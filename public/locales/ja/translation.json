@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "ダッシュボード"
+      },
+      {
+        "path": "/templates",
+        "label": "テンプレート"
+      },
+      {
+        "path": "/pricing",
+        "label": "価格設定"
+      }
+    ],
+    "accountButton": "アカウント",
+    "signOutButton": "サインアウト",
+    "connectButton": "接続する",
+    "themeLabel": "テーマ",
+    "languageLabel": "言語"
+  },
+  "footer": {
+    "description": "Solanaベースのミームコインの未来を迅速に構築している何千ものクリエイターに参加しましょう。初めてのトークンを立ち上げる場合でも、プロジェクトを拡大する場合でも、私たちのプラットフォームは、Solanaミームコインのためのプロフェッショナルなウェブサイトを迅速かつ簡単に設計、カスタマイズ、立ち上げるために必要なすべてのツールを提供します。",
+    "copyright": "無断転載を禁じます。",
+    "navigation": {
+      "label": "ナビゲーション",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "ダッシュボード"
+        },
+        {
+          "path": "/pricing",
+          "label": "価格設定"
+        },
+        {
+          "path": "/templates",
+          "label": "テンプレート"
+        },
+        {
+          "path": "/start",
+          "label": "始め方"
+        }
+      ]
+    },
+    "connect": {
+      "label": "接続する"
+    },
+    "terms": "条項",
+    "privacy": "プライバシー"
+  },
+  "home": {
+    "hero": {
+      "title": "コード不要、手間なし、ただ魔法のような体験",
+      "description": "退屈な詳細は忘れてください。ワイルドなテンプレートを選び、コインの名前でブランド化し、飛躍する準備をしましょう。",
+      "dashboardButton": "ダッシュボードへ",
+      "howToButton": "始め方",
+      "scrollToExploreButton": "スクロールして探検"
+    },
+    "launch": {
+      "badge": "迅速。革新的。効果的",
+      "title": "簡単にSolanaの旅を始めましょう",
+      "description": "コーディング不要で、Solanaプロジェクトのためのダイナミックでカスタマイズ可能なプラットフォームを構築します。高速なブロックチェーンエコシステムでの存在感を高めましょう。",
+      "startBuildingButton": "構築を開始",
+      "inputPlaceholder": "あなたのサイト"
+    },
+    "features": {
+      "badge": "コアの利点",
+      "title": "必要なすべてのツール",
+      "description": "高度な機能を備えた、ミームコインプロジェクトを紹介するユニークなウェブサイトを構築します",
+      "cards": {
+        "template": {
+          "title": "革新的なテンプレート",
+          "description": "ミームコインプロジェクトのために特別に作られた、洗練されたレスポンシブデザインの範囲を探索してください。各テンプレートは、最大の影響とユーザーエンゲージメントのために微調整されています。",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "簡単な編集",
+          "description": "直感的なエディタを使用して、簡単にウェブサイトをパーソナライズできます。色、テキスト、レイアウトを簡単に変更できます。技術的なスキルは不要です。",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "即時更新",
+          "description": "編集をリアルタイムで確認できます。サイトをコミュニティに公開する前に、すべての詳細を完璧に仕上げます。",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "よくある質問",
+      "description": "一般的な質問への必須ガイド",
+      "questions": [
+        {
+          "question": "AURORAとは何ですか？",
+          "answer": "AURORAは、ミームトークンのためのプロフェッショナルなウェブサイトを迅速に作成できるプラットフォームです。テンプレートを選択し、トークンの詳細でパーソナライズし、ウェブサイトファイルを即座にダウンロードできます。"
+        },
+        {
+          "question": "AURORAはどのように機能しますか？",
+          "answer": "AURORAは、ミームトークンのウェブサイト作成を簡素化します。テンプレートを選択し、トークン情報でカスタマイズし、技術的なスキルなしで即座にダウンロード可能なウェブサイトファイルを受け取ります。"
+        },
+        {
+          "question": "ウェブサイトのホスティングは提供していますか？",
+          "answer": "はい、私たちはウェブサイトの完全なホスティングを提供します。テンプレートを使用してサイトを作成し、カスタマイズした後、ホスティングプロセスを担当し、ウェブサイトが安全に保存され、オンラインで利用可能であることを保証します。私たちのホスティングは信頼性が高く、高速で、パフォーマンスに最適化されているため、追加の設定なしでウェブサイトが常にスムーズに動作します。"
+        },
+        {
+          "question": "ウェブサイトのホスティングは含まれていますか？",
+          "answer": "各テンプレートは、トークンの詳細、購入ボタン、トークノミクス、ロードマップ、チームプロフィール、FAQセクション、ソーシャルメディアリンクなど、ミームコインに必要な基本的な機能を備えています。すべてのテンプレートはモバイルフレンドリーで、最高のパフォーマンスに最適化されています。"
+        },
+        {
+          "question": "費用はいくらですか？",
+          "answer": "2つの価格プランを提供しています。Standardオプションは1ウェブサイトあたり0.045 SOL、Premiumオプションは0.25 SOLで、独占的なテンプレートと高度な機能にアクセスできます。要件に最適なプランを選択してください。"
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "クラシック",
+        "description": "このテンプレートは、ミームコインのプレゼンテーションだけでなく、サイト訪問を記憶に残る体験に変えるために作成されています。ユーザーがサイトに入ると、最初の数秒で明るくダイナミックな世界に入り込み、すべてが創造性、大胆さ、プロジェクトの軽快さを語りかけます。テンプレートのビジュアルコンポーネントは、「ここから記憶に残る物語が始まる！」と叫んでいるようです。",
+        "shortDescription": "このテンプレートは、ミームコインのプレゼンテーションだけでなく、サイト訪問を記憶に残る体験に変えるために作成されています。",
+        "features": [
+          "直感的なナビゲーション",
+          "美しいエフェクト",
+          "明確な構造",
+          "高速なインタラクション"
+        ]
+      },
+      "simple": {
+        "label": "シンプル",
+        "description": "このテンプレートは、シンプルさと便利さの象徴であり、特にミームコインを迅速かつ簡単にプレゼンテーションしたい人々のために作成されています。ユーザーを不必要な詳細で邪魔することなく、重要なことに集中できます。このテンプレートを使用すると、複雑な技術的な詳細を理解したり、カスタマイズに何時間も費やす必要はありません。フィールドを埋め、必要な画像をアップロードするだけで、サイトは完成です！",
+        "shortDescription": "このテンプレートは、シンプルさと便利さの象徴であり、特にミームコインを迅速かつ簡単にプレゼンテーションしたい人々のために作成されています。",
+        "features": [
+          "視覚的なシンプルさ",
+          "モダンなインターフェース",
+          "機能性",
+          "ミームコインに焦点"
+        ]
+      },
+      "impressive": {
+        "label": "印象的",
+        "description": "このテンプレートは、注目を集め、暗号通貨界で記憶に残るイベントとなるミームコインウェブサイトを作成するのに最適な選択肢です。使いやすく、カラフルで機能的なこのテンプレートは、広い視聴者にプロジェクトを簡単にプレゼンテーションできます。初心者でも数分でサイトを立ち上げることができるよう、使いやすさとスタイリッシュなデザインを考慮して設計されています。そのデザインは、ミームコインに特有の軽快さとユーモアを強調し、ユニークな雰囲気を作り出し、他のプロジェクトの中でも際立つことができます。",
+        "shortDescription": "このテンプレートは、注目を集め、暗号通貨界で記憶に残るイベントとなるミームコインウェブサイトを作成するのに最適な選択肢です。",
+        "features": [
+          "FAQセクション",
+          "ロードマップセクション",
+          "明るくエネルギッシュなデザイン",
+          "完全なカスタマイズ"
+        ],
+        "badge": "人気"
+      },
+      "rocket": {
+        "label": "ロケット",
+        "description": "ロケットテンプレートは、ミームコインウェブサイトのための明るく、ダイナミックで、記憶に残る選択肢です。その主な特徴は、スタイリッシュなロケットアニメーションで、動きと成長の感覚を作り出し、プロジェクトの急速な発展を象徴しています。このテンプレートは、ミームコインの野心的さを示し、ユニークなプレゼンテーションでユーザーの注目を集めたい人に最適です。",
+        "shortDescription": "ロケットテンプレートは、ミームコインウェブサイトのための明るく、ダイナミックで、記憶に残る選択肢です。",
+        "features": [
+          "動く背景",
+          "インタラクティブなボタン",
+          "適応性",
+          "機能性"
+        ],
+        "badge": "新着"
+      }
+    },
+    "price": "価格",
+    "selectButton": "選択",
+    "backButton": "ホームに戻る",
+    "toggleViewButton": "表示を切り替える",
+    "gridView": "グリッド",
+    "sliderView": "スライダー"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "スタンダード",
+        "description": "0.045 Solanaで、クラシックとシンプルなテンプレートを使用してウェブサイトを作成できます。これらはシンプルなテンプレートで、明確で使いやすいインターフェースを備えています。編集や変更が簡単です。",
+        "features": [
+          "無料ドメイン",
+          "作成後の編集"
+        ]
+      },
+      "advanced": {
+        "label": "アドバンスト",
+        "description": "0.05 Solで、印象的なテンプレートを使用できます。このテンプレートは、ミームトークンに合わせて編集できるさまざまな要素でいっぱいです。このテンプレートには、「購入方法」、「FAQ」、「ロードマップ」などのブロックがあります。",
+        "features": [
+          "無料ドメイン",
+          "作成後の編集",
+          "ロードマップ",
+          "FAQ",
+          "購入方法"
+        ]
+      },
+      "professional": {
+        "label": "プロフェッショナル",
+        "description": "0.065 Solで、アニメーション、さまざまなブロック、ボタン、ミームコインのための完全な編集機能を備えた完全にプロフェッショナルなロケットテンプレートを手に入れます。",
+        "features": [
+          "無料ドメイン",
+          "作成後の編集",
+          "トークノミクス",
+          "FAQ",
+          "アニメーション"
+        ]
+      }
+    },
+    "createButton": "作成を開始"
+  },
+  "account": {
+    "walletAddressLabel": "ウォレットアドレス",
+    "unauthorizedMessage": "認証されていないようです",
+    "signOutButton": "サインアウト",
+    "editButton": "編集",
+    "changeDomain": {
+      "button": "ドメインを変更",
+      "title": "ドメインを変更",
+      "description": "有効なサブドメイン（2〜20文字）を、文字、数字、ハイフンを使用して入力してください。スペースや特殊文字は使用できません。",
+      "submitButton": "変更"
+    },
+    "delete": {
+      "button": "削除",
+      "title": "本当に削除しますか？",
+      "description": "この操作は元に戻せません。これにより、サーバーからウェブサイトデータが永久に削除されます。",
+      "successMessage": "ウェブサイトが正常に削除されました！",
+      "cancelButton": "キャンセル",
+      "submitButton": "削除"
+    },
+    "unableToFetchMessage": "ウェブサイトを取得できません",
+    "noWebsitesMessage": "まだウェブサイトがありません"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "ダッシュボードページ",
+        "list": [
+          "ホームページで、サイト名を入力し、「構築を開始」ボタンをクリックします",
+          "気に入ったテンプレートを選びます。",
+          "ページを自由にデコレーションします。",
+          "「ウェブを作成」ボタンをクリックします",
+          "取引を確認して支払います。",
+          "支払いが成功したら、おめでとうございます、あなたはサイトを無事に作成しました！"
+        ]
+      },
+      {
+        "title": "テンプレートセクション",
+        "list": [
+          "「テンプレート」セクションに移動します",
+          "気に入ったテンプレートを選びます。",
+          "ページを自由にデコレーションします。",
+          "「ウェブを作成」ボタンをクリックします",
+          "取引を確認して支払います。",
+          "支払いが成功したら、おめでとうございます、あなたはサイトを無事に作成しました！"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "問題がある場合、取引にエラーがある場合、サイト改善の提案がある場合、または何か質問がある場合は、お気軽にお問い合わせください。喜んでお手伝いいたします：",
+      "email": "メール"
+    }
+  },
+  "builder": {
+    "backToTemplates": "テンプレートに戻る",
+    "description": "わずか5分でウェブサイトを作成",
+    "create": {
+      "button": "ウェブを作成",
+      "title": "ドメインを入力",
+      "description": "有効なサブドメイン（2〜20文字）を、文字、数字、ハイフンを使用して入力してください。スペースや特殊文字は使用できません。",
+      "successMessage": "ウェブサイトが正常に作成されました！",
+      "submitButton": "確認して作成"
+    },
+    "update": {
+      "button": "変更を保存",
+      "successMessage": "ウェブサイトが正常に作成されました！"
+    },
+    "classic": {
+      "categories": {
+        "text": "テキスト",
+        "images": "画像",
+        "links": "リンク",
+        "howToBuy": "購入方法",
+        "buttons": "ボタン"
+      },
+      "fields": {
+        "logoText": "プロジェクト名",
+        "ticker": "ティッカー",
+        "contractAddress": "コントラクトアドレス",
+        "description": "説明",
+        "buyNowText": "今すぐ購入",
+        "logoImage": "ロゴ",
+        "background": "背景",
+        "tokenImage": "トークン画像",
+        "tiktok": "TikTok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "CoinGecko",
+        "coinmarketcap": "CoinMarketCap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "ホワイトペーパー",
+        "authorTelegram": "作者のTelegram",
+        "authorTwitter": "作者のTwitter",
+        "authorDiscord": "作者のDiscord",
+        "showHowToBuy": "購入方法を表示",
+        "firstStep": "最初のステップ",
+        "firstStepImage": "最初のステップ画像",
+        "secondStep": "2番目のステップ",
+        "secondStepImage": "2番目のステップ画像",
+        "thirdStep": "3番目のステップ",
+        "thirdStepImage": "3番目のステップ画像",
+        "buyNowLink": "今すぐ購入リンク"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "テキスト",
+        "images": "画像",
+        "links": "リンク"
+      },
+      "fields": {
+        "ticker": "ティッカー",
+        "contractAddress": "コントラクトアドレス",
+        "background": "背景",
+        "tokenImage": "トークン画像",
+        "tiktok": "TikTok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "CoinGecko",
+        "coinmarketcap": "CoinMarketCap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "ホワイトペーパー",
+        "authorTelegram": "作者のTelegram",
+        "authorTwitter": "作者のTwitter",
+        "authorDiscord": "作者のDiscord"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "テキスト",
+        "images": "画像",
+        "links": "リンク",
+        "buttons": "ボタン",
+        "howToBuy": "購入方法",
+        "roadmap": "ロードマップ",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "ティッカー",
+        "contractAddress": "コントラクトアドレス",
+        "buyNowText": "今すぐ購入",
+        "aboutUsTitle": "私たちについてのタイトル",
+        "aboutUsDescription": "私たちについての説明",
+        "logo": "ロゴ",
+        "primaryBackground": "プライマリ背景",
+        "secondaryBackground": "セカンダリ背景",
+        "tokenImage": "トークン画像",
+        "aboutUsPreview": "私たちについてのプレビュー",
+        "tiktok": "TikTok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "CoinGecko",
+        "coinmarketcap": "CoinMarketCap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "ホワイトペーパー",
+        "authorTelegram": "作者のTelegram",
+        "authorTwitter": "作者のTwitter",
+        "authorDiscord": "作者のDiscord",
+        "buyNowLink": "今すぐ購入リンク",
+        "roadmapTitle": "ロードマップタイトル",
+        "roadmapFirstStepTitle": "フェーズ1タイトル",
+        "roadmapFirstStepDescription": "フェーズ1説明",
+        "roadmapSecondStepTitle": "フェーズ2タイトル",
+        "roadmapSecondStepDescription": "フェーズ2説明",
+        "roadmapThirdStepTitle": "フェーズ3タイトル",
+        "roadmapThirdStepDescription": "フェーズ3説明",
+        "howToBuyTitle": "購入方法タイトル",
+        "howToBuyFirstStep": "購入方法ステップ1",
+        "howToBuySecondStep": "購入方法ステップ2",
+        "howToBuyThirdStep": "購入方法ステップ3",
+        "howToBuyFourthStep": "購入方法ステップ4",
+        "FAQTitle": "FAQタイトル",
+        "firstQuestion": "FAQ質問1",
+        "firstAnswer": "FAQ回答1",
+        "secondQuestion": "FAQ質問2",
+        "secondAnswer": "FAQ回答2",
+        "thirdQuestion": "FAQ質問3",
+        "thirdAnswer": "FAQ回答3",
+        "fourthQuestion": "FAQ質問4",
+        "fourthAnswer": "FAQ回答4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "アクセントカラー",
+        "text": "テキスト",
+        "images": "画像",
+        "buttons": "ボタン",
+        "tokenomics": "トークノミクス",
+        "missionTimeline": "ミッションタイムライン",
+        "missionControl": "ミッションコントロール",
+        "faq": "FAQ",
+        "links": "リンク"
+      },
+      "fields": {
+        "primaryColor": "プライマリカラー",
+        "secondaryColor": "セカンダリカラー",
+        "heroTitle": "ヒーロータイトル",
+        "ticker": "ティッカー",
+        "description": "説明",
+        "contractAddress": "コントラクトアドレス",
+        "contractAddressLabel": "コントラクトアドレスラベル",
+        "projectName": "プロジェクト名",
+        "buyTicker": "ヘッダーボタン",
+        "buyNow": "今すぐ購入ボタン",
+        "joinUs": "参加ボタン",
+        "tokenomicsTitle": "トークノミクスタイトル",
+        "missionTimelineTitle": "ミッションタイムラインタイトル",
+        "missionControlTitle": "ミッションコントロールタイトル",
+        "FAQTitle": "ミッションFAQタイトル",
+        "joinTitle": "ミッションに参加タイトル",
+        "tokenImage": "トークン画像",
+        "buyTickerLink": "ティッカー購入URL",
+        "buyNowLink": "今すぐ購入URL",
+        "joinUsLink": "参加URL",
+        "firstTokenomicsIcon": "最初のトークノミクスアイコン",
+        "firstTokenomicsTitle": "最初のトークノミクスタイトル",
+        "firstTokenomicsValue": "最初のトークノミクス値",
+        "secondTokenomicsIcon": "2番目のトークノミクスアイコン",
+        "secondTokenomicsTitle": "2番目のトークノミクスタイトル",
+        "secondTokenomicsValue": "2番目のトークノミクス値",
+        "thirdTokenomicsIcon": "3番目のトークノミクスアイコン",
+        "thirdTokenomicsTitle": "3番目のトークノミクスタイトル",
+        "thirdTokenomicsValue": "3番目のトークノミクス値",
+        "fourthTokenomicsIcon": "4番目のトークノミクスアイコン",
+        "fourthTokenomicsTitle": "4番目のトークノミクスタイトル",
+        "fourthTokenomicsValue": "4番目のトークノミクス値",
+        "firstTimelinePhaseTitle": "フェーズ1タイトル",
+        "firstTimelineTitle": "フェーズ1タイトル",
+        "firstTimelineDescription": "フェーズ1説明",
+        "firstTimelineDate": "フェーズ1日付",
+        "secondTimelinePhaseTitle": "フェーズ2タイトル",
+        "secondTimelineTitle": "フェーズ2タイトル",
+        "secondTimelineDescription": "フェーズ2説明",
+        "secondTimelineDate": "フェーズ2日付",
+        "thirdTimelinePhaseTitle": "フェーズ3タイトル",
+        "thirdTimelineTitle": "フェーズ3タイトル",
+        "thirdTimelineDescription": "フェーズ3説明",
+        "thirdTimelineDate": "フェーズ3日付",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

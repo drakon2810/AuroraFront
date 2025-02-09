@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  @font-face {
+    font-family: 'Dino';
+    font-style: 'normal';
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/Dinosaur.ttf');
+  }
+
+  @font-face {
+    font-family: 'Arial Black';
+    font-style: 'normal';
+    font-display: swap;
+    src: url('./assets/fonts/ArialBlack.ttf');
+  }
+
+  button,
+  input {
+    @apply cursor-pointer border-0 outline-0 hover:outline-0 focus:outline-0;
+  }
+
+  h2 {
+    @apply font-bold tracking-tighter sm:text-5xl xl:text-6xl;
+  }
+
+  h3 {
+    @apply text-4xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  h5 {
+    @apply mb-4 text-sm font-bold uppercase tracking-wider text-neutral-700 dark:text-neutral-200;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-7xl px-4;
+  }
+
+  .template-element-animations {
+    @apply transition-transform data-[animation=bounce]:animate-bounce data-[animation=flash]:animate-flash data-[animation=headShake]:animate-headShake data-[animation=heartBeat]:animate-heartBeat data-[animation=hflip]:animate-hflip data-[animation=jello]:animate-jello data-[animation=ping]:animate-ping data-[animation=pulse]:animate-pulse data-[animation=rubberBand]:animate-rubberBand data-[animation=spin]:animate-spin data-[animation=swing]:animate-swing data-[animation=vflip]:animate-vflip data-[animation=wiggle]:animate-wiggle data-[animation=wobble]:animate-wobble data-[animation=in]:animate-in data-[animation=in]:fade-in data-[animation=in]:slide-in-from-bottom;
+  }
+
+  .button {
+    @apply rounded-md border-4 border-b-8 border-black bg-white px-6 py-3 leading-none;
+  }
+
+  .impressive-block {
+    @apply rounded-xl border-4 border-b-8 border-black dark:border-4 dark:border-b-8 dark:border-black;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-gradient {
+  animation: spin 4s linear infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(calc(-100% + 192px));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

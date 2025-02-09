@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "仪表板"
+      },
+      {
+        "path": "/templates",
+        "label": "模板"
+      },
+      {
+        "path": "/pricing",
+        "label": "定价"
+      }
+    ],
+    "accountButton": "账户",
+    "signOutButton": "登出",
+    "connectButton": "连接",
+    "themeLabel": "主题",
+    "languageLabel": "语言"
+  },
+  "footer": {
+    "description": "加入成千上万的创作者，他们正在快速构建基于Solana的迷因币的未来。无论您是首次发行代币还是扩展项目，我们的平台都提供了设计、定制和启动专业Solana迷因币网站所需的所有工具——快速且轻松。",
+    "copyright": "版权所有。",
+    "navigation": {
+      "label": "导航",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "仪表板"
+        },
+        {
+          "path": "/pricing",
+          "label": "定价"
+        },
+        {
+          "path": "/templates",
+          "label": "模板"
+        },
+        {
+          "path": "/start",
+          "label": "如何开始"
+        }
+      ]
+    },
+    "connect": {
+      "label": "连接"
+    },
+    "terms": "条款",
+    "privacy": "隐私"
+  },
+  "home": {
+    "hero": {
+      "title": "无需代码，无需麻烦，只有月光魔法",
+      "description": "忘记那些无聊的细节。选择一个疯狂的模板，用您的代币名称进行品牌化，准备起飞。",
+      "dashboardButton": "前往仪表盘",
+      "howToButton": "如何开始",
+      "scrollToExploreButton": "滚动以探索"
+    },
+    "launch": {
+      "badge": "快速。创新。有效",
+      "title": "轻松启动您的Solana之旅",
+      "description": "为您的Solana项目构建动态、可定制的平台——无需编码。在快节奏的区块链生态系统中提升您的存在感。",
+      "startBuildingButton": "开始构建",
+      "inputPlaceholder": "你的网站"
+    },
+    "features": {
+      "badge": "核心优势",
+      "title": "您需要的所有工具",
+      "description": "构建一个独特的网站来展示您的迷因币项目，配备高级功能",
+      "cards": {
+        "template": {
+          "title": "创新模板",
+          "description": "探索一系列专为迷因币项目设计的时尚、响应式设计。每个模板都经过微调，以最大程度地提高影响力和用户参与度。",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "轻松编辑",
+          "description": "使用我们直观的编辑器轻松个性化您的网站。轻松修改颜色、文本和布局——无需技术技能",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "即时更新",
+          "description": "在您进行编辑时实时查看更改。在将网站发布给社区之前，完善每一个细节。",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "常见问题",
+      "description": "常见问题解答指南",
+      "questions": [
+        {
+          "question": "什么是AURORA？",
+          "answer": "AURORA是一个平台，使您能够快速为您的迷因代币创建专业网站。只需选择一个模板，用您的代币详细信息进行个性化设置，即可立即下载您的网站文件。"
+        },
+        {
+          "question": "AURORA如何运作？",
+          "answer": "AURORA简化了您的迷因代币网站的创建过程。选择一个模板，用您的代币信息进行自定义，并立即获得可供下载的网站文件——无需技术技能。"
+        },
+        {
+          "question": "我们是否托管您的网站？",
+          "answer": "是的，我们为您的网站提供完整的托管服务。一旦您使用我们的模板创建并自定义了您的网站，我们将负责托管过程，确保您的网站安全存储并在线可用。我们的托管服务可靠、快速且经过性能优化，因此您的网站始终运行顺畅，无需您进行任何额外设置。"
+        },
+        {
+          "question": "是否包含网站托管？",
+          "answer": "每个模板都设计有迷因币所需的基本功能，包括代币详细信息、购买按钮、代币经济学、路线图、团队简介、常见问题解答部分和社交媒体链接。所有模板都适合移动设备并经过优化，以实现最佳性能。"
+        },
+        {
+          "question": "费用是多少？",
+          "answer": "我们提供两种定价方案：标准选项为每个网站0.045 SOL，高级选项为0.25 SOL，其中包括访问独家模板和高级功能。选择最适合您需求的方案。"
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "经典",
+        "description": "此模板不仅用于展示迷因币，还将访问网站变成一次难忘的体验。从用户进入的第一秒起，他们就进入了一个明亮、动态的世界，一切都充满了创意、大胆和项目的轻松感。模板的视觉部分仿佛在呐喊：“这里开始的故事值得铭记！”",
+        "shortDescription": "此模板不仅用于展示迷因币，还将访问网站变成一次难忘的体验",
+        "features": [
+          "直观导航",
+          "美丽的效果",
+          "清晰的结构",
+          "快速互动"
+        ]
+      },
+      "simple": {
+        "label": "简约",
+        "description": "此模板是简单和便利的典范，专为那些希望快速轻松展示其迷因币的人而设计。它允许您专注于主要事项，而不会用不必要的细节分散用户的注意力。使用此模板，您无需理解复杂的技术细节或花费数小时进行定制。只需填写字段，上传必要的图像——您的网站就准备好了！",
+        "shortDescription": "此模板是简单和便利的典范，专为那些希望快速轻松展示其迷因币的人而设计。",
+        "features": [
+          "视觉简洁",
+          "现代界面",
+          "功能性",
+          "专注于迷因币"
+        ]
+      },
+      "impressive": {
+        "label": "令人印象深刻",
+        "description": "此模板是创建您的迷因币网站的完美选择，它将吸引注意力并成为加密世界中的一次难忘事件。用户友好、色彩丰富且功能强大，它使您能够轻松向广大受众展示您的项目。该模板设计时考虑了易用性和时尚设计，因此即使是初学者也可以在几分钟内启动他们的网站。其设计强调了迷因币特有的轻松和幽默，营造出独特的氛围，使您能够在其他项目中脱颖而出。",
+        "shortDescription": "此模板是创建您的迷因币网站的完美选择，它将吸引注意力并成为加密世界中的一次难忘事件。",
+        "features": [
+          "常见问题解答部分",
+          "路线图部分",
+          "明亮且充满活力的设计",
+          "完全自定义"
+        ],
+        "badge": "热门"
+      },
+      "rocket": {
+        "label": "火箭",
+        "description": "火箭模板是一个明亮、动态且令人难忘的选择，适合您的迷因币网站。其主要特点是时尚的火箭动画，营造出运动和成长的感觉，象征着您项目的快速发展。此模板非常适合那些希望展示其迷因币的雄心壮志并通过独特的演示吸引用户注意力的人。",
+        "shortDescription": "火箭模板是一个明亮、动态且令人难忘的选择，适合您的迷因币网站。",
+        "features": [
+          "动态背景",
+          "互动按钮",
+          "适应性",
+          "功能性"
+        ],
+        "badge": "新"
+      }
+    },
+    "price": "价格",
+    "selectButton": "选择",
+    "backButton": "返回首页",
+    "toggleViewButton": "切换视图",
+    "gridView": "网格",
+    "sliderView": "滑动"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "标准",
+        "description": "0.045 Solana即可使用经典和简约模板创建网站。这些是简单的模板，具有清晰且令人愉悦的用户界面。它们易于编辑和修改。",
+        "features": [
+          "免费域名",
+          "创建后编辑"
+        ]
+      },
+      "advanced": {
+        "label": "高级",
+        "description": "0.05 Sol即可使用令人印象深刻的模板。此模板充满了您可以编辑以适应您的迷因代币的各种元素。此模板包含“如何购买”、“常见问题解答”、“路线图”等部分。",
+        "features": [
+          "免费域名",
+          "创建后编辑",
+          "路线图",
+          "常见问题解答",
+          "如何购买"
+        ]
+      },
+      "professional": {
+        "label": "专业",
+        "description": "0.065 Sol即可获得完全专业的火箭模板，带有动画、不同部分、按钮、完全编辑功能，适合您的迷因币。",
+        "features": [
+          "免费域名",
+          "创建后编辑",
+          "代币经济学",
+          "常见问题解答",
+          "动画"
+        ]
+      }
+    },
+    "createButton": "开始创建"
+  },
+  "account": {
+    "walletAddressLabel": "钱包地址",
+    "unauthorizedMessage": "您似乎未授权",
+    "signOutButton": "登出",
+    "editButton": "编辑",
+    "changeDomain": {
+      "button": "更改域名",
+      "title": "更改域名",
+      "description": "输入有效的子域名（2-20个字符），使用字母、数字和连字符。不允许使用空格或特殊字符。",
+      "submitButton": "更改"
+    },
+    "delete": {
+      "button": "删除",
+      "title": "您确定吗？",
+      "description": "此操作无法撤销。这将永久删除您服务器上的网站数据。",
+      "successMessage": "您的网站已成功删除！",
+      "cancelButton": "取消",
+      "submitButton": "删除"
+    },
+    "unableToFetchMessage": "无法获取网站",
+    "noWebsitesMessage": "您还没有网站"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "仪表板页面",
+        "list": [
+          "在主页上，您可以输入您的网站名称并点击“开始构建”按钮",
+          "选择您喜欢的模板。",
+          "按照您的喜好装饰您的页面。",
+          "点击“创建网站”按钮",
+          "确认您的交易并付款。",
+          "付款成功后，恭喜您，您已成功创建了您的网站！"
+        ]
+      },
+      {
+        "title": "模板部分",
+        "list": [
+          "转到“模板”部分",
+          "选择您喜欢的模板。",
+          "按照您的喜好装饰您的页面。",
+          "点击“创建网站”按钮",
+          "确认您的交易并付款。",
+          "付款成功后，恭喜您，您已成功创建了您的网站！"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "如果您有任何问题、交易错误、改进我们网站的建议或想询问什么，请随时联系我们，我们将很乐意为您提供帮助：",
+      "email": "电子邮件"
+    }
+  },
+  "builder": {
+    "backToTemplates": "返回模板",
+    "description": "只需5分钟即可创建您的网站",
+    "create": {
+      "button": "创建网站",
+      "title": "输入您的域名",
+      "description": "输入有效的子域名（2-20个字符），使用字母、数字和连字符。不允许使用空格或特殊字符。",
+      "successMessage": "您的网站已成功创建！",
+      "submitButton": "确认并创建"
+    },
+    "update": {
+      "button": "保存更改",
+      "successMessage": "您的网站已成功创建！"
+    },
+    "classic": {
+      "categories": {
+        "text": "文本",
+        "images": "图像",
+        "links": "链接",
+        "howToBuy": "如何购买",
+        "buttons": "按钮"
+      },
+      "fields": {
+        "logoText": "项目名称",
+        "ticker": "代币代码",
+        "contractAddress": "合约地址",
+        "description": "描述",
+        "buyNowText": "立即购买",
+        "logoImage": "标志",
+        "background": "背景",
+        "tokenImage": "代币图像",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "白皮书",
+        "authorTelegram": "作者Telegram",
+        "authorTwitter": "作者Twitter",
+        "authorDiscord": "作者Discord",
+        "showHowToBuy": "显示如何购买",
+        "firstStep": "第一步",
+        "firstStepImage": "第一步图像",
+        "secondStep": "第二步",
+        "secondStepImage": "第二步图像",
+        "thirdStep": "第三步",
+        "thirdStepImage": "第三步图像",
+        "buyNowLink": "立即购买链接"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "文本",
+        "images": "图像",
+        "links": "链接"
+      },
+      "fields": {
+        "ticker": "代币代码",
+        "contractAddress": "合约地址",
+        "background": "背景",
+        "tokenImage": "代币图像",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "白皮书",
+        "authorTelegram": "作者Telegram",
+        "authorTwitter": "作者Twitter",
+        "authorDiscord": "作者Discord"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "文本",
+        "images": "图像",
+        "links": "链接",
+        "buttons": "按钮",
+        "howToBuy": "如何购买",
+        "roadmap": "路线图",
+        "faq": "常见问题解答"
+      },
+      "fields": {
+        "ticker": "代币代码",
+        "contractAddress": "合约地址",
+        "buyNowText": "立即购买",
+        "aboutUsTitle": "关于我们标题",
+        "aboutUsDescription": "关于我们描述",
+        "logo": "标志",
+        "primaryBackground": "主背景",
+        "secondaryBackground": "次背景",
+        "tokenImage": "代币图像",
+        "aboutUsPreview": "关于我们预览",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "白皮书",
+        "authorTelegram": "作者Telegram",
+        "authorTwitter": "作者Twitter",
+        "authorDiscord": "作者Discord",
+        "buyNowLink": "立即购买链接",
+        "roadmapTitle": "路线图标题",
+        "roadmapFirstStepTitle": "第一阶段标题",
+        "roadmapFirstStepDescription": "第一阶段描述",
+        "roadmapSecondStepTitle": "第二阶段标题",
+        "roadmapSecondStepDescription": "第二阶段描述",
+        "roadmapThirdStepTitle": "第三阶段标题",
+        "roadmapThirdStepDescription": "第三阶段描述",
+        "howToBuyTitle": "如何购买标题",
+        "howToBuyFirstStep": "如何购买第一步",
+        "howToBuySecondStep": "如何购买第二步",
+        "howToBuyThirdStep": "如何购买第三步",
+        "howToBuyFourthStep": "如何购买第四步",
+        "FAQTitle": "常见问题解答标题",
+        "firstQuestion": "常见问题解答问题1",
+        "firstAnswer": "常见问题解答答案1",
+        "secondQuestion": "常见问题解答问题2",
+        "secondAnswer": "常见问题解答答案2",
+        "thirdQuestion": "常见问题解答问题3",
+        "thirdAnswer": "常见问题解答答案3",
+        "fourthQuestion": "常见问题解答问题4",
+        "fourthAnswer": "常见问题解答答案4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "强调色",
+        "text": "文本",
+        "images": "图像",
+        "buttons": "按钮",
+        "tokenomics": "代币经济学",
+        "missionTimeline": "任务时间线",
+        "missionControl": "任务控制",
+        "faq": "常见问题解答",
+        "links": "链接"
+      },
+      "fields": {
+        "primaryColor": "主色",
+        "secondaryColor": "次色",
+        "heroTitle": "主标题",
+        "ticker": "代币代码",
+        "description": "描述",
+        "contractAddress": "合约地址",
+        "contractAddressLabel": "合约地址标签",
+        "projectName": "项目名称",
+        "buyTicker": "标题按钮",
+        "buyNow": "立即购买按钮",
+        "joinUs": "加入我们按钮",
+        "tokenomicsTitle": "代币经济学标题",
+        "missionTimelineTitle": "任务时间线标题",
+        "missionControlTitle": "任务控制标题",
+        "FAQTitle": "任务常见问题解答标题",
+        "joinTitle": "加入任务标题",
+        "tokenImage": "代币图像",
+        "buyTickerLink": "购买代币链接",
+        "buyNowLink": "立即购买链接",
+        "joinUsLink": "加入我们链接",
+        "firstTokenomicsIcon": "第一个代币经济学图标",
+        "firstTokenomicsTitle": "第一个代币经济学标题",
+        "firstTokenomicsValue": "第一个代币经济学值",
+        "secondTokenomicsIcon": "第二个代币经济学图标",
+        "secondTokenomicsTitle": "第二个代币经济学标题",
+        "secondTokenomicsValue": "第二个代币经济学值",
+        "thirdTokenomicsIcon": "第三个代币经济学图标",
+        "thirdTokenomicsTitle": "第三个代币经济学标题",
+        "thirdTokenomicsValue": "第三个代币经济学值",
+        "fourthTokenomicsIcon": "第四个代币经济学图标",
+        "fourthTokenomicsTitle": "第四个代币经济学标题",
+        "fourthTokenomicsValue": "第四个代币经济学值",
+        "firstTimelinePhaseTitle": "第一阶段标题",
+        "firstTimelineTitle": "第一阶段标题",
+        "firstTimelineDescription": "第一阶段描述",
+        "firstTimelineDate": "第一阶段日期",
+        "secondTimelinePhaseTitle": "第二阶段标题",
+        "secondTimelineTitle": "第二阶段标题",
+        "secondTimelineDescription": "第二阶段描述",
+        "secondTimelineDate": "第二阶段日期",
+        "thirdTimelinePhaseTitle": "第三阶段标题",
+        "thirdTimelineTitle": "第三阶段标题",
+        "thirdTimelineDescription": "第三阶段描述",
+        "thirdTimelineDate": "第三阶段日期",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

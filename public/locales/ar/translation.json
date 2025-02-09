@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "لوحة التحكم"
+      },
+      {
+        "path": "/templates",
+        "label": "القوالب"
+      },
+      {
+        "path": "/pricing",
+        "label": "التسعير"
+      }
+    ],
+    "accountButton": "الحساب",
+    "signOutButton": "تسجيل الخروج",
+    "connectButton": "الاتصال",
+    "themeLabel": "السمة",
+    "languageLabel": "اللغة"
+  },
+  "footer": {
+    "description": "انضم إلى آلاف المبدعين الذين يبنون بسرعة مستقبل العملات الميمية القائمة على سولانا. سواء كنت تطلق أول عملة رقمية لك أو توسع مشروعك، فإن منصتنا توفر جميع الأدوات التي تحتاجها لتصميم وتخصيص وإطلاق موقع ويب احترافي لعملة الميم الخاصة بك على سولانا — بسرعة وسهولة.",
+    "copyright": "جميع الحقوق محفوظة.",
+    "navigation": {
+      "label": "ملاحة",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "لوحة القيادة"
+        },
+        {
+          "path": "/pricing",
+          "label": "التسعير"
+        },
+        {
+          "path": "/templates",
+          "label": "قوالب"
+        },
+        {
+          "path": "/start",
+          "label": "كيف تبدأ"
+        }
+      ]
+    },
+    "connect": {
+      "label": "يتصل"
+    },
+    "terms": "شروط",
+    "privacy": "خصوصية"
+  },
+  "home": {
+    "hero": {
+      "title": "لا كود، لا تعقيدات، فقط سحر القمر",
+      "description": "انسَ التفاصيل المملة. اختر قالبًا جريئًا، وقم بتخصيصه باسم عملتك، واستعد للتحليق.",
+      "dashboardButton": "انتقل إلى لوحة التحكم",
+      "howToButton": "كيف تبدأ",
+      "scrollToExploreButton": "قم بالتمرير لاستكشاف"
+    },
+    "launch": {
+      "badge": "سريع. مبتكر. فعال",
+      "title": "ابدأ رحلتك على سولانا بسهولة",
+      "description": "قم ببناء منصات ديناميكية وقابلة للتخصيص لمشاريعك على سولانا — دون الحاجة إلى كتابة كود. عزز وجودك في نظام blockchain سريع الخطى.",
+      "startBuildingButton": "ابدأ البناء",
+      "inputPlaceholder": "موقعك"
+    },
+    "features": {
+      "badge": "الفائدة الأساسية",
+      "title": "جميع الأدوات التي تحتاجها",
+      "description": "قم ببناء موقع ويب فريد لعرض مشروع عملة الميم الخاص بك، معبأ بميزات متقدمة",
+      "cards": {
+        "template": {
+          "title": "قوالب مبتكرة",
+          "description": "استكشف مجموعة من التصاميم الأنيقة والمرنة المصممة خصيصًا لمشاريع عملات الميم. كل قالب تم ضبطه لتحقيق أقصى تأثير وجذب المستخدمين.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "تحرير سهل",
+          "description": "قم بتخصيص موقعك بسهولة باستخدام محررنا البديهي. قم بتعديل الألوان والنصوص والتخطيطات بكل سهولة — دون الحاجة إلى مهارات تقنية",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "تحديثات فورية",
+          "description": "شاهد التعديلات الخاصة بك في الوقت الفعلي أثناء قيامك بها. قم بتحسين كل تفصيلة إلى الكمال قبل إطلاق موقعك للمجتمع.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "الأسئلة الشائعة",
+      "description": "دليلك الأساسي للأسئلة الشائعة",
+      "questions": [
+        {
+          "question": "ما هو AURORA؟",
+          "answer": "AURORA هي منصة تمكنك من إنشاء مواقع ويب احترافية لعملة الميم الخاصة بك بسرعة. فقط اختر قالبًا، وقم بتخصيصه بتفاصيل عملتك، وقم بتنزيل ملفات موقعك على الفور."
+        },
+        {
+          "question": "كيف يعمل AURORA؟",
+          "answer": "AURORA يبسط عملية إنشاء موقع ويب لعملة الميم الخاصة بك. اختر قالبًا، وقم بتخصيصه بمعلومات عملتك، واستلم ملفات موقعك جاهزة للتنزيل على الفور — دون الحاجة إلى مهارات تقنية"
+        },
+        {
+          "question": "هل نستضيف موقعك؟",
+          "answer": "نعم، نقدم استضافة كاملة لموقعك. بمجرد إنشاء موقعك وتخصيصه باستخدام قوالبنا، نتحمل عملية الاستضافة، مما يضمن تخزين موقعك بشكل آمن وتوفره عبر الإنترنت. استضافتنا موثوقة وسريعة ومُحسّنة للأداء، بحيث يعمل موقعك بسلاسة في جميع الأوقات، دون الحاجة إلى إعدادات إضافية منك."
+        },
+        {
+          "question": "هل تتضمن الاستضافة؟",
+          "answer": "تم تصميم كل قالب بميزات أساسية لعملة الميم الخاصة بك، بما في ذلك تفاصيل العملة، أزرار الشراء، tokenomics، خارطة الطريق، ملفات الفريق، قسم الأسئلة الشائعة، وروابط وسائل التواصل الاجتماعي. جميع القوالب متوافقة مع الهواتف المحمولة ومُحسّنة لأعلى أداء"
+        },
+        {
+          "question": "كم التكلفة؟",
+          "answer": "نقدم خطتين تسعيريتين: الخيار القياسي مقابل 0.045 SOL لكل موقع، والخيار المميز مقابل 0.25 SOL، والذي يتضمن الوصول إلى قوالب حصرية وميزات متقدمة. اختر الخيار الذي يناسب احتياجاتك."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "كلاسيكي",
+        "description": "تم إنشاء هذا القالب ليس فقط لعرض عملة الميم، ولكن لتحويل زيارة الموقع إلى تجربة لا تُنسى. من اللحظات الأولى، يدخل المستخدم عالمًا مشرقًا وديناميكيًا حيث كل شيء يتحدث عن الإبداع والجرأة وخفة المشروع. المكون البصري للقالب يصرخ: \"هنا تبدأ القصة التي تستحق التذكر!\"",
+        "shortDescription": "تم إنشاء هذا القالب ليس فقط لعرض عملة الميم، ولكن لتحويل زيارة الموقع إلى تجربة لا تُنسى",
+        "features": [
+          "تنقل بديهي",
+          "تأثيرات جميلة",
+          "هيكل واضح",
+          "تفاعل سريع"
+        ]
+      },
+      "simple": {
+        "label": "بسيط",
+        "description": "هذا القالب هو تجسيد للبساطة والراحة، تم إنشاؤه خصيصًا لأولئك الذين يرغبون في عرض عملة الميم الخاصة بهم بسرعة وسهولة. يسمح لك بالتركيز على الشيء الرئيسي دون تشتيت انتباه المستخدمين بتفاصيل غير ضرورية. مع هذا القالب، لا تحتاج إلى فهم تفاصيل تقنية معقدة أو قضاء ساعات في التخصيص. فقط املأ الحقول، وقم بتحميل الصور اللازمة — وموقعك جاهز!",
+        "shortDescription": "هذا القالب هو تجسيد للبساطة والراحة، تم إنشاؤه خصيصًا لأولئك الذين يرغبون في عرض عملة الميم الخاصة بهم بسرعة وسهولة.",
+        "features": [
+          "بساطة بصرية",
+          "واجهة حديثة",
+          "وظائف",
+          "التركيز على عملة الميم"
+        ]
+      },
+      "impressive": {
+        "label": "مثير للإعجاب",
+        "description": "هذا القالب هو الخيار المثالي لإنشاء موقع ويب لعملة الميم الخاصة بك والذي سيجذب الانتباه ويصبح حدثًا لا يُنسى في عالم العملات الرقمية. سهل الاستخدام، ملون ووظيفي، مما يسهل عرض مشروعك لجمهور واسع. تم تصميم القالب مع مراعاة سهولة الاستخدام والتصميم الأنيق، بحيث يمكن حتى للمبتدئين إطلاق موقعهم في بضع دقائق. يؤكد تصميمه على الخفة والفكاهة المميزة لعملات الميم، مما يخلق جوًا فريدًا ويسمح لك بالتميز بين المشاريع الأخرى.",
+        "shortDescription": "هذا القالب هو الخيار المثالي لإنشاء موقع ويب لعملة الميم الخاصة بك والذي سيجذب الانتباه ويصبح حدثًا لا يُنسى في عالم العملات الرقمية.",
+        "features": [
+          "قسم الأسئلة الشائعة",
+          "قسم خارطة الطريق",
+          "تصميم مشرق وحيوي",
+          "تخصيص كامل"
+        ],
+        "badge": "شائع"
+      },
+      "rocket": {
+        "label": "صاروخ",
+        "description": "قالب الصاروخ هو خيار مشرق وديناميكي ولا يُنسى لموقع عملة الميم الخاص بك. تتميز ميزته الرئيسية برسم متحرك أنيق للصاروخ، مما يخلق إحساسًا بالحركة والنمو، مما يرمز إلى التطور السريع لمشروعك. هذا القالب مثالي لأولئك الذين يرغبون في إظهار طموح عملة الميم الخاصة بهم وجذب انتباه المستخدمين بعرض فريد.",
+        "shortDescription": "قالب الصاروخ هو خيار مشرق وديناميكي ولا يُنسى لموقع عملة الميم الخاص بك.",
+        "features": [
+          "خلفية متحركة",
+          "أزرار تفاعلية",
+          "القدرة على التكيف",
+          "وظائف"
+        ],
+        "badge": "جديد"
+      }
+    },
+    "price": "السعر",
+    "selectButton": "اختر",
+    "backButton": "العودة إلى الصفحة الرئيسية",
+    "toggleViewButton": "تبديل العرض",
+    "gridView": "شبكة",
+    "sliderView": "شريط التمرير"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "قياسي",
+        "description": "مقابل 0.045 Solana يمكنك إنشاء موقع باستخدام القالب الكلاسيكي والبسيط. هذه قوالب بسيطة، مع واجهة مستخدم واضحة وممتعة. من السهل تعديلها وتخصيصها.",
+        "features": [
+          "نطاق مجاني",
+          "التعديل بعد الإنشاء"
+        ]
+      },
+      "advanced": {
+        "label": "متقدم",
+        "description": "مقابل 0.05 sol يمكنك استخدام القالب المثير للإعجاب. هذا القالب مليء بعناصر مختلفة يمكنك تعديلها لتناسب عملة الميم الخاصة بك. يحتوي هذا القالب على كتل مثل \"كيفية الشراء\"، \"الأسئلة الشائعة\"، \"خارطة الطريق\".",
+        "features": [
+          "نطاق مجاني",
+          "التعديل بعد الإنشاء",
+          "خارطة الطريق",
+          "الأسئلة الشائعة",
+          "كيفية الشراء"
+        ]
+      },
+      "professional": {
+        "label": "احترافي",
+        "description": "مقابل 0.065 Sol ستحصل على قالب صاروخ احترافي بالكامل مع رسوم متحركة، كتل مختلفة، أزرار، تخصيص كامل لعملة الميم الخاصة بك.",
+        "features": [
+          "نطاق مجاني",
+          "التعديل بعد الإنشاء",
+          "Tokenomics",
+          "الأسئلة الشائعة",
+          "رسوم متحركة"
+        ]
+      }
+    },
+    "createButton": "ابدأ الإنشاء"
+  },
+  "account": {
+    "walletAddressLabel": "عنوان المحفظة",
+    "unauthorizedMessage": "يبدو أنك غير مصرح لك",
+    "signOutButton": "تسجيل الخروج",
+    "editButton": "تعديل",
+    "changeDomain": {
+      "button": "تغيير النطاق",
+      "title": "تغيير النطاق",
+      "description": "أدخل نطاقًا فرعيًا صالحًا (2-20 حرفًا) باستخدام الأحرف والأرقام والواصلات. لا يُسمح بالمسافات أو الأحرف الخاصة.",
+      "submitButton": "تغيير"
+    },
+    "delete": {
+      "button": "إزالة",
+      "title": "هل أنت متأكد تمامًا؟",
+      "description": "لا يمكن التراجع عن هذا الإجراء. سيؤدي هذا إلى حذف بيانات موقعك بشكل دائم من خوادمنا.",
+      "successMessage": "تم حذف موقعك بنجاح!",
+      "cancelButton": "إلغاء",
+      "submitButton": "حذف"
+    },
+    "unableToFetchMessage": "غير قادر على جلب المواقع",
+    "noWebsitesMessage": "ليس لديك مواقع بعد"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "صفحة لوحة التحكم",
+        "list": [
+          "في الصفحة الرئيسية، يمكنك كتابة اسم موقعك والنقر على زر \"بدء البناء\"",
+          "اختر القالب الذي يعجبك.",
+          "قم بتزيين صفحتك كما تريد.",
+          "انقر على زر \"إنشاء موقع\"",
+          "قم بتأكيد معاملتك وادفع.",
+          "بعد الدفع الناجح، تهانينا، لقد نجحت في إنشاء موقعك!"
+        ]
+      },
+      {
+        "title": "قسم القوالب",
+        "list": [
+          "انتقل إلى قسم \"القوالب\"",
+          "اختر القالب الذي يعجبك.",
+          "قم بتزيين صفحتك كما تريد.",
+          "انقر على زر \"إنشاء موقع\"",
+          "قم بتأكيد معاملتك وادفع.",
+          "بعد الدفع الناجح، تهانينا، لقد نجحت في إنشاء موقعك!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "إذا كانت لديك أي مشاكل أو أخطاء في المعاملات، أو اقتراح لتحسين موقعنا، أو تريد أن تسأل عن شيء ما، فلا تتردد في الاتصال بنا، سنكون سعداء بمساعدتك:",
+      "email": "البريد الإلكتروني"
+    }
+  },
+  "builder": {
+    "backToTemplates": "العودة إلى القوالب",
+    "description": "قم بإنشاء موقعك في 5 دقائق فقط",
+    "create": {
+      "button": "إنشاء موقع",
+      "title": "أدخل نطاقك",
+      "description": "أدخل نطاقًا فرعيًا صالحًا (2-20 حرفًا) باستخدام الأحرف والأرقام والواصلات. لا يُسمح بالمسافات أو الأحرف الخاصة.",
+      "successMessage": "تم إنشاء موقعك بنجاح!",
+      "submitButton": "تأكيد وإنشاء"
+    },
+    "update": {
+      "button": "حفظ التغييرات",
+      "successMessage": "تم إنشاء موقعك بنجاح!"
+    },
+    "classic": {
+      "categories": {
+        "text": "نص",
+        "images": "صور",
+        "links": "روابط",
+        "howToBuy": "كيفية الشراء",
+        "buttons": "أزرار"
+      },
+      "fields": {
+        "logoText": "اسم المشروع",
+        "ticker": "Ticker",
+        "contractAddress": "عنوان العقد",
+        "description": "الوصف",
+        "buyNowText": "اشتري الآن",
+        "logoImage": "الشعار",
+        "background": "الخلفية",
+        "tokenImage": "صورة العملة",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "الورقة البيضاء",
+        "authorTelegram": "Telegram المؤلف",
+        "authorTwitter": "Twitter المؤلف",
+        "authorDiscord": "Discord المؤلف",
+        "showHowToBuy": "إظهار كيفية الشراء",
+        "firstStep": "الخطوة الأولى",
+        "firstStepImage": "صورة الخطوة الأولى",
+        "secondStep": "الخطوة الثانية",
+        "secondStepImage": "صورة الخطوة الثانية",
+        "thirdStep": "الخطوة الثالثة",
+        "thirdStepImage": "صورة الخطوة الثالثة",
+        "buyNowLink": "رابط الشراء الآن"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "نص",
+        "images": "صور",
+        "links": "روابط"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "عنوان العقد",
+        "background": "الخلفية",
+        "tokenImage": "صورة العملة",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "الورقة البيضاء",
+        "authorTelegram": "Telegram المؤلف",
+        "authorTwitter": "Twitter المؤلف",
+        "authorDiscord": "Discord المؤلف"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "نص",
+        "images": "صور",
+        "links": "روابط",
+        "buttons": "أزرار",
+        "howToBuy": "كيفية الشراء",
+        "roadmap": "خارطة الطريق",
+        "faq": "الأسئلة الشائعة"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "عنوان العقد",
+        "buyNowText": "اشتري الآن",
+        "aboutUsTitle": "عنوان عنا",
+        "aboutUsDescription": "وصف عنا",
+        "logo": "الشعار",
+        "primaryBackground": "الخلفية الأساسية",
+        "secondaryBackground": "الخلفية الثانوية",
+        "tokenImage": "صورة العملة",
+        "aboutUsPreview": "معاينة عنا",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "الورقة البيضاء",
+        "authorTelegram": "Telegram المؤلف",
+        "authorTwitter": "Twitter المؤلف",
+        "authorDiscord": "Discord المؤلف",
+        "buyNowLink": "رابط الشراء الآن",
+        "roadmapTitle": "عنوان خارطة الطريق",
+        "roadmapFirstStepTitle": "عنوان المرحلة الأولى",
+        "roadmapFirstStepDescription": "وصف المرحلة الأولى",
+        "roadmapSecondStepTitle": "عنوان المرحلة الثانية",
+        "roadmapSecondStepDescription": "وصف المرحلة الثانية",
+        "roadmapThirdStepTitle": "عنوان المرحلة الثالثة",
+        "roadmapThirdStepDescription": "وصف المرحلة الثالثة",
+        "howToBuyTitle": "عنوان كيفية الشراء",
+        "howToBuyFirstStep": "الخطوة الأولى كيفية الشراء",
+        "howToBuySecondStep": "الخطوة الثانية كيفية الشراء",
+        "howToBuyThirdStep": "الخطوة الثالثة كيفية الشراء",
+        "howToBuyFourthStep": "الخطوة الرابعة كيفية الشراء",
+        "FAQTitle": "عنوان الأسئلة الشائعة",
+        "firstQuestion": "السؤال الأول للأسئلة الشائعة",
+        "firstAnswer": "الإجابة الأولى للأسئلة الشائعة",
+        "secondQuestion": "السؤال الثاني للأسئلة الشائعة",
+        "secondAnswer": "الإجابة الثانية للأسئلة الشائعة",
+        "thirdQuestion": "السؤال الثالث للأسئلة الشائعة",
+        "thirdAnswer": "الإجابة الثالثة للأسئلة الشائعة",
+        "fourthQuestion": "السؤال الرابع للأسئلة الشائعة",
+        "fourthAnswer": "الإجابة الرابعة للأسئلة الشائعة"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "ألوان التمييز",
+        "text": "نص",
+        "images": "صور",
+        "buttons": "أزرار",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "الجدول الزمني للمهمة",
+        "missionControl": "تحكم المهمة",
+        "faq": "الأسئلة الشائعة",
+        "links": "روابط"
+      },
+      "fields": {
+        "primaryColor": "اللون الأساسي",
+        "secondaryColor": "اللون الثانوي",
+        "heroTitle": "عنوان البطل",
+        "ticker": "Ticker",
+        "description": "الوصف",
+        "contractAddress": "عنوان العقد",
+        "contractAddressLabel": "تسمية عنوان العقد",
+        "projectName": "اسم المشروع",
+        "buyTicker": "زر الرأس",
+        "buyNow": "زر الشراء الآن",
+        "joinUs": "زر الانضمام إلينا",
+        "tokenomicsTitle": "عنوان Tokenomics",
+        "missionTimelineTitle": "عنوان الجدول الزمني للمهمة",
+        "missionControlTitle": "عنوان تحكم المهمة",
+        "FAQTitle": "عنوان الأسئلة الشائعة للمهمة",
+        "joinTitle": "عنوان الانضمام إلى المهمة",
+        "tokenImage": "صورة العملة",
+        "buyTickerLink": "رابط شراء Ticker",
+        "buyNowLink": "رابط الشراء الآن",
+        "joinUsLink": "رابط الانضمام إلينا",
+        "firstTokenomicsIcon": "أيقونة Tokenomics الأولى",
+        "firstTokenomicsTitle": "عنوان Tokenomics الأولى",
+        "firstTokenomicsValue": "قيمة Tokenomics الأولى",
+        "secondTokenomicsIcon": "أيقونة Tokenomics الثانية",
+        "secondTokenomicsTitle": "عنوان Tokenomics الثانية",
+        "secondTokenomicsValue": "قيمة Tokenomics الثانية",
+        "thirdTokenomicsIcon": "أيقونة Tokenomics الثالثة",
+        "thirdTokenomicsTitle": "عنوان Tokenomics الثالثة",
+        "thirdTokenomicsValue": "قيمة Tokenomics الثالثة",
+        "fourthTokenomicsIcon": "أيقونة Tokenomics الرابعة",
+        "fourthTokenomicsTitle": "عنوان Tokenomics الرابعة",
+        "fourthTokenomicsValue": "قيمة Tokenomics الرابعة",
+        "firstTimelinePhaseTitle": "عنوان المرحلة الأولى",
+        "firstTimelineTitle": "عنوان المرحلة الأولى",
+        "firstTimelineDescription": "وصف المرحلة الأولى",
+        "firstTimelineDate": "تاريخ المرحلة الأولى",
+        "secondTimelinePhaseTitle": "عنوان المرحلة الثانية",
+        "secondTimelineTitle": "عنوان المرحلة الثانية",
+        "secondTimelineDescription": "وصف المرحلة الثانية",
+        "secondTimelineDate": "تاريخ المرحلة الثانية",
+        "thirdTimelinePhaseTitle": "عنوان المرحلة الثالثة",
+        "thirdTimelineTitle": "عنوان المرحلة الثالثة",
+        "thirdTimelineDescription": "وصف المرحلة الثالثة",
+        "thirdTimelineDate": "تاريخ المرحلة الثالثة",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "대시보드"
+      },
+      {
+        "path": "/templates",
+        "label": "템플릿"
+      },
+      {
+        "path": "/pricing",
+        "label": "가격"
+      }
+    ],
+    "accountButton": "계정",
+    "signOutButton": "로그아웃",
+    "connectButton": "연결",
+    "themeLabel": "테마",
+    "languageLabel": "언어"
+  },
+  "footer": {
+    "description": "Solana 기반 밈코인의 미래를 빠르게 구축하고 있는 수천 명의 창작자들과 함께하세요. 첫 번째 토큰을 출시하거나 프로젝트를 확장하든, 우리 플랫폼은 Solana 밈코인을 위한 전문 웹사이트를 빠르고 쉽게 디자인, 맞춤 설정 및 출시하는 데 필요한 모든 도구를 제공합니다.",
+    "copyright": "모든 권리 보유.",
+    "navigation": {
+      "label": "항해",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "계기반"
+        },
+        {
+          "path": "/pricing",
+          "label": "가격"
+        },
+        {
+          "path": "/templates",
+          "label": "템플릿"
+        },
+        {
+          "path": "/start",
+          "label": "시작하는 방법"
+        }
+      ]
+    },
+    "connect": {
+      "label": "연결하다"
+    },
+    "terms": "Terms",
+    "privacy": "은둔"
+  },
+  "home": {
+    "hero": {
+      "title": "코드 없음, 번거로움 없음, 단지 달빛 마법",
+      "description": "지루한 세부 사항은 잊어버리세요. 독특한 템플릿을 선택하고 코인 이름으로 브랜딩한 후, 높이 날아오를 준비를 하세요.",
+      "dashboardButton": "대시보드로 이동",
+      "howToButton": "시작 방법",
+      "scrollToExploreButton": "더 알아보기 위해 스크롤"
+    },
+    "launch": {
+      "badge": "빠름. 혁신적. 효과적",
+      "title": "쉽게 Solana 여정 시작하기",
+      "description": "코딩 없이도 Solana 프로젝트를 위한 동적이고 맞춤 설정 가능한 플랫폼을 구축하세요. 빠르게 변화하는 블록체인 생태계에서 당신의 존재감을 높이세요.",
+      "startBuildingButton": "구축 시작",
+      "inputPlaceholder": "귀하의 사이트"
+    },
+    "features": {
+      "badge": "핵심 혜택",
+      "title": "필요한 모든 도구",
+      "description": "고급 기능으로 가득 찬 독특한 웹사이트를 구축하여 밈코인 프로젝트를 선보이세요",
+      "cards": {
+        "template": {
+          "title": "혁신적인 템플릿",
+          "description": "밈코인 프로젝트를 위해 특별히 제작된 세련되고 반응형 디자인을 탐색하세요. 각 템플릿은 최대의 영향력과 사용자 참여를 위해 세밀하게 조정되었습니다.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "쉬운 편집",
+          "description": "직관적인 편집기를 사용하여 웹사이트를 쉽게 맞춤 설정하세요. 색상, 텍스트, 레이아웃을 간편하게 수정할 수 있습니다 — 기술적 기술이 필요 없습니다.",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "실시간 업데이트",
+          "description": "변경 사항을 실시간으로 확인하세요. 커뮤니티에 사이트를 출시하기 전에 모든 세부 사항을 완벽하게 다듬으세요.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "자주 묻는 질문",
+      "description": "일반적인 질문에 대한 필수 가이드",
+      "questions": [
+        {
+          "question": "AURORA란 무엇인가요?",
+          "answer": "AURORA는 밈 토큰을 위한 전문 웹사이트를 빠르게 생성할 수 있는 플랫폼입니다. 템플릿을 선택하고 토큰 세부 정보로 맞춤 설정한 후 웹사이트 파일을 즉시 다운로드할 수 있습니다."
+        },
+        {
+          "question": "AURORA는 어떻게 작동하나요?",
+          "answer": "AURORA는 밈 토큰 웹사이트 생성 과정을 간소화합니다. 템플릿을 선택하고 토큰 정보로 맞춤 설정한 후 웹사이트 파일을 즉시 다운로드할 수 있습니다 — 기술적 기술이 필요 없습니다."
+        },
+        {
+          "question": "웹사이트 호스팅을 제공하나요?",
+          "answer": "예, 우리는 웹사이트에 대한 완전한 호스팅을 제공합니다. 템플릿을 사용하여 사이트를 생성하고 맞춤 설정한 후, 우리는 호스팅 프로세스를 처리하여 웹사이트가 안전하게 저장되고 온라인에서 사용 가능하도록 합니다. 우리의 호스팅은 안정적이고 빠르며 성능에 최적화되어 있어 추가 설정 없이도 웹사이트가 항상 원활하게 작동합니다."
+        },
+        {
+          "question": "웹사이트 호스팅이 포함되어 있나요?",
+          "answer": "각 템플릿은 토큰 세부 정보, 구매 버튼, 토크노믹스, 로드맵, 팀 프로필, FAQ 섹션 및 소셜 미디어 링크와 같은 밈코인을 위한 필수 기능으로 설계되었습니다. 모든 템플릿은 모바일 친화적이며 최고의 성능을 위해 최적화되어 있습니다."
+        },
+        {
+          "question": "비용은 얼마인가요?",
+          "answer": "두 가지 가격 플랜을 제공합니다: 웹사이트당 0.045 SOL의 표준 옵션과 독점 템플릿 및 고급 기능에 대한 액세스가 포함된 0.25 SOL의 프리미엄 옵션. 요구 사항에 가장 적합한 플랜을 선택하세요."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "클래식",
+        "description": "이 템플릿은 단순히 밈코인을 소개하는 것뿐만 아니라 사이트 방문을 잊지 못할 경험으로 만듭니다. 사용자는 처음 몇 초 만에 밝고 역동적인 세계로 들어가며, 모든 것이 창의성, 대담함, 프로젝트의 가벼움을 말해줍니다. 템플릿의 시각적 요소는 마치 \"여기서 기억할 가치가 있는 이야기가 시작됩니다!\"라고 외치는 듯합니다.",
+        "shortDescription": "이 템플릿은 단순히 밈코인을 소개하는 것뿐만 아니라 사이트 방문을 잊지 못할 경험으로 만듭니다.",
+        "features": [
+          "직관적인 네비게이션",
+          "아름다운 효과",
+          "명확한 구조",
+          "빠른 상호작용"
+        ]
+      },
+      "simple": {
+        "label": "심플",
+        "description": "이 템플릿은 단순함과 편의성을 극대화한 것으로, 빠르고 쉽게 밈코인을 소개하고자 하는 사람들을 위해 특별히 제작되었습니다. 불필요한 세부 사항으로 사용자를 방해하지 않고 주요 사항에 집중할 수 있게 해줍니다. 이 템플릿을 사용하면 복잡한 기술적 세부 사항을 이해하거나 맞춤 설정에 시간을 들일 필요가 없습니다. 필드를 채우고 필요한 이미지를 업로드하기만 하면 사이트가 완성됩니다!",
+        "shortDescription": "이 템플릿은 단순함과 편의성을 극대화한 것으로, 빠르고 쉽게 밈코인을 소개하고자 하는 사람들을 위해 특별히 제작되었습니다.",
+        "features": [
+          "시각적 단순성",
+          "현대적인 인터페이스",
+          "기능성",
+          "밈코인에 초점"
+        ]
+      },
+      "impressive": {
+        "label": "인상적인",
+        "description": "이 템플릿은 주목을 끌고 암호화폐 세계에서 잊지 못할 이벤트가 될 밈코인 웹사이트를 만드는 데 이상적인 선택입니다. 사용자 친화적이고 다채롭고 기능적인 이 템플릿은 프로젝트를 넓은 관객에게 쉽게 소개할 수 있게 해줍니다. 이 템플릿은 사용 편의성과 스타일리시한 디자인을 고려하여 설계되었으므로 초보자도 몇 분 안에 사이트를 출시할 수 있습니다. 디자인은 밈코인의 특징인 가벼움과 유머를 강조하여 독특한 분위기를 조성하고 다른 프로젝트와 차별화할 수 있게 해줍니다.",
+        "shortDescription": "이 템플릿은 주목을 끌고 암호화폐 세계에서 잊지 못할 이벤트가 될 밈코인 웹사이트를 만드는 데 이상적인 선택입니다.",
+        "features": [
+          "FAQ 섹션",
+          "로드맵 섹션",
+          "밝고 활기찬 디자인",
+          "완전한 맞춤 설정"
+        ],
+        "badge": "인기"
+      },
+      "rocket": {
+        "label": "로켓",
+        "description": "로켓 템플릿은 밈코인 웹사이트를 위한 밝고 역동적이며 기억에 남는 선택입니다. 주요 특징은 스타일리시한 로켓 애니메이션으로, 움직임과 성장의 느낌을 주며 프로젝트의 빠른 발전을 상징합니다. 이 템플릿은 자신의 밈코인의 야망을 보여주고 독특한 프레젠테이션으로 사용자의 주목을 끌고자 하는 사람들에게 완벽합니다.",
+        "shortDescription": "로켓 템플릿은 밈코인 웹사이트를 위한 밝고 역동적이며 기억에 남는 선택입니다.",
+        "features": [
+          "움직이는 배경",
+          "인터랙티브 버튼",
+          "적응성",
+          "기능성"
+        ],
+        "badge": "신규"
+      }
+    },
+    "price": "가격",
+    "selectButton": "선택",
+    "backButton": "홈으로 돌아가기",
+    "toggleViewButton": "보기 전환",
+    "gridView": "그리드",
+    "sliderView": "슬라이더"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "표준",
+        "description": "0.045 Solana로 클래식 및 심플 템플릿을 사용하여 웹사이트를 생성할 수 있습니다. 이 템플릿들은 간단하며 명확하고 쾌적한 사용자 인터페이스를 가지고 있습니다. 쉽게 편집하고 수정할 수 있습니다.",
+        "features": [
+          "무료 도메인",
+          "생성 후 편집"
+        ]
+      },
+      "advanced": {
+        "label": "고급",
+        "description": "0.05 sol로 인상적인 템플릿을 사용할 수 있습니다. 이 템플릿은 다양한 요소로 가득 차 있어 밈토큰에 맞게 편집할 수 있습니다. 이 템플릿에는 \"구매 방법\", \"FAQ\", \"로드맵\"과 같은 블록이 포함되어 있습니다.",
+        "features": [
+          "무료 도메인",
+          "생성 후 편집",
+          "로드맵",
+          "FAQ",
+          "구매 방법"
+        ]
+      },
+      "professional": {
+        "label": "프로페셔널",
+        "description": "0.065 Sol로 애니메이션, 다양한 블록, 버튼, 밈코인을 위한 완전한 편집 기능을 갖춘 완전한 프로페셔널 로켓 템플릿을 얻을 수 있습니다.",
+        "features": [
+          "무료 도메인",
+          "생성 후 편집",
+          "토크노믹스",
+          "FAQ",
+          "애니메이션"
+        ]
+      }
+    },
+    "createButton": "생성 시작"
+  },
+  "account": {
+    "walletAddressLabel": "지갑 주소",
+    "unauthorizedMessage": "권한이 없는 것 같습니다",
+    "signOutButton": "로그아웃",
+    "editButton": "편집",
+    "changeDomain": {
+      "button": "도메인 변경",
+      "title": "도메인 변경",
+      "description": "문자, 숫자, 하이픈을 사용하여 유효한 하위 도메인(2-20자)을 입력하세요. 공백이나 특수 문자는 허용되지 않습니다.",
+      "submitButton": "변경"
+    },
+    "delete": {
+      "button": "삭제",
+      "title": "정말로 확실합니까?",
+      "description": "이 작업은 취소할 수 없습니다. 이 작업은 웹사이트 데이터를 서버에서 영구적으로 삭제합니다.",
+      "successMessage": "웹사이트가 성공적으로 삭제되었습니다!",
+      "cancelButton": "취소",
+      "submitButton": "삭제"
+    },
+    "unableToFetchMessage": "웹사이트를 가져올 수 없습니다",
+    "noWebsitesMessage": "아직 웹사이트가 없습니다"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "대시보드 페이지",
+        "list": [
+          "홈페이지에서 사이트 이름을 입력하고 \"빌딩 시작\" 버튼을 클릭하세요",
+          "마음에 드는 템플릿을 선택하세요.",
+          "원하는 대로 페이지를 꾸미세요.",
+          "\"웹 만들기\" 버튼을 클릭하세요",
+          "거래를 확인하고 결제하세요.",
+          "결제가 성공적으로 완료되면 축하합니다, 사이트를 성공적으로 만들었습니다!"
+        ]
+      },
+      {
+        "title": "템플릿 섹션",
+        "list": [
+          "\"템플릿\" 섹션으로 이동하세요",
+          "마음에 드는 템플릿을 선택하세요.",
+          "원하는 대로 페이지를 꾸미세요.",
+          "\"웹 만들기\" 버튼을 클릭하세요",
+          "거래를 확인하고 결제하세요.",
+          "결제가 성공적으로 완료되면 축하합니다, 사이트를 성공적으로 만들었습니다!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "문제가 있거나 거래 중 오류가 발생했거나 사이트 개선을 위한 제안이 있거나 질문이 있으시면 언제든지 문의해 주세요. 기꺼이 도와드리겠습니다:",
+      "email": "이메일"
+    }
+  },
+  "builder": {
+    "backToTemplates": "템플릿으로 돌아가기",
+    "description": "단 5분 만에 웹사이트를 생성하세요",
+    "create": {
+      "button": "웹 생성",
+      "title": "도메인 입력",
+      "description": "문자, 숫자, 하이픈을 사용하여 유효한 하위 도메인(2-20자)을 입력하세요. 공백이나 특수 문자는 허용되지 않습니다.",
+      "successMessage": "웹사이트가 성공적으로 생성되었습니다!",
+      "submitButton": "확인 및 생성"
+    },
+    "update": {
+      "button": "변경 사항 저장",
+      "successMessage": "웹사이트가 성공적으로 생성되었습니다!"
+    },
+    "classic": {
+      "categories": {
+        "text": "텍스트",
+        "images": "이미지",
+        "links": "링크",
+        "howToBuy": "구매 방법",
+        "buttons": "버튼"
+      },
+      "fields": {
+        "logoText": "프로젝트 이름",
+        "ticker": "티커",
+        "contractAddress": "계약 주소",
+        "description": "설명",
+        "buyNowText": "지금 구매",
+        "logoImage": "로고",
+        "background": "배경",
+        "tokenImage": "토큰 이미지",
+        "tiktok": "틱톡",
+        "twitter": "트위터",
+        "instagram": "인스타그램",
+        "discord": "디스코드",
+        "telegram": "텔레그램",
+        "dexscreener": "덱스스크리너",
+        "pumpfun": "펌프펀",
+        "coingecko": "코인게코",
+        "coinmarketcap": "코인마켓캡",
+        "birdeye": "버드아이",
+        "dextools": "덱스툴즈",
+        "whitepaper": "백서",
+        "authorTelegram": "작성자 텔레그램",
+        "authorTwitter": "작성자 트위터",
+        "authorDiscord": "작성자 디스코드",
+        "showHowToBuy": "구매 방법 표시",
+        "firstStep": "첫 번째 단계",
+        "firstStepImage": "첫 번째 단계 이미지",
+        "secondStep": "두 번째 단계",
+        "secondStepImage": "두 번째 단계 이미지",
+        "thirdStep": "세 번째 단계",
+        "thirdStepImage": "세 번째 단계 이미지",
+        "buyNowLink": "지금 구매 링크"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "텍스트",
+        "images": "이미지",
+        "links": "링크"
+      },
+      "fields": {
+        "ticker": "티커",
+        "contractAddress": "계약 주소",
+        "background": "배경",
+        "tokenImage": "토큰 이미지",
+        "tiktok": "틱톡",
+        "twitter": "트위터",
+        "instagram": "인스타그램",
+        "discord": "디스코드",
+        "telegram": "텔레그램",
+        "dexscreener": "덱스스크리너",
+        "pumpfun": "펌프펀",
+        "coingecko": "코인게코",
+        "coinmarketcap": "코인마켓캡",
+        "birdeye": "버드아이",
+        "dextools": "덱스툴즈",
+        "whitepaper": "백서",
+        "authorTelegram": "작성자 텔레그램",
+        "authorTwitter": "작성자 트위터",
+        "authorDiscord": "작성자 디스코드"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "텍스트",
+        "images": "이미지",
+        "links": "링크",
+        "buttons": "버튼",
+        "howToBuy": "구매 방법",
+        "roadmap": "로드맵",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "티커",
+        "contractAddress": "계약 주소",
+        "buyNowText": "지금 구매",
+        "aboutUsTitle": "회사 소개 제목",
+        "aboutUsDescription": "회사 소개 설명",
+        "logo": "로고",
+        "primaryBackground": "기본 배경",
+        "secondaryBackground": "보조 배경",
+        "tokenImage": "토큰 이미지",
+        "aboutUsPreview": "회사 소개 미리보기",
+        "tiktok": "틱톡",
+        "twitter": "트위터",
+        "instagram": "인스타그램",
+        "discord": "디스코드",
+        "telegram": "텔레그램",
+        "dexscreener": "덱스스크리너",
+        "pumpfun": "펌프펀",
+        "coingecko": "코인게코",
+        "coinmarketcap": "코인마켓캡",
+        "birdeye": "버드아이",
+        "dextools": "덱스툴즈",
+        "whitepaper": "백서",
+        "authorTelegram": "작성자 텔레그램",
+        "authorTwitter": "작성자 트위터",
+        "authorDiscord": "작성자 디스코드",
+        "buyNowLink": "지금 구매 링크",
+        "roadmapTitle": "로드맵 제목",
+        "roadmapFirstStepTitle": "1단계 제목",
+        "roadmapFirstStepDescription": "1단계 설명",
+        "roadmapSecondStepTitle": "2단계 제목",
+        "roadmapSecondStepDescription": "2단계 설명",
+        "roadmapThirdStepTitle": "3단계 제목",
+        "roadmapThirdStepDescription": "3단계 설명",
+        "howToBuyTitle": "구매 방법 제목",
+        "howToBuyFirstStep": "구매 방법 1단계",
+        "howToBuySecondStep": "구매 방법 2단계",
+        "howToBuyThirdStep": "구매 방법 3단계",
+        "howToBuyFourthStep": "구매 방법 4단계",
+        "FAQTitle": "FAQ 제목",
+        "firstQuestion": "FAQ 질문 1",
+        "firstAnswer": "FAQ 답변 1",
+        "secondQuestion": "FAQ 질문 2",
+        "secondAnswer": "FAQ 답변 2",
+        "thirdQuestion": "FAQ 질문 3",
+        "thirdAnswer": "FAQ 답변 3",
+        "fourthQuestion": "FAQ 질문 4",
+        "fourthAnswer": "FAQ 답변 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "강조 색상",
+        "text": "텍스트",
+        "images": "이미지",
+        "buttons": "버튼",
+        "tokenomics": "토크노믹스",
+        "missionTimeline": "미션 타임라인",
+        "missionControl": "미션 컨트롤",
+        "faq": "FAQ",
+        "links": "링크"
+      },
+      "fields": {
+        "primaryColor": "기본 색상",
+        "secondaryColor": "보조 색상",
+        "heroTitle": "히어로 제목",
+        "ticker": "티커",
+        "description": "설명",
+        "contractAddress": "계약 주소",
+        "contractAddressLabel": "계약 주소 라벨",
+        "projectName": "프로젝트 이름",
+        "buyTicker": "헤더 버튼",
+        "buyNow": "지금 구매 버튼",
+        "joinUs": "참여 버튼",
+        "tokenomicsTitle": "토크노믹스 제목",
+        "missionTimelineTitle": "미션 타임라인 제목",
+        "missionControlTitle": "미션 컨트롤 제목",
+        "FAQTitle": "미션 FAQ 제목",
+        "joinTitle": "미션 참여 제목",
+        "tokenImage": "토큰 이미지",
+        "buyTickerLink": "티커 구매 URL",
+        "buyNowLink": "지금 구매 URL",
+        "joinUsLink": "참여 URL",
+        "firstTokenomicsIcon": "첫 번째 토크노믹스 아이콘",
+        "firstTokenomicsTitle": "첫 번째 토크노믹스 제목",
+        "firstTokenomicsValue": "첫 번째 토크노믹스 값",
+        "secondTokenomicsIcon": "두 번째 토크노믹스 아이콘",
+        "secondTokenomicsTitle": "두 번째 토크노믹스 제목",
+        "secondTokenomicsValue": "두 번째 토크노믹스 값",
+        "thirdTokenomicsIcon": "세 번째 토크노믹스 아이콘",
+        "thirdTokenomicsTitle": "세 번째 토크노믹스 제목",
+        "thirdTokenomicsValue": "세 번째 토크노믹스 값",
+        "fourthTokenomicsIcon": "네 번째 토크노믹스 아이콘",
+        "fourthTokenomicsTitle": "네 번째 토크노믹스 제목",
+        "fourthTokenomicsValue": "네 번째 토크노믹스 값",
+        "firstTimelinePhaseTitle": "1단계 제목",
+        "firstTimelineTitle": "1단계 제목",
+        "firstTimelineDescription": "1단계 설명",
+        "firstTimelineDate": "1단계 날짜",
+        "secondTimelinePhaseTitle": "2단계 제목",
+        "secondTimelineTitle": "2단계 제목",
+        "secondTimelineDescription": "2단계 설명",
+        "secondTimelineDate": "2단계 날짜",
+        "thirdTimelinePhaseTitle": "3단계 제목",
+        "thirdTimelineTitle": "3단계 제목",
+        "thirdTimelineDescription": "3단계 설명",
+        "thirdTimelineDate": "3단계 날짜",
+        "joinTelegram": "텔레그램",
+        "joinTwitter": "트위터",
+        "joinDiscord": "디스코드"
+      }
+    }
+  }
+}

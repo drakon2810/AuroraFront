@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Armaturenbrett"
+      },
+      {
+        "path": "/templates",
+        "label": "Vorlagen"
+      },
+      {
+        "path": "/pricing",
+        "label": "Preise"
+      }
+    ],
+    "accountButton": "Konto",
+    "signOutButton": "Abmelden",
+    "connectButton": "Verbinden",
+    "themeLabel": "Thema",
+    "languageLabel": "Sprache"
+  },
+  "footer": {
+    "description": "Schließen Sie sich Tausenden von Creators an, die schnell die Zukunft von Solana-basierten Memecoins aufbauen. Egal, ob Sie Ihren ersten Token starten oder Ihr Projekt erweitern, unsere Plattform bietet alle Tools, die Sie benötigen, um eine professionelle Website für Ihr Solana Memecoin zu gestalten, anzupassen und zu starten – schnell und einfach.",
+    "copyright": "Alle Rechte vorbehalten.",
+    "navigation": {
+      "label": "Navigation",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Armaturenbrett"
+        },
+        {
+          "path": "/pricing",
+          "label": "Preise"
+        },
+        {
+          "path": "/templates",
+          "label": "Vorlagen"
+        },
+        {
+          "path": "/start",
+          "label": "So starten Sie"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Verbinden"
+    },
+    "terms": "Bedingungen",
+    "privacy": "Privatsphäre"
+  },
+  "home": {
+    "hero": {
+      "title": "Kein Code, kein Stress, nur Mondzauber",
+      "description": "Vergessen Sie die langweiligen Details. Wählen Sie eine verrückte Vorlage, branden Sie sie mit dem Namen Ihrer Münze und machen Sie sich bereit zum Abheben.",
+      "dashboardButton": "Zum Dashboard",
+      "howToButton": "So starten Sie",
+      "scrollToExploreButton": "Scrollen Sie, um mehr zu entdecken"
+    },
+    "launch": {
+      "badge": "Schnell. Innovativ. Effektiv",
+      "title": "Starten Sie Ihre Solana-Reise mühelos",
+      "description": "Erstellen Sie dynamische, anpassbare Plattformen für Ihre Solana-Projekte – ohne Programmierkenntnisse. Steigern Sie Ihre Präsenz im schnelllebigen Blockchain-Ökosystem.",
+      "startBuildingButton": "Start Building",
+      "inputPlaceholder": "Ihre Seite"
+    },
+    "features": {
+      "badge": "Kernvorteile",
+      "title": "Alle Tools, die Sie benötigen",
+      "description": "Erstellen Sie eine einzigartige Website, um Ihr Memecoin-Projekt zu präsentieren, vollgepackt mit erweiterten Funktionen",
+      "cards": {
+        "template": {
+          "title": "Innovative Vorlagen",
+          "description": "Entdecken Sie eine Reihe von schlanken, responsiven Designs, die speziell für Memecoin-Projekte entwickelt wurden. Jede Vorlage ist für maximale Wirkung und Benutzerengagement optimiert.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Müheloses Bearbeiten",
+          "description": "Passen Sie Ihre Website mit unserem intuitiven Editor einfach an. Ändern Sie Farben, Texte und Layouts mühelos – keine technischen Kenntnisse erforderlich.",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Sofortige Updates",
+          "description": "Sehen Sie Ihre Änderungen in Echtzeit, während Sie sie vornehmen. Verfeinern Sie jedes Detail, bevor Sie Ihre Website der Community präsentieren.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Ihr wesentlicher Leitfaden zu häufigen Fragen",
+      "questions": [
+        {
+          "question": "Was ist AURORA?",
+          "answer": "AURORA ist eine Plattform, mit der Sie schnell professionelle Websites für Ihren Meme-Token erstellen können. Wählen Sie einfach eine Vorlage, passen Sie sie mit den Details Ihres Tokens an und laden Sie Ihre Website-Dateien sofort herunter."
+        },
+        {
+          "question": "Wie funktioniert AURORA?",
+          "answer": "AURORA vereinfacht die Erstellung der Website für Ihren Meme-Token. Wählen Sie eine Vorlage, passen Sie sie mit Ihren Token-Informationen an und erhalten Sie sofort die Website-Dateien zum Download – keine technischen Kenntnisse erforderlich."
+        },
+        {
+          "question": "Hosten wir Ihre Website?",
+          "answer": "Ja, wir bieten vollständiges Hosting für Ihre Website an. Sobald Sie Ihre Website mit unseren Vorlagen erstellt und angepasst haben, kümmern wir uns um den Hosting-Prozess und sorgen dafür, dass Ihre Website sicher gespeichert und online verfügbar ist. Unser Hosting ist zuverlässig, schnell und für beste Leistung optimiert, sodass Ihre Website jederzeit reibungslos läuft, ohne dass Sie zusätzliche Einrichtungen vornehmen müssen."
+        },
+        {
+          "question": "Ist Website-Hosting inbegriffen?",
+          "answer": "Jede Vorlage ist mit wesentlichen Funktionen für Ihr Memecoin ausgestattet, darunter Token-Details, Kaufschaltflächen, Tokenomics, Roadmap, Teamprofile, FAQ-Bereich und Social-Media-Links. Alle Vorlagen sind mobilfreundlich und für beste Leistung optimiert."
+        },
+        {
+          "question": "Wie viel kostet es?",
+          "answer": "Wir bieten zwei Preispläne an: die Standard-Option für 0,045 SOL pro Website und die Premium-Option für 0,25 SOL, die Zugang zu exklusiven Vorlagen und erweiterten Funktionen bietet. Wählen Sie den Plan, der am besten zu Ihren Anforderungen passt."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Klassisch",
+        "description": "Diese Vorlage wurde nicht nur für die Präsentation von Memecoins erstellt, sondern auch, um den Besuch der Website zu einem unvergesslichen Erlebnis zu machen. Von den ersten Sekunden an betritt der Benutzer eine helle, dynamische Welt, in der alles von Kreativität, Mut und Leichtigkeit des Projekts spricht. Die visuelle Komponente der Vorlage scheint zu schreien: „Hier beginnt eine Geschichte, die es wert ist, in Erinnerung zu bleiben!“",
+        "shortDescription": "Diese Vorlage wurde nicht nur für die Präsentation von Memecoins erstellt, sondern auch, um den Besuch der Website zu einem unvergesslichen Erlebnis zu machen.",
+        "features": [
+          "Intuitive Navigation",
+          "Schöne Effekte",
+          "Klare Struktur",
+          "Schnelle Interaktion"
+        ]
+      },
+      "simple": {
+        "label": "Einfach",
+        "description": "Diese Vorlage ist das Sinnbild von Einfachheit und Bequemlichkeit, speziell für diejenigen geschaffen, die ihr Memecoin schnell und einfach präsentieren möchten. Sie ermöglicht es Ihnen, sich auf das Wesentliche zu konzentrieren, ohne die Benutzer mit unnötigen Details abzulenken. Mit dieser Vorlage müssen Sie sich nicht mit komplexen technischen Details befassen oder Stunden mit der Anpassung verbringen. Füllen Sie einfach die Felder aus, laden Sie die notwendigen Bilder hoch – und Ihre Website ist fertig!",
+        "shortDescription": "Diese Vorlage ist das Sinnbild von Einfachheit und Bequemlichkeit, speziell für diejenigen geschaffen, die ihr Memecoin schnell und einfach präsentieren möchten.",
+        "features": [
+          "Visuelle Einfachheit",
+          "Moderne Schnittstelle",
+          "Funktionalität",
+          "Fokus auf Memecoin"
+        ]
+      },
+      "impressive": {
+        "label": "Beeindruckend",
+        "description": "Diese Vorlage ist die perfekte Wahl, um Ihre Memecoin-Website zu erstellen, die Aufmerksamkeit erregen und zu einem denkwürdigen Ereignis in der Krypto-Welt werden wird. Benutzerfreundlich, farbenfroh und funktional, macht es einfach, Ihr Projekt einem breiten Publikum zu präsentieren. Die Vorlage wurde mit Benutzerfreundlichkeit und stilvollem Design im Hinterkopf entwickelt, sodass selbst Anfänger ihre Website in wenigen Minuten starten können. Ihr Design betont die Leichtigkeit und den Humor, die für Memecoins charakteristisch sind, und schafft eine einzigartige Atmosphäre, die es Ihnen ermöglicht, sich von anderen Projekten abzuheben.",
+        "shortDescription": "Diese Vorlage ist die perfekte Wahl, um Ihre Memecoin-Website zu erstellen, die Aufmerksamkeit erregen und zu einem denkwürdigen Ereignis in der Krypto-Welt werden wird.",
+        "features": [
+          "FAQ-Bereich",
+          "Roadmap-Bereich",
+          "Helles und energetisches Design",
+          "Vollständige Anpassung"
+        ],
+        "badge": "Beliebt"
+      },
+      "rocket": {
+        "label": "Rakete",
+        "description": "Die Raketen-Vorlage ist eine helle, dynamische und einprägsame Wahl für Ihre Memecoin-Website. Ihr Hauptmerkmal ist eine stilvolle Raketenanimation, die ein Gefühl von Bewegung und Wachstum erzeugt und die schnelle Entwicklung Ihres Projekts symbolisiert. Diese Vorlage ist perfekt für diejenigen, die die Ambitionen ihres Memecoins zeigen und die Aufmerksamkeit der Benutzer mit einer einzigartigen Präsentation gewinnen möchten.",
+        "shortDescription": "Die Raketen-Vorlage ist eine helle, dynamische und einprägsame Wahl für Ihre Memecoin-Website.",
+        "features": [
+          "Bewegungshintergrund",
+          "Interaktive Schaltflächen",
+          "Anpassungsfähigkeit",
+          "Funktionalität"
+        ],
+        "badge": "Neu"
+      }
+    },
+    "price": "Preis",
+    "selectButton": "Auswählen",
+    "backButton": "Zurück zur Startseite",
+    "toggleViewButton": "Ansicht umschalten",
+    "gridView": "Raster",
+    "sliderView": "Slider"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Standard",
+        "description": "Für 0,045 Solana können Sie eine Website mit der Classic- und Simple-Vorlage erstellen. Dies sind einfache Vorlagen mit einer klaren und angenehmen Benutzeroberfläche. Sie sind einfach zu bearbeiten und zu modifizieren.",
+        "features": [
+          "Kostenlose Domain",
+          "Bearbeitung nach der Erstellung"
+        ]
+      },
+      "advanced": {
+        "label": "Erweitert",
+        "description": "Für 0,05 SOL können Sie die Impressive-Vorlage verwenden. Diese Vorlage ist voller verschiedener Elemente, die Sie an Ihren Memecoin anpassen können. Diese Vorlage enthält Blöcke wie „How to Buy“, „FAQ“, „Roadmap“.",
+        "features": [
+          "Kostenlose Domain",
+          "Bearbeitung nach der Erstellung",
+          "Roadmap",
+          "FAQ",
+          "How to Buy"
+        ]
+      },
+      "professional": {
+        "label": "Professionell",
+        "description": "Für 0,065 SOL erhalten Sie eine vollständig professionelle Rocket-Vorlage mit Animationen, verschiedenen Blöcken, Schaltflächen und vollständiger Bearbeitung für Ihren Memecoin.",
+        "features": [
+          "Kostenlose Domain",
+          "Bearbeitung nach der Erstellung",
+          "Tokenomics",
+          "FAQ",
+          "Animationen"
+        ]
+      }
+    },
+    "createButton": "Erstellung starten"
+  },
+  "account": {
+    "walletAddressLabel": "Wallet Adresse",
+    "unauthorizedMessage": "Es scheint, Sie sind nicht autorisiert",
+    "signOutButton": "Abmelden",
+    "editButton": "Bearbeiten",
+    "changeDomain": {
+      "button": "Domain ändern",
+      "title": "Domain ändern",
+      "description": "Geben Sie eine gültige Subdomain (2-20 Zeichen) mit Buchstaben, Zahlen und Bindestrichen ein. Keine Leerzeichen oder Sonderzeichen erlaubt.",
+      "submitButton": "Ändern"
+    },
+    "delete": {
+      "button": "Entfernen",
+      "title": "Sind Sie absolut sicher?",
+      "description": "Diese Aktion kann nicht rückgängig gemacht werden. Dadurch werden Ihre Website-Daten dauerhaft von unseren Servern gelöscht.",
+      "successMessage": "Ihre Website wurde erfolgreich gelöscht!",
+      "cancelButton": "Abbrechen",
+      "submitButton": "Löschen"
+    },
+    "unableToFetchMessage": "Websites konnten nicht abgerufen werden",
+    "noWebsitesMessage": "Sie haben noch keine Websites"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Dashboard-Seite",
+        "list": [
+          "Auf der Startseite können Sie den Namen Ihrer Website eingeben und auf die Schaltfläche \"Mit dem Bau beginnen\" klicken",
+          "Wählen Sie die Vorlage, die Ihnen gefällt.",
+          "Gestalten Sie Ihre Seite nach Ihren Wünschen.",
+          "Klicken Sie auf die Schaltfläche \"Web erstellen\"",
+          "Bestätigen Sie Ihre Transaktion und zahlen Sie.",
+          "Nach erfolgreicher Zahlung, Glückwunsch, Sie haben Ihre Website erfolgreich erstellt!"
+        ]
+      },
+      {
+        "title": "Vorlagenbereich",
+        "list": [
+          "Gehen Sie zum Bereich \"Vorlagen\"",
+          "Wählen Sie die Vorlage, die Ihnen gefällt.",
+          "Gestalten Sie Ihre Seite nach Ihren Wünschen.",
+          "Klicken Sie auf die Schaltfläche \"Web erstellen\"",
+          "Bestätigen Sie Ihre Transaktion und zahlen Sie.",
+          "Nach erfolgreicher Zahlung, Glückwunsch, Sie haben Ihre Website erfolgreich erstellt!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "Wenn Sie Probleme haben, Fehler bei Transaktionen, einen Vorschlag zur Verbesserung unserer Website oder eine Frage haben, zögern Sie nicht, uns zu kontaktieren, wir helfen Ihnen gerne weiter:",
+      "email": "E-Mail"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Zurück zu den Vorlagen",
+    "description": "Erstellen Sie Ihre Website in nur 5 Minuten",
+    "create": {
+      "button": "Web erstellen",
+      "title": "Geben Sie Ihre Domain ein",
+      "description": "Geben Sie eine gültige Subdomain (2-20 Zeichen) mit Buchstaben, Zahlen und Bindestrichen ein. Keine Leerzeichen oder Sonderzeichen erlaubt.",
+      "successMessage": "Ihre Website wurde erfolgreich erstellt!",
+      "submitButton": "Bestätigen und erstellen"
+    },
+    "update": {
+      "button": "Änderungen speichern",
+      "successMessage": "Ihre Website wurde erfolgreich erstellt!"
+    },
+    "classic": {
+      "categories": {
+        "text": "Text",
+        "images": "Bilder",
+        "links": "Links",
+        "howToBuy": "So kaufen Sie",
+        "buttons": "Schaltflächen"
+      },
+      "fields": {
+        "logoText": "Projektname",
+        "ticker": "Ticker",
+        "contractAddress": "Vertragsadresse",
+        "description": "Beschreibung",
+        "buyNowText": "Jetzt kaufen",
+        "logoImage": "Logo",
+        "background": "Hintergrund",
+        "tokenImage": "Token-Bild",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Autor Telegram",
+        "authorTwitter": "Autor Twitter",
+        "authorDiscord": "Autor Discord",
+        "showHowToBuy": "Zeigen Sie, wie man kauft",
+        "firstStep": "Erster Schritt",
+        "firstStepImage": "Bild des ersten Schritts",
+        "secondStep": "Zweiter Schritt",
+        "secondStepImage": "Bild des zweiten Schritts",
+        "thirdStep": "Dritter Schritt",
+        "thirdStepImage": "Bild des dritten Schritts",
+        "buyNowLink": "Jetzt kaufen Link"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Text",
+        "images": "Bilder",
+        "links": "Links"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Vertragsadresse",
+        "background": "Hintergrund",
+        "tokenImage": "Token-Bild",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Autor Telegram",
+        "authorTwitter": "Autor Twitter",
+        "authorDiscord": "Autor Discord"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Text",
+        "images": "Bilder",
+        "links": "Links",
+        "buttons": "Schaltflächen",
+        "howToBuy": "So kaufen Sie",
+        "roadmap": "Roadmap",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Vertragsadresse",
+        "buyNowText": "Jetzt kaufen",
+        "aboutUsTitle": "Über uns Titel",
+        "aboutUsDescription": "Über uns Beschreibung",
+        "logo": "Logo",
+        "primaryBackground": "Primärer Hintergrund",
+        "secondaryBackground": "Sekundärer Hintergrund",
+        "tokenImage": "Token-Bild",
+        "aboutUsPreview": "Über uns Vorschau",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Autor Telegram",
+        "authorTwitter": "Autor Twitter",
+        "authorDiscord": "Autor Discord",
+        "buyNowLink": "Jetzt kaufen Link",
+        "roadmapTitle": "Roadmap Titel",
+        "roadmapFirstStepTitle": "Phase 1 Titel",
+        "roadmapFirstStepDescription": "Phase 1 Beschreibung",
+        "roadmapSecondStepTitle": "Phase 2 Titel",
+        "roadmapSecondStepDescription": "Phase 2 Beschreibung",
+        "roadmapThirdStepTitle": "Phase 3 Titel",
+        "roadmapThirdStepDescription": "Phase 3 Beschreibung",
+        "howToBuyTitle": "So kaufen Sie Titel",
+        "howToBuyFirstStep": "So kaufen Sie Schritt 1",
+        "howToBuySecondStep": "So kaufen Sie Schritt 2",
+        "howToBuyThirdStep": "So kaufen Sie Schritt 3",
+        "howToBuyFourthStep": "So kaufen Sie Schritt 4",
+        "FAQTitle": "FAQ Titel",
+        "firstQuestion": "FAQ Frage 1",
+        "firstAnswer": "FAQ Antwort 1",
+        "secondQuestion": "FAQ Frage 2",
+        "secondAnswer": "FAQ Antwort 2",
+        "thirdQuestion": "FAQ Frage 3",
+        "thirdAnswer": "FAQ Antwort 3",
+        "fourthQuestion": "FAQ Frage 4",
+        "fourthAnswer": "FAQ Antwort 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Akzentfarben",
+        "text": "Text",
+        "images": "Bilder",
+        "buttons": "Schaltflächen",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Missionszeitplan",
+        "missionControl": "Missionskontrolle",
+        "faq": "FAQ",
+        "links": "Links"
+      },
+      "fields": {
+        "primaryColor": "Primäre Farbe",
+        "secondaryColor": "Sekundäre Farbe",
+        "heroTitle": "Heldentitel",
+        "ticker": "Ticker",
+        "description": "Beschreibung",
+        "contractAddress": "Vertragsadresse",
+        "contractAddressLabel": "Vertragsadressenlabel",
+        "projectName": "Projektname",
+        "buyTicker": "Header-Schaltfläche",
+        "buyNow": "Jetzt kaufen Schaltfläche",
+        "joinUs": "Schließen Sie sich uns an Schaltfläche",
+        "tokenomicsTitle": "Tokenomics Titel",
+        "missionTimelineTitle": "Missionszeitplan Titel",
+        "missionControlTitle": "Missionskontrolle Titel",
+        "FAQTitle": "Missions-FAQ Titel",
+        "joinTitle": "Schließen Sie sich der Mission an Titel",
+        "tokenImage": "Token-Bild",
+        "buyTickerLink": "Ticker kaufen URL",
+        "buyNowLink": "Jetzt kaufen URL",
+        "joinUsLink": "Schließen Sie sich uns an URL",
+        "firstTokenomicsIcon": "Erstes Tokenomics-Symbol",
+        "firstTokenomicsTitle": "Erster Tokenomics-Titel",
+        "firstTokenomicsValue": "Erster Tokenomics-Wert",
+        "secondTokenomicsIcon": "Zweites Tokenomics-Symbol",
+        "secondTokenomicsTitle": "Zweiter Tokenomics-Titel",
+        "secondTokenomicsValue": "Zweiter Tokenomics-Wert",
+        "thirdTokenomicsIcon": "Drittes Tokenomics-Symbol",
+        "thirdTokenomicsTitle": "Dritter Tokenomics-Titel",
+        "thirdTokenomicsValue": "Dritter Tokenomics-Wert",
+        "fourthTokenomicsIcon": "Viertes Tokenomics-Symbol",
+        "fourthTokenomicsTitle": "Vierter Tokenomics-Titel",
+        "fourthTokenomicsValue": "Vierter Tokenomics-Wert",
+        "firstTimelinePhaseTitle": "Phase 1 Titel",
+        "firstTimelineTitle": "Phase 1 Titel",
+        "firstTimelineDescription": "Phase 1 Beschreibung",
+        "firstTimelineDate": "Phase 1 Datum",
+        "secondTimelinePhaseTitle": "Phase 2 Titel",
+        "secondTimelineTitle": "Phase 2 Titel",
+        "secondTimelineDescription": "Phase 2 Beschreibung",
+        "secondTimelineDate": "Phase 2 Datum",
+        "thirdTimelinePhaseTitle": "Phase 3 Titel",
+        "thirdTimelineTitle": "Phase 3 Titel",
+        "thirdTimelineDescription": "Phase 3 Beschreibung",
+        "thirdTimelineDate": "Phase 3 Datum",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

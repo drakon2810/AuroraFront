@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Kontrol Paneli"
+      },
+      {
+        "path": "/templates",
+        "label": "Şablonlar"
+      },
+      {
+        "path": "/pricing",
+        "label": "Fiyatlandırma"
+      }
+    ],
+    "accountButton": "Hesap",
+    "signOutButton": "Çıkış Yap",
+    "connectButton": "Bağlan",
+    "themeLabel": "Tema",
+    "languageLabel": "Dil"
+  },
+  "footer": {
+    "description": "Solana tabanlı memecoin'lerin geleceğini hızla inşa eden binlerce yaratıcıya katılın. İlk token'ınızı başlatıyor ya da projenizi genişletiyor olun, platformumuz Solana memecoin'iniz için hızlı ve kolay bir şekilde profesyonel bir web sitesi tasarlamak, özelleştirmek ve başlatmak için ihtiyacınız olan tüm araçları sağlar.",
+    "copyright": "Her hakkı saklıdır.",
+    "navigation": {
+      "label": "Navigasyon",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Kontrol Paneli"
+        },
+        {
+          "path": "/pricing",
+          "label": "Fiyatlandırma"
+        },
+        {
+          "path": "/templates",
+          "label": "Şablonlar"
+        },
+        {
+          "path": "/start",
+          "label": "Nasıl Başlanır"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Bağlamak"
+    },
+    "terms": "Şartlar",
+    "privacy": "Mahremiyet"
+  },
+  "home": {
+    "hero": {
+      "title": "Kod yok, sorun yok, sadece ay ışığı büyüsü",
+      "description": "Sıkıcı detayları unutun. Vahşi bir şablon seçin, coin'inizin adıyla markalayın ve yükselmeye hazır olun.",
+      "dashboardButton": "Panele Git",
+      "howToButton": "Nasıl Başlanır",
+      "scrollToExploreButton": "Keşfetmek için kaydırın"
+    },
+    "launch": {
+      "badge": "Hızlı. Yenilikçi. Etkili",
+      "title": "Solana Yolculuğunuza Zahmetsizce Başlayın",
+      "description": "Solana projeleriniz için dinamik, özelleştirilebilir platformlar oluşturun — kodlama gerekmez. Hızlı tempolu blockchain ekosistemindeki varlığınızı yükseltin.",
+      "startBuildingButton": "Oluşturmaya Başla",
+      "inputPlaceholder": "siteniz"
+    },
+    "features": {
+      "badge": "Temel Faydalar",
+      "title": "İhtiyacınız Olan Tüm Araçlar",
+      "description": "Memecoin projenizi sergilemek için gelişmiş özelliklerle dolu benzersiz bir web sitesi oluşturun",
+      "cards": {
+        "template": {
+          "title": "Yenilikçi Şablonlar",
+          "description": "Memecoin projeleri için özel olarak tasarlanmış şık, duyarlı tasarımları keşfedin. Her şablon maksimum etki ve kullanıcı etkileşimi için ince ayarlanmıştır.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Kolay Düzenleme",
+          "description": "Sezgisel düzenleyicimizle web sitenizi kolayca kişiselleştirin. Renkleri, metni ve düzenleri zahmetsizce değiştirin — teknik beceri gerekmez.",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Anında Güncellemeler",
+          "description": "Yaptığınız değişiklikleri gerçek zamanlı olarak görüntüleyin. Sitenizi topluluğa sunmadan önce her detayı mükemmelleştirin.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Sıkça Sorulan Sorular",
+      "description": "Yaygın Sorular İçin Temel Rehberiniz",
+      "questions": [
+        {
+          "question": "AURORA nedir?",
+          "answer": "AURORA, meme token'ınız için hızlı bir şekilde profesyonel web siteleri oluşturmanızı sağlayan bir platformdur. Sadece bir şablon seçin, token'ınızın detaylarıyla kişiselleştirin ve web sitenizin dosyalarını anında indirin."
+        },
+        {
+          "question": "AURORA nasıl çalışır?",
+          "answer": "AURORA, meme token'ınızın web sitesi oluşturma sürecini kolaylaştırır. Bir şablon seçin, token bilgilerinizle özelleştirin ve web sitesi dosyalarını anında indirmeye hazır olarak alın — teknik beceri gerekmez."
+        },
+        {
+          "question": "Web sitenizi barındırıyor muyuz?",
+          "answer": "Evet, web siteniz için tam barındırma sağlıyoruz. Şablonlarımızı kullanarak sitenizi oluşturup özelleştirdikten sonra, barındırma sürecini biz hallederiz, böylece web siteniz güvenli bir şekilde saklanır ve çevrimiçi olarak erişilebilir olur. Barındırma hizmetimiz güvenilir, hızlı ve performans için optimize edilmiştir, böylece web siteniz her zaman sorunsuz çalışır ve sizden ek bir kurulum gerektirmez."
+        },
+        {
+          "question": "Web sitesi barındırma dahil mi?",
+          "answer": "Her şablon, token detayları, satın alma butonları, tokenomics, yol haritası, ekip profilleri, SSS bölümü ve sosyal medya bağlantıları gibi temel özelliklerle tasarlanmıştır. Tüm şablonlar mobil uyumlu ve en iyi performans için optimize edilmiştir."
+        },
+        {
+          "question": "Maliyeti nedir?",
+          "answer": "İki fiyatlandırma planı sunuyoruz: web sitesi başına 0.045 SOL olan Standart seçenek ve özel şablonlara ve gelişmiş özelliklere erişim sağlayan 0.25 SOL olan Premium seçenek. İhtiyaçlarınıza en uygun planı seçin."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Klasik",
+        "description": "Bu şablon sadece memecoin sunumu için değil, aynı zamanda site ziyaretini unutulmaz bir deneyime dönüştürmek için yaratılmıştır. Kullanıcı ilk saniyelerden itibaren yaratıcılık, cesaret ve projenin hafifliğini yansıtan parlak, dinamik bir dünyaya girer. Şablonun görsel bileşeni adeta şöyle haykırır: \"Burada hatırlanmaya değer bir hikaye başlıyor!\"",
+        "shortDescription": "Bu şablon sadece memecoin sunumu için değil, aynı zamanda site ziyaretini unutulmaz bir deneyime dönüştürmek için yaratılmıştır",
+        "features": [
+          "Sezgisel gezinme",
+          "Güzel efektler",
+          "Net yapı",
+          "Hızlı etkileşim"
+        ]
+      },
+      "simple": {
+        "label": "Basit",
+        "description": "Bu şablon, memecoin'ini hızlı ve kolay bir şekilde sunmak isteyenler için basitliğin ve kullanışlılığın somutlaşmış halidir. Kullanıcıları gereksiz detaylarla boğmadan asıl konuya odaklanmanızı sağlar. Bu şablonla karmaşık teknik detayları anlamanıza veya özelleştirme için saatler harcamanıza gerek yok. Sadece alanları doldurun, gerekli resimleri yükleyin — ve siteniz hazır!",
+        "shortDescription": "Bu şablon, memecoin'ini hızlı ve kolay bir şekilde sunmak isteyenler için basitliğin ve kullanışlılığın somutlaşmış halidir.",
+        "features": [
+          "Görsel basitlik",
+          "Modern arayüz",
+          "İşlevsellik",
+          "Memcoin'e odaklanma"
+        ]
+      },
+      "impressive": {
+        "label": "Etkileyici",
+        "description": "Bu şablon, dikkat çekecek ve kripto dünyasında unutulmaz bir olay haline gelecek memecoin web sitenizi oluşturmak için mükemmel bir seçimdir. Kullanıcı dostu, renkli ve işlevsel olan bu şablon, projenizi geniş bir kitleye kolayca sunmanızı sağlar. Şablon, kullanım kolaylığı ve şık tasarım düşünülerek tasarlanmıştır, böylece yeni başlayanlar bile birkaç dakika içinde sitelerini başlatabilir. Tasarımı, memecoin'lerin karakteristik hafifliğini ve mizahını vurgulayarak benzersiz bir atmosfer yaratır ve diğer projeler arasında öne çıkmanızı sağlar.",
+        "shortDescription": "Bu şablon, dikkat çekecek ve kripto dünyasında unutulmaz bir olay haline gelecek memecoin web sitenizi oluşturmak için mükemmel bir seçimdir.",
+        "features": [
+          "SSS bölümü",
+          "Yol Haritası Bölümü",
+          "Parlak ve enerjik tasarım",
+          "Tam özelleştirme"
+        ],
+        "badge": "Popüler"
+      },
+      "rocket": {
+        "label": "Roket",
+        "description": "Roket şablonu, memecoin web siteniz için parlak, dinamik ve unutulmaz bir seçimdir. Ana özelliği, projenizin hızlı gelişimini simgeleyen şık bir roket animasyonudur. Bu şablon, memecoin'inizin iddialılığını göstermek ve kullanıcıların dikkatini benzersiz bir sunumla çekmek isteyenler için mükemmeldir.",
+        "shortDescription": "Roket şablonu, memecoin web siteniz için parlak, dinamik ve unutulmaz bir seçimdir.",
+        "features": [
+          "Hareketli arka plan",
+          "Etkileşimli butonlar",
+          "Uyumluluk",
+          "İşlevsellik"
+        ],
+        "badge": "Yeni"
+      }
+    },
+    "price": "Fiyat",
+    "selectButton": "Seç",
+    "backButton": "Ana Sayfaya Dön",
+    "toggleViewButton": "Görünümü Değiştir",
+    "gridView": "Izgara",
+    "sliderView": "Kaydırma"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Standart",
+        "description": "0.045 Solana karşılığında Klasik ve Basit şablonları kullanarak bir web sitesi oluşturabilirsiniz. Bunlar, net ve hoş bir kullanıcı arayüzüne sahip basit şablonlardır. Düzenlemesi ve değiştirilmesi kolaydır.",
+        "features": [
+          "Ücretsiz alan adı",
+          "Oluşturma sonrası düzenleme"
+        ]
+      },
+      "advanced": {
+        "label": "Gelişmiş",
+        "description": "0.05 sol karşılığında Etkileyici şablonu kullanabilirsiniz. Bu şablon, memtoken'ınıza uyacak şekilde düzenleyebileceğiniz çeşitli öğelerle doludur. Bu şablon, \"Nasıl Satın Alınır\", \"SSS\", \"Yol Haritası\" gibi bloklar içerir.",
+        "features": [
+          "Ücretsiz alan adı",
+          "Oluşturma sonrası düzenleme",
+          "Yol Haritası",
+          "SSS",
+          "Nasıl Satın Alınır"
+        ]
+      },
+      "professional": {
+        "label": "Profesyonel",
+        "description": "0.065 Sol karşılığında animasyonlar, çeşitli bloklar, butonlar ve memecoin'iniz için tam düzenleme özellikleriyle dolu tamamen profesyonel bir Roket şablonu alacaksınız.",
+        "features": [
+          "Ücretsiz alan adı",
+          "Oluşturma sonrası düzenleme",
+          "Tokenomics",
+          "SSS",
+          "Animasyonlar"
+        ]
+      }
+    },
+    "createButton": "Oluşturmaya Başla"
+  },
+  "account": {
+    "walletAddressLabel": "Cüzdan Adresi",
+    "unauthorizedMessage": "Görünüşe göre yetkiniz yok",
+    "signOutButton": "Çıkış Yap",
+    "editButton": "Düzenle",
+    "changeDomain": {
+      "button": "Alan Adını Değiştir",
+      "title": "Alan Adını Değiştir",
+      "description": "Geçerli bir alt alan adı girin (2-20 karakter). Harfler, rakamlar ve kısa çizgiler kullanılabilir. Boşluk veya özel karakterlere izin verilmez.",
+      "submitButton": "Değiştir"
+    },
+    "delete": {
+      "button": "Kaldır",
+      "title": "Kesinlikle emin misiniz?",
+      "description": "Bu işlem geri alınamaz. Bu, web sitenizin verilerini sunucularımızdan kalıcı olarak silecektir.",
+      "successMessage": "Web siteniz başarıyla silindi!",
+      "cancelButton": "İptal",
+      "submitButton": "Sil"
+    },
+    "unableToFetchMessage": "Web siteleri getirilemedi",
+    "noWebsitesMessage": "Henüz hiç web siteniz yok"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Gösterge Paneli Sayfası",
+        "list": [
+          "Ana sayfada, sitenizin adını yazabilir ve \"Yapıya Başla\" düğmesine tıklayabilirsiniz",
+          "Beğendiğiniz şablonu seçin.",
+          "Sayfanızı istediğiniz gibi dekore edin.",
+          "\"Web Oluştur\" düğmesine tıklayın",
+          "İşleminizi onaylayın ve ödeme yapın.",
+          "Başarılı ödemeden sonra, tebrikler, sitenizi başarıyla oluşturdunuz!"
+        ]
+      },
+      {
+        "title": "Şablonlar Bölümü",
+        "list": [
+          "\"Şablonlar\" bölümüne gidin",
+          "Beğendiğiniz şablonu seçin.",
+          "Sayfanızı istediğiniz gibi dekore edin.",
+          "\"Web Oluştur\" düğmesine tıklayın",
+          "İşleminizi onaylayın ve ödeme yapın.",
+          "Başarılı ödemeden sonra, tebrikler, sitenizi başarıyla oluşturdunuz!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "Herhangi bir sorununuz, işlem hatalarınız, sitemizi geliştirme öneriniz veya sormak istediğiniz bir şey varsa, bize ulaşmaktan çekinmeyin, size yardımcı olmaktan mutluluk duyarız:",
+      "email": "E-posta"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Şablonlara Geri Dön",
+    "description": "Web sitenizi sadece 5 dakikada oluşturun",
+    "create": {
+      "button": "Web Oluştur",
+      "title": "Alan Adınızı Girin",
+      "description": "Geçerli bir alt alan adı girin (2-20 karakter). Harfler, rakamlar ve kısa çizgiler kullanılabilir. Boşluk veya özel karakterlere izin verilmez.",
+      "successMessage": "Web siteniz başarıyla oluşturuldu!",
+      "submitButton": "Onayla ve Oluştur"
+    },
+    "update": {
+      "button": "Değişiklikleri Kaydet",
+      "successMessage": "Web siteniz başarıyla oluşturuldu!"
+    },
+    "classic": {
+      "categories": {
+        "text": "Metin",
+        "images": "Görseller",
+        "links": "Bağlantılar",
+        "howToBuy": "Nasıl Satın Alınır",
+        "buttons": "Butonlar"
+      },
+      "fields": {
+        "logoText": "Proje Adı",
+        "ticker": "Ticker",
+        "contractAddress": "Kontrat Adresi",
+        "description": "Açıklama",
+        "buyNowText": "Hemen Satın Al",
+        "logoImage": "Logo",
+        "background": "Arka Plan",
+        "tokenImage": "Token Görseli",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Beyaz Kitap",
+        "authorTelegram": "Yazar Telegram",
+        "authorTwitter": "Yazar Twitter",
+        "authorDiscord": "Yazar Discord",
+        "showHowToBuy": "Nasıl Satın Alınır'ı Göster",
+        "firstStep": "İlk Adım",
+        "firstStepImage": "İlk Adım Görseli",
+        "secondStep": "İkinci Adım",
+        "secondStepImage": "İkinci Adım Görseli",
+        "thirdStep": "Üçüncü Adım",
+        "thirdStepImage": "Üçüncü Adım Görseli",
+        "buyNowLink": "Hemen Satın Al Bağlantısı"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Metin",
+        "images": "Görseller",
+        "links": "Bağlantılar"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Kontrat Adresi",
+        "background": "Arka Plan",
+        "tokenImage": "Token Görseli",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Beyaz Kitap",
+        "authorTelegram": "Yazar Telegram",
+        "authorTwitter": "Yazar Twitter",
+        "authorDiscord": "Yazar Discord"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Metin",
+        "images": "Görseller",
+        "links": "Bağlantılar",
+        "buttons": "Butonlar",
+        "howToBuy": "Nasıl Satın Alınır",
+        "roadmap": "Yol Haritası",
+        "faq": "SSS"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Kontrat Adresi",
+        "buyNowText": "Hemen Satın Al",
+        "aboutUsTitle": "Hakkımızda Başlığı",
+        "aboutUsDescription": "Hakkımızda Açıklaması",
+        "logo": "Logo",
+        "primaryBackground": "Birincil Arka Plan",
+        "secondaryBackground": "İkincil Arka Plan",
+        "tokenImage": "Token Görseli",
+        "aboutUsPreview": "Hakkımızda Önizleme",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Beyaz Kitap",
+        "authorTelegram": "Yazar Telegram",
+        "authorTwitter": "Yazar Twitter",
+        "authorDiscord": "Yazar Discord",
+        "buyNowLink": "Hemen Satın Al Bağlantısı",
+        "roadmapTitle": "Yol Haritası Başlığı",
+        "roadmapFirstStepTitle": "Aşama 1 Başlığı",
+        "roadmapFirstStepDescription": "Aşama 1 Açıklaması",
+        "roadmapSecondStepTitle": "Aşama 2 Başlığı",
+        "roadmapSecondStepDescription": "Aşama 2 Açıklaması",
+        "roadmapThirdStepTitle": "Aşama 3 Başlığı",
+        "roadmapThirdStepDescription": "Aşama 3 Açıklaması",
+        "howToBuyTitle": "Nasıl Satın Alınır Başlığı",
+        "howToBuyFirstStep": "Nasıl Satın Alınır Adım 1",
+        "howToBuySecondStep": "Nasıl Satın Alınır Adım 2",
+        "howToBuyThirdStep": "Nasıl Satın Alınır Adım 3",
+        "howToBuyFourthStep": "Nasıl Satın Alınır Adım 4",
+        "FAQTitle": "SSS Başlığı",
+        "firstQuestion": "SSS Soru 1",
+        "firstAnswer": "SSS Cevap 1",
+        "secondQuestion": "SSS Soru 2",
+        "secondAnswer": "SSS Cevap 2",
+        "thirdQuestion": "SSS Soru 3",
+        "thirdAnswer": "SSS Cevap 3",
+        "fourthQuestion": "SSS Soru 4",
+        "fourthAnswer": "SSS Cevap 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Vurgu Renkleri",
+        "text": "Metin",
+        "images": "Görseller",
+        "buttons": "Butonlar",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Görev Zaman Çizelgesi",
+        "missionControl": "Görev Kontrolü",
+        "faq": "SSS",
+        "links": "Bağlantılar"
+      },
+      "fields": {
+        "primaryColor": "Birincil Renk",
+        "secondaryColor": "İkincil Renk",
+        "heroTitle": "Kahraman Başlığı",
+        "ticker": "Ticker",
+        "description": "Açıklama",
+        "contractAddress": "Kontrat Adresi",
+        "contractAddressLabel": "Kontrat Adresi Etiketi",
+        "projectName": "Proje Adı",
+        "buyTicker": "Başlık Butonu",
+        "buyNow": "Hemen Satın Al Butonu",
+        "joinUs": "Bize Katıl Butonu",
+        "tokenomicsTitle": "Tokenomics Başlığı",
+        "missionTimelineTitle": "Görev Zaman Çizelgesi Başlığı",
+        "missionControlTitle": "Görev Kontrolü Başlığı",
+        "FAQTitle": "Görev SSS Başlığı",
+        "joinTitle": "Göreve Katıl Başlığı",
+        "tokenImage": "Token Görseli",
+        "buyTickerLink": "Ticker Satın Al URL'si",
+        "buyNowLink": "Hemen Satın Al URL'si",
+        "joinUsLink": "Bize Katıl URL'si",
+        "firstTokenomicsIcon": "İlk Tokenomics İkonu",
+        "firstTokenomicsTitle": "İlk Tokenomics Başlığı",
+        "firstTokenomicsValue": "İlk Tokenomics Değeri",
+        "secondTokenomicsIcon": "İkinci Tokenomics İkonu",
+        "secondTokenomicsTitle": "İkinci Tokenomics Başlığı",
+        "secondTokenomicsValue": "İkinci Tokenomics Değeri",
+        "thirdTokenomicsIcon": "Üçüncü Tokenomics İkonu",
+        "thirdTokenomicsTitle": "Üçüncü Tokenomics Başlığı",
+        "thirdTokenomicsValue": "Üçüncü Tokenomics Değeri",
+        "fourthTokenomicsIcon": "Dördüncü Tokenomics İkonu",
+        "fourthTokenomicsTitle": "Dördüncü Tokenomics Başlığı",
+        "fourthTokenomicsValue": "Dördüncü Tokenomics Değeri",
+        "firstTimelinePhaseTitle": "Aşama 1 Başlığı",
+        "firstTimelineTitle": "Aşama 1 Başlığı",
+        "firstTimelineDescription": "Aşama 1 Açıklaması",
+        "firstTimelineDate": "Aşama 1 Tarihi",
+        "secondTimelinePhaseTitle": "Aşama 2 Başlığı",
+        "secondTimelineTitle": "Aşama 2 Başlığı",
+        "secondTimelineDescription": "Aşama 2 Açıklaması",
+        "secondTimelineDate": "Aşama 2 Tarihi",
+        "thirdTimelinePhaseTitle": "Aşama 3 Başlığı",
+        "thirdTimelineTitle": "Aşama 3 Başlığı",
+        "thirdTimelineDescription": "Aşama 3 Açıklaması",
+        "thirdTimelineDate": "Aşama 3 Tarihi",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

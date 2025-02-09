@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Dashboard"
+      },
+      {
+        "path": "/templates",
+        "label": "Sjablonen"
+      },
+      {
+        "path": "/pricing",
+        "label": "Prijzen"
+      }
+    ],
+    "accountButton": "Rekening",
+    "signOutButton": "Meld u af",
+    "connectButton": "Verbinden",
+    "themeLabel": "Thema",
+    "languageLabel": "Taal"
+  },
+  "footer": {
+    "description": "Sluit je aan bij duizenden makers die snel de toekomst van Solana-gebaseerde memecoins bouwen. Of je nu je eerste token lanceert of je project uitbreidt, ons platform biedt alle tools die je nodig hebt om een professionele website voor je Solana memecoin te ontwerpen, aan te passen en te lanceren—snel en eenvoudig.",
+    "copyright": "Alle rechten voorbehouden.",
+    "navigation": {
+      "label": "Navigatie",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Dashboard"
+        },
+        {
+          "path": "/pricing",
+          "label": "Prijzen"
+        },
+        {
+          "path": "/templates",
+          "label": "Sjablonen"
+        },
+        {
+          "path": "/start",
+          "label": "Hoe te beginnen"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Verbinden"
+    },
+    "terms": "Voorwaarden",
+    "privacy": "Privacy"
+  },
+  "home": {
+    "hero": {
+      "title": "Geen code, geen gedoe, alleen maanlichtmagie",
+      "description": "Vergeet de saaie details. Kies een wild sjabloon, brand het met de naam van je coin en maak je klaar om te stijgen.",
+      "dashboardButton": "Ga naar Dashboard",
+      "howToButton": "Hoe te beginnen",
+      "scrollToExploreButton": "Scroll om te verkennen"
+    },
+    "launch": {
+      "badge": "Snel. Innovatief. Effectief",
+      "title": "Start je Solana-reis moeiteloos",
+      "description": "Bouw dynamische, aanpasbare platforms voor je Solana-projecten—geen codering vereist. Verhoog je aanwezigheid in het snelle blockchain-ecosysteem.",
+      "startBuildingButton": "Start met bouwen",
+      "inputPlaceholder": "jouw website"
+    },
+    "features": {
+      "badge": "Kernvoordelen",
+      "title": "Alle tools die je nodig hebt",
+      "description": "Bouw een unieke website om je memecoin-project te laten zien, boordevol geavanceerde functies",
+      "cards": {
+        "template": {
+          "title": "Innovatieve sjablonen",
+          "description": "Verken een reeks strakke, responsieve ontwerpen die speciaal zijn gemaakt voor memecoin-projecten. Elk sjabloon is afgestemd op maximale impact en gebruikersbetrokkenheid.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Moeiteloos bewerken",
+          "description": "Personaliseer je website eenvoudig met onze intuïtieve editor. Pas kleuren, tekst en lay-outs moeiteloos aan—geen technische vaardigheden nodig.",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Directe updates",
+          "description": "Bekijk je aanpassingen in real-time terwijl je ze maakt. Verfijn elk detail tot perfectie voordat je je site lanceert naar de community.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Veelgestelde vragen",
+      "description": "Je essentiële gids voor veelgestelde vragen",
+      "questions": [
+        {
+          "question": "Wat is AURORA?",
+          "answer": "AURORA is een platform waarmee je snel professionele websites kunt maken voor je meme-token. Selecteer gewoon een sjabloon, personaliseer het met de details van je token en download je websitebestanden direct."
+        },
+        {
+          "question": "Hoe werkt AURORA?",
+          "answer": "AURORA vereenvoudigt het maken van de website voor je meme-token. Selecteer een sjabloon, pas het aan met je tokeninformatie en ontvang direct de websitebestanden die klaar zijn om te downloaden—geen technische vaardigheden nodig."
+        },
+        {
+          "question": "Hosten we je website?",
+          "answer": "Ja, we bieden volledige hosting voor je website. Zodra je je site hebt gemaakt en aangepast met onze sjablonen, zorgen wij voor het hostingproces, zodat je website veilig wordt opgeslagen en online beschikbaar is. Onze hosting is betrouwbaar, snel en geoptimaliseerd voor prestaties, zodat je website altijd soepel draait, zonder extra instellingen van jouw kant."
+        },
+        {
+          "question": "Is websitehosting inbegrepen?",
+          "answer": "Elk sjabloon is ontworpen met essentiële functies voor je memecoin, inclusief tokendetails, koopknoppen, tokenomics, roadmap, teamprofielen, FAQ-sectie en sociale media-links. Alle sjablonen zijn mobielvriendelijk en geoptimaliseerd voor top prestaties."
+        },
+        {
+          "question": "Hoeveel kost het?",
+          "answer": "We bieden twee prijsplannen aan: de Standaard optie voor 0.045 SOL per website, en de Premium optie voor 0.25 SOL, die toegang biedt tot exclusieve sjablonen en geavanceerde functies. Kies het plan dat het beste past bij je behoeften."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Klassiek",
+        "description": "Dit sjabloon is niet alleen gemaakt voor de presentatie van memecoin, maar ook om een bezoek aan de site in een onvergetelijke ervaring te veranderen. Vanaf de eerste seconden betreedt de gebruiker een heldere, dynamische wereld waar alles spreekt van creativiteit, durf en lichtheid van het project. Het visuele onderdeel van het sjabloon schreeuwt als het ware: \"Hier begint het verhaal dat het onthouden waard is!\"",
+        "shortDescription": "Dit sjabloon is niet alleen gemaakt voor de presentatie van memecoin, maar ook om een bezoek aan de site in een onvergetelijke ervaring te veranderen.",
+        "features": [
+          "Intuïtieve navigatie",
+          "Prachtige effecten",
+          "Duidelijke structuur",
+          "Snelle interactie"
+        ]
+      },
+      "simple": {
+        "label": "Eenvoudig",
+        "description": "Dit sjabloon is het toonbeeld van eenvoud en gemak, speciaal gemaakt voor degenen die hun memecoin snel en gemakkelijk willen presenteren. Het stelt je in staat om je te concentreren op het belangrijkste zonder gebruikers af te leiden met onnodige details. Met dit sjabloon hoef je geen complexe technische details te begrijpen of uren te besteden aan aanpassingen. Vul gewoon de velden in, upload de benodigde afbeeldingen—en je site is klaar!",
+        "shortDescription": "Dit sjabloon is het toonbeeld van eenvoud en gemak, speciaal gemaakt voor degenen die hun memecoin snel en gemakkelijk willen presenteren.",
+        "features": [
+          "Visuele eenvoud",
+          "Moderne interface",
+          "Functionaliteit",
+          "Focus op memecoin"
+        ]
+      },
+      "impressive": {
+        "label": "Indrukwekkend",
+        "description": "Dit sjabloon is de perfecte keuze voor het maken van je memecoin-website die de aandacht zal trekken en een onvergetelijke gebeurtenis in de cryptowereld zal worden. Gebruiksvriendelijk, kleurrijk en functioneel, het maakt het gemakkelijk om je project aan een breed publiek te presenteren. Het sjabloon is ontworpen met gebruiksgemak en stijlvol design in gedachten, zodat zelfs beginners hun site in een paar minuten kunnen lanceren. Het ontwerp benadrukt de lichtheid en humor die kenmerkend zijn voor memecoins, creëert een unieke sfeer en stelt je in staat om op te vallen tussen andere projecten.",
+        "shortDescription": "Dit sjabloon is de perfecte keuze voor het maken van je memecoin-website die de aandacht zal trekken en een onvergetelijke gebeurtenis in de cryptowereld zal worden.",
+        "features": [
+          "FAQ-sectie",
+          "Roadmap-sectie",
+          "Helder en energiek design",
+          "Volledige aanpassing"
+        ],
+        "badge": "Populair"
+      },
+      "rocket": {
+        "label": "Raket",
+        "description": "Het Raket-sjabloon is een heldere, dynamische en memorabele keuze voor je memecoin-website. Het belangrijkste kenmerk is een stijlvolle raketanimatie, die een gevoel van beweging en groei creëert, wat de snelle ontwikkeling van je project symboliseert. Dit sjabloon is perfect voor degenen die de ambitie van hun memecoin willen tonen en de aandacht van gebruikers willen trekken met een unieke presentatie.",
+        "shortDescription": "Het Raket-sjabloon is een heldere, dynamische en memorabele keuze voor je memecoin-website.",
+        "features": [
+          "Bewegende achtergrond",
+          "Interactieve knoppen",
+          "Aanpasbaarheid",
+          "Functionaliteit"
+        ],
+        "badge": "Nieuw"
+      }
+    },
+    "price": "Prijs",
+    "selectButton": "Selecteer",
+    "backButton": "Terug naar Home",
+    "toggleViewButton": "Wissel weergave",
+    "gridView": "Raster",
+    "sliderView": "Schuifregelaar"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Standaard",
+        "description": "Voor 0.045 Solana kun je een website maken met het Klassieke en Eenvoudige sjabloon. Dit zijn eenvoudige sjablonen met een duidelijke en prettige gebruikersinterface. Ze zijn gemakkelijk te bewerken en aan te passen.",
+        "features": [
+          "Gratis domein",
+          "Bewerken na creatie"
+        ]
+      },
+      "advanced": {
+        "label": "Geavanceerd",
+        "description": "Voor 0.05 SOL kun je het Indrukwekkende sjabloon gebruiken. Dit sjabloon zit vol met verschillende elementen die je kunt bewerken om ze aan te passen aan je memtoken. Dit sjabloon heeft blokken zoals \"Hoe te kopen\", \"FAQ\", \"Roadmap\".",
+        "features": [
+          "Gratis domein",
+          "Bewerken na creatie",
+          "Roadmap",
+          "FAQ",
+          "Hoe te kopen"
+        ]
+      },
+      "professional": {
+        "label": "Professioneel",
+        "description": "Voor 0.065 SOL krijg je een volledig professioneel Raket-sjabloon met animaties, verschillende blokken, knoppen, volledige bewerking voor je memecoin.",
+        "features": [
+          "Gratis domein",
+          "Bewerken na creatie",
+          "Tokenomics",
+          "FAQ",
+          "Animaties"
+        ]
+      }
+    },
+    "createButton": "Start met maken"
+  },
+  "account": {
+    "walletAddressLabel": "Portemonnee-adres",
+    "unauthorizedMessage": "Het lijkt erop dat je niet bent geautoriseerd",
+    "signOutButton": "Uitloggen",
+    "editButton": "Bewerken",
+    "changeDomain": {
+      "button": "Domein wijzigen",
+      "title": "Domein wijzigen",
+      "description": "Voer een geldig subdomein in (2-20 tekens) met letters, cijfers en streepjes. Geen spaties of speciale tekens toegestaan.",
+      "submitButton": "Wijzigen"
+    },
+    "delete": {
+      "button": "Verwijderen",
+      "title": "Weet je het absoluut zeker?",
+      "description": "Deze actie kan niet ongedaan worden gemaakt. Dit zal je websitegegevens permanent van onze servers verwijderen.",
+      "successMessage": "Je website is succesvol verwijderd!",
+      "cancelButton": "Annuleren",
+      "submitButton": "Verwijderen"
+    },
+    "unableToFetchMessage": "Kan websites niet ophalen",
+    "noWebsitesMessage": "Je hebt nog geen websites"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Dashboardpagina",
+        "list": [
+          "Op de startpagina kunt u de naam van uw site invoeren en op de knop \"Start met bouwen\" klikken",
+          "Kies de sjabloon die u leuk vindt.",
+          "Versier uw pagina zoals u wilt.",
+          "Klik op de knop \"Web maken\"",
+          "Bevestig uw transactie en betaal.",
+          "Na succesvolle betaling, gefeliciteerd, u heeft uw website succesvol gemaakt!"
+        ]
+      },
+      {
+        "title": "Sjabloonsectie",
+        "list": [
+          "Ga naar de sectie \"Sjablonen\"",
+          "Kies de sjabloon die u leuk vindt.",
+          "Versier uw pagina zoals u wilt.",
+          "Klik op de knop \"Web maken\"",
+          "Bevestig uw transactie en betaal.",
+          "Na succesvolle betaling, gefeliciteerd, u heeft uw website succesvol gemaakt!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "Als u problemen heeft, fouten met transacties, een suggestie om onze site te verbeteren of iets wilt vragen, aarzel dan niet om contact met ons op te nemen, we helpen u graag verder:",
+      "email": "E-mail"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Terug naar sjablonen",
+    "description": "Maak je website in slechts 5 minuten",
+    "create": {
+      "button": "Website maken",
+      "title": "Voer je domein in",
+      "description": "Voer een geldig subdomein in (2-20 tekens) met letters, cijfers en streepjes. Geen spaties of speciale tekens toegestaan.",
+      "successMessage": "Je website is succesvol aangemaakt!",
+      "submitButton": "Bevestigen en maken"
+    },
+    "update": {
+      "button": "Wijzigingen opslaan",
+      "successMessage": "Je website is succesvol aangemaakt!"
+    },
+    "classic": {
+      "categories": {
+        "text": "Tekst",
+        "images": "Afbeeldingen",
+        "links": "Links",
+        "howToBuy": "Hoe te kopen",
+        "buttons": "Knoppen"
+      },
+      "fields": {
+        "logoText": "Projectnaam",
+        "ticker": "Ticker",
+        "contractAddress": "Contractadres",
+        "description": "Beschrijving",
+        "buyNowText": "Nu kopen",
+        "logoImage": "Logo",
+        "background": "Achtergrond",
+        "tokenImage": "Tokenafbeelding",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Telegram van de auteur",
+        "authorTwitter": "Twitter van de auteur",
+        "authorDiscord": "Discord van de auteur",
+        "showHowToBuy": "Toon hoe te kopen",
+        "firstStep": "Eerste stap",
+        "firstStepImage": "Afbeelding eerste stap",
+        "secondStep": "Tweede stap",
+        "secondStepImage": "Afbeelding tweede stap",
+        "thirdStep": "Derde stap",
+        "thirdStepImage": "Afbeelding derde stap",
+        "buyNowLink": "Nu kopen link"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Tekst",
+        "images": "Afbeeldingen",
+        "links": "Links"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Contractadres",
+        "background": "Achtergrond",
+        "tokenImage": "Tokenafbeelding",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Telegram van de auteur",
+        "authorTwitter": "Twitter van de auteur",
+        "authorDiscord": "Discord van de auteur"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Tekst",
+        "images": "Afbeeldingen",
+        "links": "Links",
+        "buttons": "Knoppen",
+        "howToBuy": "Hoe te kopen",
+        "roadmap": "Roadmap",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Contractadres",
+        "buyNowText": "Nu kopen",
+        "aboutUsTitle": "Titel over ons",
+        "aboutUsDescription": "Beschrijving over ons",
+        "logo": "Logo",
+        "primaryBackground": "Primaire achtergrond",
+        "secondaryBackground": "Secundaire achtergrond",
+        "tokenImage": "Tokenafbeelding",
+        "aboutUsPreview": "Voorbeeld over ons",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Telegram van de auteur",
+        "authorTwitter": "Twitter van de auteur",
+        "authorDiscord": "Discord van de auteur",
+        "buyNowLink": "Nu kopen link",
+        "roadmapTitle": "Roadmap-titel",
+        "roadmapFirstStepTitle": "Fase 1 titel",
+        "roadmapFirstStepDescription": "Fase 1 beschrijving",
+        "roadmapSecondStepTitle": "Fase 2 titel",
+        "roadmapSecondStepDescription": "Fase 2 beschrijving",
+        "roadmapThirdStepTitle": "Fase 3 titel",
+        "roadmapThirdStepDescription": "Fase 3 beschrijving",
+        "howToBuyTitle": "Titel hoe te kopen",
+        "howToBuyFirstStep": "Hoe te kopen stap 1",
+        "howToBuySecondStep": "Hoe te kopen stap 2",
+        "howToBuyThirdStep": "Hoe te kopen stap 3",
+        "howToBuyFourthStep": "Hoe te kopen stap 4",
+        "FAQTitle": "FAQ-titel",
+        "firstQuestion": "FAQ-vraag 1",
+        "firstAnswer": "FAQ-antwoord 1",
+        "secondQuestion": "FAQ-vraag 2",
+        "secondAnswer": "FAQ-antwoord 2",
+        "thirdQuestion": "FAQ-vraag 3",
+        "thirdAnswer": "FAQ-antwoord 3",
+        "fourthQuestion": "FAQ-vraag 4",
+        "fourthAnswer": "FAQ-antwoord 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Accentkleuren",
+        "text": "Tekst",
+        "images": "Afbeeldingen",
+        "buttons": "Knoppen",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Missietijdlijn",
+        "missionControl": "Missiecontrole",
+        "faq": "FAQ",
+        "links": "Links"
+      },
+      "fields": {
+        "primaryColor": "Primaire kleur",
+        "secondaryColor": "Secundaire kleur",
+        "heroTitle": "Hero-titel",
+        "ticker": "Ticker",
+        "description": "Beschrijving",
+        "contractAddress": "Contractadres",
+        "contractAddressLabel": "Contractadreslabel",
+        "projectName": "Projectnaam",
+        "buyTicker": "Headerknop",
+        "buyNow": "Nu kopen knop",
+        "joinUs": "Doe mee knop",
+        "tokenomicsTitle": "Tokenomics-titel",
+        "missionTimelineTitle": "Missietijdlijn-titel",
+        "missionControlTitle": "Missiecontrole-titel",
+        "FAQTitle": "Missie FAQ-titel",
+        "joinTitle": "Doe mee met de missie titel",
+        "tokenImage": "Tokenafbeelding",
+        "buyTickerLink": "Koop Ticker URL",
+        "buyNowLink": "Nu kopen URL",
+        "joinUsLink": "Doe mee URL",
+        "firstTokenomicsIcon": "Eerste tokenomics-icoon",
+        "firstTokenomicsTitle": "Eerste tokenomics-titel",
+        "firstTokenomicsValue": "Eerste tokenomics-waarde",
+        "secondTokenomicsIcon": "Tweede tokenomics-icoon",
+        "secondTokenomicsTitle": "Tweede tokenomics-titel",
+        "secondTokenomicsValue": "Tweede tokenomics-waarde",
+        "thirdTokenomicsIcon": "Derde tokenomics-icoon",
+        "thirdTokenomicsTitle": "Derde tokenomics-titel",
+        "thirdTokenomicsValue": "Derde tokenomics-waarde",
+        "fourthTokenomicsIcon": "Vierde tokenomics-icoon",
+        "fourthTokenomicsTitle": "Vierde tokenomics-titel",
+        "fourthTokenomicsValue": "Vierde tokenomics-waarde",
+        "firstTimelinePhaseTitle": "Fase 1 titel",
+        "firstTimelineTitle": "Fase 1 titel",
+        "firstTimelineDescription": "Fase 1 beschrijving",
+        "firstTimelineDate": "Fase 1 datum",
+        "secondTimelinePhaseTitle": "Fase 2 titel",
+        "secondTimelineTitle": "Fase 2 titel",
+        "secondTimelineDescription": "Fase 2 beschrijving",
+        "secondTimelineDate": "Fase 2 datum",
+        "thirdTimelinePhaseTitle": "Fase 3 titel",
+        "thirdTimelineTitle": "Fase 3 titel",
+        "thirdTimelineDescription": "Fase 3 beschrijving",
+        "thirdTimelineDate": "Fase 3 datum",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

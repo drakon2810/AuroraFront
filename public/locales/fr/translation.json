@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Tableau de bord"
+      },
+      {
+        "path": "/templates",
+        "label": "Modèles"
+      },
+      {
+        "path": "/pricing",
+        "label": "Tarifs"
+      }
+    ],
+    "accountButton": "Compte",
+    "signOutButton": "se déconnecter",
+    "connectButton": "Connecter",
+    "themeLabel": "Thème",
+    "languageLabel": "Langue"
+  },
+  "footer": {
+    "description": "Rejoignez des milliers de créateurs qui construisent rapidement l'avenir des memecoins basés sur Solana. Que vous lanciez votre premier token ou étendiez votre projet, notre plateforme fournit tous les outils dont vous avez besoin pour concevoir, personnaliser et lancer un site web professionnel pour votre memecoin Solana — rapidement et facilement.",
+    "copyright": "Tous droits réservés.",
+    "navigation": {
+      "label": "Navigation",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Tableau de bord"
+        },
+        {
+          "path": "/pricing",
+          "label": "Tarifs"
+        },
+        {
+          "path": "/templates",
+          "label": "Modèles"
+        },
+        {
+          "path": "/start",
+          "label": "Comment commencer"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Connecter"
+    },
+    "terms": "Termes",
+    "privacy": "Confidentialité"
+  },
+  "home": {
+    "hero": {
+      "title": "Pas de code, pas de tracas, juste de la magie lunaire",
+      "description": "Oubliez les détails ennuyeux. Choisissez un modèle audacieux, personnalisez-le avec le nom de votre coin et préparez-vous à décoller.",
+      "dashboardButton": "Aller au tableau de bord",
+      "howToButton": "Comment commencer",
+      "scrollToExploreButton": "Faites défiler pour explorer"
+    },
+    "launch": {
+      "badge": "Rapide. Innovant. Efficace",
+      "title": "Démarrez votre voyage Solana sans effort",
+      "description": "Construisez des plateformes dynamiques et personnalisables pour vos projets Solana — sans codage. Élevez votre présence dans l'écosystème blockchain en pleine croissance.",
+      "startBuildingButton": "Commencer à construire",
+      "inputPlaceholder": "votre site"
+    },
+    "features": {
+      "badge": "Avantages clés",
+      "title": "Tous les outils dont vous avez besoin",
+      "description": "Construisez un site web unique pour présenter votre projet memecoin, rempli de fonctionnalités avancées",
+      "cards": {
+        "template": {
+          "title": "Modèles innovants",
+          "description": "Explorez une gamme de designs élégants et réactifs spécialement conçus pour les projets memecoin. Chaque modèle est finement ajusté pour un impact maximal et un engagement utilisateur optimal.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Édition sans effort",
+          "description": "Personnalisez votre site web avec facilité grâce à notre éditeur intuitif. Modifiez les couleurs, le texte et les mises en page sans effort — aucune compétence technique requise.",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Mises à jour instantanées",
+          "description": "Visualisez vos modifications en temps réel pendant que vous les effectuez. Affinez chaque détail à la perfection avant de lancer votre site à la communauté.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Questions fréquemment posées",
+      "description": "Votre guide essentiel pour les questions courantes",
+      "questions": [
+        {
+          "question": "Qu'est-ce qu'AURORA ?",
+          "answer": "AURORA est une plateforme qui vous permet de créer rapidement des sites web professionnels pour votre token memecoin. Il suffit de sélectionner un modèle, de le personnaliser avec les détails de votre token et de télécharger instantanément les fichiers de votre site web."
+        },
+        {
+          "question": "Comment fonctionne AURORA ?",
+          "answer": "AURORA simplifie la création du site web de votre token memecoin. Sélectionnez un modèle, personnalisez-le avec les informations de votre token et recevez instantanément les fichiers du site web prêts à être téléchargés — aucune compétence technique requise."
+        },
+        {
+          "question": "Hébergeons-nous votre site web ?",
+          "answer": "Oui, nous fournissons un hébergement complet pour votre site web. Une fois que vous avez créé et personnalisé votre site en utilisant nos modèles, nous nous occupons du processus d'hébergement, en veillant à ce que votre site soit stocké en toute sécurité et disponible en ligne. Notre hébergement est fiable, rapide et optimisé pour les performances, afin que votre site fonctionne parfaitement à tout moment, sans configuration supplémentaire de votre part."
+        },
+        {
+          "question": "L'hébergement du site web est-il inclus ?",
+          "answer": "Chaque modèle est conçu avec des fonctionnalités essentielles pour votre memecoin, y compris les détails du token, les boutons d'achat, la tokenomics, la feuille de route, les profils de l'équipe, une section FAQ et des liens vers les réseaux sociaux. Tous les modèles sont adaptés aux mobiles et optimisés pour des performances optimales."
+        },
+        {
+          "question": "Combien cela coûte-t-il ?",
+          "answer": "Nous proposons deux plans tarifaires : l'option Standard pour 0,045 SOL par site web, et l'option Premium pour 0,25 SOL, qui inclut l'accès à des modèles exclusifs et à des fonctionnalités avancées. Choisissez le plan qui correspond le mieux à vos besoins."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Classique",
+        "description": "Ce modèle est créé non seulement pour la présentation du memecoin, mais aussi pour transformer la visite du site en une expérience mémorable. Dès les premières secondes, l'utilisateur entre dans un monde lumineux et dynamique où tout parle de créativité, d'audace et de légèreté du projet. La composante visuelle du modèle semble crier : \"Ici commence une histoire qui mérite d'être retenue !\"",
+        "shortDescription": "Ce modèle est créé non seulement pour la présentation du memecoin, mais aussi pour transformer la visite du site en une expérience mémorable",
+        "features": [
+          "Navigation intuitive",
+          "Beaux effets",
+          "Structure claire",
+          "Interaction rapide"
+        ]
+      },
+      "simple": {
+        "label": "Simple",
+        "description": "Ce modèle est l'incarnation de la simplicité et de la commodité, créé spécialement pour ceux qui veulent présenter rapidement et facilement leur memecoin. Il vous permet de vous concentrer sur l'essentiel sans distraire les utilisateurs avec des détails inutiles. Avec ce modèle, vous n'avez pas besoin de comprendre des détails techniques complexes ou de passer des heures à personnaliser. Il suffit de remplir les champs, de télécharger les images nécessaires — et votre site est prêt !",
+        "shortDescription": "Ce modèle est l'incarnation de la simplicité et de la commodité, créé spécialement pour ceux qui veulent présenter rapidement et facilement leur memecoin.",
+        "features": [
+          "Simplicité visuelle",
+          "Interface moderne",
+          "Fonctionnalité",
+          "Concentration sur le memecoin"
+        ]
+      },
+      "impressive": {
+        "label": "Impressionnant",
+        "description": "Ce modèle est le choix parfait pour créer votre site web memecoin qui attirera l'attention et deviendra un événement mémorable dans le monde de la crypto. Convivial, coloré et fonctionnel, il facilite la présentation de votre projet à un large public. Le modèle est conçu en pensant à la facilité d'utilisation et au design élégant, de sorte que même les débutants peuvent lancer leur site en quelques minutes. Son design met en valeur la légèreté et l'humour caractéristiques des memecoins, créant une atmosphère unique et vous permettant de vous démarquer parmi d'autres projets.",
+        "shortDescription": "Ce modèle est le choix parfait pour créer votre site web memecoin qui attirera l'attention et deviendra un événement mémorable dans le monde de la crypto.",
+        "features": [
+          "Section FAQ",
+          "Section Feuille de route",
+          "Design vif et énergique",
+          "Personnalisation complète"
+        ],
+        "badge": "Populaire"
+      },
+      "rocket": {
+        "label": "Fusée",
+        "description": "Le modèle Fusée est un choix lumineux, dynamique et mémorable pour votre site web memecoin. Sa principale caractéristique est une animation de fusée stylisée, qui crée un sentiment de mouvement et de croissance, symbolisant le développement rapide de votre projet. Ce modèle est parfait pour ceux qui veulent montrer l'ambition de leur memecoin et attirer l'attention des utilisateurs avec une présentation unique.",
+        "shortDescription": "Le modèle Fusée est un choix lumineux, dynamique et mémorable pour votre site web memecoin.",
+        "features": [
+          "Arrière-plan animé",
+          "Boutons interactifs",
+          "Adaptabilité",
+          "Fonctionnalité"
+        ],
+        "badge": "Nouveau"
+      }
+    },
+    "price": "Prix",
+    "selectButton": "Sélectionner",
+    "backButton": "Retour à l'accueil",
+    "toggleViewButton": "Changer la vue",
+    "gridView": "Grille",
+    "sliderView": "Curseur"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Standard",
+        "description": "Pour 0,045 Solana, vous pouvez créer un site web en utilisant les modèles Classique et Simple. Ce sont des modèles simples, avec une interface utilisateur claire et agréable. Ils sont faciles à éditer et à modifier.",
+        "features": [
+          "Domaine gratuit",
+          "Édition après création"
+        ]
+      },
+      "advanced": {
+        "label": "Avancé",
+        "description": "Pour 0,05 sol, vous pouvez utiliser le modèle Impressionnant. Ce modèle est rempli de différents éléments que vous pouvez éditer pour les adapter à votre memtoken. Ce modèle comprend des blocs tels que \"Comment acheter\", \"FAQ\", \"Feuille de route\".",
+        "features": [
+          "Domaine gratuit",
+          "Édition après création",
+          "Feuille de route",
+          "FAQ",
+          "Comment acheter"
+        ]
+      },
+      "professional": {
+        "label": "Professionnel",
+        "description": "Pour 0,065 Sol, vous obtiendrez un modèle entièrement professionnel Fusée avec des animations, différents blocs, boutons, une édition complète pour votre memecoin.",
+        "features": [
+          "Domaine gratuit",
+          "Édition après création",
+          "Tokenomics",
+          "FAQ",
+          "Animations"
+        ]
+      }
+    },
+    "createButton": "Commencer à créer"
+  },
+  "account": {
+    "walletAddressLabel": "Adresse du portefeuille",
+    "unauthorizedMessage": "Il semble que vous ne soyez pas autorisé",
+    "signOutButton": "Déconnexion",
+    "editButton": "Modifier",
+    "changeDomain": {
+      "button": "Changer de domaine",
+      "title": "Changer de domaine",
+      "description": "Entrez un sous-domaine valide (2-20 caractères) en utilisant des lettres, des chiffres et des traits d'union. Les espaces et les caractères spéciaux ne sont pas autorisés.",
+      "submitButton": "Changer"
+    },
+    "delete": {
+      "button": "Supprimer",
+      "title": "Êtes-vous absolument sûr ?",
+      "description": "Cette action ne peut pas être annulée. Cela supprimera définitivement les données de votre site web de nos serveurs.",
+      "successMessage": "Votre site web a été supprimé avec succès !",
+      "cancelButton": "Annuler",
+      "submitButton": "Supprimer"
+    },
+    "unableToFetchMessage": "Impossible de récupérer les sites web",
+    "noWebsitesMessage": "Vous n'avez pas encore de sites web"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Page du tableau de bord",
+        "list": [
+          "Sur la page d'accueil, vous pouvez écrire le nom de votre site et cliquer sur le bouton \"Commencer la construction\"",
+          "Choisissez le modèle que vous aimez.",
+          "Décorez votre page comme vous le souhaitez.",
+          "Cliquez sur le bouton \"Créer un site\"",
+          "Confirmez votre transaction et payez.",
+          "Après un paiement réussi, félicitations, vous avez créé votre site web avec succès !"
+        ]
+      },
+      {
+        "title": "Section des modèles",
+        "list": [
+          "Accédez à la section \"Modèles\"",
+          "Choisissez le modèle que vous aimez.",
+          "Décorez votre page comme vous le souhaitez.",
+          "Cliquez sur le bouton \"Créer un site\"",
+          "Confirmez votre transaction et payez.",
+          "Après un paiement réussi, félicitations, vous avez créé votre site web avec succès !"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "Si vous avez des problèmes, des erreurs de transaction, une suggestion pour améliorer notre site ou une question, n'hésitez pas à nous contacter, nous serons heureux de vous aider :",
+      "email": "E-mail"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Retour aux modèles",
+    "description": "Créez votre site web en seulement 5 minutes",
+    "create": {
+      "button": "Créer un site web",
+      "title": "Entrez votre domaine",
+      "description": "Entrez un sous-domaine valide (2-20 caractères) en utilisant des lettres, des chiffres et des traits d'union. Les espaces et les caractères spéciaux ne sont pas autorisés.",
+      "successMessage": "Votre site web a été créé avec succès !",
+      "submitButton": "Confirmer et créer"
+    },
+    "update": {
+      "button": "Enregistrer les modifications",
+      "successMessage": "Votre site web a été créé avec succès !"
+    },
+    "classic": {
+      "categories": {
+        "text": "Texte",
+        "images": "Images",
+        "links": "Liens",
+        "howToBuy": "Comment acheter",
+        "buttons": "Boutons"
+      },
+      "fields": {
+        "logoText": "Nom du projet",
+        "ticker": "Ticker",
+        "contractAddress": "Adresse du contrat",
+        "description": "Description",
+        "buyNowText": "Acheter maintenant",
+        "logoImage": "Logo",
+        "background": "Arrière-plan",
+        "tokenImage": "Image du token",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Livre blanc",
+        "authorTelegram": "Telegram de l'auteur",
+        "authorTwitter": "Twitter de l'auteur",
+        "authorDiscord": "Discord de l'auteur",
+        "showHowToBuy": "Afficher comment acheter",
+        "firstStep": "Première étape",
+        "firstStepImage": "Image de la première étape",
+        "secondStep": "Deuxième étape",
+        "secondStepImage": "Image de la deuxième étape",
+        "thirdStep": "Troisième étape",
+        "thirdStepImage": "Image de la troisième étape",
+        "buyNowLink": "Lien d'achat"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Texte",
+        "images": "Images",
+        "links": "Liens"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Adresse du contrat",
+        "background": "Arrière-plan",
+        "tokenImage": "Image du token",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Livre blanc",
+        "authorTelegram": "Telegram de l'auteur",
+        "authorTwitter": "Twitter de l'auteur",
+        "authorDiscord": "Discord de l'auteur"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Texte",
+        "images": "Images",
+        "links": "Liens",
+        "buttons": "Boutons",
+        "howToBuy": "Comment acheter",
+        "roadmap": "Feuille de route",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Adresse du contrat",
+        "buyNowText": "Acheter maintenant",
+        "aboutUsTitle": "Titre À propos de nous",
+        "aboutUsDescription": "Description À propos de nous",
+        "logo": "Logo",
+        "primaryBackground": "Arrière-plan principal",
+        "secondaryBackground": "Arrière-plan secondaire",
+        "tokenImage": "Image du token",
+        "aboutUsPreview": "Aperçu À propos de nous",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Livre blanc",
+        "authorTelegram": "Telegram de l'auteur",
+        "authorTwitter": "Twitter de l'auteur",
+        "authorDiscord": "Discord de l'auteur",
+        "buyNowLink": "Lien d'achat",
+        "roadmapTitle": "Titre de la feuille de route",
+        "roadmapFirstStepTitle": "Titre de la phase 1",
+        "roadmapFirstStepDescription": "Description de la phase 1",
+        "roadmapSecondStepTitle": "Titre de la phase 2",
+        "roadmapSecondStepDescription": "Description de la phase 2",
+        "roadmapThirdStepTitle": "Titre de la phase 3",
+        "roadmapThirdStepDescription": "Description de la phase 3",
+        "howToBuyTitle": "Titre Comment acheter",
+        "howToBuyFirstStep": "Étape 1 Comment acheter",
+        "howToBuySecondStep": "Étape 2 Comment acheter",
+        "howToBuyThirdStep": "Étape 3 Comment acheter",
+        "howToBuyFourthStep": "Étape 4 Comment acheter",
+        "FAQTitle": "Titre FAQ",
+        "firstQuestion": "Question FAQ 1",
+        "firstAnswer": "Réponse FAQ 1",
+        "secondQuestion": "Question FAQ 2",
+        "secondAnswer": "Réponse FAQ 2",
+        "thirdQuestion": "Question FAQ 3",
+        "thirdAnswer": "Réponse FAQ 3",
+        "fourthQuestion": "Question FAQ 4",
+        "fourthAnswer": "Réponse FAQ 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Couleurs d'accentuation",
+        "text": "Texte",
+        "images": "Images",
+        "buttons": "Boutons",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Chronologie de la mission",
+        "missionControl": "Contrôle de la mission",
+        "faq": "FAQ",
+        "links": "Liens"
+      },
+      "fields": {
+        "primaryColor": "Couleur primaire",
+        "secondaryColor": "Couleur secondaire",
+        "heroTitle": "Titre du héros",
+        "ticker": "Ticker",
+        "description": "Description",
+        "contractAddress": "Adresse du contrat",
+        "contractAddressLabel": "Libellé de l'adresse du contrat",
+        "projectName": "Nom du projet",
+        "buyTicker": "Bouton d'en-tête",
+        "buyNow": "Bouton Acheter maintenant",
+        "joinUs": "Bouton Rejoignez-nous",
+        "tokenomicsTitle": "Titre Tokenomics",
+        "missionTimelineTitle": "Titre de la chronologie de la mission",
+        "missionControlTitle": "Titre du contrôle de la mission",
+        "FAQTitle": "Titre FAQ de la mission",
+        "joinTitle": "Titre Rejoindre la mission",
+        "tokenImage": "Image du token",
+        "buyTickerLink": "URL du bouton d'achat",
+        "buyNowLink": "URL du bouton Acheter maintenant",
+        "joinUsLink": "URL du bouton Rejoignez-nous",
+        "firstTokenomicsIcon": "Icône Tokenomics 1",
+        "firstTokenomicsTitle": "Titre Tokenomics 1",
+        "firstTokenomicsValue": "Valeur Tokenomics 1",
+        "secondTokenomicsIcon": "Icône Tokenomics 2",
+        "secondTokenomicsTitle": "Titre Tokenomics 2",
+        "secondTokenomicsValue": "Valeur Tokenomics 2",
+        "thirdTokenomicsIcon": "Icône Tokenomics 3",
+        "thirdTokenomicsTitle": "Titre Tokenomics 3",
+        "thirdTokenomicsValue": "Valeur Tokenomics 3",
+        "fourthTokenomicsIcon": "Icône Tokenomics 4",
+        "fourthTokenomicsTitle": "Titre Tokenomics 4",
+        "fourthTokenomicsValue": "Valeur Tokenomics 4",
+        "firstTimelinePhaseTitle": "Titre de la phase 1",
+        "firstTimelineTitle": "Titre de la phase 1",
+        "firstTimelineDescription": "Description de la phase 1",
+        "firstTimelineDate": "Date de la phase 1",
+        "secondTimelinePhaseTitle": "Titre de la phase 2",
+        "secondTimelineTitle": "Titre de la phase 2",
+        "secondTimelineDescription": "Description de la phase 2",
+        "secondTimelineDate": "Date de la phase 2",
+        "thirdTimelinePhaseTitle": "Titre de la phase 3",
+        "thirdTimelineTitle": "Titre de la phase 3",
+        "thirdTimelineDescription": "Description de la phase 3",
+        "thirdTimelineDate": "Date de la phase 3",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

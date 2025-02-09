@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Trang tổng quan"
+      },
+      {
+        "path": "/templates",
+        "label": "Mẫu"
+      },
+      {
+        "path": "/pricing",
+        "label": "Định giá"
+      }
+    ],
+    "accountButton": "Tài khoản",
+    "signOutButton": "Đăng xuất",
+    "connectButton": "Kết nối",
+    "themeLabel": "Chủ đề",
+    "languageLabel": "Ngôn ngữ"
+  },
+  "footer": {
+    "description": "Tham gia cùng hàng nghìn nhà sáng tạo đang nhanh chóng xây dựng tương lai của các memecoin dựa trên Solana. Cho dù bạn đang khởi chạy token đầu tiên của mình hay mở rộng dự án, nền tảng của chúng tôi cung cấp tất cả các công cụ bạn cần để thiết kế, tùy chỉnh và khởi chạy một trang web chuyên nghiệp cho memecoin Solana của bạn — một cách nhanh chóng và dễ dàng.",
+    "copyright": "Mọi quyền được bảo lưu.",
+    "navigation": {
+      "label": "Điều hướng",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Trang tổng quan"
+        },
+        {
+          "path": "/pricing",
+          "label": "Định giá"
+        },
+        {
+          "path": "/templates",
+          "label": "Mẫu"
+        },
+        {
+          "path": "/start",
+          "label": "Làm thế nào để bắt đầu"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Kết nối"
+    },
+    "terms": "Điều khoản",
+    "privacy": "Sự riêng tư"
+  },
+  "home": {
+    "hero": {
+      "title": "Không cần mã, không rắc rối, chỉ có phép thuật ánh trăng",
+      "description": "Hãy quên đi những chi tiết nhàm chán. Chọn một mẫu hoang dã, gắn thương hiệu với tên đồng xu của bạn và chuẩn bị cất cánh.",
+      "dashboardButton": "Đến Bảng Điều Khiển",
+      "howToButton": "Cách bắt đầu",
+      "scrollToExploreButton": "Cuộn để khám phá"
+    },
+    "launch": {
+      "badge": "Nhanh. Sáng tạo. Hiệu quả",
+      "title": "Khởi động Hành trình Solana của Bạn một cách Dễ dàng",
+      "description": "Xây dựng các nền tảng động, có thể tùy chỉnh cho các dự án Solana của bạn — không cần viết mã. Nâng cao sự hiện diện của bạn trong hệ sinh thái blockchain tốc độ cao.",
+      "startBuildingButton": "Bắt đầu Xây dựng",
+      "inputPlaceholder": "trang web của bạn"
+    },
+    "features": {
+      "badge": "Lợi ích Cốt lõi",
+      "title": "Tất cả các Công cụ Bạn Cần",
+      "description": "Xây dựng một trang web độc đáo để trưng bày dự án memecoin của bạn, được trang bị các tính năng tiên tiến",
+      "cards": {
+        "template": {
+          "title": "Mẫu Sáng tạo",
+          "description": "Khám phá một loạt các thiết kế đẹp mắt và phản hồi nhanh được tạo riêng cho các dự án memecoin. Mỗi mẫu được điều chỉnh để tối đa hóa tác động và sự tương tác của người dùng.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Chỉnh sửa Dễ dàng",
+          "description": "Tùy chỉnh trang web của bạn một cách dễ dàng bằng trình chỉnh sửa trực quan của chúng tôi. Thay đổi màu sắc, văn bản và bố cục một cách dễ dàng — không cần kỹ năng kỹ thuật.",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Cập nhật Tức thì",
+          "description": "Xem các chỉnh sửa của bạn trong thời gian thực khi bạn thực hiện chúng. Tinh chỉnh từng chi tiết đến mức hoàn hảo trước khi khởi chạy trang web của bạn cho cộng đồng.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Câu hỏi Thường gặp",
+      "description": "Hướng dẫn Thiết yếu cho các Câu hỏi Thông thường",
+      "questions": [
+        {
+          "question": "AURORA là gì?",
+          "answer": "AURORA là một nền tảng cho phép bạn nhanh chóng tạo các trang web chuyên nghiệp cho token meme của mình. Chỉ cần chọn một mẫu, tùy chỉnh nó với thông tin token của bạn và tải xuống các tệp trang web ngay lập tức."
+        },
+        {
+          "question": "AURORA hoạt động như thế nào?",
+          "answer": "AURORA đơn giản hóa việc tạo trang web cho token meme của bạn. Chọn một mẫu, tùy chỉnh nó với thông tin token của bạn và nhận ngay các tệp trang web sẵn sàng để tải xuống — không cần kỹ năng kỹ thuật."
+        },
+        {
+          "question": "Chúng tôi có lưu trữ trang web của bạn không?",
+          "answer": "Có, chúng tôi cung cấp dịch vụ lưu trữ đầy đủ cho trang web của bạn. Sau khi bạn tạo và tùy chỉnh trang web của mình bằng các mẫu của chúng tôi, chúng tôi sẽ đảm nhận quá trình lưu trữ, đảm bảo rằng trang web của bạn được lưu trữ an toàn và có sẵn trực tuyến. Dịch vụ lưu trữ của chúng tôi đáng tin cậy, nhanh chóng và được tối ưu hóa cho hiệu suất, để trang web của bạn hoạt động trơn tru mọi lúc, không cần thiết lập thêm từ phía bạn."
+        },
+        {
+          "question": "Dịch vụ lưu trữ trang web có được bao gồm không?",
+          "answer": "Mỗi mẫu được thiết kế với các tính năng thiết yếu cho memecoin của bạn, bao gồm thông tin token, nút mua, tokenomics, lộ trình, hồ sơ nhóm, phần câu hỏi thường gặp và liên kết mạng xã hội. Tất cả các mẫu đều thân thiện với thiết bị di động và được tối ưu hóa cho hiệu suất cao nhất."
+        },
+        {
+          "question": "Chi phí là bao nhiêu?",
+          "answer": "Chúng tôi cung cấp hai gói giá: tùy chọn Tiêu chuẩn với giá 0,045 SOL cho mỗi trang web và tùy chọn Cao cấp với giá 0,25 SOL, bao gồm quyền truy cập vào các mẫu độc quyền và các tính năng nâng cao. Chọn gói phù hợp nhất với nhu cầu của bạn."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Cổ điển",
+        "description": "Mẫu này được tạo ra không chỉ để trình bày memecoin, mà còn để biến chuyến thăm trang web thành một trải nghiệm đáng nhớ. Ngay từ những giây đầu tiên, người dùng bước vào một thế giới tươi sáng và năng động, nơi mọi thứ đều nói lên sự sáng tạo, táo bạo và nhẹ nhàng của dự án. Thành phần trực quan của mẫu như thể hét lên: \"Đây là nơi bắt đầu một câu chuyện đáng nhớ!\"",
+        "shortDescription": "Mẫu này được tạo ra không chỉ để trình bày memecoin, mà còn để biến chuyến thăm trang web thành một trải nghiệm đáng nhớ.",
+        "features": [
+          "Điều hướng trực quan",
+          "Hiệu ứng đẹp mắt",
+          "Cấu trúc rõ ràng",
+          "Tương tác nhanh chóng"
+        ]
+      },
+      "simple": {
+        "label": "Đơn giản",
+        "description": "Mẫu này là hiện thân của sự đơn giản và tiện lợi, được tạo ra đặc biệt cho những ai muốn trình bày memecoin của họ một cách nhanh chóng và dễ dàng. Nó cho phép bạn tập trung vào điều chính mà không làm người dùng phân tâm bởi các chi tiết không cần thiết. Với mẫu này, bạn không cần phải hiểu các chi tiết kỹ thuật phức tạp hoặc dành hàng giờ để tùy chỉnh. Chỉ cần điền vào các trường, tải lên các hình ảnh cần thiết — và trang web của bạn đã sẵn sàng!",
+        "shortDescription": "Mẫu này là hiện thân của sự đơn giản và tiện lợi, được tạo ra đặc biệt cho những ai muốn trình bày memecoin của họ một cách nhanh chóng và dễ dàng.",
+        "features": [
+          "Sự đơn giản trực quan",
+          "Giao diện hiện đại",
+          "Tính năng",
+          "Tập trung vào memecoin"
+        ]
+      },
+      "impressive": {
+        "label": "Ấn tượng",
+        "description": "Mẫu này là lựa chọn hoàn hảo để tạo trang web memecoin của bạn, thu hút sự chú ý và trở thành một sự kiện đáng nhớ trong thế giới tiền điện tử. Thân thiện với người dùng, đầy màu sắc và chức năng, nó giúp bạn dễ dàng trình bày dự án của mình cho một lượng lớn khán giả. Mẫu được thiết kế với sự dễ sử dụng và thiết kế phong cách, để ngay cả người mới bắt đầu cũng có thể khởi chạy trang web của họ trong vài phút. Thiết kế của nó nhấn mạnh sự nhẹ nhàng và hài hước đặc trưng của memecoin, tạo ra một bầu không khí độc đáo và cho phép bạn nổi bật giữa các dự án khác.",
+        "shortDescription": "Mẫu này là lựa chọn hoàn hảo để tạo trang web memecoin của bạn, thu hút sự chú ý và trở thành một sự kiện đáng nhớ trong thế giới tiền điện tử.",
+        "features": [
+          "Phần câu hỏi thường gặp",
+          "Phần Lộ trình",
+          "Thiết kế tươi sáng và tràn đầy năng lượng",
+          "Tùy chỉnh hoàn toàn"
+        ],
+        "badge": "Phổ biến"
+      },
+      "rocket": {
+        "label": "Tên lửa",
+        "description": "Mẫu Tên lửa là một lựa chọn tươi sáng, năng động và đáng nhớ cho trang web memecoin của bạn. Đặc điểm chính của nó là một hoạt ảnh tên lửa phong cách, tạo ra cảm giác chuyển động và tăng trưởng, tượng trưng cho sự phát triển nhanh chóng của dự án bạn. Mẫu này hoàn hảo cho những ai muốn thể hiện sự tham vọng của memecoin và thu hút sự chú ý của người dùng bằng một bài thuyết trình độc đáo.",
+        "shortDescription": "Mẫu Tên lửa là một lựa chọn tươi sáng, năng động và đáng nhớ cho trang web memecoin của bạn.",
+        "features": [
+          "Nền chuyển động",
+          "Nút tương tác",
+          "Khả năng thích ứng",
+          "Tính năng"
+        ],
+        "badge": "Mới"
+      }
+    },
+    "price": "Giá",
+    "selectButton": "Chọn",
+    "backButton": "Quay lại Trang chủ",
+    "toggleViewButton": "Chuyển đổi chế độ xem",
+    "gridView": "Lưới",
+    "sliderView": "Trượt"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Tiêu chuẩn",
+        "description": "Với 0,045 Solana, bạn có thể tạo một trang web bằng mẫu Cổ điển và Đơn giản. Đây là những mẫu đơn giản, với giao diện người dùng rõ ràng và dễ chịu. Chúng dễ dàng chỉnh sửa và thay đổi.",
+        "features": [
+          "Miễn phí tên miền",
+          "Chỉnh sửa sau khi tạo"
+        ]
+      },
+      "advanced": {
+        "label": "Nâng cao",
+        "description": "Với 0,05 SOL, bạn có thể sử dụng mẫu Ấn tượng. Mẫu này chứa đầy các yếu tố khác nhau mà bạn có thể chỉnh sửa để phù hợp với memtoken của bạn. Mẫu này có các khối như \"Cách mua\", \"Câu hỏi thường gặp\", \"Lộ trình\".",
+        "features": [
+          "Miễn phí tên miền",
+          "Chỉnh sửa sau khi tạo",
+          "Lộ trình",
+          "Câu hỏi thường gặp",
+          "Cách mua"
+        ]
+      },
+      "professional": {
+        "label": "Chuyên nghiệp",
+        "description": "Với 0,065 SOL, bạn sẽ nhận được một mẫu hoàn toàn chuyên nghiệp, Tên lửa, với các hoạt ảnh, các khối khác nhau, nút bấm, chỉnh sửa đầy đủ cho memecoin của bạn.",
+        "features": [
+          "Miễn phí tên miền",
+          "Chỉnh sửa sau khi tạo",
+          "Tokenomics",
+          "Câu hỏi thường gặp",
+          "Hoạt ảnh"
+        ]
+      }
+    },
+    "createButton": "Bắt đầu tạo"
+  },
+  "account": {
+    "walletAddressLabel": "Địa chỉ ví",
+    "unauthorizedMessage": "Có vẻ như bạn không được ủy quyền",
+    "signOutButton": "Đăng xuất",
+    "editButton": "Chỉnh sửa",
+    "changeDomain": {
+      "button": "Thay đổi tên miền",
+      "title": "Thay đổi tên miền",
+      "description": "Nhập một tên miền phụ hợp lệ (2-20 ký tự) sử dụng chữ cái, số và dấu gạch ngang. Không được phép sử dụng khoảng trắng hoặc ký tự đặc biệt.",
+      "submitButton": "Thay đổi"
+    },
+    "delete": {
+      "button": "Xóa",
+      "title": "Bạn có chắc chắn tuyệt đối không?",
+      "description": "Hành động này không thể hoàn tác. Điều này sẽ xóa vĩnh viễn dữ liệu trang web của bạn khỏi máy chủ của chúng tôi.",
+      "successMessage": "Trang web của bạn đã được xóa thành công!",
+      "cancelButton": "Hủy",
+      "submitButton": "Xóa"
+    },
+    "unableToFetchMessage": "Không thể tải các trang web",
+    "noWebsitesMessage": "Bạn chưa có trang web nào"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Trang bảng điều khiển",
+        "list": [
+          "Trên trang chủ, bạn có thể viết tên trang web của mình và nhấp vào nút \"Bắt đầu xây dựng\"",
+          "Chọn mẫu bạn thích.",
+          "Trang trí trang của bạn theo ý muốn.",
+          "Nhấp vào nút \"Tạo web\"",
+          "Xác nhận giao dịch và thanh toán.",
+          "Sau khi thanh toán thành công, chúc mừng, bạn đã tạo thành công trang web của mình!"
+        ]
+      },
+      {
+        "title": "Phần mẫu",
+        "list": [
+          "Đi đến phần \"Mẫu\"",
+          "Chọn mẫu bạn thích.",
+          "Trang trí trang của bạn theo ý muốn.",
+          "Nhấp vào nút \"Tạo web\"",
+          "Xác nhận giao dịch và thanh toán.",
+          "Sau khi thanh toán thành công, chúc mừng, bạn đã tạo thành công trang web của mình!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "Nếu bạn có bất kỳ vấn đề nào, lỗi với giao dịch, đề xuất cải thiện trang web của chúng tôi hoặc muốn hỏi điều gì đó, đừng ngần ngại liên hệ với chúng tôi, chúng tôi sẽ sẵn lòng giúp đỡ bạn:",
+      "email": "Email"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Quay lại các mẫu",
+    "description": "Tạo trang web của bạn chỉ trong 5 phút",
+    "create": {
+      "button": "Tạo Trang web",
+      "title": "Nhập tên miền của bạn",
+      "description": "Nhập một tên miền phụ hợp lệ (2-20 ký tự) sử dụng chữ cái, số và dấu gạch ngang. Không được phép sử dụng khoảng trắng hoặc ký tự đặc biệt.",
+      "successMessage": "Trang web của bạn đã được tạo thành công!",
+      "submitButton": "Xác nhận và Tạo"
+    },
+    "update": {
+      "button": "Lưu thay đổi",
+      "successMessage": "Trang web của bạn đã được tạo thành công!"
+    },
+    "classic": {
+      "categories": {
+        "text": "Văn bản",
+        "images": "Hình ảnh",
+        "links": "Liên kết",
+        "howToBuy": "Cách Mua",
+        "buttons": "Nút bấm"
+      },
+      "fields": {
+        "logoText": "Tên Dự án",
+        "ticker": "Ticker",
+        "contractAddress": "Địa chỉ Hợp đồng",
+        "description": "Mô tả",
+        "buyNowText": "Mua Ngay",
+        "logoImage": "Logo",
+        "background": "Nền",
+        "tokenImage": "Hình ảnh Token",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Sách trắng",
+        "authorTelegram": "Telegram Tác giả",
+        "authorTwitter": "Twitter Tác giả",
+        "authorDiscord": "Discord Tác giả",
+        "showHowToBuy": "Hiển thị Cách Mua",
+        "firstStep": "Bước đầu tiên",
+        "firstStepImage": "Hình ảnh Bước đầu tiên",
+        "secondStep": "Bước thứ hai",
+        "secondStepImage": "Hình ảnh Bước thứ hai",
+        "thirdStep": "Bước thứ ba",
+        "thirdStepImage": "Hình ảnh Bước thứ ba",
+        "buyNowLink": "Liên kết Mua Ngay"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Văn bản",
+        "images": "Hình ảnh",
+        "links": "Liên kết"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Địa chỉ Hợp đồng",
+        "background": "Nền",
+        "tokenImage": "Hình ảnh Token",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Sách trắng",
+        "authorTelegram": "Telegram Tác giả",
+        "authorTwitter": "Twitter Tác giả",
+        "authorDiscord": "Discord Tác giả"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Văn bản",
+        "images": "Hình ảnh",
+        "links": "Liên kết",
+        "buttons": "Nút bấm",
+        "howToBuy": "Cách Mua",
+        "roadmap": "Lộ trình",
+        "faq": "Câu hỏi thường gặp"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Địa chỉ Hợp đồng",
+        "buyNowText": "Mua Ngay",
+        "aboutUsTitle": "Tiêu đề Về Chúng Tôi",
+        "aboutUsDescription": "Mô tả Về Chúng Tôi",
+        "logo": "Logo",
+        "primaryBackground": "Nền Chính",
+        "secondaryBackground": "Nền Phụ",
+        "tokenImage": "Hình ảnh Token",
+        "aboutUsPreview": "Xem trước Về Chúng Tôi",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Sách trắng",
+        "authorTelegram": "Telegram Tác giả",
+        "authorTwitter": "Twitter Tác giả",
+        "authorDiscord": "Discord Tác giả",
+        "buyNowLink": "Liên kết Mua Ngay",
+        "roadmapTitle": "Tiêu đề Lộ trình",
+        "roadmapFirstStepTitle": "Tiêu đề Giai đoạn 1",
+        "roadmapFirstStepDescription": "Mô tả Giai đoạn 1",
+        "roadmapSecondStepTitle": "Tiêu đề Giai đoạn 2",
+        "roadmapSecondStepDescription": "Mô tả Giai đoạn 2",
+        "roadmapThirdStepTitle": "Tiêu đề Giai đoạn 3",
+        "roadmapThirdStepDescription": "Mô tả Giai đoạn 3",
+        "howToBuyTitle": "Tiêu đề Cách Mua",
+        "howToBuyFirstStep": "Bước 1 Cách Mua",
+        "howToBuySecondStep": "Bước 2 Cách Mua",
+        "howToBuyThirdStep": "Bước 3 Cách Mua",
+        "howToBuyFourthStep": "Bước 4 Cách Mua",
+        "FAQTitle": "Tiêu đề Câu hỏi thường gặp",
+        "firstQuestion": "Câu hỏi 1 Câu hỏi thường gặp",
+        "firstAnswer": "Câu trả lời 1 Câu hỏi thường gặp",
+        "secondQuestion": "Câu hỏi 2 Câu hỏi thường gặp",
+        "secondAnswer": "Câu trả lời 2 Câu hỏi thường gặp",
+        "thirdQuestion": "Câu hỏi 3 Câu hỏi thường gặp",
+        "thirdAnswer": "Câu trả lời 3 Câu hỏi thường gặp",
+        "fourthQuestion": "Câu hỏi 4 Câu hỏi thường gặp",
+        "fourthAnswer": "Câu trả lời 4 Câu hỏi thường gặp"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Màu nhấn",
+        "text": "Văn bản",
+        "images": "Hình ảnh",
+        "buttons": "Nút bấm",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Dòng thời gian Nhiệm vụ",
+        "missionControl": "Kiểm soát Nhiệm vụ",
+        "faq": "Câu hỏi thường gặp",
+        "links": "Liên kết"
+      },
+      "fields": {
+        "primaryColor": "Màu chính",
+        "secondaryColor": "Màu phụ",
+        "heroTitle": "Tiêu đề Hero",
+        "ticker": "Ticker",
+        "description": "Mô tả",
+        "contractAddress": "Địa chỉ Hợp đồng",
+        "contractAddressLabel": "Nhãn Địa chỉ Hợp đồng",
+        "projectName": "Tên Dự án",
+        "buyTicker": "Nút Tiêu đề",
+        "buyNow": "Nút Mua Ngay",
+        "joinUs": "Nút Tham Gia",
+        "tokenomicsTitle": "Tiêu đề Tokenomics",
+        "missionTimelineTitle": "Tiêu đề Dòng thời gian Nhiệm vụ",
+        "missionControlTitle": "Tiêu đề Kiểm soát Nhiệm vụ",
+        "FAQTitle": "Tiêu đề Câu hỏi thường gặp Nhiệm vụ",
+        "joinTitle": "Tiêu đề Tham Gia Nhiệm vụ",
+        "tokenImage": "Hình ảnh Token",
+        "buyTickerLink": "URL Nút Mua Ticker",
+        "buyNowLink": "URL Nút Mua Ngay",
+        "joinUsLink": "URL Nút Tham Gia",
+        "firstTokenomicsIcon": "Biểu tượng Tokenomics đầu tiên",
+        "firstTokenomicsTitle": "Tiêu đề Tokenomics đầu tiên",
+        "firstTokenomicsValue": "Giá trị Tokenomics đầu tiên",
+        "secondTokenomicsIcon": "Biểu tượng Tokenomics thứ hai",
+        "secondTokenomicsTitle": "Tiêu đề Tokenomics thứ hai",
+        "secondTokenomicsValue": "Giá trị Tokenomics thứ hai",
+        "thirdTokenomicsIcon": "Biểu tượng Tokenomics thứ ba",
+        "thirdTokenomicsTitle": "Tiêu đề Tokenomics thứ ba",
+        "thirdTokenomicsValue": "Giá trị Tokenomics thứ ba",
+        "fourthTokenomicsIcon": "Biểu tượng Tokenomics thứ tư",
+        "fourthTokenomicsTitle": "Tiêu đề Tokenomics thứ tư",
+        "fourthTokenomicsValue": "Giá trị Tokenomics thứ tư",
+        "firstTimelinePhaseTitle": "Tiêu đề Giai đoạn 1",
+        "firstTimelineTitle": "Tiêu đề Giai đoạn 1",
+        "firstTimelineDescription": "Mô tả Giai đoạn 1",
+        "firstTimelineDate": "Ngày Giai đoạn 1",
+        "secondTimelinePhaseTitle": "Tiêu đề Giai đoạn 2",
+        "secondTimelineTitle": "Tiêu đề Giai đoạn 2",
+        "secondTimelineDescription": "Mô tả Giai đoạn 2",
+        "secondTimelineDate": "Ngày Giai đoạn 2",
+        "thirdTimelinePhaseTitle": "Tiêu đề Giai đoạn 3",
+        "thirdTimelineTitle": "Tiêu đề Giai đoạn 3",
+        "thirdTimelineDescription": "Mô tả Giai đoạn 3",
+        "thirdTimelineDate": "Ngày Giai đoạn 3",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

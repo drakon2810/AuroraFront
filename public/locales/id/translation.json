@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Dasbor"
+      },
+      {
+        "path": "/templates",
+        "label": "Templat"
+      },
+      {
+        "path": "/pricing",
+        "label": "Harga"
+      }
+    ],
+    "accountButton": "Akun",
+    "signOutButton": "Keluar",
+    "connectButton": "Menghubungkan",
+    "themeLabel": "Tema",
+    "languageLabel": "Bahasa"
+  },
+  "footer": {
+    "description": "Bergabunglah dengan ribuan kreator yang dengan cepat membangun masa depan memecoin berbasis Solana. Baik Anda meluncurkan token pertama Anda atau memperluas proyek Anda, platform kami menyediakan semua alat yang Anda butuhkan untuk merancang, menyesuaikan, dan meluncurkan situs web profesional untuk memecoin Solana Anda—dengan cepat dan mudah.",
+    "copyright": "Semua hak dilindungi undang-undang.",
+    "navigation": {
+      "label": "Navigasi",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Dasbor"
+        },
+        {
+          "path": "/pricing",
+          "label": "Harga"
+        },
+        {
+          "path": "/templates",
+          "label": "Templat"
+        },
+        {
+          "path": "/start",
+          "label": "Bagaimana Memulainya"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Menghubungkan"
+    },
+    "terms": "Ketentuan",
+    "privacy": "Pribadi"
+  },
+  "home": {
+    "hero": {
+      "title": "Tanpa kode, tanpa ribet, hanya keajaiban bulan",
+      "description": "Lupakan detail yang membosankan. Pilih templat yang menarik, beri merek dengan nama koin Anda, dan bersiaplah untuk melambung.",
+      "dashboardButton": "Pergi ke Dasbor",
+      "howToButton": "Cara memulai",
+      "scrollToExploreButton": "Gulir untuk menjelajahi"
+    },
+    "launch": {
+      "badge": "Cepat. Inovatif. Efektif",
+      "title": "Mulai Perjalanan Solana Anda dengan Mudah",
+      "description": "Bangun platform yang dinamis dan dapat disesuaikan untuk proyek Solana Anda—tanpa perlu coding. Tingkatkan kehadiran Anda dalam ekosistem blockchain yang bergerak cepat.",
+      "startBuildingButton": "Mulai Membangun",
+      "inputPlaceholder": "situs Anda"
+    },
+    "features": {
+      "badge": "Manfaat Inti",
+      "title": "Semua Alat yang Anda Butuhkan",
+      "description": "Bangun situs web unik untuk memamerkan proyek memecoin Anda, dilengkapi dengan fitur canggih",
+      "cards": {
+        "template": {
+          "title": "Templat Inovatif",
+          "description": "Jelajahi berbagai desain yang ramping dan responsif yang dirancang khusus untuk proyek memecoin. Setiap templat disesuaikan untuk dampak maksimal dan keterlibatan pengguna.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Pengeditan Tanpa Ribet",
+          "description": "Personalisasi situs web Anda dengan mudah menggunakan editor intuitif kami. Ubah warna, teks, dan tata letak dengan mudah—tanpa perlu keterampilan teknis",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Pembaruan Instan",
+          "description": "Lihat hasil edit Anda secara real-time saat Anda membuatnya. Sempurnakan setiap detail sebelum meluncurkan situs Anda ke komunitas.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "description": "Panduan Penting untuk Pertanyaan Umum",
+      "questions": [
+        {
+          "question": "Apa itu AURORA?",
+          "answer": "AURORA adalah platform yang memungkinkan Anda membuat situs web profesional untuk token meme Anda dengan cepat. Cukup pilih templat, personalisasi dengan detail token Anda, dan unduh file situs web Anda secara instan."
+        },
+        {
+          "question": "Bagaimana cara kerja AURORA?",
+          "answer": "AURORA menyederhanakan pembuatan situs web untuk token meme Anda. Pilih templat, sesuaikan dengan informasi token Anda, dan segera terima file situs web siap unduh—tanpa perlu keterampilan teknis"
+        },
+        {
+          "question": "Apakah kami menghosting situs web Anda?",
+          "answer": "Ya, kami menyediakan hosting penuh untuk situs web Anda. Setelah Anda membuat dan menyesuaikan situs Anda menggunakan templat kami, kami akan mengurus proses hosting, memastikan bahwa situs web Anda disimpan dengan aman dan tersedia online. Hosting kami andal, cepat, dan dioptimalkan untuk kinerja, sehingga situs web Anda berjalan lancar setiap saat, tanpa perlu pengaturan tambahan dari Anda."
+        },
+        {
+          "question": "Apakah hosting situs web termasuk?",
+          "answer": "Setiap templat dirancang dengan fitur penting untuk memecoin Anda, termasuk detail token, tombol beli, tokenomics, roadmap, profil tim, bagian FAQ, dan tautan media sosial. Semua templat ramah seluler dan dioptimalkan untuk kinerja terbaik"
+        },
+        {
+          "question": "Berapa biayanya?",
+          "answer": "Kami menawarkan dua paket harga: opsi Standar seharga 0,045 SOL per situs web, dan opsi Premium seharga 0,25 SOL, yang mencakup akses ke templat eksklusif dan fitur canggih. Pilih paket yang paling sesuai dengan kebutuhan Anda."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Klasik",
+        "description": "Templat ini dibuat tidak hanya untuk presentasi memecoin, tetapi untuk mengubah kunjungan ke situs menjadi pengalaman yang berkesan. Dari detik pertama, pengguna memasuki dunia yang cerah dan dinamis di mana semuanya berbicara tentang kreativitas, keberanian, dan ringannya proyek. Komponen visual templat seolah-olah berteriak: \"Di sinilah cerita dimulai, yang patut diingat!\"",
+        "shortDescription": "Templat ini dibuat tidak hanya untuk presentasi memecoin, tetapi untuk mengubah kunjungan ke situs menjadi pengalaman yang berkesan",
+        "features": [
+          "Navigasi intuitif",
+          "Efek yang indah",
+          "Struktur yang jelas",
+          "Interaksi cepat"
+        ]
+      },
+      "simple": {
+        "label": "Sederhana",
+        "description": "Templat ini adalah perwujudan kesederhanaan dan kenyamanan, dibuat khusus untuk mereka yang ingin dengan cepat dan mudah mempresentasikan memecoin mereka. Ini memungkinkan Anda fokus pada hal utama tanpa mengalihkan perhatian pengguna dengan detail yang tidak perlu. Dengan templat ini, Anda tidak perlu memahami detail teknis yang rumit atau menghabiskan waktu berjam-jam untuk penyesuaian. Cukup isi bidang, unggah gambar yang diperlukan—dan situs Anda siap!",
+        "shortDescription": "Templat ini adalah perwujudan kesederhanaan dan kenyamanan, dibuat khusus untuk mereka yang ingin dengan cepat dan mudah mempresentasikan memecoin mereka.",
+        "features": [
+          "Kesederhanaan visual",
+          "Antarmuka modern",
+          "Fungsionalitas",
+          "Fokus pada memecoin"
+        ]
+      },
+      "impressive": {
+        "label": "Mengesankan",
+        "description": "Templat ini adalah pilihan sempurna untuk membuat situs web memecoin Anda yang akan menarik perhatian dan menjadi acara yang berkesan di dunia kripto. Ramah pengguna, penuh warna, dan fungsional, ini memudahkan Anda untuk mempresentasikan proyek Anda kepada audiens yang luas. Templat ini dirancang dengan mempertimbangkan kemudahan penggunaan dan desain yang stylish, sehingga bahkan pemula dapat meluncurkan situs mereka dalam beberapa menit. Desainnya menekankan ringan dan humor yang khas dari memecoin, menciptakan atmosfer unik dan memungkinkan Anda untuk menonjol di antara proyek lain.",
+        "shortDescription": "Templat ini adalah pilihan sempurna untuk membuat situs web memecoin Anda yang akan menarik perhatian dan menjadi acara yang berkesan di dunia kripto.",
+        "features": [
+          "Bagian FAQ",
+          "Bagian Roadmap",
+          "Desain yang cerah dan energetik",
+          "Penyesuaian penuh"
+        ],
+        "badge": "Populer"
+      },
+      "rocket": {
+        "label": "Roket",
+        "description": "Templat Roket adalah pilihan yang cerah, dinamis, dan berkesan untuk situs web memecoin Anda. Fitur utamanya adalah animasi roket yang stylish, yang menciptakan rasa pergerakan dan pertumbuhan, melambangkan perkembangan cepat proyek Anda. Templat ini sempurna untuk mereka yang ingin menunjukkan ambisi memecoin mereka dan menarik perhatian pengguna dengan presentasi yang unik.",
+        "shortDescription": "Templat Roket adalah pilihan yang cerah, dinamis, dan berkesan untuk situs web memecoin Anda.",
+        "features": [
+          "Latar belakang bergerak",
+          "Tombol interaktif",
+          "Adaptabilitas",
+          "Fungsionalitas"
+        ],
+        "badge": "Baru"
+      }
+    },
+    "price": "Harga",
+    "selectButton": "Pilih",
+    "backButton": "Kembali ke Beranda",
+    "toggleViewButton": "Alihkan tampilan",
+    "gridView": "Grid",
+    "sliderView": "Slider"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Standar",
+        "description": "Dengan 0,045 Solana, Anda dapat membuat situs web menggunakan templat Klasik dan Sederhana. Ini adalah templat sederhana, dengan antarmuka pengguna yang jelas dan menyenangkan. Mudah untuk diedit dan dimodifikasi.",
+        "features": [
+          "Domain gratis",
+          "Pengeditan setelah pembuatan"
+        ]
+      },
+      "advanced": {
+        "label": "Lanjutan",
+        "description": "Dengan 0,05 sol, Anda dapat menggunakan templat Mengesankan. Templat ini penuh dengan berbagai elemen yang dapat Anda edit agar sesuai dengan memtoken Anda. Templat ini memiliki blok seperti \"Cara Membeli\", \"FAQ\", \"Roadmap\".",
+        "features": [
+          "Domain gratis",
+          "Pengeditan setelah pembuatan",
+          "Roadmap",
+          "FAQ",
+          "Cara membeli"
+        ]
+      },
+      "professional": {
+        "label": "Profesional",
+        "description": "Dengan 0,065 Sol, Anda akan mendapatkan templat Roket yang sepenuhnya profesional dengan animasi, berbagai blok, tombol, pengeditan penuh untuk memecoin Anda.",
+        "features": [
+          "Domain gratis",
+          "Pengeditan setelah pembuatan",
+          "Tokenomics",
+          "FAQ",
+          "Animasi"
+        ]
+      }
+    },
+    "createButton": "Mulai membuat"
+  },
+  "account": {
+    "walletAddressLabel": "Alamat Dompet",
+    "unauthorizedMessage": "Sepertinya Anda tidak diotorisasi",
+    "signOutButton": "Keluar",
+    "editButton": "Edit",
+    "changeDomain": {
+      "button": "Ubah domain",
+      "title": "Ubah domain",
+      "description": "Masukkan subdomain yang valid (2-20 karakter) menggunakan huruf, angka, dan tanda hubung. Tidak boleh ada spasi atau karakter khusus.",
+      "submitButton": "Ubah"
+    },
+    "delete": {
+      "button": "Hapus",
+      "title": "Apakah Anda benar-benar yakin?",
+      "description": "Tindakan ini tidak dapat dibatalkan. Ini akan menghapus data situs web Anda secara permanen dari server kami.",
+      "successMessage": "Situs web Anda berhasil dihapus!",
+      "cancelButton": "Batal",
+      "submitButton": "Hapus"
+    },
+    "unableToFetchMessage": "Tidak dapat mengambil situs web",
+    "noWebsitesMessage": "Anda belum memiliki situs web"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Halaman dasbor",
+        "list": [
+          "Di halaman beranda, Anda dapat menulis nama situs Anda dan mengklik tombol \"Mulai Membangun\"",
+          "Pilih template yang Anda sukai.",
+          "Hias halaman Anda sesuai keinginan.",
+          "Klik tombol \"Buat Web\"",
+          "Konfirmasi transaksi Anda dan bayar.",
+          "Setelah pembayaran berhasil, selamat, Anda telah berhasil membuat situs web Anda!"
+        ]
+      },
+      {
+        "title": "Bagian template",
+        "list": [
+          "Buka bagian \"Template\"",
+          "Pilih template yang Anda sukai.",
+          "Hias halaman Anda sesuai keinginan.",
+          "Klik tombol \"Buat Web\"",
+          "Konfirmasi transaksi Anda dan bayar.",
+          "Setelah pembayaran berhasil, selamat, Anda telah berhasil membuat situs web Anda!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "Jika Anda memiliki masalah, kesalahan dengan transaksi, saran untuk meningkatkan situs kami, atau ingin menanyakan sesuatu, jangan ragu untuk menghubungi kami, kami akan dengan senang hati membantu Anda:",
+      "email": "Email"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Kembali ke templat",
+    "description": "Buat situs web Anda hanya dalam 5 menit",
+    "create": {
+      "button": "Buat Web",
+      "title": "Masukkan domain Anda",
+      "description": "Masukkan subdomain yang valid (2-20 karakter) menggunakan huruf, angka, dan tanda hubung. Tidak boleh ada spasi atau karakter khusus.",
+      "successMessage": "Situs web Anda berhasil dibuat!",
+      "submitButton": "Konfirmasi dan Buat"
+    },
+    "update": {
+      "button": "Simpan perubahan",
+      "successMessage": "Situs web Anda berhasil dibuat!"
+    },
+    "classic": {
+      "categories": {
+        "text": "Teks",
+        "images": "Gambar",
+        "links": "Tautan",
+        "howToBuy": "Cara Membeli",
+        "buttons": "Tombol"
+      },
+      "fields": {
+        "logoText": "Nama Proyek",
+        "ticker": "Ticker",
+        "contractAddress": "Alamat Kontrak",
+        "description": "Deskripsi",
+        "buyNowText": "Beli Sekarang",
+        "logoImage": "Logo",
+        "background": "Latar Belakang",
+        "tokenImage": "Gambar Token",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Telegram Penulis",
+        "authorTwitter": "Twitter Penulis",
+        "authorDiscord": "Discord Penulis",
+        "showHowToBuy": "Tampilkan Cara Membeli",
+        "firstStep": "Langkah Pertama",
+        "firstStepImage": "Gambar Langkah Pertama",
+        "secondStep": "Langkah Kedua",
+        "secondStepImage": "Gambar Langkah Kedua",
+        "thirdStep": "Langkah Ketiga",
+        "thirdStepImage": "Gambar Langkah Ketiga",
+        "buyNowLink": "Tautan Beli Sekarang"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Teks",
+        "images": "Gambar",
+        "links": "Tautan"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Alamat Kontrak",
+        "background": "Latar Belakang",
+        "tokenImage": "Gambar Token",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Telegram Penulis",
+        "authorTwitter": "Twitter Penulis",
+        "authorDiscord": "Discord Penulis"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Teks",
+        "images": "Gambar",
+        "links": "Tautan",
+        "buttons": "Tombol",
+        "howToBuy": "Cara Membeli",
+        "roadmap": "Roadmap",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Alamat Kontrak",
+        "buyNowText": "Beli Sekarang",
+        "aboutUsTitle": "Judul Tentang Kami",
+        "aboutUsDescription": "Deskripsi Tentang Kami",
+        "logo": "Logo",
+        "primaryBackground": "Latar Belakang Utama",
+        "secondaryBackground": "Latar Belakang Sekunder",
+        "tokenImage": "Gambar Token",
+        "aboutUsPreview": "Pratinjau Tentang Kami",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Telegram Penulis",
+        "authorTwitter": "Twitter Penulis",
+        "authorDiscord": "Discord Penulis",
+        "buyNowLink": "Tautan Beli Sekarang",
+        "roadmapTitle": "Judul Roadmap",
+        "roadmapFirstStepTitle": "Judul Fase 1",
+        "roadmapFirstStepDescription": "Deskripsi Fase 1",
+        "roadmapSecondStepTitle": "Judul Fase 2",
+        "roadmapSecondStepDescription": "Deskripsi Fase 2",
+        "roadmapThirdStepTitle": "Judul Fase 3",
+        "roadmapThirdStepDescription": "Deskripsi Fase 3",
+        "howToBuyTitle": "Judul Cara Membeli",
+        "howToBuyFirstStep": "Langkah 1 Cara Membeli",
+        "howToBuySecondStep": "Langkah 2 Cara Membeli",
+        "howToBuyThirdStep": "Langkah 3 Cara Membeli",
+        "howToBuyFourthStep": "Langkah 4 Cara Membeli",
+        "FAQTitle": "Judul FAQ",
+        "firstQuestion": "Pertanyaan FAQ 1",
+        "firstAnswer": "Jawaban FAQ 1",
+        "secondQuestion": "Pertanyaan FAQ 2",
+        "secondAnswer": "Jawaban FAQ 2",
+        "thirdQuestion": "Pertanyaan FAQ 3",
+        "thirdAnswer": "Jawaban FAQ 3",
+        "fourthQuestion": "Pertanyaan FAQ 4",
+        "fourthAnswer": "Jawaban FAQ 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Warna Aksen",
+        "text": "Teks",
+        "images": "Gambar",
+        "buttons": "Tombol",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Timeline Misi",
+        "missionControl": "Kontrol Misi",
+        "faq": "FAQ",
+        "links": "Tautan"
+      },
+      "fields": {
+        "primaryColor": "Warna Utama",
+        "secondaryColor": "Warna Sekunder",
+        "heroTitle": "Judul Hero",
+        "ticker": "Ticker",
+        "description": "Deskripsi",
+        "contractAddress": "Alamat Kontrak",
+        "contractAddressLabel": "Label Alamat Kontrak",
+        "projectName": "Nama Proyek",
+        "buyTicker": "Tombol Header",
+        "buyNow": "Tombol Beli Sekarang",
+        "joinUs": "Tombol Bergabung",
+        "tokenomicsTitle": "Judul Tokenomics",
+        "missionTimelineTitle": "Judul Timeline Misi",
+        "missionControlTitle": "Judul Kontrol Misi",
+        "FAQTitle": "Judul FAQ Misi",
+        "joinTitle": "Judul Bergabung dengan Misi",
+        "tokenImage": "Gambar Token",
+        "buyTickerLink": "URL Beli Ticker",
+        "buyNowLink": "URL Beli Sekarang",
+        "joinUsLink": "URL Bergabung",
+        "firstTokenomicsIcon": "Ikon Tokenomics Pertama",
+        "firstTokenomicsTitle": "Judul Tokenomics Pertama",
+        "firstTokenomicsValue": "Nilai Tokenomics Pertama",
+        "secondTokenomicsIcon": "Ikon Tokenomics Kedua",
+        "secondTokenomicsTitle": "Judul Tokenomics Kedua",
+        "secondTokenomicsValue": "Nilai Tokenomics Kedua",
+        "thirdTokenomicsIcon": "Ikon Tokenomics Ketiga",
+        "thirdTokenomicsTitle": "Judul Tokenomics Ketiga",
+        "thirdTokenomicsValue": "Nilai Tokenomics Ketiga",
+        "fourthTokenomicsIcon": "Ikon Tokenomics Keempat",
+        "fourthTokenomicsTitle": "Judul Tokenomics Keempat",
+        "fourthTokenomicsValue": "Nilai Tokenomics Keempat",
+        "firstTimelinePhaseTitle": "Judul Fase 1",
+        "firstTimelineTitle": "Judul Fase 1",
+        "firstTimelineDescription": "Deskripsi Fase 1",
+        "firstTimelineDate": "Tanggal Fase 1",
+        "secondTimelinePhaseTitle": "Judul Fase 2",
+        "secondTimelineTitle": "Judul Fase 2",
+        "secondTimelineDescription": "Deskripsi Fase 2",
+        "secondTimelineDate": "Tanggal Fase 2",
+        "thirdTimelinePhaseTitle": "Judul Fase 3",
+        "thirdTimelineTitle": "Judul Fase 3",
+        "thirdTimelineDescription": "Deskripsi Fase 3",
+        "thirdTimelineDate": "Tanggal Fase 3",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "header": {
+    "navLinks": [
+      {
+        "path": "/dashboard",
+        "label": "Dashboard"
+      },
+      {
+        "path": "/templates",
+        "label": "Templates"
+      },
+      {
+        "path": "/pricing",
+        "label": "Pricing"
+      }
+    ],
+    "accountButton": "Account",
+    "signOutButton": "Sign out",
+    "connectButton": "Connect",
+    "themeLabel": "Theme",
+    "languageLabel": "Language"
+  },
+  "footer": {
+    "description": "Join thousands of creators who are rapidly building the future of Solana-based memecoins. Whether you’re launching your first token or expanding your project, our platform provides all the tools you need to design, customize, and launch a professional website for your Solana memecoin—quickly and with ease.",
+    "copyright": "All rights reserved.",
+    "navigation": {
+      "label": "Navigation",
+      "items": [
+        {
+          "path": "/dashboard",
+          "label": "Dashboard"
+        },
+        {
+          "path": "/pricing",
+          "label": "Pricing"
+        },
+        {
+          "path": "/templates",
+          "label": "Templates"
+        },
+        {
+          "path": "/start",
+          "label": "How to Start"
+        }
+      ]
+    },
+    "connect": {
+      "label": "Connect"
+    },
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "home": {
+    "hero": {
+      "title": "No code, no hassle, just moonlight magic",
+      "description": "Forget the boring details. Choose a wild template, brand it with your coin’s name, and get ready to soar.",
+      "dashboardButton": "Go to Dashboard",
+      "howToButton": "How to start",
+      "scrollToExploreButton": "Scroll to explore"
+    },
+    "launch": {
+      "badge": "Quick. Innovative. Effective",
+      "title": "Kickstart Your Solana Journey Effortlessly",
+      "description": "Build dynamic, customizable platforms for your Solana projects—no coding required. Elevate your presence in the fast-paced blockchain ecosystem.",
+      "startBuildingButton": "Start Building",
+      "inputPlaceholder": "your site"
+    },
+    "features": {
+      "badge": "Core Benefits",
+      "title": "All the Tools You Need",
+      "description": "Build a unique website to showcase your memecoin project, packed with advanced features",
+      "cards": {
+        "template": {
+          "title": "Innovative Templates",
+          "description": "Explore a range of sleek, responsive designs crafted specifically for memecoin projects. Each template is fine-tuned for maximum impact and user engagement.",
+          "iconName": "rocket"
+        },
+        "editing": {
+          "title": "Effortless Editing",
+          "description": "Personalize your website with ease using our intuitive editor. Modify colors, text, and layouts effortlessly—no technical skills needed",
+          "iconName": "palette"
+        },
+        "updates": {
+          "title": "Instant Updates",
+          "description": "View your edits in real-time as you make them. Refine every detail to perfection before launching your site to the community.",
+          "iconName": "lightning"
+        }
+      }
+    },
+    "FAQs": {
+      "title": "Frequently Asked Questions",
+      "description": "Your Essential Guide to Common Questions",
+      "questions": [
+        {
+          "question": "What is AURORA?",
+          "answer": "AURORA is a platform that enables you to quickly create professional websites for your meme token. Just select a template, personalize it with your token’s details, and download your website files instantly."
+        },
+        {
+          "question": "How does AURORA work?",
+          "answer": "AURORA streamlines the creation of your meme token’s website. Select a template, customize it with your token information, and instantly receive the website files ready for download—no technical skills needed"
+        },
+        {
+          "question": "Do we host your website?",
+          "answer": "Yes, we provide full hosting for your website. Once you’ve created and customized your site using our templates, we take care of the hosting process, ensuring that your website is securely stored and available online. Our hosting is reliable, fast, and optimized for performance, so your website runs smoothly at all times, with no additional setup required from you."
+        },
+        {
+          "question": "Is website hosting included?",
+          "answer": "Each template is designed with essential features for your memecoin, including token details, buy buttons, tokenomics, roadmap, team profiles, FAQ section, and social media links. All templates are mobile-friendly and optimized for top performance"
+        },
+        {
+          "question": "How much does it cost?",
+          "answer": "We offer two pricing plans: the Standard option for 0.045 SOL per website, and the Premium option for 0.25 SOL, which includes access to exclusive templates and advanced features. Select the plan that works best for your requirements."
+        }
+      ]
+    }
+  },
+  "templates": {
+    "cards": {
+      "classic": {
+        "label": "Classic",
+        "description": "This template is created not just for the presentation of memecoin, but to turn a visit to the site into a memorable experience. From the first seconds the user enters a bright, dynamic world where everything speaks of creativity, boldness and lightness of the project. The visual component of the template as if shouts: \"Here begins the story, which is worth remembering!\"",
+        "shortDescription": "This template is created not just for the presentation of memecoin, but to turn a visit to the site into a memorable experience",
+        "features": [
+          "Intuitive navigation",
+          "Beautiful effects",
+          "Clear structure",
+          "Fast interaction"
+        ]
+      },
+      "simple": {
+        "label": "Simple",
+        "description": "This template is the epitome of simplicity and convenience, created especially for those who want to quickly and easily present their memecoin. It allows you to focus on the main thing without distracting users with unnecessary details. With this template, you don't need to understand complex technical details or spend hours on customization. Just fill in the fields, upload the necessary images - and your site is ready!",
+        "shortDescription": "This template is the epitome of simplicity and convenience, created especially for those who want to quickly and easily present their memecoin.",
+        "features": [
+          "Visual simplicity",
+          "Modern interface",
+          "Functionality",
+          "Focus on memcoin"
+        ]
+      },
+      "impressive": {
+        "label": "Impressive",
+        "description": "This template is the perfect choice for creating your memcoin website that will attract attention and become a memorable event in the crypto world. User-friendly, colorful and functional, it makes it easy to present your project to a wide audience. The template is designed with ease of use and stylish design in mind, so that even beginners can launch their site in a few minutes. Its design emphasizes the lightness and humor characteristic of memcoins, creating a unique atmosphere and allowing you to stand out among other projects.",
+        "shortDescription": "This template is the perfect choice for creating your memecoin website that will attract attention and become a memorable event in the crypto world.",
+        "features": [
+          "FAQ section",
+          "Road Map Section",
+          "Bright and energetic design",
+          "Full customization"
+        ],
+        "badge": "Popular"
+      },
+      "rocket": {
+        "label": "Rocket",
+        "description": "Rocket template is a bright, dynamic and memorable choice for your memecoin website. Its main feature is a stylish rocket animation, which creates a sense of movement and growth, symbolizing the rapid development of your project. This template is perfect for those who want to show the ambitiousness of their memcoin and attract users' attention with a unique presentation.",
+        "shortDescription": "Rocket template is a bright, dynamic and memorable choice for your memecoin website.",
+        "features": [
+          "Motion background",
+          "Interactive buttons",
+          "Adaptability",
+          "Functionality"
+        ],
+        "badge": "New"
+      }
+    },
+    "price": "Price",
+    "selectButton": "Select",
+    "backButton": "Back to Home",
+    "toggleViewButton": "Toggle view",
+    "gridView": "Grid",
+    "sliderView": "Slider"
+  },
+  "pricing": {
+    "cards": {
+      "standard": {
+        "label": "Standard",
+        "description": "For 0.045 Solana you can create a website using Classic and Simple template. These are simple templates, with a clear and pleasant user interface. They are easy to edit and modify.",
+        "features": [
+          "Free domain",
+          "Editing after creation"
+        ]
+      },
+      "advanced": {
+        "label": "Advanced",
+        "description": "For 0.05 sol you can use the Impressive template. This template is full of different elements that you can edit to fit your memtoken. This template has blocks such as \"How to buy\", \"FAQ\", \"Roadmap\".",
+        "features": [
+          "Free domain",
+          "Editing after creation",
+          "Roadmap",
+          "FAQ",
+          "How to buy"
+        ]
+      },
+      "professional": {
+        "label": "Professional",
+        "description": "For 0.065 Sol you will get a fully professional template Rocket with animations, different blocks, buttons, full editing for your memecoin.",
+        "features": [
+          "Free domain",
+          "Editing after creation",
+          "Tokenomics",
+          "FAQ",
+          "Animations"
+        ]
+      }
+    },
+    "createButton": "Start create"
+  },
+  "account": {
+    "walletAddressLabel": "Wallet Address",
+    "unauthorizedMessage": "It seems like you're not authorized",
+    "signOutButton": "Sign out",
+    "editButton": "Edit",
+    "changeDomain": {
+      "button": "Change domain",
+      "title": "Change domain",
+      "description": "Enter a valid subdomain (2-20 characters) using letters, numbers, and hyphens. No spaces or special characters allowed.",
+      "submitButton": "Change"
+    },
+    "delete": {
+      "button": "Remove",
+      "title": "Are you absolutely sure?",
+      "description": "This action cannot be undone. This will permanently delete your website data from our servers.",
+      "successMessage": "Your website was successfully deleted!",
+      "cancelButton": "Cancel",
+      "submitButton": "Delete"
+    },
+    "unableToFetchMessage": "Unable to fetch websites",
+    "noWebsitesMessage": "You have no websites yet"
+  },
+  "start": {
+    "items": [
+      {
+        "title": "Dashboard page",
+        "list": [
+          "On the home page, you can write your site name and click the \"Start Building\" button",
+          "Choose the template you like.",
+          "Decorate your page the way you want.",
+          "Click the \"Create Web\" button",
+          "Confirm your transaction and pay.",
+          "After successful payment, congratulations, you have successfully created your website!"
+        ]
+      },
+      {
+        "title": "Templates section",
+        "list": [
+          "Go to the \"Templates\" section",
+          "Choose the template you like.",
+          "Decorate your page the way you want.",
+          "Click the \"Create Web\" button",
+          "Confirm your transaction and pay.",
+          "After successful payment, congratulations, you have successfully created your website!"
+        ]
+      }
+    ],
+    "contacts": {
+      "message": "If you have any problems, errors with transactions, a suggestion to improve our site, or want to ask something, feel free to contact us, we will be happy to help you:",
+      "email": "Email"
+    }
+  },
+  "builder": {
+    "backToTemplates": "Back to templates",
+    "description": "Create your website in just 5 minutes",
+    "create": {
+      "button": "Create Web",
+      "title": "Enter your domain",
+      "description": "Enter a valid subdomain (2-20 characters) using letters, numbers, and hyphens. No spaces or special characters allowed.",
+      "successMessage": "Your website was successfully created!",
+      "submitButton": "Confirm and Create"
+    },
+    "update": {
+      "button": "Save changes",
+      "successMessage": "Your website was successfully created!"
+    },
+    "classic": {
+      "categories": {
+        "text": "Text",
+        "images": "Images",
+        "links": "Links",
+        "howToBuy": "How to Buy",
+        "buttons": "Buttons"
+      },
+      "fields": {
+        "logoText": "Project Name",
+        "ticker": "Ticker",
+        "contractAddress": "Contract Address",
+        "description": "Description",
+        "buyNowText": "Buy Now",
+        "logoImage": "Logo",
+        "background": "Background",
+        "tokenImage": "Token Image",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Author Telegram",
+        "authorTwitter": "Author Twitter",
+        "authorDiscord": "Author Discord",
+        "showHowToBuy": "Show How to Buy",
+        "firstStep": "First Step",
+        "firstStepImage": "First Step Image",
+        "secondStep": "Second Step",
+        "secondStepImage": "Second Step Image",
+        "thirdStep": "Third Step",
+        "thirdStepImage": "Third Step Image",
+        "buyNowLink": "Buy Now Link"
+      }
+    },
+    "simple": {
+      "categories": {
+        "text": "Text",
+        "images": "Images",
+        "links": "Links"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Contract Address",
+        "background": "Background",
+        "tokenImage": "Token Image",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Author Telegram",
+        "authorTwitter": "Author Twitter",
+        "authorDiscord": "Author Discord"
+      }
+    },
+    "impressive": {
+      "categories": {
+        "text": "Text",
+        "images": "Images",
+        "links": "Links",
+        "buttons": "Buttons",
+        "howToBuy": "How to Buy",
+        "roadmap": "Roadmap",
+        "faq": "FAQ"
+      },
+      "fields": {
+        "ticker": "Ticker",
+        "contractAddress": "Contract Address",
+        "buyNowText": "Buy Now",
+        "aboutUsTitle": "About Us Title",
+        "aboutUsDescription": "About Us Description",
+        "logo": "Logo",
+        "primaryBackground": "Primary Background",
+        "secondaryBackground": "Secondary Background",
+        "tokenImage": "Token Image",
+        "aboutUsPreview": "About Us Preview",
+        "tiktok": "Tiktok",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "discord": "Discord",
+        "telegram": "Telegram",
+        "dexscreener": "Dexscreener",
+        "pumpfun": "Pumpfun",
+        "coingecko": "Coingecko",
+        "coinmarketcap": "Coinmarketcap",
+        "birdeye": "Birdeye",
+        "dextools": "Dextools",
+        "whitepaper": "Whitepaper",
+        "authorTelegram": "Author Telegram",
+        "authorTwitter": "Author Twitter",
+        "authorDiscord": "Author Discord",
+        "buyNowLink": "Buy Now Link",
+        "roadmapTitle": "Roadmap Title",
+        "roadmapFirstStepTitle": "Phase 1 Title",
+        "roadmapFirstStepDescription": "Phase 1 Description",
+        "roadmapSecondStepTitle": "Phase 2 Title",
+        "roadmapSecondStepDescription": "Phase 2 Description",
+        "roadmapThirdStepTitle": "Phase 3 Title",
+        "roadmapThirdStepDescription": "Phase 3 Description",
+        "howToBuyTitle": "How to Buy Title",
+        "howToBuyFirstStep": "How to Buy Step 1",
+        "howToBuySecondStep": "How to Buy Step 2",
+        "howToBuyThirdStep": "How to Buy Step 3",
+        "howToBuyFourthStep": "How to Buy Step 4",
+        "FAQTitle": "FAQ Title",
+        "firstQuestion": "FAQ Question 1",
+        "firstAnswer": "FAQ Answer 1",
+        "secondQuestion": "FAQ Question 2",
+        "secondAnswer": "FAQ Answer 2",
+        "thirdQuestion": "FAQ Question 3",
+        "thirdAnswer": "FAQ Answer 3",
+        "fourthQuestion": "FAQ Question 4",
+        "fourthAnswer": "FAQ Answer 4"
+      }
+    },
+    "rocket": {
+      "categories": {
+        "accentColors": "Accent Colors",
+        "text": "Text",
+        "images": "Images",
+        "buttons": "Buttons",
+        "tokenomics": "Tokenomics",
+        "missionTimeline": "Mission Timeline",
+        "missionControl": "Mission Control",
+        "faq": "FAQ",
+        "links": "Links"
+      },
+      "fields": {
+        "primaryColor": "Primary Color",
+        "secondaryColor": "Secondary Color",
+        "heroTitle": "Hero Title",
+        "ticker": "Ticker",
+        "description": "Description",
+        "contractAddress": "Contract Address",
+        "contractAddressLabel": "Contract Address Label",
+        "projectName": "Project Name",
+        "buyTicker": "Header Button",
+        "buyNow": "Buy Now Button",
+        "joinUs": "Join Us Button",
+        "tokenomicsTitle": "Tokenomics Title",
+        "missionTimelineTitle": "Mission Timeline Title",
+        "missionControlTitle": "Mission Control Title",
+        "FAQTitle": "Mission FAQ Title",
+        "joinTitle": "Join The Mission Title",
+        "tokenImage": "Token Image",
+        "buyTickerLink": "Buy Ticker URL",
+        "buyNowLink": "Buy Now URL",
+        "joinUsLink": "Join Us URL",
+        "firstTokenomicsIcon": "First Tokenomics Icon",
+        "firstTokenomicsTitle": "First Tokenomics Title",
+        "firstTokenomicsValue": "First Tokenomics Value",
+        "secondTokenomicsIcon": "Second Tokenomics Icon",
+        "secondTokenomicsTitle": "Second Tokenomics Title",
+        "secondTokenomicsValue": "Second Tokenomics Value",
+        "thirdTokenomicsIcon": "Third Tokenomics Icon",
+        "thirdTokenomicsTitle": "Third Tokenomics Title",
+        "thirdTokenomicsValue": "Third Tokenomics Value",
+        "fourthTokenomicsIcon": "Fourth Tokenomics Icon",
+        "fourthTokenomicsTitle": "Fourth Tokenomics Title",
+        "fourthTokenomicsValue": "Fourth Tokenomics Value",
+        "firstTimelinePhaseTitle": "Phase 1 Title",
+        "firstTimelineTitle": "Phase 1 Title",
+        "firstTimelineDescription": "Phase 1 Description",
+        "firstTimelineDate": "Phase 1 Date",
+        "secondTimelinePhaseTitle": "Phase 2 Title",
+        "secondTimelineTitle": "Phase 2 Title",
+        "secondTimelineDescription": "Phase 2 Description",
+        "secondTimelineDate": "Phase 2 Date",
+        "thirdTimelinePhaseTitle": "Phase 3 Title",
+        "thirdTimelineTitle": "Phase 3 Title",
+        "thirdTimelineDescription": "Phase 3 Description",
+        "thirdTimelineDate": "Phase 3 Date",
+        "joinTelegram": "Telegram",
+        "joinTwitter": "Twitter",
+        "joinDiscord": "Discord"
+      }
+    }
+  }
+}
