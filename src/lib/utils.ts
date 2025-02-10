@@ -9,8 +9,8 @@ export const cn = (...inputs: ClassValue[]) => {
 }
 
 export const getSubdomain = () => {
-  const hostnameParts = window.location.hostname.split('.')
-  if (hostnameParts.length > 1) return hostnameParts[0]
+  const hostnameParts = window.location.host.split(/[.:]/)
+  if (hostnameParts.length > 2) return hostnameParts[0]
 
   return null
 }
