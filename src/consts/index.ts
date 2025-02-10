@@ -26,7 +26,7 @@ import {
 import { FaRocket, FaPalette, FaBoltLightning } from 'react-icons/fa6'
 
 export const PROJECT_NAME = 'AURORA'
-export const BASE_URL = 'http://aurorabuild.pro:3000'
+export const BASE_URL = 'https://aurorabuild.pro:3000'
 export const GOOGLE_API_BASE_URL =
   'https://www.googleapis.com/webfonts/v1/webfonts'
 
