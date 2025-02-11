@@ -62,7 +62,7 @@ export const createWebsite: CreateWebsiteFn = async ({
 }) => {
   await uploadFiles(name, uploadedFiles, publicKey)
 
-  const url = `${BASE_URL}/websites/create/${name.toLowerCase()}`
+  const url = `${BASE_URL}/websites/create/${name}`
   const response = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Public-Key': publicKey },
