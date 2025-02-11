@@ -30,14 +30,14 @@ export const getFonts = async (): Promise<Pick<GetFontsResponse, 'items'>> => {
 }
 
 const uploadFiles = async (
-  name: string,
+  websiteName: string,
   files: { [key: string]: File },
   publicKey: string
 ) => {
   const url = `${BASE_URL}/files/upload`
 
   const formData = new FormData()
-  formData.append('name', name)
+  formData.append('websiteName', websiteName)
 
   for (const fileName of Object.keys(files)) {
     const file = files[fileName]
