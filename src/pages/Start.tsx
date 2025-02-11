@@ -14,7 +14,7 @@ export const Start = () => {
           <p>{t('start.contacts.message')}</p>
           <span>{t('start.contacts.email')}: admin@aurorabuild.pro</span>
           <div className='flex items-center gap-4'>
-            <a href='https://t.me/aurorabuild' target='_blank'>
+            <a href='https://t.me/+RpT8pKZEDwJmOTBk' target='_blank'>
               <Telegram />
             </a>
             <a href='https://x.com/AuroraBuildd' target='_blank'>

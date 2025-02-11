@@ -72,7 +72,7 @@ export const footerSocialLinks = [
   */
   {
     icon: Telegram,
-    href: 'https://t.me/SWATSecurity1'
+    href: 'https://t.me/+RpT8pKZEDwJmOTBk'
   },
   {
     icon: Medium,
