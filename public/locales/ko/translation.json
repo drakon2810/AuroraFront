@@ -154,12 +154,7 @@
         "label": "로켓",
         "description": "로켓 템플릿은 밈코인 웹사이트를 위한 밝고 역동적이며 기억에 남는 선택입니다. 주요 특징은 스타일리시한 로켓 애니메이션으로, 움직임과 성장의 느낌을 주며 프로젝트의 빠른 발전을 상징합니다. 이 템플릿은 자신의 밈코인의 야망을 보여주고 독특한 프레젠테이션으로 사용자의 주목을 끌고자 하는 사람들에게 완벽합니다.",
         "shortDescription": "로켓 템플릿은 밈코인 웹사이트를 위한 밝고 역동적이며 기억에 남는 선택입니다.",
-        "features": [
-          "움직이는 배경",
-          "인터랙티브 버튼",
-          "적응성",
-          "기능성"
-        ],
+        "features": ["움직이는 배경", "인터랙티브 버튼", "적응성", "기능성"],
         "badge": "신규"
       }
     },
@@ -175,10 +170,7 @@
       "standard": {
         "label": "표준",
         "description": "0.045 Solana로 클래식 및 심플 템플릿을 사용하여 웹사이트를 생성할 수 있습니다. 이 템플릿들은 간단하며 명확하고 쾌적한 사용자 인터페이스를 가지고 있습니다. 쉽게 편집하고 수정할 수 있습니다.",
-        "features": [
-          "무료 도메인",
-          "생성 후 편집"
-        ]
+        "features": ["무료 도메인", "생성 후 편집"]
       },
       "advanced": {
         "label": "고급",
@@ -458,23 +450,23 @@
         "thirdTimelineTitle": "3단계 제목",
         "thirdTimelineDescription": "3단계 설명",
         "thirdTimelineDate": "3단계 날짜",
-          "firstControlAvatar": "첫 번째 아바타",
-          "firstControlName": "첫 번째 이름",
-          "firstControlJob": "첫 번째 직업",
-          "secondControlAvatar": "두 번째 아바타",
-          "secondControlName": "두 번째 이름",
-          "secondControlJob": "두 번째 직업",
-          "thirdControlAvatar": "세 번째 아바타",
-          "thirdControlName": "세 번째 이름",
-          "thirdControlJob": "세 번째 직업",
-          "firstQuestion": "첫 번째 FAQ 질문",
-          "firstAnswer": "첫 번째 FAQ 답변",
-          "secondQuestion": "두 번째 FAQ 질문",
-          "secondAnswer": "두 번째 FAQ 답변",
-          "thirdQuestion": "세 번째 FAQ 질문",
-          "thirdAnswer": "세 번째 FAQ 답변",
-          "fourthQuestion": "네 번째 FAQ 질문",
-          "fourthAnswer": "네 번째 FAQ 답변",       
+        "firstControlAvatar": "첫 번째 아바타",
+        "firstControlName": "첫 번째 이름",
+        "firstControlJob": "첫 번째 직업",
+        "secondControlAvatar": "두 번째 아바타",
+        "secondControlName": "두 번째 이름",
+        "secondControlJob": "두 번째 직업",
+        "thirdControlAvatar": "세 번째 아바타",
+        "thirdControlName": "세 번째 이름",
+        "thirdControlJob": "세 번째 직업",
+        "firstQuestion": "첫 번째 FAQ 질문",
+        "firstAnswer": "첫 번째 FAQ 답변",
+        "secondQuestion": "두 번째 FAQ 질문",
+        "secondAnswer": "두 번째 FAQ 답변",
+        "thirdQuestion": "세 번째 FAQ 질문",
+        "thirdAnswer": "세 번째 FAQ 답변",
+        "fourthQuestion": "네 번째 FAQ 질문",
+        "fourthAnswer": "네 번째 FAQ 답변",
         "joinTelegram": "텔레그램",
         "joinTwitter": "트위터",
         "joinDiscord": "디스코드"

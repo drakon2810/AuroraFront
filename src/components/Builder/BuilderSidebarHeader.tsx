@@ -1,11 +1,7 @@
 import { Badge } from '../Badge'
 import { Button } from '../ui/button'
 import { TemplateContext } from '@/contexts/TemplateContext'
-import { TemplateEditorContext } from '@/contexts/TemplateEditorContext'
-import {
-  TemplateContextValues,
-  TemplateEditorContextValues
-} from '@/types/contexts'
+import { TemplateContextValues } from '@/types/contexts'
 import { MoveLeft } from 'lucide-react'
 import { FC, MouseEvent, useContext } from 'react'
 import { useTranslation } from 'react-i18next'
