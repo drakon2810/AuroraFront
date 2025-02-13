@@ -60,7 +60,15 @@
     },
     "launch": {
       "badge": "Schnell. Innovativ. Effektiv",
-      "title": "Starten Sie Ihre Solana-Reise mühelos",
+      "title": "Starten Sie Ihre Solana-Reise",
+      "titleWords": [
+        "Mühelos",
+        "Nahtlos",
+        "Reibungslos",
+        "Einfach",
+        "Fehlerfrei",
+        "Problemlos"
+      ],
       "description": "Erstellen Sie dynamische, anpassbare Plattformen für Ihre Solana-Projekte – ohne Programmierkenntnisse. Steigern Sie Ihre Präsenz im schnelllebigen Blockchain-Ökosystem.",
       "startBuildingButton": "Start Building",
       "inputPlaceholder": "Ihre Seite"
@@ -175,7 +183,10 @@
       "standard": {
         "label": "Standard",
         "description": "Für 0,045 Solana können Sie eine Website mit der Classic- und Simple-Vorlage erstellen. Dies sind einfache Vorlagen mit einer klaren und angenehmen Benutzeroberfläche. Sie sind einfach zu bearbeiten und zu modifizieren.",
-        "features": ["Kostenlose Domain", "Bearbeitung nach der Erstellung"]
+        "features": [
+          "Kostenlose Domain",
+          "Bearbeitung nach der Erstellung"
+        ]
       },
       "advanced": {
         "label": "Erweitert",

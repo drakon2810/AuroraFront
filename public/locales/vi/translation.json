@@ -60,7 +60,15 @@
     },
     "launch": {
       "badge": "Nhanh. Sáng tạo. Hiệu quả",
-      "title": "Khởi động Hành trình Solana của Bạn một cách Dễ dàng",
+      "title": "Bắt đầu hành trình Solana của bạn",
+      "titleWords": [
+        "Dễ dàng",
+        "Liền mạch",
+        "Trơn tru",
+        "Đơn giản",
+        "Hoàn hảo",
+        "Không phiền phức"
+      ],
       "description": "Xây dựng các nền tảng động, có thể tùy chỉnh cho các dự án Solana của bạn — không cần viết mã. Nâng cao sự hiện diện của bạn trong hệ sinh thái blockchain tốc độ cao.",
       "startBuildingButton": "Bắt đầu Xây dựng",
       "inputPlaceholder": "trang web của bạn"
@@ -175,7 +183,10 @@
       "standard": {
         "label": "Tiêu chuẩn",
         "description": "Với 0,045 Solana, bạn có thể tạo một trang web bằng mẫu Cổ điển và Đơn giản. Đây là những mẫu đơn giản, với giao diện người dùng rõ ràng và dễ chịu. Chúng dễ dàng chỉnh sửa và thay đổi.",
-        "features": ["Miễn phí tên miền", "Chỉnh sửa sau khi tạo"]
+        "features": [
+          "Miễn phí tên miền",
+          "Chỉnh sửa sau khi tạo"
+        ]
       },
       "advanced": {
         "label": "Nâng cao",

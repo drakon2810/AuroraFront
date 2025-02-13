@@ -60,7 +60,15 @@
     },
     "launch": {
       "badge": "Quick. Innovative. Effective",
-      "title": "Kickstart Your Solana Journey Effortlessly",
+      "title": "Kickstart Your Solana Journey",
+      "titleWords": [
+        "Effortlessly",
+        "Seamlessly",
+        "Smoothly",
+        "Easily",
+        "Flawlessly",
+        "Hassle-Free"
+      ],
       "description": "Build dynamic, customizable platforms for your Solana projects—no coding required. Elevate your presence in the fast-paced blockchain ecosystem.",
       "startBuildingButton": "Start Building",
       "inputPlaceholder": "your site"
@@ -175,7 +183,10 @@
       "standard": {
         "label": "Standard",
         "description": "For 0.045 Solana you can create a website using Classic and Simple template. These are simple templates, with a clear and pleasant user interface. They are easy to edit and modify.",
-        "features": ["Free domain", "Editing after creation"]
+        "features": [
+          "Free domain",
+          "Editing after creation"
+        ]
       },
       "advanced": {
         "label": "Advanced",

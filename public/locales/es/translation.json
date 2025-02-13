@@ -60,7 +60,15 @@
     },
     "launch": {
       "badge": "Rápido. Innovador. Efectivo",
-      "title": "Inicia tu viaje en Solana sin esfuerzo",
+      "title": "Comienza tu viaje con Solana",
+      "titleWords": [
+        "Sin esfuerzo",
+        "Sin problemas",
+        "Suavemente",
+        "Fácilmente",
+        "Perfectamente",
+        "Sin complicaciones"
+      ],
       "description": "Construye plataformas dinámicas y personalizables para tus proyectos en Solana—sin necesidad de codificación. Eleva tu presencia en el ecosistema blockchain de ritmo rápido.",
       "startBuildingButton": "Comenzar a construir",
       "inputPlaceholder": "tu sitio"
@@ -175,7 +183,10 @@
       "standard": {
         "label": "Estándar",
         "description": "Por 0.045 Solana puedes crear un sitio web utilizando las plantillas Clásico y Simple. Estas son plantillas sencillas, con una interfaz de usuario clara y agradable. Son fáciles de editar y modificar.",
-        "features": ["Dominio gratis", "Edición después de la creación"]
+        "features": [
+          "Dominio gratis",
+          "Edición después de la creación"
+        ]
       },
       "advanced": {
         "label": "Avanzado",

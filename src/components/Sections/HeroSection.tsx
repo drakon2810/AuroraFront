@@ -2,6 +2,7 @@ import { Button } from '../Button'
 import { Description } from '../Description'
 import { FancyButton } from '../FancyButton'
 import { TextAnimate } from '../magicui/text-animate'
+import { TypingAnimation } from '../magicui/typing-animation'
 import { Section } from './Section'
 import { PROJECT_NAME } from '@/consts'
 import { useWallet } from '@solana/wallet-adapter-react'
@@ -36,7 +37,9 @@ export const HeroSection = () => {
         >
           {PROJECT_NAME}
         </TextAnimate>
-        <h2 className='py-2 xl:text-5xl'>{t('home.hero.title')}</h2>
+        <TypingAnimation as='h2' duration={70} className='py-2 xl:text-5xl'>
+          {t('home.hero.title')}
+        </TypingAnimation>
         <Description className='my-6'>{t('home.hero.description')}</Description>
         <div className='flex items-center gap-4'>
           <FancyButton onClick={goToDashboard}>

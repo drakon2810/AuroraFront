@@ -2,6 +2,7 @@ import { Badge } from '../Badge'
 import { Button } from '../Button'
 import { Description } from '../Description'
 import { WebsiteNameInput } from '../WebsiteNameInput'
+import { FlipWords } from '../ui/flip-words'
 import { Section } from './Section'
 import Video from '@/assets/video.mp4'
 import { useValidateName } from '@/hooks/useValidateName'
@@ -15,6 +16,9 @@ export const LaunchSection = () => {
 
   const navigate = useNavigate()
   const { t } = useTranslation()
+  const titleWords = t('home.launch.titleWords', {
+    returnObjects: true
+  }) as string[]
 
   return (
     <Section
@@ -24,7 +28,11 @@ export const LaunchSection = () => {
       <div className='container flex items-center justify-between gap-12'>
         <div className='flex flex-col gap-4'>
           <Badge>{t('home.launch.badge')}</Badge>
-          <h2>{t('home.launch.title')}</h2>
+          <div className='font-bold tracking-tighter sm:text-5xl xl:text-6xl'>
+            <span>{t('home.launch.title')}</span>
+            <br />
+            <FlipWords className='px-0 -tracking-[0.10em]' words={titleWords} />
+          </div>
           <Description className='max-w-[600px]'>
             {t('home.launch.description')}
           </Description>

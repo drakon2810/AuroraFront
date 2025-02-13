@@ -2,8 +2,8 @@ import { Badge } from './Badge'
 import { Button } from './Button'
 import { Description } from './Description'
 import { useSlider } from '@/hooks/useSlider'
-import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { motion, AnimatePresence } from 'motion/react'
 import { FC } from 'react'
 
 interface Card {
