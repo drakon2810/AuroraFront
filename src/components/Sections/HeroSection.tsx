@@ -1,6 +1,7 @@
 import { Button } from '../Button'
 import { Description } from '../Description'
 import { FancyButton } from '../FancyButton'
+import { TextAnimate } from '../magicui/text-animate'
 import { Section } from './Section'
 import { PROJECT_NAME } from '@/consts'
 import { useWallet } from '@solana/wallet-adapter-react'
@@ -27,9 +28,14 @@ export const HeroSection = () => {
       className='relative -mt-[75px] flex items-center justify-center gap-8 pt-[75px]'
     >
       <div className='flex flex-auto flex-col items-center justify-center text-center'>
-        <h1 className='select-none text-8xl font-black uppercase leading-normal sm:text-7xl md:text-8xl lg:text-9xl xl:text-[18.7rem]'>
+        <TextAnimate
+          as='h1'
+          animation='fadeIn'
+          by='character'
+          className='select-none text-8xl font-black uppercase leading-normal sm:text-7xl md:text-8xl lg:text-9xl xl:text-[18.7rem]'
+        >
           {PROJECT_NAME}
-        </h1>
+        </TextAnimate>
         <h2 className='py-2 xl:text-5xl'>{t('home.hero.title')}</h2>
         <Description className='my-6'>{t('home.hero.description')}</Description>
         <div className='flex items-center gap-4'>

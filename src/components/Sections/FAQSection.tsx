@@ -1,3 +1,4 @@
+import { Card } from '../Cards/Card'
 import { Description } from '../Description'
 import {
   Accordion,
@@ -27,9 +28,15 @@ export const FAQSection = () => {
         className='container flex flex-col gap-4'
       >
         {Object.values(FAQs).map(({ question, answer }) => (
-          <AccordionItem key={question} value={question}>
-            <AccordionTrigger>{question}</AccordionTrigger>
-            <AccordionContent>{answer}</AccordionContent>
+          <AccordionItem
+            key={question}
+            value={question}
+            className='border-none p-0'
+          >
+            <Card className='w-full px-6 py-0'>
+              <AccordionTrigger>{question}</AccordionTrigger>
+              <AccordionContent>{answer}</AccordionContent>
+            </Card>
           </AccordionItem>
         ))}
       </Accordion>

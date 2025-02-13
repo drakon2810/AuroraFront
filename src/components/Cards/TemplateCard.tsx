@@ -25,7 +25,7 @@ export const TemplateCard: FC<{ name: string }> = ({ name }) => {
   params.set('category', 'editor')
 
   return (
-    <Card className='group justify-between'>
+    <Card className='group relative justify-between overflow-hidden'>
       <div className='flex flex-col gap-4'>
         <div className='h-48 overflow-hidden rounded-md'>
           <img

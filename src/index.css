@@ -68,6 +68,10 @@
   .impressive-block {
     @apply rounded-xl border-4 border-b-8 border-black dark:border-4 dark:border-b-8 dark:border-black;
   }
+
+  .card {
+    @apply flex w-96 flex-col gap-4 rounded-2xl border border-neutral-300 bg-neutral-200 p-8 dark:border-neutral-500 dark:bg-neutral-700;
+  }
 }
 
 @keyframes spin {
