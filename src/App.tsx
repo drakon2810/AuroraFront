@@ -1,6 +1,4 @@
 import { Layout } from './components/Layout'
-import { NavBar } from './components/ui/tubelight-navbar'
-import { navItems } from './consts'
 import { TemplateContextProvider } from './contexts/TemplateContext'
 import { TemplateEditorContextProvider } from './contexts/TemplateEditorContext'
 import { Account } from './pages/Account'

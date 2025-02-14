@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 export const StartBuilding = () => {
   const [name, setName] = useState('')
-  const { errors, isValid, revalidate } = useValidateName(name)
+  const { errors, revalidate } = useValidateName(name)
 
   const navigate = useNavigate()
   const { t } = useTranslation()
