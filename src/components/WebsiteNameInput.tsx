@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import { debounce } from 'lodash'
 import { ChangeEvent, Dispatch, FC, SetStateAction, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -32,9 +33,19 @@ export const WebsiteNameInput: FC<WebsiteNameInputProps> = ({
     verifyName()
   }
 
+  const errorValues = Object.values(errors).filter(Boolean)
+
   return (
     <div className='flex w-full flex-col'>
-      <div className='flex items-center rounded-full border-2 border-neutral-300 bg-neutral-200 dark:border-neutral-500 dark:bg-neutral-600'>
+      <div
+        className={cn(
+          'flex items-center rounded-xl border-2 border-neutral-300 bg-neutral-200 dark:border-neutral-600 dark:bg-neutral-700',
+          {
+            'border-red-500 text-red-500 dark:border-red-500':
+              errorValues.length > 0
+          }
+        )}
+      >
         <input
           id='domain'
           value={value}
@@ -45,12 +56,10 @@ export const WebsiteNameInput: FC<WebsiteNameInputProps> = ({
         <span className='pr-4'>.{window.location.host}</span>
       </div>
       <div className='flex flex-col text-sm'>
-        {Object.keys(errors).map((error) => {
-          if (error === 'isValidLength' && value.length === 0) return
-
+        {errorValues.map((error) => {
           return (
             <span key={error} className='text-red-500'>
-              {errors[error]}
+              {error}
             </span>
           )
         })}

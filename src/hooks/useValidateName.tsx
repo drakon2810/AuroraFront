@@ -20,7 +20,7 @@ export const useValidateName = (value: string) => {
 
   const errors = {
     isNameTaken: !!value && isNameTaken ? messages.isNameTaken : null,
-    isValidLength: !isValidLength ? messages.isValidLength : null
+    isValidLength: !!value && !isValidLength ? messages.isValidLength : null
   }
 
   const isValid = Object.values(errors).filter((value) => value).length === 0

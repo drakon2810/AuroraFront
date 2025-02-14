@@ -28,7 +28,7 @@ export const StartBuilding = () => {
       />
       <RainbowButton
         type='submit'
-        className='w-full whitespace-nowrap rounded-full'
+        className='w-full whitespace-nowrap rounded-xl'
       >
         {t('home.launch.startBuildingButton')}
       </RainbowButton>
