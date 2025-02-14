@@ -1,6 +1,7 @@
 import { SmallLogo, Telegram, Twitter } from '@/components/Icons'
 import { Section } from '@/components/Sections/Section'
 import { StartItems } from '@/components/Start/StartItems'
+import { SplineScene } from '@/components/ui/splite'
 import { useTranslation } from 'react-i18next'
 
 export const Start = () => {
@@ -23,7 +24,11 @@ export const Start = () => {
           </div>
         </div>
       </div>
-      <SmallLogo size={500} className='-mr-48' />
+      {/* <SmallLogo size={500} className='-mr-48' />*/}
+      <SplineScene
+        scene='https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode'
+        className='h-[1000px]'
+      />
     </Section>
   )
 }
