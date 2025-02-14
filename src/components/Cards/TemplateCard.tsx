@@ -27,7 +27,7 @@ export const TemplateCard: FC<{ name: string }> = ({ name }) => {
 
   return (
     <BackgroundGradient>
-      <Card className='group relative h-full justify-between overflow-hidden'>
+      <Card className='group relative h-full max-w-96 justify-between overflow-hidden'>
         <div className='flex flex-col gap-4'>
           <div className='h-48 overflow-hidden rounded-md'>
             <img
