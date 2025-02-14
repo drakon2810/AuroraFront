@@ -1,24 +1,29 @@
 import { Badge } from '../Badge'
 import { Button } from '../Button'
 import { Description } from '../Description'
-import { WebsiteNameInput } from '../WebsiteNameInput'
+import { FancyButton } from '../FancyButton'
 import { FlipWords } from '../ui/flip-words'
 import { Section } from './Section'
 import Video from '@/assets/video.mp4'
-import { useValidateName } from '@/hooks/useValidateName'
-import { useState } from 'react'
+import { useWallet } from '@solana/wallet-adapter-react'
+import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
 export const LaunchSection = () => {
-  const [name, setName] = useState('')
-  const { errors, isValid, revalidate } = useValidateName(name)
+  const { connected } = useWallet()
+  const { setVisible } = useWalletModal()
 
   const navigate = useNavigate()
   const { t } = useTranslation()
   const titleWords = t('home.launch.titleWords', {
     returnObjects: true
   }) as string[]
+
+  const goToDashboard = () => {
+    if (connected) return navigate('/account')
+    setVisible(true)
+  }
 
   return (
     <Section
@@ -36,29 +41,14 @@ export const LaunchSection = () => {
           <Description className='max-w-[600px]'>
             {t('home.launch.description')}
           </Description>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault()
-              navigate(`/templates?name=${name}`)
-            }}
-            className='flex items-center gap-4'
-          >
-            <div className='h-12 w-full max-w-sm'>
-              <WebsiteNameInput
-                value={name}
-                setValue={setName}
-                errors={errors}
-                revalidate={revalidate}
-              />
-            </div>
-            <Button
-              type='submit'
-              className='whitespace-nowrap'
-              disabled={!isValid}
-            >
-              {t('home.launch.startBuildingButton')}
+          <div className='flex items-center gap-4'>
+            <FancyButton onClick={goToDashboard}>
+              {t('home.hero.dashboardButton')}
+            </FancyButton>
+            <Button to='/start' variant='outline'>
+              {t('home.hero.howToButton')}
             </Button>
-          </form>
+          </div>
         </div>
         <video
           autoPlay

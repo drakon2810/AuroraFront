@@ -1,32 +1,18 @@
-import { Button } from '../Button'
-import { Description } from '../Description'
-import { FancyButton } from '../FancyButton'
+import { StartBuilding } from '../StartBuilding'
 import { TextAnimate } from '../magicui/text-animate'
 import { TypingAnimation } from '../magicui/typing-animation'
 import { Section } from './Section'
 import { PROJECT_NAME } from '@/consts'
-import { useWallet } from '@solana/wallet-adapter-react'
-import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import { useTranslation } from 'react-i18next'
 import { IoIosArrowDown } from 'react-icons/io'
-import { useNavigate } from 'react-router-dom'
 
 export const HeroSection = () => {
-  const { connected } = useWallet()
-  const { setVisible } = useWalletModal()
-
-  const navigate = useNavigate()
   const { t } = useTranslation()
-
-  const goToDashboard = () => {
-    if (connected) return navigate('/account')
-    setVisible(true)
-  }
 
   return (
     <Section
       id='hero'
-      className='relative -mt-[75px] flex items-center justify-center gap-8 pt-[75px]'
+      className='-mt-[75px] flex flex-col items-center justify-center gap-8 pt-[75px]'
     >
       <div className='flex flex-auto flex-col items-center justify-center text-center'>
         <TextAnimate
@@ -40,20 +26,9 @@ export const HeroSection = () => {
         <TypingAnimation as='h2' duration={70} className='py-2 xl:text-5xl'>
           {t('home.hero.title')}
         </TypingAnimation>
-        <Description className='my-6'>{t('home.hero.description')}</Description>
-        <div className='flex items-center gap-4'>
-          <FancyButton onClick={goToDashboard}>
-            {t('home.hero.dashboardButton')}
-          </FancyButton>
-          <Button to='/start' variant='outline'>
-            {t('home.hero.howToButton')}
-          </Button>
-        </div>
+        <StartBuilding />
       </div>
-      <a
-        href='/#launch'
-        className='absolute bottom-8 flex animate-bounce flex-col items-center'
-      >
+      <a href='/#launch' className='flex animate-bounce flex-col items-center'>
         <span className='text-sm'>{t('home.hero.scrollToExploreButton')}</span>
         <IoIosArrowDown size={24} />
       </a>
