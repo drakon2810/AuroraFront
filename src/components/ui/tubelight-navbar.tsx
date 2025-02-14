@@ -1,9 +1,8 @@
 import { cn } from '@/lib/utils'
 import { LucideIcon } from 'lucide-react'
 import { motion } from 'motion/react'
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 interface NavItem {
   name: string
@@ -17,7 +16,7 @@ interface NavBarProps {
 }
 
 export function NavBar({ items, className }: NavBarProps) {
-  const [activeTab, setActiveTab] = useState<string | null>(null)
+  const { pathname } = useLocation()
   const { t } = useTranslation()
 
   return (
@@ -30,19 +29,20 @@ export function NavBar({ items, className }: NavBarProps) {
       <div className='flex items-center gap-3 rounded-full border border-neutral-200 bg-white/5 px-1 py-1 shadow-lg backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-950/5'>
         {items.map((item) => {
           const Icon = item.icon
-          const isActive = activeTab === item.name
+          const isActive = item.url === pathname
 
           return (
             <NavLink
               key={item.name}
               to={item.url}
-              onClick={() => setActiveTab(item.name)}
-              className={cn(
-                'relative cursor-pointer rounded-full px-6 py-2 text-sm font-semibold transition-colors',
-                'text-neutral-950/80 hover:text-neutral-900 dark:text-neutral-50/80 dark:hover:text-neutral-50',
-                isActive &&
-                  'bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50'
-              )}
+              className={({ isActive }) =>
+                cn(
+                  'relative cursor-pointer rounded-full px-6 py-2 text-sm font-semibold transition-colors',
+                  'text-neutral-950/80 hover:text-neutral-900 dark:text-neutral-50/80 dark:hover:text-neutral-50',
+                  isActive &&
+                    'bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50'
+                )
+              }
             >
               <span className='hidden md:inline'>
                 {t(`navLinks.${item.name}`)}

@@ -6,6 +6,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from './ui/dropdown-menu'
+import { NavBar } from './ui/tubelight-navbar'
+import { navItems } from '@/consts'
 import { useWallet } from '@solana/wallet-adapter-react'
 import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import { useTranslation } from 'react-i18next'
@@ -21,6 +23,7 @@ export const HeaderNav = () => {
 
   return (
     <nav className='flex items-center gap-8'>
+      <NavBar items={navItems} />
       {!connected && (
         <Button onClick={() => setVisible(true)} className='py-2'>
           {t('header.connectButton')}

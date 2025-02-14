@@ -14,7 +14,6 @@ import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <>
-      <NavBar items={navItems} />
       <Routes>
         <Route
           element={
