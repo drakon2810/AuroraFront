@@ -25,10 +25,13 @@ export const Start = () => {
         </div>
       </div>
       {/* <SmallLogo size={500} className='-mr-48' />*/}
-      <SplineScene
-        scene='https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode'
-        className='h-[1000px]'
-      />
+      <div className='flex w-[500px] max-w-3xl flex-col items-center border-[10px] border-white'>
+        <h3>Aurora</h3>
+        <SplineScene
+          scene='https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode'
+          className='!h-[600px]'
+        />
+      </div>
     </Section>
   )
 }
