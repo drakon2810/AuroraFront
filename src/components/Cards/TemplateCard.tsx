@@ -1,6 +1,7 @@
 import { Button } from '../Button'
 import { Description } from '../Description'
 import { Solana } from '../Icons'
+import { BackgroundGradient } from '../ui/background-gradient'
 import { Card } from './Card'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateName } from '@/types/templates'
@@ -25,36 +26,38 @@ export const TemplateCard: FC<{ name: string }> = ({ name }) => {
   params.set('category', 'editor')
 
   return (
-    <Card className='group relative justify-between overflow-hidden'>
-      <div className='flex flex-col gap-4'>
-        <div className='h-48 overflow-hidden rounded-md'>
-          <img
-            className='min-h-full object-cover object-top group-hover:animate-scroll'
-            src={preview}
-          />
+    <BackgroundGradient>
+      <Card className='group relative h-full justify-between overflow-hidden'>
+        <div className='flex flex-col gap-4'>
+          <div className='h-48 overflow-hidden rounded-md'>
+            <img
+              className='min-h-full object-cover object-top group-hover:animate-scroll'
+              src={preview}
+            />
+          </div>
+          <h4>{label}</h4>
+          <Description>{shortDescription}</Description>
+          <ul className='flex flex-col gap-1 pb-4'>
+            {features.map((feature) => (
+              <li key={feature} className='flex items-center gap-2'>
+                <Check size={20} />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <h4>{label}</h4>
-        <Description>{shortDescription}</Description>
-        <ul className='flex flex-col gap-1 pb-4'>
-          {features.map((feature) => (
-            <li key={feature} className='flex items-center gap-2'>
-              <Check size={20} />
-              <span>{feature}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className='flex flex-col gap-4'>
-        <div className='flex items-center gap-2'>
-          <span className='text-lg font-medium'>
-            {t('templates.price')}: {price} sol
-          </span>
-          <Solana />
+        <div className='flex flex-col gap-4'>
+          <div className='flex items-center gap-2'>
+            <span className='text-lg font-medium'>
+              {t('templates.price')}: {price} sol
+            </span>
+            <Solana />
+          </div>
+          <Button to={`/create?${params.toString()}`}>
+            {t('templates.selectButton')}
+          </Button>
         </div>
-        <Button to={`/create?${params.toString()}`}>
-          {t('templates.selectButton')}
-        </Button>
-      </div>
-    </Card>
+      </Card>
+    </BackgroundGradient>
   )
 }

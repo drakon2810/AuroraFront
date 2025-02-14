@@ -18,7 +18,7 @@ export const Card: FC<CardProps> = ({ children, className }) => {
       gradientOpacity={0.6}
       gradientSize={130}
       className={cn(
-        'flex w-96 flex-col gap-4 rounded-2xl border border-neutral-300 bg-neutral-200 p-8 dark:border-neutral-500 dark:bg-neutral-700',
+        'flex w-full max-w-96 flex-col gap-4 rounded-2xl border border-neutral-300 bg-neutral-200 p-8 dark:border-neutral-500 dark:bg-neutral-700',
         className
       )}
     >
