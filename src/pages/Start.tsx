@@ -1,4 +1,4 @@
-import { SmallLogo, Telegram, Twitter } from '@/components/Icons'
+import { Telegram, Twitter } from '@/components/Icons'
 import { Section } from '@/components/Sections/Section'
 import { StartItems } from '@/components/Start/StartItems'
 import { SplineScene } from '@/components/ui/splite'
