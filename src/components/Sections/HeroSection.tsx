@@ -23,7 +23,11 @@ export const HeroSection = () => {
         >
           {PROJECT_NAME}
         </TextAnimate>
-        <TypingAnimation as='h2' duration={70} className='py-2 xl:text-5xl'>
+        <TypingAnimation
+          as='h2'
+          duration={70}
+          className='pb-8 pt-2 xl:text-5xl'
+        >
           {t('home.hero.title')}
         </TypingAnimation>
         <StartBuilding />
