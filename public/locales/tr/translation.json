@@ -153,10 +153,7 @@
       "standard": {
         "label": "Standart",
         "description": "0.045 Solana karşılığında Klasik ve Basit şablonları kullanarak bir web sitesi oluşturabilirsiniz. Bunlar, net ve hoş bir kullanıcı arayüzüne sahip basit şablonlardır. Düzenlemesi ve değiştirilmesi kolaydır.",
-        "features": [
-          "Ücretsiz alan adı",
-          "Oluşturma sonrası düzenleme"
-        ]
+        "features": ["Ücretsiz alan adı", "Oluşturma sonrası düzenleme"]
       },
       "advanced": {
         "label": "Gelişmiş",

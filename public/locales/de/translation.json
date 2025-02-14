@@ -153,10 +153,7 @@
       "standard": {
         "label": "Standard",
         "description": "Für 0,045 Solana können Sie eine Website mit der Classic- und Simple-Vorlage erstellen. Dies sind einfache Vorlagen mit einer klaren und angenehmen Benutzeroberfläche. Sie sind einfach zu bearbeiten und zu modifizieren.",
-        "features": [
-          "Kostenlose Domain",
-          "Bearbeitung nach der Erstellung"
-        ]
+        "features": ["Kostenlose Domain", "Bearbeitung nach der Erstellung"]
       },
       "advanced": {
         "label": "Erweitert",

@@ -153,10 +153,7 @@
       "standard": {
         "label": "Standaard",
         "description": "Voor 0.045 Solana kun je een website maken met het Klassieke en Eenvoudige sjabloon. Dit zijn eenvoudige sjablonen met een duidelijke en prettige gebruikersinterface. Ze zijn gemakkelijk te bewerken en aan te passen.",
-        "features": [
-          "Gratis domein",
-          "Bewerken na creatie"
-        ]
+        "features": ["Gratis domein", "Bewerken na creatie"]
       },
       "advanced": {
         "label": "Geavanceerd",

@@ -153,10 +153,7 @@
       "standard": {
         "label": "Standard",
         "description": "For 0.045 Solana you can create a website using Classic and Simple template. These are simple templates, with a clear and pleasant user interface. They are easy to edit and modify.",
-        "features": [
-          "Free domain",
-          "Editing after creation"
-        ]
+        "features": ["Free domain", "Editing after creation"]
       },
       "advanced": {
         "label": "Advanced",

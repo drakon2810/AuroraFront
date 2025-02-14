@@ -153,10 +153,7 @@
       "standard": {
         "label": "Standard",
         "description": "Pour 0,045 Solana, vous pouvez créer un site web en utilisant les modèles Classique et Simple. Ce sont des modèles simples, avec une interface utilisateur claire et agréable. Ils sont faciles à éditer et à modifier.",
-        "features": [
-          "Domaine gratuit",
-          "Édition après création"
-        ]
+        "features": ["Domaine gratuit", "Édition après création"]
       },
       "advanced": {
         "label": "Avancé",

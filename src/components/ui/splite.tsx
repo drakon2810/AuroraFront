@@ -20,4 +20,3 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
     </Suspense>
   )
 }
-
