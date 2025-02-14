@@ -28,12 +28,8 @@ export const FAQSection = () => {
         className='container flex flex-col gap-4'
       >
         {Object.values(FAQs).map(({ question, answer }) => (
-          <AccordionItem
-            key={question}
-            value={question}
-            className='border-none p-0'
-          >
-            <Card className='w-full px-6 py-0'>
+          <AccordionItem key={question} value={question} asChild>
+            <Card className='min-w-full px-6 py-0'>
               <AccordionTrigger>{question}</AccordionTrigger>
               <AccordionContent>{answer}</AccordionContent>
             </Card>
