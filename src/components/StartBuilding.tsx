@@ -1,5 +1,5 @@
-import { Button } from './Button'
 import { WebsiteNameInput } from './WebsiteNameInput'
+import { RainbowButton } from './ui/rainbow-button'
 import { useValidateName } from '@/hooks/useValidateName'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -18,19 +18,20 @@ export const StartBuilding = () => {
         e.preventDefault()
         navigate(`/templates?name=${name}`)
       }}
-      className='flex items-center gap-4 pt-4'
+      className='flex flex-col items-center gap-2 pt-4'
     >
-      <div className='h-12 w-full max-w-sm'>
-        <WebsiteNameInput
-          value={name}
-          setValue={setName}
-          errors={errors}
-          revalidate={revalidate}
-        />
-      </div>
-      <Button type='submit' className='whitespace-nowrap' disabled={!isValid}>
+      <WebsiteNameInput
+        value={name}
+        setValue={setName}
+        errors={errors}
+        revalidate={revalidate}
+      />
+      <RainbowButton
+        type='submit'
+        className='w-full whitespace-nowrap rounded-full'
+      >
         {t('home.launch.startBuildingButton')}
-      </Button>
+      </RainbowButton>
     </form>
   )
 }

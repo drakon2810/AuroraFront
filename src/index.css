@@ -55,6 +55,7 @@
   h5 {
     @apply mb-4 text-sm font-bold uppercase tracking-wider text-neutral-700 dark:text-neutral-200;
   }
+
   .dark {
     --color-1: 0 100% 63%;
     --color-2: 270 100% 63%;

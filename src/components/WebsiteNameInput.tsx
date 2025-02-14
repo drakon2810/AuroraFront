@@ -33,7 +33,7 @@ export const WebsiteNameInput: FC<WebsiteNameInputProps> = ({
   }
 
   return (
-    <div className='relative w-full'>
+    <div className='flex w-full flex-col'>
       <div className='flex items-center rounded-full border-2 border-neutral-300 bg-neutral-200 dark:border-neutral-500 dark:bg-neutral-600'>
         <input
           id='domain'
