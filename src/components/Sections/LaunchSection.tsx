@@ -45,7 +45,7 @@ export const LaunchSection = () => {
             <FancyButton onClick={goToDashboard}>
               {t('home.hero.dashboardButton')}
             </FancyButton>
-            <Button to='/start' variant='outline'>
+            <Button to='/start' variant='outline' className='whitespace-nowrap'>
               {t('home.hero.howToButton')}
             </Button>
           </div>
