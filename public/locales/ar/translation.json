@@ -1,52 +1,22 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "لوحة التحكم"
-      },
-      {
-        "path": "/templates",
-        "label": "القوالب"
-      },
-      {
-        "path": "/pricing",
-        "label": "التسعير"
-      }
-    ],
     "accountButton": "الحساب",
     "signOutButton": "تسجيل الخروج",
     "connectButton": "الاتصال",
     "themeLabel": "السمة",
     "languageLabel": "اللغة"
   },
+  "navLinks": {
+    "dashboard": "لوحة القيادة",
+    "templates": "النماذج",
+    "exhibition": "المعرض",
+    "start": "كيفية البدء"
+  },
   "footer": {
     "description": "انضم إلى آلاف المبدعين الذين يبنون بسرعة مستقبل العملات الميمية القائمة على سولانا. سواء كنت تطلق أول عملة رقمية لك أو توسع مشروعك، فإن منصتنا توفر جميع الأدوات التي تحتاجها لتصميم وتخصيص وإطلاق موقع ويب احترافي لعملة الميم الخاصة بك على سولانا — بسرعة وسهولة.",
     "copyright": "جميع الحقوق محفوظة.",
-    "navigation": {
-      "label": "ملاحة",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "لوحة القيادة"
-        },
-        {
-          "path": "/pricing",
-          "label": "التسعير"
-        },
-        {
-          "path": "/templates",
-          "label": "قوالب"
-        },
-        {
-          "path": "/start",
-          "label": "كيف تبدأ"
-        }
-      ]
-    },
-    "connect": {
-      "label": "يتصل"
-    },
+    "navigation": "ملاحة",
+    "connect": "يتصل",
     "terms": "شروط",
     "privacy": "خصوصية"
   },

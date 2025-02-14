@@ -23,6 +23,7 @@ import {
   PT,
   SA
 } from 'country-flag-icons/react/3x2'
+import { Book, LayoutDashboard, LayoutTemplate, Star } from 'lucide-react'
 import { FaRocket, FaPalette, FaBoltLightning } from 'react-icons/fa6'
 
 export const PROJECT_NAME = 'AURORA'
@@ -35,6 +36,13 @@ export const featuresCardIcons = {
   palette: FaPalette,
   lightning: FaBoltLightning
 }
+
+export const navItems = [
+  { name: 'dashboard', url: '/account', icon: LayoutDashboard },
+  { name: 'templates', url: '/templates', icon: LayoutTemplate },
+  { name: 'exhibition', url: '/pricing', icon: Star },
+  { name: 'start', url: '/start', icon: Book }
+]
 
 export const languages = [
   { icon: IN, label: 'हिं', value: 'hi' }, // Индийский (Хинди)

@@ -1,4 +1,6 @@
 import { Layout } from './components/Layout'
+import { NavBar } from './components/ui/tubelight-navbar'
+import { navItems } from './consts'
 import { TemplateContextProvider } from './contexts/TemplateContext'
 import { TemplateEditorContextProvider } from './contexts/TemplateEditorContext'
 import { Account } from './pages/Account'
@@ -11,34 +13,37 @@ import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <Routes>
-      <Route
-        element={
-          <TemplateContextProvider>
-            <Outlet />
-          </TemplateContextProvider>
-        }
-      >
+    <>
+      <NavBar items={navItems} />
+      <Routes>
         <Route
           element={
-            <TemplateEditorContextProvider>
+            <TemplateContextProvider>
               <Outlet />
-            </TemplateEditorContextProvider>
+            </TemplateContextProvider>
           }
         >
-          <Route path='/create' element={<Builder />} />
-          <Route path='/edit' element={<Builder />} />
+          <Route
+            element={
+              <TemplateEditorContextProvider>
+                <Outlet />
+              </TemplateEditorContextProvider>
+            }
+          >
+            <Route path='/create' element={<Builder />} />
+            <Route path='/edit' element={<Builder />} />
+          </Route>
+          <Route path='/' element={<Main />} />
+          <Route path='/account' element={<Account />} />
         </Route>
-        <Route path='/' element={<Main />} />
-        <Route path='/account' element={<Account />} />
-      </Route>
-      <Route element={<Layout />}>
-        <Route path='/pricing' element={<Pricing />} />
-        <Route path='/templates' element={<Templates />} />
-        <Route path='/start' element={<Start />} />
-      </Route>
-      <Route path='*' element={<Navigate to='/' />} />
-    </Routes>
+        <Route element={<Layout />}>
+          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/templates' element={<Templates />} />
+          <Route path='/start' element={<Start />} />
+        </Route>
+        <Route path='*' element={<Navigate to='/' />} />
+      </Routes>
+    </>
   )
 }
 

@@ -1,54 +1,24 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Armaturenbrett"
-      },
-      {
-        "path": "/templates",
-        "label": "Vorlagen"
-      },
-      {
-        "path": "/pricing",
-        "label": "Preise"
-      }
-    ],
     "accountButton": "Konto",
     "signOutButton": "Abmelden",
     "connectButton": "Verbinden",
     "themeLabel": "Thema",
     "languageLabel": "Sprache"
   },
+  "navLinks": {
+    "dashboard": "Dashboard",
+    "templates": "Vorlagen",
+    "exhibition": "Ausstellung",
+    "start": "So starten Sie"
+  },
   "footer": {
-    "description": "Schließen Sie sich Tausenden von Creators an, die schnell die Zukunft von Solana-basierten Memecoins aufbauen. Egal, ob Sie Ihren ersten Token starten oder Ihr Projekt erweitern, unsere Plattform bietet alle Tools, die Sie benötigen, um eine professionelle Website für Ihr Solana Memecoin zu gestalten, anzupassen und zu starten – schnell und einfach.",
+    "description": "Schließen Sie sich Tausenden von Kreativen an, die schnell die Zukunft von Solana-basierten Memecoins gestalten. Egal, ob Sie Ihr erstes Token starten oder Ihr Projekt erweitern – unsere Plattform bietet alle Werkzeuge, die Sie benötigen, um eine professionelle Website für Ihren Solana-Memecoin zu entwerfen, anzupassen und zu starten – schnell und einfach.",
     "copyright": "Alle Rechte vorbehalten.",
-    "navigation": {
-      "label": "Navigation",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Armaturenbrett"
-        },
-        {
-          "path": "/pricing",
-          "label": "Preise"
-        },
-        {
-          "path": "/templates",
-          "label": "Vorlagen"
-        },
-        {
-          "path": "/start",
-          "label": "So starten Sie"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Verbinden"
-    },
+    "navigation": "Navigation",
+    "connect": "Verbinden",
     "terms": "Bedingungen",
-    "privacy": "Privatsphäre"
+    "privacy": "Datenschutz"
   },
   "home": {
     "hero": {

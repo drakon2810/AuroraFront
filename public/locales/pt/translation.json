@@ -1,52 +1,22 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Painel"
-      },
-      {
-        "path": "/templates",
-        "label": "Modelos"
-      },
-      {
-        "path": "/pricing",
-        "label": "Preços"
-      }
-    ],
     "accountButton": "Conta",
     "signOutButton": "Sair",
     "connectButton": "Conectar",
     "themeLabel": "Tema",
     "languageLabel": "Idioma"
   },
+  "navLinks": {
+    "dashboard": "Painel",
+    "templates": "Modelos",
+    "exhibition": "Exposição",
+    "start": "Como Começar"
+  },
   "footer": {
-    "description": "Junte-se a milhares de criadores que estão rapidamente construindo o futuro dos memecoins baseados em Solana. Quer você esteja lançando seu primeiro token ou expandindo seu projeto, nossa plataforma oferece todas as ferramentas necessárias para projetar, personalizar e lançar um site profissional para o seu memecoin na Solana — de forma rápida e fácil.",
+    "description": "Junte-se a milhares de criadores que estão rapidamente construindo o futuro dos memecoins baseados em Solana. Quer você esteja lançando seu primeiro token ou expandindo seu projeto, nossa plataforma oferece todas as ferramentas necessárias para projetar, personalizar e lançar um site profissional para seu memecoin Solana—de forma rápida e fácil.",
     "copyright": "Todos os direitos reservados.",
-    "navigation": {
-      "label": "Navegação",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Painel"
-        },
-        {
-          "path": "/pricing",
-          "label": "Preços"
-        },
-        {
-          "path": "/templates",
-          "label": "Modelos"
-        },
-        {
-          "path": "/start",
-          "label": "Como começar"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Conectar"
-    },
+    "navigation": "Navegação",
+    "connect": "Conectar",
     "terms": "Termos",
     "privacy": "Privacidade"
   },

@@ -1,54 +1,24 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Dasbor"
-      },
-      {
-        "path": "/templates",
-        "label": "Templat"
-      },
-      {
-        "path": "/pricing",
-        "label": "Harga"
-      }
-    ],
     "accountButton": "Akun",
     "signOutButton": "Keluar",
-    "connectButton": "Menghubungkan",
+    "connectButton": "Hubungkan",
     "themeLabel": "Tema",
     "languageLabel": "Bahasa"
   },
+  "navLinks": {
+    "dashboard": "Dasbor",
+    "templates": "Template",
+    "exhibition": "Pameran",
+    "start": "Cara Memulai"
+  },
   "footer": {
-    "description": "Bergabunglah dengan ribuan kreator yang dengan cepat membangun masa depan memecoin berbasis Solana. Baik Anda meluncurkan token pertama Anda atau memperluas proyek Anda, platform kami menyediakan semua alat yang Anda butuhkan untuk merancang, menyesuaikan, dan meluncurkan situs web profesional untuk memecoin Solana Anda—dengan cepat dan mudah.",
-    "copyright": "Semua hak dilindungi undang-undang.",
-    "navigation": {
-      "label": "Navigasi",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Dasbor"
-        },
-        {
-          "path": "/pricing",
-          "label": "Harga"
-        },
-        {
-          "path": "/templates",
-          "label": "Templat"
-        },
-        {
-          "path": "/start",
-          "label": "Bagaimana Memulainya"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Menghubungkan"
-    },
+    "description": "Bergabunglah dengan ribuan kreator yang dengan cepat membangun masa depan memecoin berbasis Solana. Apakah Anda meluncurkan token pertama Anda atau memperluas proyek Anda, platform kami menyediakan semua alat yang Anda butuhkan untuk merancang, menyesuaikan, dan meluncurkan situs web profesional untuk memecoin Solana Anda—dengan cepat dan mudah.",
+    "copyright": "Hak cipta dilindungi.",
+    "navigation": "Navigasi",
+    "connect": "Hubungkan",
     "terms": "Ketentuan",
-    "privacy": "Pribadi"
+    "privacy": "Privasi"
   },
   "home": {
     "hero": {

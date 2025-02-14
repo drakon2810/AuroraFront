@@ -1,52 +1,22 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Panel"
-      },
-      {
-        "path": "/templates",
-        "label": "Plantillas"
-      },
-      {
-        "path": "/pricing",
-        "label": "Precios"
-      }
-    ],
     "accountButton": "Cuenta",
     "signOutButton": "Cerrar sesión",
     "connectButton": "Conectar",
     "themeLabel": "Tema",
     "languageLabel": "Idioma"
   },
+  "navLinks": {
+    "dashboard": "Panel de control",
+    "templates": "Plantillas",
+    "exhibition": "Exhibición",
+    "start": "Cómo empezar"
+  },
   "footer": {
-    "description": "Únete a miles de creadores que están construyendo rápidamente el futuro de los memecoins basados en Solana. Ya sea que estés lanzando tu primer token o expandiendo tu proyecto, nuestra plataforma proporciona todas las herramientas que necesitas para diseñar, personalizar y lanzar un sitio web profesional para tu memecoin de Solana—rápido y fácil.",
-    "copyright": "Reservados todos los derechos.",
-    "navigation": {
-      "label": "Navegación",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Panel"
-        },
-        {
-          "path": "/pricing",
-          "label": "Precios"
-        },
-        {
-          "path": "/templates",
-          "label": "Plantillas"
-        },
-        {
-          "path": "/start",
-          "label": "Cómo empezar"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Conectar"
-    },
+    "description": "Únete a miles de creadores que están construyendo rápidamente el futuro de los memecoins basados en Solana. Ya sea que estés lanzando tu primer token o expandiendo tu proyecto, nuestra plataforma ofrece todas las herramientas que necesitas para diseñar, personalizar y lanzar un sitio web profesional para tu memecoin de Solana, de forma rápida y sencilla.",
+    "copyright": "Todos los derechos reservados.",
+    "navigation": "Navegación",
+    "connect": "Conectar",
     "terms": "Términos",
     "privacy": "Privacidad"
   },

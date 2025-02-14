@@ -1,53 +1,23 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Pannello di controllo"
-      },
-      {
-        "path": "/templates",
-        "label": "Modelli"
-      },
-      {
-        "path": "/pricing",
-        "label": "Prezzi"
-      }
-    ],
     "accountButton": "Account",
-    "signOutButton": "Disconnessione",
-    "connectButton": "Collegare",
+    "signOutButton": "Esci",
+    "connectButton": "Connetti",
     "themeLabel": "Tema",
     "languageLabel": "Lingua"
   },
+  "navLinks": {
+    "dashboard": "Dashboard",
+    "templates": "Template",
+    "exhibition": "Mostra",
+    "start": "Come Iniziare"
+  },
   "footer": {
-    "description": "Unisciti a migliaia di creatori che stanno rapidamente costruendo il futuro dei memecoin basati su Solana. Che tu stia lanciando il tuo primo token o espandendo il tuo progetto, la nostra piattaforma fornisce tutti gli strumenti necessari per progettare, personalizzare e lanciare un sito web professionale per il tuo memecoin su Solana: in modo rapido e semplice.",
+    "description": "Unisciti a migliaia di creatori che stanno rapidamente costruendo il futuro dei memecoin basati su Solana. Che tu stia lanciando il tuo primo token o espandendo il tuo progetto, la nostra piattaforma offre tutti gli strumenti necessari per progettare, personalizzare e lanciare un sito web professionale per il tuo memecoin Solana—in modo rapido e semplice.",
     "copyright": "Tutti i diritti riservati.",
-    "navigation": {
-      "label": "Navigazione",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Pannello di controllo"
-        },
-        {
-          "path": "/pricing",
-          "label": "Prezzi"
-        },
-        {
-          "path": "/templates",
-          "label": "Modelli"
-        },
-        {
-          "path": "/start",
-          "label": "Come iniziare"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Collegare"
-    },
-    "terms": "Terms",
+    "navigation": "Navigazione",
+    "connect": "Connetti",
+    "terms": "Termini",
     "privacy": "Privacy"
   },
   "home": {

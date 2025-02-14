@@ -1,52 +1,22 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "仪表板"
-      },
-      {
-        "path": "/templates",
-        "label": "模板"
-      },
-      {
-        "path": "/pricing",
-        "label": "定价"
-      }
-    ],
     "accountButton": "账户",
-    "signOutButton": "登出",
+    "signOutButton": "退出",
     "connectButton": "连接",
     "themeLabel": "主题",
     "languageLabel": "语言"
   },
+  "navLinks": {
+    "dashboard": "仪表板",
+    "templates": "模板",
+    "exhibition": "展览",
+    "start": "如何开始"
+  },
   "footer": {
-    "description": "加入成千上万的创作者，他们正在快速构建基于Solana的迷因币的未来。无论您是首次发行代币还是扩展项目，我们的平台都提供了设计、定制和启动专业Solana迷因币网站所需的所有工具——快速且轻松。",
+    "description": "加入成千上万的创作者，他们正在迅速构建基于Solana的meme币的未来。无论您是推出第一个代币还是扩展项目，我们的平台都提供了设计、定制和快速轻松地启动您的Solana meme币专业网站所需的所有工具。",
     "copyright": "版权所有。",
-    "navigation": {
-      "label": "导航",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "仪表板"
-        },
-        {
-          "path": "/pricing",
-          "label": "定价"
-        },
-        {
-          "path": "/templates",
-          "label": "模板"
-        },
-        {
-          "path": "/start",
-          "label": "如何开始"
-        }
-      ]
-    },
-    "connect": {
-      "label": "连接"
-    },
+    "navigation": "导航",
+    "connect": "连接",
     "terms": "条款",
     "privacy": "隐私"
   },

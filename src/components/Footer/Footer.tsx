@@ -15,10 +15,10 @@ export const Footer: FC = () => {
         <FooterItem title={PROJECT_NAME}>
           <p>{t('footer.description')}</p>
         </FooterItem>
-        <FooterItem title={t('footer.navigation.label')}>
+        <FooterItem title={t('footer.navigation')}>
           <FooterNav />
         </FooterItem>
-        <FooterItem title={t('footer.connect.label')}>
+        <FooterItem title={t('footer.connect')}>
           <FooterSocials />
         </FooterItem>
       </div>

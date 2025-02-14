@@ -1,53 +1,23 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Tableau de bord"
-      },
-      {
-        "path": "/templates",
-        "label": "Modèles"
-      },
-      {
-        "path": "/pricing",
-        "label": "Tarifs"
-      }
-    ],
     "accountButton": "Compte",
-    "signOutButton": "se déconnecter",
+    "signOutButton": "Se déconnecter",
     "connectButton": "Connecter",
     "themeLabel": "Thème",
     "languageLabel": "Langue"
   },
+  "navLinks": {
+    "dashboard": "Tableau de bord",
+    "templates": "Modèles",
+    "exhibition": "Exposition",
+    "start": "Comment commencer"
+  },
   "footer": {
-    "description": "Rejoignez des milliers de créateurs qui construisent rapidement l'avenir des memecoins basés sur Solana. Que vous lanciez votre premier token ou étendiez votre projet, notre plateforme fournit tous les outils dont vous avez besoin pour concevoir, personnaliser et lancer un site web professionnel pour votre memecoin Solana — rapidement et facilement.",
+    "description": "Rejoignez des milliers de créateurs qui construisent rapidement l'avenir des memecoins basés sur Solana. Que vous lanciez votre premier token ou que vous développiez votre projet, notre plateforme fournit tous les outils dont vous avez besoin pour concevoir, personnaliser et lancer un site web professionnel pour votre memecoin Solana — rapidement et facilement.",
     "copyright": "Tous droits réservés.",
-    "navigation": {
-      "label": "Navigation",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Tableau de bord"
-        },
-        {
-          "path": "/pricing",
-          "label": "Tarifs"
-        },
-        {
-          "path": "/templates",
-          "label": "Modèles"
-        },
-        {
-          "path": "/start",
-          "label": "Comment commencer"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Connecter"
-    },
-    "terms": "Termes",
+    "navigation": "Navigation",
+    "connect": "Connecter",
+    "terms": "Conditions",
     "privacy": "Confidentialité"
   },
   "home": {

@@ -1,53 +1,23 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "ダッシュボード"
-      },
-      {
-        "path": "/templates",
-        "label": "テンプレート"
-      },
-      {
-        "path": "/pricing",
-        "label": "価格設定"
-      }
-    ],
     "accountButton": "アカウント",
     "signOutButton": "サインアウト",
-    "connectButton": "接続する",
+    "connectButton": "接続",
     "themeLabel": "テーマ",
     "languageLabel": "言語"
   },
+  "navLinks": {
+    "dashboard": "ダッシュボード",
+    "templates": "テンプレート",
+    "exhibition": "展示",
+    "start": "始め方"
+  },
   "footer": {
-    "description": "Solanaベースのミームコインの未来を迅速に構築している何千ものクリエイターに参加しましょう。初めてのトークンを立ち上げる場合でも、プロジェクトを拡大する場合でも、私たちのプラットフォームは、Solanaミームコインのためのプロフェッショナルなウェブサイトを迅速かつ簡単に設計、カスタマイズ、立ち上げるために必要なすべてのツールを提供します。",
-    "copyright": "無断転載を禁じます。",
-    "navigation": {
-      "label": "ナビゲーション",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "ダッシュボード"
-        },
-        {
-          "path": "/pricing",
-          "label": "価格設定"
-        },
-        {
-          "path": "/templates",
-          "label": "テンプレート"
-        },
-        {
-          "path": "/start",
-          "label": "始め方"
-        }
-      ]
-    },
-    "connect": {
-      "label": "接続する"
-    },
-    "terms": "条項",
+    "description": "ソラナベースのミームコインの未来を急速に築いている何千ものクリエイターに参加しましょう。最初のトークンを立ち上げるにしても、プロジェクトを拡大するにしても、当社のプラットフォームは、ソラナミームコイン向けのプロフェッショナルなウェブサイトを迅速かつ容易にデザイン、カスタマイズ、ローンチするために必要なすべてのツールを提供します。",
+    "copyright": "全著作権所有.",
+    "navigation": "ナビゲーション",
+    "connect": "接続",
+    "terms": "利用規約",
     "privacy": "プライバシー"
   },
   "home": {

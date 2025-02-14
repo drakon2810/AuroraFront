@@ -1,54 +1,24 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Kontrol Paneli"
-      },
-      {
-        "path": "/templates",
-        "label": "Şablonlar"
-      },
-      {
-        "path": "/pricing",
-        "label": "Fiyatlandırma"
-      }
-    ],
     "accountButton": "Hesap",
-    "signOutButton": "Çıkış Yap",
+    "signOutButton": "Oturumu Kapat",
     "connectButton": "Bağlan",
     "themeLabel": "Tema",
     "languageLabel": "Dil"
   },
+  "navLinks": {
+    "dashboard": "Gösterge Paneli",
+    "templates": "Şablonlar",
+    "exhibition": "Sergi",
+    "start": "Nasıl Başlanır"
+  },
   "footer": {
-    "description": "Solana tabanlı memecoin'lerin geleceğini hızla inşa eden binlerce yaratıcıya katılın. İlk token'ınızı başlatıyor ya da projenizi genişletiyor olun, platformumuz Solana memecoin'iniz için hızlı ve kolay bir şekilde profesyonel bir web sitesi tasarlamak, özelleştirmek ve başlatmak için ihtiyacınız olan tüm araçları sağlar.",
-    "copyright": "Her hakkı saklıdır.",
-    "navigation": {
-      "label": "Navigasyon",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Kontrol Paneli"
-        },
-        {
-          "path": "/pricing",
-          "label": "Fiyatlandırma"
-        },
-        {
-          "path": "/templates",
-          "label": "Şablonlar"
-        },
-        {
-          "path": "/start",
-          "label": "Nasıl Başlanır"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Bağlamak"
-    },
+    "description": "Solana tabanlı memecoin'lerin geleceğini hızla inşa eden binlerce yaratıcıya katılın. İlk tokeninizi başlatıyor olun ya da projenizi genişletiyor olun, platformumuz Solana memecoin'iniz için profesyonel bir web sitesi tasarlamak, özelleştirmek ve başlatmak için ihtiyaç duyduğunuz tüm araçları hızlı ve kolay bir şekilde sunar.",
+    "copyright": "Tüm hakları saklıdır.",
+    "navigation": "Navigasyon",
+    "connect": "Bağlan",
     "terms": "Şartlar",
-    "privacy": "Mahremiyet"
+    "privacy": "Gizlilik"
   },
   "home": {
     "hero": {

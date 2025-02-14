@@ -1,52 +1,22 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Dashboard"
-      },
-      {
-        "path": "/templates",
-        "label": "Sjablonen"
-      },
-      {
-        "path": "/pricing",
-        "label": "Prijzen"
-      }
-    ],
-    "accountButton": "Rekening",
-    "signOutButton": "Meld u af",
+    "accountButton": "Account",
+    "signOutButton": "Uitloggen",
     "connectButton": "Verbinden",
     "themeLabel": "Thema",
     "languageLabel": "Taal"
   },
+  "navLinks": {
+    "dashboard": "Dashboard",
+    "templates": "Sjablonen",
+    "exhibition": "Tentoonstelling",
+    "start": "Hoe te beginnen"
+  },
   "footer": {
-    "description": "Sluit je aan bij duizenden makers die snel de toekomst van Solana-gebaseerde memecoins bouwen. Of je nu je eerste token lanceert of je project uitbreidt, ons platform biedt alle tools die je nodig hebt om een professionele website voor je Solana memecoin te ontwerpen, aan te passen en te lanceren—snel en eenvoudig.",
+    "description": "Sluit je aan bij duizenden makers die snel de toekomst van op Solana gebaseerde memecoins vormgeven. Of je nu je eerste token lanceert of je project uitbreidt, ons platform biedt alle tools die je nodig hebt om een professionele website voor je Solana memecoin te ontwerpen, aan te passen en te lanceren—snel en eenvoudig.",
     "copyright": "Alle rechten voorbehouden.",
-    "navigation": {
-      "label": "Navigatie",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Dashboard"
-        },
-        {
-          "path": "/pricing",
-          "label": "Prijzen"
-        },
-        {
-          "path": "/templates",
-          "label": "Sjablonen"
-        },
-        {
-          "path": "/start",
-          "label": "Hoe te beginnen"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Verbinden"
-    },
+    "navigation": "Navigatie",
+    "connect": "Verbinden",
     "terms": "Voorwaarden",
     "privacy": "Privacy"
   },

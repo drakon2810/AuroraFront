@@ -1,54 +1,24 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Trang tổng quan"
-      },
-      {
-        "path": "/templates",
-        "label": "Mẫu"
-      },
-      {
-        "path": "/pricing",
-        "label": "Định giá"
-      }
-    ],
     "accountButton": "Tài khoản",
     "signOutButton": "Đăng xuất",
     "connectButton": "Kết nối",
     "themeLabel": "Chủ đề",
     "languageLabel": "Ngôn ngữ"
   },
+  "navLinks": {
+    "dashboard": "Bảng điều khiển",
+    "templates": "Mẫu",
+    "exhibition": "Triển lãm",
+    "start": "Cách bắt đầu"
+  },
   "footer": {
-    "description": "Tham gia cùng hàng nghìn nhà sáng tạo đang nhanh chóng xây dựng tương lai của các memecoin dựa trên Solana. Cho dù bạn đang khởi chạy token đầu tiên của mình hay mở rộng dự án, nền tảng của chúng tôi cung cấp tất cả các công cụ bạn cần để thiết kế, tùy chỉnh và khởi chạy một trang web chuyên nghiệp cho memecoin Solana của bạn — một cách nhanh chóng và dễ dàng.",
-    "copyright": "Mọi quyền được bảo lưu.",
-    "navigation": {
-      "label": "Điều hướng",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Trang tổng quan"
-        },
-        {
-          "path": "/pricing",
-          "label": "Định giá"
-        },
-        {
-          "path": "/templates",
-          "label": "Mẫu"
-        },
-        {
-          "path": "/start",
-          "label": "Làm thế nào để bắt đầu"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Kết nối"
-    },
+    "description": "Tham gia cùng hàng ngàn người sáng tạo đang nhanh chóng xây dựng tương lai của các memecoin dựa trên Solana. Dù bạn đang ra mắt token đầu tiên hay mở rộng dự án, nền tảng của chúng tôi cung cấp tất cả công cụ cần thiết để thiết kế, tùy chỉnh và khởi chạy một trang web chuyên nghiệp cho memecoin Solana của bạn—nhanh chóng và dễ dàng.",
+    "copyright": "Bản quyền thuộc về chủ sở hữu.",
+    "navigation": "Điều hướng",
+    "connect": "Kết nối",
     "terms": "Điều khoản",
-    "privacy": "Sự riêng tư"
+    "privacy": "Quyền riêng tư"
   },
   "home": {
     "hero": {

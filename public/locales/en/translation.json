@@ -1,52 +1,22 @@
 {
   "header": {
-    "navLinks": [
-      {
-        "path": "/dashboard",
-        "label": "Dashboard"
-      },
-      {
-        "path": "/templates",
-        "label": "Templates"
-      },
-      {
-        "path": "/pricing",
-        "label": "Pricing"
-      }
-    ],
     "accountButton": "Account",
     "signOutButton": "Sign out",
     "connectButton": "Connect",
     "themeLabel": "Theme",
     "languageLabel": "Language"
   },
+  "navLinks": {
+    "dashboard": "Dashboard",
+    "templates": "Templates",
+    "exhibition": "Exhibition",
+    "start": "How to Start"
+  },
   "footer": {
     "description": "Join thousands of creators who are rapidly building the future of Solana-based memecoins. Whether you’re launching your first token or expanding your project, our platform provides all the tools you need to design, customize, and launch a professional website for your Solana memecoin—quickly and with ease.",
     "copyright": "All rights reserved.",
-    "navigation": {
-      "label": "Navigation",
-      "items": [
-        {
-          "path": "/dashboard",
-          "label": "Dashboard"
-        },
-        {
-          "path": "/pricing",
-          "label": "Pricing"
-        },
-        {
-          "path": "/templates",
-          "label": "Templates"
-        },
-        {
-          "path": "/start",
-          "label": "How to Start"
-        }
-      ]
-    },
-    "connect": {
-      "label": "Connect"
-    },
+    "navigation": "Navigation",
+    "connect": "Connect",
     "terms": "Terms",
     "privacy": "Privacy"
   },
