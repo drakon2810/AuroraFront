@@ -3,6 +3,7 @@ import { Section } from '@/components/Sections/Section'
 import { StartItems } from '@/components/Start/StartItems'
 import { SplineScene } from '@/components/ui/splite'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 export const Start = () => {
   const { t } = useTranslation()
@@ -15,16 +16,15 @@ export const Start = () => {
           <p>{t('start.contacts.message')}</p>
           <span>{t('start.contacts.email')}: admin@aurorabuild.pro</span>
           <div className='flex items-center gap-4'>
-            <a href='https://t.me/+RpT8pKZEDwJmOTBk' target='_blank'>
+            <Link to='https://t.me/+RpT8pKZEDwJmOTBk' target='_blank'>
               <Telegram />
-            </a>
-            <a href='https://x.com/AuroraBuildd' target='_blank'>
+            </Link>
+            <Link to='https://x.com/AuroraBuildd' target='_blank'>
               <Twitter />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-      {/* <SmallLogo size={500} className='-mr-48' />*/}
       <div className='flex w-[500px] max-w-3xl flex-col items-center border-[10px] border-white'>
         <h3>Aurora</h3>
         <SplineScene

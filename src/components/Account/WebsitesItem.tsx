@@ -40,13 +40,13 @@ export const WebsitesItem: FC<WebsitesItemsProps> = ({
             <div className='flex flex-col'>
               <h4 className='flex gap-2 text-2xl leading-none'>
                 <span>{name}</span>
-                <a
-                  href={websiteURL}
+                <Link
+                  to={websiteURL}
                   target='_blank'
                   className='text-neutral-400 transition-colors duration-300 hover:text-black dark:hover:text-white'
                 >
                   <ExternalLink size={18} />
-                </a>
+                </Link>
               </h4>
               <span className='text-sm text-neutral-400'>{template}</span>
             </div>

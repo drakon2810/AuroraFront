@@ -5,6 +5,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { useCopy } from '@/hooks/useCopy'
 import { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 interface DeployingModalFooterProps {
   websiteURL: string
@@ -30,9 +31,9 @@ export const DeployingModalFooter: FC<DeployingModalFooterProps> = ({
             {isCopied ? 'Copied' : 'Copy link'}
           </Button>
           <Button asChild>
-            <a href={websiteURL} target='_blank'>
+            <Link to={websiteURL} target='_blank'>
               Forward
-            </a>
+            </Link>
           </Button>
         </div>
       )}

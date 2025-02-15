@@ -1,6 +1,7 @@
 import { Button } from '../ui/button'
 import { footerSocialLinks } from '@/consts'
 import { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 export const FooterSocials: FC = () => {
   return (
@@ -8,9 +9,9 @@ export const FooterSocials: FC = () => {
       {footerSocialLinks.map(({ href, icon: Icon }) => (
         <li key={href}>
           <Button asChild variant='outline' size='icon'>
-            <a href={href} target='_blank'>
+            <Link to={href} target='_blank'>
               <Icon />
-            </a>
+            </Link>
           </Button>
         </li>
       ))}
