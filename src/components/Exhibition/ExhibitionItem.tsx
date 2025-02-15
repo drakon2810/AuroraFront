@@ -57,7 +57,7 @@ export const ExhibitionItem: FC<ExhibitionItemProps> = ({
           </span>
         </div>
       </PinContainer>
-      <div className='z-50 -mt-5 flex w-full items-center gap-0.5 px-3'>
+      <div className='z-50 -mt-5 flex w-full items-center gap-0.5 px-2'>
         {twitterURL && (
           <ExhibitionItemLink href={twitterURL}>
             <Twitter size={18} />
