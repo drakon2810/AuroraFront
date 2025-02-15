@@ -4,7 +4,6 @@ import {
   ErrorResponse,
   GetFontsResponse,
   GetWebsiteFn,
-  GetUserWebsitesFn,
   Website,
   DeleteWebsiteFn,
   UpdateWebsite,
