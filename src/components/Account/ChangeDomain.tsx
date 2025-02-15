@@ -19,7 +19,7 @@ import { useTranslation } from 'react-i18next'
 
 export const ChangeDomain: FC<{ name: string }> = ({ name = '' }) => {
   const [websiteName, setWebsiteName] = useState(name)
-  const { errors, isValid, revalidate } = useValidateName(websiteName)
+  const { errors, isValid, validate } = useValidateName(websiteName)
 
   const { publicKey } = useWallet()
   const { toast } = useToast()
@@ -79,7 +79,7 @@ export const ChangeDomain: FC<{ name: string }> = ({ name = '' }) => {
             setValue={setWebsiteName}
             value={websiteName}
             errors={errors}
-            revalidate={revalidate}
+            validate={validate}
           />
           <DialogFooter className='pt-4'>
             <Button type='submit' disabled={!isValid}>

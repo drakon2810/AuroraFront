@@ -88,10 +88,9 @@ export const getWebsite: GetWebsiteFn = async (name: string) => {
   return data as Website
 }
 
-export const getUserWebsites: GetUserWebsitesFn = async (publicKey: string) => {
-  const url = `${BASE_URL}/websites`
+export const getWebsites: GetUserWebsitesFn = async (user?: string) => {
+  const url = `${BASE_URL}/websites?user=${user ?? ''}`
   const response = await fetch(url, {
-    headers: { 'Public-Key': publicKey },
     credentials: 'include'
   })
   const data: Website[] | ErrorResponse = await response.json()

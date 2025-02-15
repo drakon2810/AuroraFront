@@ -8,11 +8,9 @@ const messages = {
 
 export const useValidateName = (value: string) => {
   const { isSuccess: isNameTaken, refetch } = useQuery({
-    queryKey: ['websiteName'],
-    queryFn: () => {
-      return getWebsite(value)
-    },
-    enabled: !!value,
+    queryKey: [value],
+    queryFn: () => getWebsite(value),
+    enabled: false,
     retry: false
   })
 
@@ -28,6 +26,6 @@ export const useValidateName = (value: string) => {
   return {
     errors,
     isValid,
-    revalidate: refetch
+    validate: refetch
   }
 }

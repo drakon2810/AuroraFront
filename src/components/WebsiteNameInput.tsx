@@ -7,19 +7,19 @@ interface WebsiteNameInputProps {
   value: string
   setValue: Dispatch<SetStateAction<string>>
   errors: { [key: string]: string | null }
-  revalidate: () => void
+  validate: () => void
 }
 
 export const WebsiteNameInput: FC<WebsiteNameInputProps> = ({
   value,
   setValue,
   errors,
-  revalidate
+  validate
 }) => {
   const { t } = useTranslation()
 
   const verifyName = useCallback(
-    debounce(() => revalidate(), 300),
+    debounce(() => validate(), 300),
     []
   )
 

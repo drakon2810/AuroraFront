@@ -1,5 +1,6 @@
 import { Card } from '../Cards/Card'
 import { Description } from '../Description'
+import { Logos3 } from '../blocks/logos3'
 import {
   Accordion,
   AccordionContent,
@@ -36,6 +37,7 @@ export const FAQSection = () => {
           </AccordionItem>
         ))}
       </Accordion>
+      <Logos3 className='bg-neutral-100 pt-0 dark:bg-neutral-800' />
     </Section>
   )
 }

@@ -13,7 +13,7 @@ import {
 } from '@/components/ui/dialog'
 import { useCreateWebsite } from '@/hooks/useCreateWebsite'
 import confetti from 'canvas-confetti'
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSearchParams } from 'react-router-dom'
 
@@ -25,7 +25,7 @@ export const CreateButton = () => {
   const [websiteName, setWebsiteName] = useState(name)
 
   const {
-    name: { errors, isValid, revalidate },
+    name: { errors, isValid, validate },
     create,
     status
   } = useCreateWebsite({
@@ -66,7 +66,7 @@ export const CreateButton = () => {
               value={websiteName}
               setValue={setWebsiteName}
               errors={errors}
-              revalidate={revalidate}
+              validate={validate}
             />
             <DialogFooter className='pt-4'>
               <DeployingModal name={websiteName} status={status}>

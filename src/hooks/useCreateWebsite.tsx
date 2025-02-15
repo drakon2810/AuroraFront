@@ -20,7 +20,7 @@ export const useCreateWebsite = ({
   onSuccess?: () => void
   onError?: () => void
 }) => {
-  const { errors, isValid, revalidate } = useValidateName(name)
+  const { errors, isValid, validate } = useValidateName(name)
 
   const [searchParams] = useSearchParams()
   const template = searchParams.get('template') ?? ''
@@ -51,7 +51,7 @@ export const useCreateWebsite = ({
         variant: 'successful'
       })
       onSuccess && onSuccess()
-      revalidate()
+      validate()
     },
     onError: (error) => {
       toast({
@@ -85,7 +85,7 @@ export const useCreateWebsite = ({
   }
 
   return {
-    name: { errors, isValid, revalidate },
+    name: { errors, isValid, validate },
     status: { isLoading, isError, isSuccess },
     create
   }

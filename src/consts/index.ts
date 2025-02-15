@@ -27,7 +27,8 @@ import { Book, LayoutDashboard, LayoutTemplate, Star } from 'lucide-react'
 import { FaRocket, FaPalette, FaBoltLightning } from 'react-icons/fa6'
 
 export const PROJECT_NAME = 'AURORA'
-export const BASE_URL = 'https://aurorabuild.pro:3000'
+// export const BASE_URL = 'https://aurorabuild.pro:3000'
+export const BASE_URL = 'http://localhost:3000'
 export const GOOGLE_API_BASE_URL =
   'https://www.googleapis.com/webfonts/v1/webfonts'
 
@@ -40,7 +41,7 @@ export const featuresCardIcons = {
 export const navItems = [
   { name: 'dashboard', url: '/account', icon: LayoutDashboard },
   { name: 'templates', url: '/templates', icon: LayoutTemplate },
-  { name: 'exhibition', url: '/pricing', icon: Star },
+  { name: 'exhibition', url: '/exhibition', icon: Star },
   { name: 'start', url: '/start', icon: Book }
 ]
 

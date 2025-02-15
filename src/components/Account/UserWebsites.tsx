@@ -1,6 +1,6 @@
 import { Loading } from '../Loading'
 import { Websites } from './Websites'
-import { getUserWebsites } from '@/services/api'
+import { getWebsites } from '@/services/api'
 import { useWallet } from '@solana/wallet-adapter-react'
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
@@ -13,7 +13,7 @@ export const UserWebsites = () => {
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ['userWebsites'],
-    queryFn: () => getUserWebsites(publicKey)
+    queryFn: () => getWebsites(publicKey)
   })
 
   if (isLoading) {

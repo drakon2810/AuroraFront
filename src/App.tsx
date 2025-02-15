@@ -3,7 +3,7 @@ import { TemplateContextProvider } from './contexts/TemplateContext'
 import { TemplateEditorContextProvider } from './contexts/TemplateEditorContext'
 import { Account } from './pages/Account'
 import { Builder } from './pages/Builder'
-import { Pricing } from './pages/Pricing'
+import { Exhibition } from './pages/Exhibition'
 import { Start } from './pages/Start'
 import { Templates } from './pages/Templates'
 import { Main } from '@/pages/Main'
@@ -34,7 +34,7 @@ function App() {
           <Route path='/account' element={<Account />} />
         </Route>
         <Route element={<Layout />}>
-          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/exhibition' element={<Exhibition />} />
           <Route path='/templates' element={<Templates />} />
           <Route path='/start' element={<Start />} />
         </Route>

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 export const StartBuilding = () => {
   const [name, setName] = useState('')
-  const { errors, revalidate } = useValidateName(name)
+  const { errors, validate } = useValidateName(name)
 
   const navigate = useNavigate()
   const { t } = useTranslation()
@@ -24,7 +24,7 @@ export const StartBuilding = () => {
         value={name}
         setValue={setName}
         errors={errors}
-        revalidate={revalidate}
+        validate={validate}
       />
       <RainbowButton
         type='submit'
