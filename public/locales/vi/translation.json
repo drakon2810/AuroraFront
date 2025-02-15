@@ -92,6 +92,9 @@
       ]
     }
   },
+  "exhibition": {
+    "createdLabel": "Đã tạo"
+  },
   "templates": {
     "cards": {
       "classic": {
@@ -153,7 +156,10 @@
       "standard": {
         "label": "Tiêu chuẩn",
         "description": "Với 0,045 Solana, bạn có thể tạo một trang web bằng mẫu Cổ điển và Đơn giản. Đây là những mẫu đơn giản, với giao diện người dùng rõ ràng và dễ chịu. Chúng dễ dàng chỉnh sửa và thay đổi.",
-        "features": ["Miễn phí tên miền", "Chỉnh sửa sau khi tạo"]
+        "features": [
+          "Miễn phí tên miền",
+          "Chỉnh sửa sau khi tạo"
+        ]
       },
       "advanced": {
         "label": "Nâng cao",

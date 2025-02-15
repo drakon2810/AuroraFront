@@ -23,6 +23,27 @@ import {
   PT,
   SA
 } from 'country-flag-icons/react/3x2'
+import {
+  ar,
+  bn,
+  de,
+  el,
+  enUS,
+  es,
+  fr,
+  hi,
+  id,
+  it,
+  ja,
+  ko,
+  nl,
+  pt,
+  ru,
+  tr,
+  uk,
+  vi,
+  zhCN
+} from 'date-fns/locale'
 import { Book, LayoutDashboard, LayoutTemplate, Star } from 'lucide-react'
 import { FaRocket, FaPalette, FaBoltLightning } from 'react-icons/fa6'
 
@@ -66,6 +87,28 @@ export const languages = [
   { icon: PT, label: 'Pt', value: 'pt' }, // Португальский
   { icon: SA, label: 'عربى', value: 'ar' } // Арабский
 ]
+
+export const dateLocales = {
+  ar,
+  bn,
+  de,
+  el,
+  en: enUS,
+  es,
+  fr,
+  hi,
+  id,
+  it,
+  ja,
+  ko,
+  nl,
+  pt,
+  ru,
+  tr,
+  uk,
+  vi,
+  zh: zhCN
+}
 
 export const footerSocialLinks = [
   {

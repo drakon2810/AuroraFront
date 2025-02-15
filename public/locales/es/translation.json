@@ -92,6 +92,9 @@
       ]
     }
   },
+  "exhibition": {
+    "createdLabel": "Creado"
+  },
   "templates": {
     "cards": {
       "classic": {
@@ -153,7 +156,10 @@
       "standard": {
         "label": "Estándar",
         "description": "Por 0.045 Solana puedes crear un sitio web utilizando las plantillas Clásico y Simple. Estas son plantillas sencillas, con una interfaz de usuario clara y agradable. Son fáciles de editar y modificar.",
-        "features": ["Dominio gratis", "Edición después de la creación"]
+        "features": [
+          "Dominio gratis",
+          "Edición después de la creación"
+        ]
       },
       "advanced": {
         "label": "Avanzado",

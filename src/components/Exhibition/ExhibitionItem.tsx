@@ -2,17 +2,42 @@ import { Pumpfun, Telegram, Twitter } from '../Icons'
 import { PinContainer } from '../ui/3d-pin'
 import { ExhibitionItemLink } from './ExhibitionItemLink'
 import ImagePlaceholder from '@/assets/images/placeholder.webp'
+import { dateLocales } from '@/consts'
 import { getTemplateTokenImageSrc, getWebsiteURL } from '@/lib/utils'
 import { TemplateData } from '@/types/templates'
+import { formatDistance } from 'date-fns'
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+
+const getDateLocale = (locale: string) => {
+  if (dateLocales.hasOwnProperty(locale)) {
+    return dateLocales[locale as keyof typeof dateLocales]
+  }
+
+  return dateLocales.en
+}
 
 interface ExhibitionItemProps {
   name: string
   data: TemplateData
+  createdAt: string
 }
 
-export const ExhibitionItem: FC<ExhibitionItemProps> = ({ name, data }) => {
+export const ExhibitionItem: FC<ExhibitionItemProps> = ({
+  name,
+  data,
+  createdAt
+}) => {
   const tokenImageSrc = getTemplateTokenImageSrc(data, name)
+
+  const { t, i18n } = useTranslation()
+  const locale = getDateLocale(i18n.language)
+
+  const date = new Date(createdAt)
+  const timeAgo = formatDistance(date, new Date(), {
+    addSuffix: true,
+    locale
+  })
 
   const twitterURL = data.links.twitter.url
   const telegramURL = data.links.telegram.url
@@ -27,6 +52,9 @@ export const ExhibitionItem: FC<ExhibitionItemProps> = ({ name, data }) => {
             src={tokenImageSrc || ImagePlaceholder}
             className='h-64 w-64 rounded-xl object-fill object-center'
           />
+          <span className='text-neutral-300'>
+            {t('exhibition.createdLabel')} {timeAgo}
+          </span>
         </div>
       </PinContainer>
       <div className='flex items-center gap-2'>

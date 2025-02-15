@@ -9,9 +9,14 @@ export const ExhibitionItems = () => {
   })
 
   return (
-    <div className='flex flex-wrap justify-center gap-4'>
-      {data?.map(({ data, name }) => (
-        <ExhibitionItem key={name} name={name} data={data} />
+    <div className='flex flex-wrap gap-4'>
+      {data?.map(({ data, name, createdAt }) => (
+        <ExhibitionItem
+          key={name}
+          name={name}
+          data={data}
+          createdAt={createdAt}
+        />
       ))}
     </div>
   )

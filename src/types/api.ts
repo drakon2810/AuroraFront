@@ -22,6 +22,7 @@ export type Website = {
   template: string
   data: TemplateData
   creator: string
+  createdAt: string
 }
 
 export type CreateWebsiteResponse = Website | ErrorResponse

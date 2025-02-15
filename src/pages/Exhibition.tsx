@@ -11,7 +11,7 @@ export const Exhibition = () => {
   })
 
   return (
-    <Section className='container flex w-full items-center justify-center'>
+    <Section className='container flex w-full max-w-[1740px] justify-center'>
       {isLoading && <Loading size={48} />}
       {isError && (
         <span className='text-red-500'>Unable to fetch websites</span>

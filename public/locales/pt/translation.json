@@ -92,6 +92,9 @@
       ]
     }
   },
+  "exhibition": {
+    "createdLabel": "Criado"
+  },
   "templates": {
     "cards": {
       "classic": {
@@ -153,7 +156,10 @@
       "standard": {
         "label": "Padrão",
         "description": "Por 0,045 Solana, você pode criar um site usando os modelos Clássico e Simples. Esses são modelos simples, com uma interface de usuário clara e agradável. Eles são fáceis de editar e modificar.",
-        "features": ["Domínio grátis", "Edição após a criação"]
+        "features": [
+          "Domínio grátis",
+          "Edição após a criação"
+        ]
       },
       "advanced": {
         "label": "Avançado",
