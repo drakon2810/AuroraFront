@@ -13,7 +13,7 @@ export const ExhibitionItemLink: FC<ExhibitionItemLinkProps> = ({
     <a
       href={href}
       target='_blank'
-      className='flex flex-auto items-center justify-center gap-1 rounded-md border border-neutral-800 bg-black p-1 font-medium text-white'
+      className='flex flex-auto items-center justify-center gap-1 rounded-md border border-neutral-500 bg-white p-1 font-medium dark:border-neutral-800 dark:bg-black'
     >
       {children}
     </a>

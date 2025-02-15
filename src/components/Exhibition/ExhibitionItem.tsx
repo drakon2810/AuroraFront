@@ -1,6 +1,5 @@
-import { Pumpfun, Telegram, Twitter } from '../Icons'
 import { PinContainer } from '../ui/3d-pin'
-import { ExhibitionItemLink } from './ExhibitionItemLink'
+import { ExhibitionItemLinks } from './ExhibitionItemLinks'
 import ImagePlaceholder from '@/assets/images/placeholder.webp'
 import { dateLocales } from '@/consts'
 import { getTemplateTokenImageSrc, getWebsiteURL } from '@/lib/utils'
@@ -39,10 +38,6 @@ export const ExhibitionItem: FC<ExhibitionItemProps> = ({
     locale
   })
 
-  const twitterURL = data.links.twitter.url
-  const telegramURL = data.links.telegram.url
-  const pumpfunURL = data.links.pumpfun.url
-
   return (
     <div className='flex flex-col items-center'>
       <PinContainer title={getWebsiteURL(name)} href={getWebsiteURL(name)}>
@@ -52,31 +47,12 @@ export const ExhibitionItem: FC<ExhibitionItemProps> = ({
             src={tokenImageSrc || ImagePlaceholder}
             className='h-64 w-64 rounded-xl object-fill object-center'
           />
-          <span className='text-neutral-300'>
+          <span className='text-neutral-500 dark:text-neutral-300'>
             {t('exhibition.createdLabel')} {timeAgo}
           </span>
         </div>
       </PinContainer>
-      <div className='z-50 -mt-5 flex w-full items-center gap-0.5 px-2'>
-        {twitterURL && (
-          <ExhibitionItemLink href={twitterURL}>
-            <Twitter size={18} />
-            <span>Twitter</span>
-          </ExhibitionItemLink>
-        )}
-        {telegramURL && (
-          <ExhibitionItemLink href={telegramURL}>
-            <Telegram size={16} />
-            <span>Telegram</span>
-          </ExhibitionItemLink>
-        )}
-        {pumpfunURL && (
-          <ExhibitionItemLink href={pumpfunURL}>
-            <Pumpfun size={16} />
-            <span>Pump.fun</span>
-          </ExhibitionItemLink>
-        )}
-      </div>
+      <ExhibitionItemLinks data={data} />
     </div>
   )
 }
