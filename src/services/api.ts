@@ -7,7 +7,8 @@ import {
   GetUserWebsitesFn,
   Website,
   DeleteWebsiteFn,
-  UpdateWebsite
+  UpdateWebsite,
+  GetWebsitesFn
 } from '@/types/api'
 
 const handleError = (data: ErrorResponse) => {
@@ -88,8 +89,8 @@ export const getWebsite: GetWebsiteFn = async (name: string) => {
   return data as Website
 }
 
-export const getWebsites: GetUserWebsitesFn = async (user?: string) => {
-  const url = `${BASE_URL}/websites?user=${user ?? ''}`
+export const getWebsites: GetWebsitesFn = async (user = '') => {
+  const url = `${BASE_URL}/websites?user=${user}`
   const response = await fetch(url, {
     credentials: 'include'
   })

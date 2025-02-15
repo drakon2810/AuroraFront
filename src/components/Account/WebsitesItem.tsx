@@ -3,7 +3,7 @@ import { Button } from '../ui/button'
 import { ChangeDomain } from './ChangeDomain'
 import { DeleteWebsite } from './DeleteWebsite'
 import ImagePlaceholder from '@/assets/images/placeholder.webp'
-import { getUploadedImageURL } from '@/lib/utils'
+import { getTemplateTokenImageSrc, getUploadedImageURL } from '@/lib/utils'
 import { ImageData, TemplateData } from '@/types/templates'
 import { ExternalLink } from 'lucide-react'
 import { FC } from 'react'
@@ -16,17 +16,6 @@ interface WebsitesItemsProps {
   data: TemplateData
 }
 
-const getImageSrc = (data: TemplateData, websiteName: string) => {
-  const fieldData = data?.tokenImage as ImageData
-  if (!fieldData) return null
-
-  if (fieldData.isUploaded) {
-    return getUploadedImageURL('tokenImage', websiteName, data)
-  }
-
-  return fieldData.src
-}
-
 export const WebsitesItem: FC<WebsitesItemsProps> = ({
   name,
   template,
@@ -37,7 +26,7 @@ export const WebsitesItem: FC<WebsitesItemsProps> = ({
   const { protocol, host } = window.location
   const websiteURL = `${protocol}//${name}.${host}`
 
-  const src = getImageSrc(data, name)
+  const src = getTemplateTokenImageSrc(data, name)
 
   return (
     <li className='w-full'>

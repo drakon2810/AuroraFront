@@ -8,6 +8,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger
 } from '@/components/ui/alert-dialog'
+import { getWebsiteURL } from '@/lib/utils'
 import { FC, ReactNode } from 'react'
 
 interface DeployingModalProps {
@@ -25,8 +26,7 @@ export const DeployingModal: FC<DeployingModalProps> = ({
   name,
   status
 }) => {
-  const { protocol, host } = window.location
-  const websiteURL = `${protocol}//${name}.${host}`
+  const websiteURL = getWebsiteURL(name)
 
   return (
     <AlertDialog>

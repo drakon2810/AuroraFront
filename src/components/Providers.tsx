@@ -9,6 +9,7 @@ import {
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { PropsWithChildren, useMemo } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
@@ -30,7 +31,7 @@ export const Providers = ({ children }: PropsWithChildren) => {
             <WalletProvider wallets={wallets} autoConnect>
               <WalletModalProvider>{children}</WalletModalProvider>
               <Toaster />
-              {/*<ReactQueryDevtools />*/}
+              <ReactQueryDevtools />
             </WalletProvider>
           </ConnectionProvider>
         </QueryClientProvider>

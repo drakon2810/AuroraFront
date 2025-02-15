@@ -38,3 +38,22 @@ export const getUploadedImageURL = (
 
   return URL.createObjectURL(uploadedLocallyFile)
 }
+
+export const getTemplateTokenImageSrc = (
+  data: TemplateData,
+  websiteName: string
+) => {
+  const fieldData = data?.tokenImage as ImageData
+  if (!fieldData) return null
+
+  if (fieldData.isUploaded) {
+    return getUploadedImageURL('tokenImage', websiteName, data)
+  }
+
+  return fieldData.src
+}
+
+export const getWebsiteURL = (name: string) => {
+  const { host, protocol } = window.location
+  return `${protocol}//${name}.${host}`
+}

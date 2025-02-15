@@ -11,7 +11,7 @@ export const Loading: FC<LoadingProps> = ({ size = 24, className }) => {
     <svg
       aria-hidden='true'
       className={cn(
-        'animate-spin fill-neutral-600 text-neutral-200 dark:text-neutral-600',
+        'animate-spin fill-neutral-800 text-neutral-200 dark:fill-white dark:text-neutral-600',
         className
       )}
       viewBox='0 0 100 101'

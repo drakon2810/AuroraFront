@@ -43,7 +43,7 @@ export type CreateWebsiteFn = ({
 
 export type GetWebsiteFn = (name: string) => Promise<Website>
 
-export type GetUserWebsitesFn = (publicKey: string) => Promise<Website[]>
+export type GetWebsitesFn = (user?: string) => Promise<Website[]>
 
 export type DeleteWebsiteFn = ({
   name,
