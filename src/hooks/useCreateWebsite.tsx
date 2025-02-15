@@ -11,7 +11,15 @@ import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSearchParams } from 'react-router-dom'
 
-export const useCreateWebsite = (name: string) => {
+export const useCreateWebsite = ({
+  name,
+  onSuccess,
+  onError
+}: {
+  name: string
+  onSuccess?: () => void
+  onError?: () => void
+}) => {
   const { errors, isValid, revalidate } = useValidateName(name)
 
   const [searchParams] = useSearchParams()
@@ -42,6 +50,7 @@ export const useCreateWebsite = (name: string) => {
         title: t('builder.create.successMessage'),
         variant: 'successful'
       })
+      onSuccess && onSuccess()
       revalidate()
     },
     onError: (error) => {
@@ -50,6 +59,7 @@ export const useCreateWebsite = (name: string) => {
         description: error.message,
         variant: 'destructive'
       })
+      onError && onError()
     }
   })
 

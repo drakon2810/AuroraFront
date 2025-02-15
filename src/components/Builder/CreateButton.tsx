@@ -12,22 +12,34 @@ import {
   DialogTrigger
 } from '@/components/ui/dialog'
 import { useCreateWebsite } from '@/hooks/useCreateWebsite'
-import { FormEvent, useState } from 'react'
+import confetti from 'canvas-confetti'
+import { FormEvent, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSearchParams } from 'react-router-dom'
 
 export const CreateButton = () => {
   const { t } = useTranslation()
   const [searchParams] = useSearchParams()
-  const name = searchParams.get('name') ?? ''
 
+  const name = searchParams.get('name') ?? ''
   const [websiteName, setWebsiteName] = useState(name)
 
   const {
     name: { errors, isValid, revalidate },
     create,
     status
-  } = useCreateWebsite(websiteName)
+  } = useCreateWebsite({
+    name: websiteName,
+    onSuccess: () => {
+      confetti({
+        origin: { y: -0.2 },
+        angle: -90,
+        particleCount: 200,
+        spread: 200,
+        gravity: 2
+      })
+    }
+  })
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault()
@@ -35,35 +47,37 @@ export const CreateButton = () => {
   }
 
   return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <FancyButton className='mb-4 w-full max-w-64 self-center'>
-          {t('builder.create.button')}
-        </FancyButton>
-      </DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>{t('builder.create.title')}</DialogTitle>
-          <DialogDescription>
-            {t('builder.create.description')}
-          </DialogDescription>
-        </DialogHeader>
-        <form onSubmit={onSubmit}>
-          <WebsiteNameInput
-            value={websiteName}
-            setValue={setWebsiteName}
-            errors={errors}
-            revalidate={revalidate}
-          />
-          <DialogFooter className='pt-4'>
-            <DeployingModal name={websiteName} status={status}>
-              <Button type='submit' disabled={!isValid}>
-                {t('builder.create.submitButton')}
-              </Button>
-            </DeployingModal>
-          </DialogFooter>
-        </form>
-      </DialogContent>
-    </Dialog>
+    <>
+      <Dialog>
+        <DialogTrigger asChild>
+          <FancyButton className='mb-4 w-full max-w-64 self-center'>
+            {t('builder.create.button')}
+          </FancyButton>
+        </DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>{t('builder.create.title')}</DialogTitle>
+            <DialogDescription>
+              {t('builder.create.description')}
+            </DialogDescription>
+          </DialogHeader>
+          <form onSubmit={onSubmit}>
+            <WebsiteNameInput
+              value={websiteName}
+              setValue={setWebsiteName}
+              errors={errors}
+              revalidate={revalidate}
+            />
+            <DialogFooter className='pt-4'>
+              <DeployingModal name={websiteName} status={status}>
+                <Button type='submit' disabled={!isValid}>
+                  {t('builder.create.submitButton')}
+                </Button>
+              </DeployingModal>
+            </DialogFooter>
+          </form>
+        </DialogContent>
+      </Dialog>
+    </>
   )
 }
