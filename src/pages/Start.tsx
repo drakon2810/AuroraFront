@@ -25,7 +25,7 @@ export const Start = () => {
           </div>
         </div>
       </div>
-      <div className='flex w-[500px] max-w-3xl flex-col items-center border-[10px] border-white'>
+      <div className='flex w-[500px] max-w-3xl flex-col items-center border-[10px] border-black dark:border-white'>
         <h3>Aurora</h3>
         <SplineScene
           scene='https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode'
