@@ -9,8 +9,8 @@ export const Home = () => {
   return (
     <div className='flex h-full flex-col'>
       <HeroSection />
-      <LaunchSection />
       <RecentlyCreatedSection />
+      <LaunchSection />
       <FeaturesSection />
       <FAQSection />
       <TrustedSection />
