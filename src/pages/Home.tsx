@@ -3,6 +3,7 @@ import { FeaturesSection } from '@/components/Sections/FeaturesSection'
 import { HeroSection } from '@/components/Sections/HeroSection'
 import { LaunchSection } from '@/components/Sections/LaunchSection'
 import { RecentlyCreatedSection } from '@/components/Sections/RecentlyCreatedSection'
+import { TrustedSection } from '@/components/Sections/TrustedSection'
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <RecentlyCreatedSection />
       <FeaturesSection />
       <FAQSection />
+      <TrustedSection />
     </div>
   )
 }

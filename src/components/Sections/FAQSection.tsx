@@ -1,13 +1,11 @@
 import { Card } from '../Cards/Card'
 import { Description } from '../Description'
-import { Logos3 } from '../blocks/logos3'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger
 } from '../ui/accordion'
-import { Section } from './Section'
 import { useTranslation } from 'react-i18next'
 
 export const FAQSection = () => {
@@ -15,9 +13,9 @@ export const FAQSection = () => {
   const FAQs = t('home.FAQs.questions', { returnObjects: true })
 
   return (
-    <Section
+    <section
       id='FAQ'
-      className='flex flex-col items-center justify-center gap-12 bg-neutral-100 dark:bg-neutral-800'
+      className='flex flex-col items-center justify-center gap-12 bg-neutral-100 py-24 dark:bg-neutral-800'
     >
       <div className='flex flex-col items-center gap-4'>
         <h3 className='text-4xl font-bold'>{t('home.FAQs.title')}</h3>
@@ -37,7 +35,6 @@ export const FAQSection = () => {
           </AccordionItem>
         ))}
       </Accordion>
-      <Logos3 className='bg-neutral-100 pt-0 dark:bg-neutral-800' />
-    </Section>
+    </section>
   )
 }
