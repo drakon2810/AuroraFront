@@ -1,3 +1,4 @@
+import { TemplateData } from './templates'
 import { PropertyPath } from 'lodash'
 import { LucideIcon } from 'lucide-react'
 import { FC } from 'react'
@@ -40,4 +41,10 @@ export interface NavLink {
 export interface StartItem {
   title: string
   list: string[]
+}
+
+export interface WebsiteData {
+  name: string
+  data: TemplateData
+  createdAt: string
 }

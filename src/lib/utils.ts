@@ -1,4 +1,4 @@
-import { BASE_URL } from '@/consts'
+import { BASE_URL, dateLocales } from '@/consts'
 import { ImageData, TemplateData } from '@/types/templates'
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
@@ -56,4 +56,12 @@ export const getTemplateTokenImageSrc = (
 export const getWebsiteURL = (name: string) => {
   const { host, protocol } = window.location
   return `${protocol}//${name}.${host}`
+}
+
+export const getDateLocale = (locale: string) => {
+  if (dateLocales.hasOwnProperty(locale)) {
+    return dateLocales[locale as keyof typeof dateLocales]
+  }
+
+  return dateLocales.en
 }
