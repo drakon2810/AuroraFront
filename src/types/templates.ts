@@ -26,7 +26,13 @@ export interface Animation {
 
 type SizeUnit = 'px' | 'rem' | 'cm' | '%'
 
-export type Data = TextData | ImageData | LinkData | ToggleData | ColorData
+export type Data =
+  | TextData
+  | ImageData
+  | LinkData
+  | ToggleData
+  | ColorData
+  | WidgetsData
 
 interface CommonData {
   label: string
@@ -70,12 +76,29 @@ export interface LinkData extends CommonData {
   visibility: 'header' | 'main' | 'none'
 }
 
+export interface WidgetsData extends CommonData {
+  value: string[] // или другой тип, например, { src: string, animation: string }
+  fontFamily: string
+  fontSizeValue: number
+  sizeUnit: SizeUnit
+  color: string
+  align?: 'left' | 'center' | 'right'
+  styles: TextStyles[]
+  strokeColor: string
+  strokeWidth: number
+  backgroundColor: string
+}
+
 export interface ToggleData {
   value: boolean
 }
 
 export interface ColorData {
   value: string
+}
+
+export interface WidgetsData {
+  value: string[]
 }
 
 interface TemplateTextCategoryField {
@@ -103,6 +126,11 @@ interface TemplateColorCategoryField {
   defaultValues?: Partial<ColorData>
 }
 
+interface TemplateWidgetsCategoryField {
+  type: 'widgets'
+  defaultValues?: Partial<ColorData>
+}
+
 export type TemplateSubCategoryField = {
   name: string
   editor?: boolean
@@ -113,6 +141,7 @@ export type TemplateSubCategoryField = {
   | TemplateLinkCategoryField
   | TemplateToggleCategoryField
   | TemplateColorCategoryField
+  | TemplateWidgetsCategoryField
 )
 
 export type DefaultValues = {
@@ -121,6 +150,7 @@ export type DefaultValues = {
   link: Omit<LinkData, 'label' | 'name'>
   toggle: Omit<ToggleData, 'label' | 'name'>
   color: Omit<ColorData, 'label' | 'name'>
+  widgets: Omit<WidgetsData, 'label' | 'name'>
 }
 
 export type TemplateSubCategoryFieldType = keyof DefaultValues

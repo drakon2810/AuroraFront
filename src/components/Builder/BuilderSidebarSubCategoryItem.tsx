@@ -30,12 +30,14 @@ export const BuilderSidebarSubCategoryItem: FC<TemplateSubCategoryField> = (
   return (
     <div className='flex flex-col gap-2'>
       <div className='flex items-center'>
-        <Label
-          htmlFor={name}
-          className='flex items-center justify-between gap-4 pr-2 font-arial-black'
-        >
-          {t(`builder.${selectedTemplate}.fields.${name}`)}
-        </Label>
+        {name !== 'Falling animation' && (
+          <Label
+            htmlFor={name}
+            className='flex items-center justify-between gap-4 pr-2 font-arial-black'
+          >
+            {t(`builder.${selectedTemplate}.fields.${name}`)}
+          </Label>
+        )}
         {editor && (
           <Button onClick={() => setActiveSubCategory(props)} variant='ghost'>
             <ChevronRight />

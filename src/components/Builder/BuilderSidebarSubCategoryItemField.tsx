@@ -1,4 +1,5 @@
 import { Input } from '../ui/input'
+import { FallingImageWidget } from '../ui/widgets'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateEditorContext } from '@/contexts/TemplateEditorContext'
 import {
@@ -10,7 +11,8 @@ import {
   ImageData,
   LinkData,
   TemplateSubCategoryFieldType,
-  TextData
+  TextData,
+  WidgetsData
 } from '@/types/templates'
 import { FC, useContext } from 'react'
 import { HexColorPicker } from 'react-colorful'
@@ -67,6 +69,15 @@ export const BuilderSidebarSubCategoryItemField: FC<
         <HexColorPicker
           color={(data[name] as ColorData).value}
           onChange={(color) => updateField(`${name}.value`, color)}
+        />
+      )
+    case 'widgets':
+      return (
+        <FallingImageWidget
+          value={(data[name] as WidgetsData)?.value || []}
+          onChange={(newValue: string[]) =>
+            updateField(`${name}.value`, newValue)
+          }
         />
       )
   }

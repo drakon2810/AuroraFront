@@ -284,6 +284,16 @@ export const templatesData = {
             defaultValues: { visibility: 'none' }
           }
         ]
+      },
+      {
+        label: 'widgets',
+        fields: [
+          {
+            type: 'widgets',
+            name: 'Falling animation',
+            placeholder: 'URL-'
+          }
+        ]
       }
     ]
   },
