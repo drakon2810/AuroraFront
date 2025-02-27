@@ -1,3 +1,5 @@
+import RotatingImages from '../components/ui/RotatingImages'
+import { useFallingImagesStore } from '../store/useFallingImagesStore'
 import { BuilderCategories } from '@/components/Builder/BuilderCategories'
 import { BuilderSidebar } from '@/components/Builder/BuilderSidebar'
 import {
@@ -14,10 +16,13 @@ export const Builder = () => {
   const { selectedTemplate } = useContext(
     TemplateContext
   ) as TemplateContextValues
+  const statusCheckbox = useFallingImagesStore(
+    (state) => state.isCheckboxChecked
+  )
 
   if (!selectedTemplate) return
   const Template = templates[selectedTemplate]
-
+  console.log(statusCheckbox)
   return (
     <ResizablePanelGroup direction='horizontal' className='flex max-h-dvh'>
       <BuilderCategories />
@@ -31,8 +36,13 @@ export const Builder = () => {
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel>
-        <main className='h-full flex-auto text-white'>
+        <main className='relative h-full flex-auto text-white'>
           <Template />
+          {statusCheckbox && (
+            <div className='pointer-events-none absolute bottom-0 left-0 right-0 top-0 z-50'>
+              <RotatingImages />
+            </div>
+          )}
         </main>
       </ResizablePanel>
     </ResizablePanelGroup>
