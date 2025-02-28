@@ -1,4 +1,4 @@
-import { useFallingImagesStore } from '../../store/useFallingImagesStore'
+import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import styles from '../Styles/RotatingImages.module.css'
 
 const RotatingImages = () => {

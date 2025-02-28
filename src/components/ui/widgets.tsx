@@ -1,5 +1,5 @@
-import { useFallingImagesStore } from '../../store/useFallingImagesStore'
-import { AudioWidget } from './AudioWidgetProps'
+import { useFallingImagesStore } from '../../store/useWidgetsStore'
+import { AudioWidget } from './audioWidgetProps'
 import { FC, useState, ChangeEvent } from 'react'
 
 interface FallingImageWidgetProps {
@@ -19,6 +19,9 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
   )
 
   const statusCheckbox = useFallingImagesStore((state) => state.statusCheckbox)
+  const changePopTicker = useFallingImagesStore(
+    (state) => state.changePopTicker
+  )
 
   const handleToggle = () => {
     setIsActive(!isActive)
@@ -45,6 +48,7 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
     }
   }
   statusCheckbox(isActive)
+  changePopTicker(isActiveTicker)
 
   return (
     <div>

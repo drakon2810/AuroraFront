@@ -31,6 +31,7 @@ export const Text: FC<TextProps> = ({
   ) as TemplateContextValues
 
   const fieldData = data?.[fieldName] as TextData
+
   if (!fieldData) return <TemplateItemError />
 
   loadFonts([fieldData.fontFamily])

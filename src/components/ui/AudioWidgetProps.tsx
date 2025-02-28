@@ -1,33 +1,40 @@
+import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import styles from '../Styles/AudioWidgetProps.module.css'
 import { MusicalNoteIcon } from '@heroicons/react/24/outline'
 import { FC, useState, ChangeEvent } from 'react'
+import { ColorPicker, useColor } from 'react-color-palette'
+import 'react-color-palette/css'
 
 interface AudioWidgetProps {
   onAudioChange?: (file: File | null) => void
-  onAudioToggle?: (isEnabled: boolean) => void
-  onAutoplayChange?: (isAutoplay: boolean) => void
-  onButtonColorChange?: (color: string) => void
 }
 
-export const AudioWidget: FC<AudioWidgetProps> = ({
-  onAudioChange,
-  onAutoplayChange,
-  onButtonColorChange
-}) => {
+export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
   const [isAutoplay, setIsAutoplay] = useState(false)
   const [audioFile, setAudioFile] = useState<File | null>(null)
-  const [buttonColor, setButtonColor] = useState('Default')
   const [isActiveAudio, setIsActiveAudio] = useState<boolean>(false)
+  const [color, setColor] = useColor('#000000')
+  const [active, setActive] = useState(false)
+  const addAudioIcon = useFallingImagesStore((state) => state.addAudioIcon)
+  const addAudioIconColor = useFallingImagesStore(
+    (state) => state.addAudioIconColor
+  )
+  const addAudioFile = useFallingImagesStore((state) => state.addAudioFile)
 
   const handleToggleAudio = () => {
-    setIsActiveAudio(!isActiveAudio)
+    const newValue = !isActiveAudio
+    setIsActiveAudio(newValue)
+    addAudioIcon(newValue)
   }
 
-  // Обработчик автоплея
   const handleAutoplayChange = (event: ChangeEvent<HTMLInputElement>) => {
     const checked = event.target.checked
     setIsAutoplay(checked)
-    onAutoplayChange?.(checked)
+  }
+
+  const handleDefaultChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const checked = event.target.checked
+    setActive(checked)
   }
 
   const handleAudioUpload = (event: ChangeEvent<HTMLInputElement>) => {
@@ -35,13 +42,24 @@ export const AudioWidget: FC<AudioWidgetProps> = ({
     if (file) {
       setAudioFile(file)
       onAudioChange?.(file)
+      addAudioFile(file)
     }
   }
 
-  const handleButtonColorChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    const color = event.target.value
-    setButtonColor(color)
-    onButtonColorChange?.(color)
+  const newColor = {
+    hex: '#000000',
+    rgb: { r: 255, g: 0, b: 0, a: 1 },
+    hsv: { h: 0, s: 1, v: 1, a: 1 }
+  }
+
+  const handleAudioIconColorDefault = () => {
+    setColor(newColor)
+    addAudioIconColor(color.hex)
+  }
+
+  const handleAudioIconColor = (newColor: any) => {
+    setColor(newColor)
+    addAudioIconColor(newColor.hex)
   }
 
   return (
@@ -70,7 +88,6 @@ export const AudioWidget: FC<AudioWidgetProps> = ({
           <span className={styles.checkboxLabel}>autoplay</span>
         </div>
       </div>
-
       <label className={styles.audioUpload}>
         <input
           type='file'
@@ -79,23 +96,53 @@ export const AudioWidget: FC<AudioWidgetProps> = ({
           className={styles.fileInput}
           disabled={!isActiveAudio}
         />
-        <MusicalNoteIcon className={styles.audioIcon} />
-      </label>
 
+        <div className='flex flex-col items-center justify-center text-center'>
+          <MusicalNoteIcon className={styles.audioIcon} />
+          <span className='h-6 w-48 overflow-hidden whitespace-nowrap text-sm text-gray-700'>
+            {audioFile?.name
+              ? audioFile.name.length > 20
+                ? `${audioFile.name.slice(0, 20)}...`
+                : audioFile.name
+              : 'No file selected'}
+          </span>
+        </div>
+      </label>
       <div className={styles.colorSelectContainer}>
         <span>Button color:</span>
-        <select
-          value={buttonColor}
-          onChange={handleButtonColorChange}
-          className={styles.select}
-          disabled={!isActiveAudio}
-        >
-          <option value='Default'>Default</option>
-          <option value='Red'>Red</option>
-          <option value='Blue'>Blue</option>
-          <option value='Green'>Green</option>
-        </select>
+        <div className={styles.defaultConteiner}>
+          <input
+            type='checkbox'
+            checked={active}
+            onChange={handleDefaultChange}
+            className={styles.checkbox}
+            disabled={!isActiveAudio}
+          />
+
+          <span className={styles.checkboxLabel}>
+            <span style={{ color: `${color.hex}` }}>Default</span>
+          </span>
+          {active && (
+            <button
+              onClick={handleAudioIconColorDefault}
+              className={styles.btn}
+            >
+              х
+            </button>
+          )}
+        </div>
       </div>
+      {active && (
+        <div>
+          <div className='w-60'>
+            <ColorPicker
+              hideInput={['rgb', 'hsv']}
+              color={color}
+              onChange={handleAudioIconColor}
+            />
+          </div>
+        </div>
+      )}
     </div>
   )
 }
