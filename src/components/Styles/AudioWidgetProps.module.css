@@ -1,0 +1,142 @@
+.widget {
+  border-radius: 8px; /* Закруглённые углы */
+
+  display: flex; /* Гибкое выравнивание элементов */
+  flex-direction: column; /* Элементы друг под другом */
+  gap: 12px; /* Расстояние между элементами */
+  width: 300px; /* Примерная ширина, как на макете */
+}
+
+.switchContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 12px;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  position: relative;
+}
+
+.switchEnabled {
+  background-color: #4a90e2;
+}
+
+.switchLabel {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch span {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.switch input:checked + span {
+  transform: translateX(20px);
+}
+
+.autoplayContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 80px;
+  margin-bottom: 15px;
+}
+
+.defaultConteiner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #666;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #333;
+}
+
+.audioUpload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #e9e6e6;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #fff;
+  width: 250px;
+}
+
+.audioIcon {
+  width: 24px;
+  height: 24px;
+  color: #666;
+}
+
+.fileInput {
+  display: none;
+}
+
+.colorSelectContainer {
+  display: flex;
+
+  gap: 8px;
+}
+
+.select {
+  padding: 4px 8px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 10px;
+}

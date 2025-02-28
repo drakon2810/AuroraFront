@@ -284,6 +284,16 @@ export const templatesData = {
             defaultValues: { visibility: 'none' }
           }
         ]
+      },
+      {
+        label: 'widgets',
+        fields: [
+          {
+            type: 'widgets',
+            name: 'Falling animation',
+            placeholder: 'URL-'
+          }
+        ]
       }
     ]
   },
@@ -419,6 +429,16 @@ export const templatesData = {
             name: 'authorDiscord',
             placeholder: 'https://discord.com',
             defaultValues: { visibility: 'header' }
+          }
+        ]
+      },
+      {
+        label: 'widgets',
+        fields: [
+          {
+            type: 'widgets',
+            name: 'Falling animation',
+            placeholder: 'URL-'
           }
         ]
       }
@@ -835,6 +855,16 @@ export const templatesData = {
               value: 'FOURTH ANSWER',
               color: '#000'
             }
+          }
+        ]
+      },
+      {
+        label: 'widgets',
+        fields: [
+          {
+            type: 'widgets',
+            name: 'Falling animation',
+            placeholder: 'URL-'
           }
         ]
       }
@@ -1474,6 +1504,16 @@ export const templatesData = {
             name: 'joinDiscord',
             editor: true,
             placeholder: 'URL'
+          }
+        ]
+      },
+      {
+        label: 'widgets',
+        fields: [
+          {
+            type: 'widgets',
+            name: 'Falling animation',
+            placeholder: 'URL-'
           }
         ]
       }

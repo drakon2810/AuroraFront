@@ -1,6 +1,7 @@
 import { Loading } from '@/components/Loading'
 import { getSubdomain } from '@/lib/utils'
 import { getWebsite } from '@/services/api'
+import { useFallingImagesStore } from '@/store/useWidgetsStore'
 import { templatesFields } from '@/templates'
 import { UpdateField } from '@/types'
 import { TemplateContextValues } from '@/types/contexts'
@@ -32,6 +33,7 @@ export const TemplateContextProvider: FC<PropsWithChildren> = ({
   const isCreator = pathname === '/create'
 
   const isValidTemplate = templatesFields.hasOwnProperty(template ?? '')
+  const addInputValue = useFallingImagesStore((state) => state.addInputValue)
 
   if (isCreator && !isValidTemplate) {
     return <Navigate to='/templates' />
@@ -72,6 +74,9 @@ export const TemplateContextProvider: FC<PropsWithChildren> = ({
   const updateField: UpdateField = useCallback((path, value) => {
     setData((data) => set(cloneDeep(data), path, value))
   }, [])
+
+  const dataInput = data.ticker
+  addInputValue(dataInput)
 
   if (isFetching) {
     return (

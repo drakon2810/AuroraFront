@@ -1,0 +1,91 @@
+.audioButton {
+  width: 48px; /* Размер кнопки, можно настроить */
+  height: 48px; /* Размер кнопки, можно настроить */
+  background-color: #1a202c; /* Тёмно-серый фон, как на скриншоте */
+  border-radius: 50%; /* Круглая кнопка */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease; /* Плавный переход для всех изменений */
+}
+
+.audioButton:active {
+  transform: scale(
+    0.95
+  ); /* Сжатие кнопки при нажатии для визуальной обратной связи */
+  background-color: #2d3748; /* Более тёмный фон при нажатии */
+  border-color: #a0aec0; /* Более светлая обводка при нажатии */
+}
+
+.audioButton:hover {
+  transform: scale(1.1); /* Лёгкое увеличение при наведении */
+}
+
+.iconContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speakerIcon {
+  width: 24px;
+  height: 24px;
+  color: #4a5568; /* Серая иконка по умолчанию */
+}
+
+.audioLines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audioLines::after,
+.audioLines::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #2ecc71; /* Зелёные линии */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.audioLines::after {
+  left: 20%;
+  animation-delay: 0.2s;
+}
+
+.audioLines::before {
+  right: 20%;
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 20px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.active {
+  border-color: #2ecc71; /* Зелёная обводка при активном состоянии */
+}
+
+.active .speakerIcon {
+  color: #2ecc71; /* Зелёная иконка при активном состоянии */
+}
