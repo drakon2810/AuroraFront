@@ -75,7 +75,7 @@ export const TemplateContextProvider: FC<PropsWithChildren> = ({
     setData((data) => set(cloneDeep(data), path, value))
   }, [])
 
-  const dataInput = data.ticker
+  const dataInput = data?.ticker || ''
   addInputValue(dataInput)
 
   if (isFetching) {
