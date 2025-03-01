@@ -12,7 +12,7 @@ import {
 import { templates } from '@/consts/templates'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
-import { useContext, useState } from 'react'
+import { useContext, useState, useEffect } from 'react'
 
 export const Builder = () => {
   const { selectedTemplate } = useContext(
@@ -23,8 +23,12 @@ export const Builder = () => {
   )
   const isAudioaIcon = useFallingImagesStore((state) => state.isAudioaIcon)
   const isPopTicker = useFallingImagesStore((state) => state.isPopTicker)
+  const fallingImages = useFallingImagesStore((state) => state.fallingImages)
   const value = useFallingImagesStore((state) => state.value) // Значение из стора
-
+  const clearFallingImages = useFallingImagesStore(
+    (state) => state.clearFallingImages
+  ) // Значение из стора
+  console.log(fallingImages)
   // Состояние для хранения списка текстов
   const [texts, setTexts] = useState<
     { id: number; x: number; y: number; value: string }[]
@@ -55,6 +59,12 @@ export const Builder = () => {
       )
     }, 2000) // Время жизни текста — 2 секунды
   }
+
+  useEffect(() => {
+    return () => {
+      clearFallingImages()
+    }
+  }, [clearFallingImages])
 
   return (
     <ResizablePanelGroup direction='horizontal' className='flex max-h-dvh'>

@@ -26,14 +26,21 @@ export const DisplayValueOnClick = ({
             left: text.x,
             top: text.y,
             padding: '20px',
-            backgroundColor: 'transparent',
-            color: 'black',
-            fontSize: '48px',
-            fontWeight: 'bold',
+            fontSize: '64px', // Увеличенный размер
+            fontWeight: '900', // Очень жирный текст
+            color: 'white', // Основной цвет текста
+            textShadow: `
+              0 0 10px rgba(255, 255, 255, 0.8),
+              0 0 20px rgba(255, 255, 255, 0.6),
+              0 0 30px rgba(255, 0, 0, 0.5),
+              0 0 40px rgba(255, 0, 0, 0.4),
+              0 0 50px rgba(255, 0, 255, 0.3)
+            `, // Создает эффект ряби
             transform: 'translate(-50%, -50%)',
             whiteSpace: 'nowrap',
             pointerEvents: 'none',
-            zIndex: 1000
+            zIndex: 1000,
+            animation: 'fadeOut 2s ease-in-out forwards' // Анимация затухания
           }}
         >
           <p>{value.value || 'Ticker'}</p>

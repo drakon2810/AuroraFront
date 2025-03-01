@@ -15,6 +15,7 @@ interface FallingImagesStore {
   addAudioFile: (file: File | null) => void
   addInputValue: (value: any) => void
   changePopTicker: (value: boolean) => void
+  clearFallingImages: () => void
 }
 
 export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
@@ -25,33 +26,44 @@ export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
   color: '',
   value: null,
   isPopTicker: false,
+
   addFallingImage: (file, count) =>
     set((state) => ({
       fallingImages: [...state.fallingImages, ...new Array(count).fill(file)]
     })),
+
   statusCheckbox: (checked) =>
     set(() => ({
       isCheckboxChecked: checked
     })),
+
   addAudioIcon: (checked) =>
     set(() => ({
       isAudioaIcon: checked
     })),
+
   addAudioIconColor: (color) =>
     set(() => ({
       color: color
     })),
+
   addAudioFile: (file: File | null) =>
     set(() => ({
       audioFile: file
     })),
+
   addInputValue: (value) =>
     set(() => ({
       value: value
     })),
-  changePopTicker: (value) => {
+
+  changePopTicker: (value) =>
     set(() => ({
       isPopTicker: value
+    })),
+
+  clearFallingImages: () =>
+    set(() => ({
+      fallingImages: []
     }))
-  }
 }))
