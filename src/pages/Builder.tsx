@@ -12,7 +12,7 @@ import {
 import { templates } from '@/consts/templates'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 
 export const Builder = () => {
   const { selectedTemplate } = useContext(
@@ -23,9 +23,39 @@ export const Builder = () => {
   )
   const isAudioaIcon = useFallingImagesStore((state) => state.isAudioaIcon)
   const isPopTicker = useFallingImagesStore((state) => state.isPopTicker)
+  const value = useFallingImagesStore((state) => state.value) // Значение из стора
 
-  if (!selectedTemplate) return
+  // Состояние для хранения списка текстов
+  const [texts, setTexts] = useState<
+    { id: number; x: number; y: number; value: string }[]
+  >([])
+
+  if (!selectedTemplate) return null
   const Template = templates[selectedTemplate]
+
+  const handleScreenClick = (event: React.MouseEvent) => {
+    const rect = event.currentTarget.getBoundingClientRect()
+    const x = event.clientX - rect.left
+    const y = event.clientY - rect.top
+
+    // Добавляем новый текст с уникальным id и текущим значением из стора
+    const newText = {
+      id: Date.now(), // Уникальный идентификатор
+      x,
+      y,
+      value: value.value || 'Ticker' // Используем значение из стора или дефолтное
+    }
+
+    setTexts((prevTexts) => [...prevTexts, newText])
+
+    // Удаляем текст через 2 секунды
+    setTimeout(() => {
+      setTexts((prevTexts) =>
+        prevTexts.filter((text) => text.id !== newText.id)
+      )
+    }, 2000) // Время жизни текста — 2 секунды
+  }
+
   return (
     <ResizablePanelGroup direction='horizontal' className='flex max-h-dvh'>
       <BuilderCategories />
@@ -39,12 +69,11 @@ export const Builder = () => {
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel>
-        <main className='relative h-full flex-auto overflow-visible text-white'>
-          {isPopTicker && (
-            <div className='absolute z-50 h-dvh w-full'>
-              <DisplayValueOnClick />
-            </div>
-          )}
+        <main
+          className='relative h-full flex-auto overflow-visible text-white'
+          onClick={isPopTicker ? handleScreenClick : undefined}
+        >
+          {isPopTicker && <DisplayValueOnClick texts={texts} />}
           <Template />
 
           {statusCheckbox && (

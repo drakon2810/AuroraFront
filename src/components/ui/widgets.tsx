@@ -1,5 +1,5 @@
 import { useFallingImagesStore } from '../../store/useWidgetsStore'
-import { AudioWidget } from './audioWidgetProps'
+import { AudioWidget } from './AudioWidgetProps'
 import { FC, useState, ChangeEvent } from 'react'
 
 interface FallingImageWidgetProps {
