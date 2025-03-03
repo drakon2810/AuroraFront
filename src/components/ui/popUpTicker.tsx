@@ -1,7 +1,10 @@
 import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import { FontsPicker } from '../FontsPicker/FontsPicker'
+import { ThemeContext } from '@/contexts/ThemeContext'
+import { ThemeContextValues } from '@/types/contexts'
 import { motion } from 'framer-motion'
 import { FC, useState } from 'react'
+import { useContext } from 'react'
 
 interface PopUpTickerProps {
   isActiveTicker: boolean
@@ -13,6 +16,7 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
   onToggleTicker
 }) => {
   const [color, setColor] = useState<string>('#ffffff')
+  const { theme } = useContext(ThemeContext) as ThemeContextValues
   const [fontSize, setFontSize] = useState<string>('16')
   const changePopTickerFontSize = useFallingImagesStore(
     (state) => state.changePopTickerFontSize
@@ -32,7 +36,13 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
   }
 
   return (
-    <div className='mb-4 rounded-lg border-2 bg-[#fff] shadow-sm'>
+    <div
+      className={`mb-4 rounded-lg border-2 shadow-sm ${
+        theme === 'dark'
+          ? 'border-gray-700 bg-transparent'
+          : 'border-gray-200 bg-[#fff]'
+      }`}
+    >
       <div className='flex items-center gap-2 px-4 py-2'>
         <label className='relative inline-flex cursor-pointer items-center'>
           <input
@@ -43,7 +53,9 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
           />
           <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
         </label>
-        <span className='text-sm font-medium text-gray-700'>
+        <span
+          className={`text-sm font-medium text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'}`}
+        >
           Pop-up Ticker on hero click
         </span>
       </div>
@@ -58,7 +70,11 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
         >
           <div className='flex flex-col gap-4'>
             <div className='flex items-center gap-2'>
-              <label className='text-sm font-medium text-gray-700'>Color</label>
+              <label
+                className={`text-sm font-medium text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'}`}
+              >
+                Color
+              </label>
               <input
                 type='color'
                 value={color}
@@ -68,7 +84,9 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
             </div>
 
             <div className='flex items-center gap-2'>
-              <label className='text-sm font-medium text-gray-700'>
+              <label
+                className={`text-sm font-medium text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'}`}
+              >
                 Font Size
               </label>
               <input

@@ -1,7 +1,10 @@
 import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import { AudioWidget } from './AudioWidgetProps'
 import { PopUpTicker } from './popUpTicker'
+import { ThemeContext } from '@/contexts/ThemeContext'
+import { ThemeContextValues } from '@/types/contexts'
 import { FC, useState, ChangeEvent } from 'react'
+import { useContext } from 'react'
 
 interface FallingImageWidgetProps {
   value: (File | null)[]
@@ -14,7 +17,7 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
 }) => {
   const [isActive, setIsActive] = useState<boolean>(false)
   const [isActiveTicker, setIsActiveTicker] = useState<boolean>(false)
-
+  const { theme } = useContext(ThemeContext) as ThemeContextValues
   const addFallingImage = useFallingImagesStore(
     (state) => state.addFallingImage
   )
@@ -57,7 +60,13 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
         isActiveTicker={isActiveTicker}
         onToggleTicker={handleToggleTicker}
       />
-      <div className='rounded-lg border-2 bg-[#fff] p-4 shadow-sm'>
+      <div
+        className={`rounded-lg border-2 p-4 shadow-sm ${
+          theme === 'dark'
+            ? 'border-gray-700 bg-transparent'
+            : 'border-gray-200 bg-[#fff]'
+        }`}
+      >
         <div className='mb-4 flex items-center gap-2'>
           <label className='relative inline-flex cursor-pointer items-center'>
             <input
@@ -68,7 +77,11 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
             />
             <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
           </label>
-          <span className='text-sm font-medium text-gray-700'>
+          <span
+            className={`text-sm font-medium text-gray-700 ${
+              theme === 'dark' ? 'text-white' : 'text-black'
+            }`}
+          >
             Falling animation
           </span>
         </div>
@@ -115,7 +128,13 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
           ))}
         </div>
       </div>
-      <div className='mt-4 rounded-lg border-2 bg-[#fff] p-4 shadow-sm'>
+      <div
+        className={`mt-4 rounded-lg border-2 p-4 shadow-sm ${
+          theme === 'dark'
+            ? 'border-gray-700 bg-transparent'
+            : 'border-gray-200 bg-[#fff]'
+        }`}
+      >
         <AudioWidget />
       </div>
     </div>

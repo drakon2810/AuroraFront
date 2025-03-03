@@ -1,7 +1,10 @@
 import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import styles from '../Styles/AudioWidgetProps.module.css'
+import { ThemeContext } from '@/contexts/ThemeContext'
+import { ThemeContextValues } from '@/types/contexts'
 import { MusicalNoteIcon } from '@heroicons/react/24/outline'
 import { FC, useState, ChangeEvent } from 'react'
+import { useContext } from 'react'
 
 interface AudioWidgetProps {
   onAudioChange?: (file: File | null) => void
@@ -14,6 +17,7 @@ export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
   const [color, setColor] = useState<string>('#000000')
   const [colorIcon, setColorIcon] = useState<string>('#4a5568')
   const [shape, setShape] = useState('circle')
+  const { theme } = useContext(ThemeContext) as ThemeContextValues
 
   const addAudioIcon = useFallingImagesStore((state) => state.addAudioIcon)
   const addAudioIconColor = useFallingImagesStore(
@@ -87,7 +91,11 @@ export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
             />
             <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
           </label>
-          <span className='text-sm font-medium text-gray-700'>Audio</span>
+          <span
+            className={`text-sm font-medium text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'}`}
+          >
+            Audio
+          </span>
         </div>
         <div className={styles.autoplayContainer}>
           <input
@@ -97,7 +105,13 @@ export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
             className={styles.checkbox}
             disabled={!isActiveAudio}
           />
-          <span className={styles.checkboxLabel}>autoplay</span>
+          <span className={styles.checkboxLabel}>
+            <span
+              className={`${theme === 'dark' ? 'text-white' : 'text-black'}`}
+            >
+              autoplay
+            </span>
+          </span>
         </div>
       </div>
       <label className={styles.audioUpload}>
@@ -122,9 +136,21 @@ export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
       {isActiveAudio && (
         <div className={styles.colorSelectContainer}>
           <strong>
-            <span>Button</span>
+            <span
+              className={`text-sm font-medium text-gray-700 ${
+                theme === 'dark' ? 'text-white' : 'text-black'
+              }`}
+            >
+              Button
+            </span>
           </strong>
-          <span>color</span>
+          <span
+            className={`text-sm font-medium text-gray-700 ${
+              theme === 'dark' ? 'text-white' : 'text-black'
+            }`}
+          >
+            color
+          </span>
         </div>
       )}
       {isActiveAudio && (
@@ -146,7 +172,13 @@ export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
       {isActiveAudio && (
         <div className='mb-4'>
           <label className='block text-sm font-medium text-gray-700'>
-            SHAPE
+            <span
+              className={`text-sm font-medium text-gray-700 ${
+                theme === 'dark' ? 'text-white' : 'text-black'
+              }`}
+            >
+              SHAPE
+            </span>
           </label>
           <div className='mt-2 flex gap-4'>
             <div className='grid gap-2'>
@@ -197,9 +229,21 @@ export const AudioWidget: FC<AudioWidgetProps> = ({ onAudioChange }) => {
       {isActiveAudio && (
         <div className={styles.colorSelectContainer}>
           <strong>
-            <span>Icon</span>
+            <span
+              className={`text-sm font-medium text-gray-700 ${
+                theme === 'dark' ? 'text-white' : 'text-black'
+              }`}
+            >
+              Icon
+            </span>
           </strong>
-          <span>color</span>
+          <span
+            className={`text-sm font-medium text-gray-700 ${
+              theme === 'dark' ? 'text-white' : 'text-black'
+            }`}
+          >
+            color
+          </span>
         </div>
       )}
       {isActiveAudio && (
