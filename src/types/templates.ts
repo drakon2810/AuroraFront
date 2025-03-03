@@ -77,7 +77,7 @@ export interface LinkData extends CommonData {
 }
 
 export interface WidgetsData extends CommonData {
-  value: string[] // или другой тип, например, { src: string, animation: string }
+  value: (File | null)[]
   fontFamily: string
   fontSizeValue: number
   sizeUnit: SizeUnit
@@ -98,7 +98,7 @@ export interface ColorData {
 }
 
 export interface WidgetsData {
-  value: string[]
+  value: (File | null)[]
 }
 
 interface TemplateTextCategoryField {
@@ -128,7 +128,7 @@ interface TemplateColorCategoryField {
 
 interface TemplateWidgetsCategoryField {
   type: 'widgets'
-  defaultValues?: Partial<ColorData>
+  defaultValues?: Partial<WidgetsData>
 }
 
 export type TemplateSubCategoryField = {

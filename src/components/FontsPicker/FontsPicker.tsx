@@ -1,3 +1,4 @@
+import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import { FontsPickerItem } from './FontsPickerItem'
 import { Loading } from '@/components/Loading'
 import { Button } from '@/components/ui/button'
@@ -32,9 +33,13 @@ export const FontsPicker: FC<FontsPickerProps> = ({ onChange }) => {
 
   const [open, setOpen] = useState(false)
   const [currentFontFamily, setCurrentFontFamily] = useState('')
+  const changePopTickerFonts = useFallingImagesStore(
+    (state) => state.changePopTickerFonts
+  )
 
   const selectFont = (value: string) => {
     setCurrentFontFamily(value)
+    changePopTickerFonts(value)
     setOpen(false)
     onChange && onChange(value)
 

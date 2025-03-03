@@ -9,6 +9,8 @@ export const AudioButton = () => {
   const [isActive, setIsActive] = useState(false)
   const audioFile = useFallingImagesStore((state) => state.audioFile)
   const color = useFallingImagesStore((state) => state.color)
+  const shape = useFallingImagesStore((state) => state.shape)
+  const colorImg = useFallingImagesStore((state) => state.colorImg)
 
   console.log(audioFile)
   const handleToggle = () => {
@@ -23,12 +25,18 @@ export const AudioButton = () => {
     <div>
       <button
         onClick={handleToggle}
-        className={`${styles.audioButton} ${isActive ? styles.active : ''}`}
-        style={{ backgroundColor: `${color}` }}
+        className={`${styles.audioButton} ${isActive ? styles.active : ''} ${shape === 'circle' ? 'rounded-full' : ''} ${shape === 'rounded' ? 'rounded-lg' : ''} ${shape === 'square' ? 'rounded-none' : ''} `}
+        style={{
+          backgroundColor: shape === 'none' ? 'transparent' : color
+        }}
       >
         <div className={styles.iconContainer}>
           <svg
-            className={styles.speakerIcon}
+            style={{
+              width: '24px',
+              height: '24px',
+              color: colorImg || '#4a5568'
+            }}
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'
@@ -45,7 +53,6 @@ export const AudioButton = () => {
         </div>
       </button>
 
-      {/* Вставляем компонент AudioPlayer */}
       <AudioPlayer
         audioFile={audioFile}
         isActive={isActive}

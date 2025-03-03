@@ -1,5 +1,6 @@
 import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import { AudioWidget } from './AudioWidgetProps'
+import { PopUpTicker } from './popUpTicker'
 import { FC, useState, ChangeEvent } from 'react'
 
 interface FallingImageWidgetProps {
@@ -52,22 +53,10 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
 
   return (
     <div>
-      <div className='mb-4 rounded-lg border-2 bg-[#fff] shadow-sm'>
-        <div className='flex items-center gap-2 px-4 py-2'>
-          <label className='relative inline-flex cursor-pointer items-center'>
-            <input
-              type='checkbox'
-              checked={isActiveTicker}
-              onChange={handleToggleTicker}
-              className='peer sr-only'
-            />
-            <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
-          </label>
-          <span className='text-sm font-medium text-gray-700'>
-            Pop-up Ticker on hero click
-          </span>
-        </div>
-      </div>
+      <PopUpTicker
+        isActiveTicker={isActiveTicker}
+        onToggleTicker={handleToggleTicker}
+      />
       <div className='rounded-lg border-2 bg-[#fff] p-4 shadow-sm'>
         <div className='mb-4 flex items-center gap-2'>
           <label className='relative inline-flex cursor-pointer items-center'>

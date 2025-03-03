@@ -71,13 +71,14 @@ export const BuilderSidebarSubCategoryItemField: FC<
           onChange={(color) => updateField(`${name}.value`, color)}
         />
       )
+
     case 'widgets':
       return (
         <FallingImageWidget
           value={(data[name] as WidgetsData)?.value || []}
-          onChange={(newValue: string[]) =>
+          onChange={(newValue: (File | null)[]) => {
             updateField(`${name}.value`, newValue)
-          }
+          }}
         />
       )
   }

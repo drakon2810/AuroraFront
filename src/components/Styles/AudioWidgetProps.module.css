@@ -113,9 +113,7 @@
 }
 
 .colorSelectContainer {
-  display: flex;
-
-  gap: 8px;
+  display: grid;
 }
 
 .select {

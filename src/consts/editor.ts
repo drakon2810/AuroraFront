@@ -124,5 +124,47 @@ export const editorFields = {
       label: 'Animation',
       element: EditorAnimations
     }
+  ],
+  widgets: [
+    {
+      label: 'Content',
+      element: EditorContent
+    },
+    {
+      label: 'Font family',
+      element: EditorFontsPicker
+    },
+    {
+      label: 'Font size',
+      element: EditorFontSize
+    },
+    {
+      label: 'Color',
+      element: EditorColor
+    },
+    {
+      label: 'Background',
+      element: EditorBackground
+    },
+    {
+      label: 'Stroke',
+      element: EditorStroke
+    },
+    {
+      label: 'Align',
+      element: EditorAlign
+    },
+    {
+      label: 'Styles',
+      element: EditorStyles
+    },
+    {
+      label: 'Rotate',
+      element: EditorRotate
+    },
+    {
+      label: 'Animations',
+      element: EditorAnimations
+    }
   ]
 }

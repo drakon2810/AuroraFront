@@ -1,26 +1,24 @@
 .audioButton {
-  width: 48px; /* Размер кнопки, можно настроить */
-  height: 48px; /* Размер кнопки, можно настроить */
-  background-color: #1a202c; /* Тёмно-серый фон, как на скриншоте */
-  border-radius: 50%; /* Круглая кнопка */
+  width: 48px;
+  height: 48px;
+  background-color: #1a202c;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s ease; /* Плавный переход для всех изменений */
+  transition: all 0.3s ease;
 }
 
 .audioButton:active {
-  transform: scale(
-    0.95
-  ); /* Сжатие кнопки при нажатии для визуальной обратной связи */
-  background-color: #2d3748; /* Более тёмный фон при нажатии */
-  border-color: #a0aec0; /* Более светлая обводка при нажатии */
+  transform: scale(0.95);
+  background-color: #2d3748;
+  border-color: #a0aec0;
 }
 
 .audioButton:hover {
-  transform: scale(1.1); /* Лёгкое увеличение при наведении */
+  transform: scale(1.1);
 }
 
 .iconContainer {
@@ -30,12 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.speakerIcon {
-  width: 24px;
-  height: 24px;
-  color: #4a5568; /* Серая иконка по умолчанию */
 }
 
 .audioLines {
@@ -53,7 +45,7 @@
   position: absolute;
   width: 2px;
   height: 20px;
-  background-color: #2ecc71; /* Зелёные линии */
+  background-color: #2ecc71;
   animation: pulse 1.5s infinite ease-in-out;
 }
 
@@ -83,9 +75,27 @@
 }
 
 .active {
-  border-color: #2ecc71; /* Зелёная обводка при активном состоянии */
+  border-color: #2ecc71;
 }
 
 .active .speakerIcon {
-  color: #2ecc71; /* Зелёная иконка при активном состоянии */
+  color: #2ecc71;
+}
+
+.audioButton.rounded-full {
+  border-radius: 50%;
+}
+
+.audioButton.rounded-lg {
+  border-radius: 8px;
+}
+
+.audioButton.rounded-none {
+  border-radius: 0;
+
+  .audioButton.rounded-none {
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+  }
 }
