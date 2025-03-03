@@ -297,7 +297,8 @@
       "categories": {
         "text": "Текст",
         "images": "Изображения",
-        "links": "Ссылки"
+        "links": "Ссылки",
+        "widgets": "Виджеты"
       },
       "fields": {
         "ticker": "Тикер",
@@ -329,7 +330,8 @@
         "buttons": "Кнопки",
         "howToBuy": "Как купить",
         "roadmap": "Дорожная карта",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "widgets": "Виджеты"
       },
       "fields": {
         "ticker": "Тикер",
@@ -391,7 +393,8 @@
         "missionTimeline": "График миссии",
         "missionControl": "Управление миссией",
         "faq": "FAQ",
-        "links": "Ссылки"
+        "links": "Ссылки",
+        "widgets": "Виджеты"
       },
       "fields": {
         "primaryColor": "Основной цвет",
