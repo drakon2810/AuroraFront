@@ -271,12 +271,7 @@ export const templatesData = {
               imagePlaceholder: Jupiter
             },
             editor: true
-          }
-        ]
-      },
-      {
-        label: 'buttons',
-        fields: [
+          },
           {
             type: 'link',
             name: 'buyNowLink',
@@ -285,6 +280,7 @@ export const templatesData = {
           }
         ]
       },
+
       {
         label: 'widgets',
         fields: [

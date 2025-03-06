@@ -1,4 +1,8 @@
-import { Editor } from '@/components/Editor/Editor'
+import { EditorWidgets } from '../components/Builder/Test/EditorWidgets'
+import { EditorButtons } from '@/components/Builder/Test/EditorButtons'
+import { EditorImage } from '@/components/Builder/Test/EditorImg'
+import { Editorlinks } from '@/components/Builder/Test/EditorLinks'
+import { EditorText } from '@/components/Builder/Test/EditorText'
 import { EditorAnimations } from '@/components/Editor/EditorAnimations'
 import { EditorRotate } from '@/components/Editor/EditorRotate'
 import { EditorBorder } from '@/components/Editor/Image/EditorBorder'
@@ -18,13 +22,40 @@ import { EditorStroke } from '@/components/Editor/Text/EditorStroke'
 import { EditorStyles } from '@/components/Editor/Text/EditorStyles'
 import { TemplatesSelector } from '@/components/TemplatesSelector'
 import { Categories } from '@/types'
-import { Edit, GalleryVerticalEnd } from 'lucide-react'
+import {
+  GalleryVerticalEnd,
+  LetterText,
+  Image,
+  Link,
+  Grid2x2Plus,
+  WandSparkles
+} from 'lucide-react'
 
 export const categoriesFields = {
-  editor: {
-    label: 'Editor',
-    icon: Edit,
-    element: Editor
+  text: {
+    label: 'text',
+    icon: LetterText,
+    element: EditorText
+  },
+  image: {
+    label: 'images',
+    icon: Image,
+    element: EditorImage
+  },
+  links: {
+    label: 'links',
+    icon: Link,
+    element: Editorlinks
+  },
+  blocks: {
+    label: 'howToBuy',
+    icon: Grid2x2Plus,
+    element: EditorButtons
+  },
+  widgets: {
+    label: 'widgets',
+    icon: WandSparkles,
+    element: EditorWidgets
   },
   templates: {
     label: 'Templates',
