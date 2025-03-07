@@ -1,3 +1,4 @@
+import { LogoUploader } from '../ui/LogoUploader'
 import { Input } from '../ui/input'
 import { FallingImageWidget } from '../ui/widgets'
 import { TemplateContext } from '@/contexts/TemplateContext'
@@ -44,12 +45,9 @@ export const BuilderSidebarSubCategoryItemField: FC<
 
     case 'image':
       return (
-        <Input
-          type='url'
-          id={name}
-          value={(data[name] as ImageData).src}
-          onChange={(e) => updateField(`${name}.src`, e.target.value)}
-          placeholder={placeholder}
+        <LogoUploader
+          image={(data[name] as ImageData)?.src || null}
+          onChange={(imageUrl) => updateField(`${name}.src`, imageUrl)}
         />
       )
 

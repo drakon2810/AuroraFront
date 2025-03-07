@@ -156,10 +156,7 @@
       "standard": {
         "label": "Standard",
         "description": "For 0.045 Solana you can create a website using Classic and Simple template. These are simple templates, with a clear and pleasant user interface. They are easy to edit and modify.",
-        "features": [
-          "Free domain",
-          "Editing after creation"
-        ]
+        "features": ["Free domain", "Editing after creation"]
       },
       "advanced": {
         "label": "Advanced",
@@ -254,8 +251,8 @@
     },
     "classic": {
       "categories": {
-        "text": "Text",
-        "images": "Images",
+        "text": "GENERAL",
+        "images": "STYLES",
         "links": "Links",
         "howToBuy": "How to Buy",
         "buttons": "Buttons"
@@ -263,11 +260,11 @@
       "fields": {
         "logoText": "Project Name",
         "ticker": "Ticker",
-        "contractAddress": "Contract Address",
+        "contractAddress": "Contract",
         "description": "Description",
         "buyNowText": "Buy Now",
-        "logoImage": "Logo",
-        "background": "Background",
+        "logoImage": "Logo ",
+        "background": "Background ",
         "tokenImage": "Token Image",
         "tiktok": "Tiktok",
         "twitter": "Twitter",
@@ -296,13 +293,13 @@
     },
     "simple": {
       "categories": {
-        "text": "Text",
-        "images": "Images",
+        "text": "GENERAL",
+        "images": "STYLES",
         "links": "Links"
       },
       "fields": {
         "ticker": "Ticker",
-        "contractAddress": "Contract Address",
+        "contractAddress": "Contract",
         "background": "Background",
         "tokenImage": "Token Image",
         "tiktok": "Tiktok",
@@ -324,8 +321,8 @@
     },
     "impressive": {
       "categories": {
-        "text": "Text",
-        "images": "Images",
+        "text": "GENERAL",
+        "images": "STYLES",
         "links": "Links",
         "buttons": "Buttons",
         "howToBuy": "How to Buy",
@@ -334,7 +331,7 @@
       },
       "fields": {
         "ticker": "Ticker",
-        "contractAddress": "Contract Address",
+        "contractAddress": "Contract",
         "buyNowText": "Buy Now",
         "aboutUsTitle": "About Us Title",
         "aboutUsDescription": "About Us Description",
@@ -385,8 +382,8 @@
     "rocket": {
       "categories": {
         "accentColors": "Accent Colors",
-        "text": "Text",
-        "images": "Images",
+        "text": "GENERAL",
+        "images": "STYLES",
         "buttons": "Buttons",
         "tokenomics": "Tokenomics",
         "missionTimeline": "Mission Timeline",
@@ -400,8 +397,8 @@
         "heroTitle": "Hero Title",
         "ticker": "Ticker",
         "description": "Description",
-        "contractAddress": "Contract Address",
-        "contractAddressLabel": "Contract Address Label",
+        "contractAddress": "Contract ",
+        "contractAddressLabel": "Contract Label",
         "projectName": "Project Name",
         "buyTicker": "Header Button",
         "buyNow": "Buy Now Button",

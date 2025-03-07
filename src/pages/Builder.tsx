@@ -24,12 +24,12 @@ export const Builder = () => {
   const isAudioaIcon = useFallingImagesStore((state) => state.isAudioaIcon)
   const isPopTicker = useFallingImagesStore((state) => state.isPopTicker)
   const fallingImages = useFallingImagesStore((state) => state.fallingImages)
-  const value = useFallingImagesStore((state) => state.value) // Значение из стора
+  const value = useFallingImagesStore((state) => state.value)
   const clearFallingImages = useFallingImagesStore(
     (state) => state.clearFallingImages
-  ) // Значение из стора
+  )
   console.log(fallingImages)
-  // Состояние для хранения списка текстов
+
   const [texts, setTexts] = useState<
     { id: number; x: number; y: number; value: string }[]
   >([])
@@ -42,22 +42,20 @@ export const Builder = () => {
     const x = event.clientX - rect.left
     const y = event.clientY - rect.top
 
-    // Добавляем новый текст с уникальным id и текущим значением из стора
     const newText = {
-      id: Date.now(), // Уникальный идентификатор
+      id: Date.now(),
       x,
       y,
-      value: value.value || 'Ticker' // Используем значение из стора или дефолтное
+      value: value.value || 'Ticker'
     }
 
     setTexts((prevTexts) => [...prevTexts, newText])
 
-    // Удаляем текст через 2 секунды
     setTimeout(() => {
       setTexts((prevTexts) =>
         prevTexts.filter((text) => text.id !== newText.id)
       )
-    }, 2000) // Время жизни текста — 2 секунды
+    }, 2000)
   }
 
   useEffect(() => {

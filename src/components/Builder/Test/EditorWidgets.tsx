@@ -1,3 +1,4 @@
+import { BuilderButton } from '../BuilderButton'
 import { BuilderSidebarSubCategoryEditorMenu } from '../BuilderSidebarSubCategoryEditorMenu'
 import { BuilderSidebarSubCategoryItem } from '../BuilderSidebarSubCategoryItem'
 import { templatesData } from '@/consts/templatesData'
@@ -26,7 +27,7 @@ export const EditorWidgets = () => {
   const { label, fields } = textCategory
 
   return (
-    <div>
+    <div className='flex flex-auto flex-col justify-between gap-4 p-4'>
       <div className='p-3 font-arial-black'>
         {t(`builder.${selectedTemplate}.categories.${label}`)}
       </div>
@@ -36,9 +37,8 @@ export const EditorWidgets = () => {
           <BuilderSidebarSubCategoryItem key={field.name} {...field} />
         ))}
       </div>
+
+      <BuilderButton />
     </div>
   )
-}
-
-{
 }

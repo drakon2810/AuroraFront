@@ -59,14 +59,6 @@ export const templatesData = {
           },
           {
             type: 'text',
-            name: 'description',
-            editor: true,
-            defaultValues: {
-              color: '#000'
-            }
-          },
-          {
-            type: 'text',
             name: 'buyNowText',
             editor: true,
             defaultValues: {
@@ -75,12 +67,16 @@ export const templatesData = {
               align: 'center',
               styles: ['bold']
             }
-          }
-        ]
-      },
-      {
-        label: 'images',
-        fields: [
+          },
+          {
+            type: 'text',
+            name: 'description',
+            editor: true,
+            defaultValues: {
+              color: '#000',
+              placeholder: 'Enter project description'
+            }
+          },
           {
             type: 'image',
             name: 'logoImage',
@@ -92,6 +88,22 @@ export const templatesData = {
               sizeUnit: 'px'
             }
           },
+
+          {
+            type: 'image',
+            name: 'tokenImage',
+            placeholder: 'URL',
+            editor: true,
+            defaultValues: {
+              width: 340,
+              sizeUnit: 'px'
+            }
+          }
+        ]
+      },
+      {
+        label: 'images',
+        fields: [
           {
             type: 'image',
             name: 'background',
@@ -102,16 +114,6 @@ export const templatesData = {
               height: 100,
               sizeUnit: '%',
               imagePlaceholder: ClassicBackground
-            }
-          },
-          {
-            type: 'image',
-            name: 'tokenImage',
-            placeholder: 'URL',
-            editor: true,
-            defaultValues: {
-              width: 340,
-              sizeUnit: 'px'
             }
           }
         ]
@@ -280,7 +282,6 @@ export const templatesData = {
           }
         ]
       },
-
       {
         label: 'widgets',
         fields: [

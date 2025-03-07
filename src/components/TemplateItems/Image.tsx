@@ -13,6 +13,8 @@ interface ImageProps {
   className?: {
     wrapper?: string
     image?: string
+    width?: string
+    height?: string
   }
 }
 

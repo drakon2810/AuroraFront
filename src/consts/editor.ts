@@ -1,4 +1,5 @@
 import { EditorWidgets } from '../components/Builder/Test/EditorWidgets'
+import { BuilderSidebarSubCategoryEditorMenu } from '@/components/Builder/BuilderSidebarSubCategoryEditorMenu'
 import { EditorButtons } from '@/components/Builder/Test/EditorButtons'
 import { EditorImage } from '@/components/Builder/Test/EditorImg'
 import { Editorlinks } from '@/components/Builder/Test/EditorLinks'
@@ -153,48 +154,6 @@ export const editorFields = {
     },
     {
       label: 'Animation',
-      element: EditorAnimations
-    }
-  ],
-  widgets: [
-    {
-      label: 'Content',
-      element: EditorContent
-    },
-    {
-      label: 'Font family',
-      element: EditorFontsPicker
-    },
-    {
-      label: 'Font size',
-      element: EditorFontSize
-    },
-    {
-      label: 'Color',
-      element: EditorColor
-    },
-    {
-      label: 'Background',
-      element: EditorBackground
-    },
-    {
-      label: 'Stroke',
-      element: EditorStroke
-    },
-    {
-      label: 'Align',
-      element: EditorAlign
-    },
-    {
-      label: 'Styles',
-      element: EditorStyles
-    },
-    {
-      label: 'Rotate',
-      element: EditorRotate
-    },
-    {
-      label: 'Animations',
       element: EditorAnimations
     }
   ]

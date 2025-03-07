@@ -251,7 +251,7 @@
     },
     "classic": {
       "categories": {
-        "text": "Текст",
+        "text": "Главная",
         "images": "Изображения",
         "links": "Ссылки",
         "howToBuy": "Как купить",
@@ -295,7 +295,7 @@
     },
     "simple": {
       "categories": {
-        "text": "Текст",
+        "general": "Главная",
         "images": "Изображения",
         "links": "Ссылки",
         "widgets": "Виджеты"
@@ -324,7 +324,7 @@
     },
     "impressive": {
       "categories": {
-        "text": "Текст",
+        "text": "Главная",
         "images": "Изображения",
         "links": "Ссылки",
         "buttons": "Кнопки",
@@ -386,7 +386,7 @@
     "rocket": {
       "categories": {
         "accentColors": "Акцентные цвета",
-        "text": "Текст",
+        "text": "Главная",
         "images": "Изображения",
         "buttons": "Кнопки",
         "tokenomics": "Токеномика",
