@@ -33,12 +33,14 @@ export const templatesData = {
           {
             type: 'text',
             name: 'logoText',
+            placeholder: 'Enter project name',
             editor: true,
             defaultValues: { fontSizeValue: 40, color: '#ffffff' }
           },
           {
             type: 'text',
             name: 'ticker',
+            placeholder: 'Enter ticker',
             editor: true,
             defaultValues: {
               fontSizeValue: 7.5,
@@ -51,6 +53,7 @@ export const templatesData = {
           },
           {
             type: 'text',
+            placeholder: 'Enter contract address',
             name: 'contractAddress',
             editor: true,
             defaultValues: {
@@ -948,6 +951,7 @@ export const templatesData = {
           {
             type: 'text',
             name: 'projectName',
+            placeholder: 'Enter project name',
             editor: true,
             defaultValues: {
               value: 'Name',

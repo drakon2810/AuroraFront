@@ -1,11 +1,15 @@
 import { create } from 'zustand'
 
 interface GeneralStoreInterface {
-  isHide: boolean
-  changeIsHide: (value: boolean) => void
+  isHideToken: boolean
+  isHideLogo: boolean
+  changeIsHideToke: (value: boolean) => void
+  changeIsHideLogo: (value: boolean) => void
 }
 
 export const useGeneralStore = create<GeneralStoreInterface>((set) => ({
-  isHide: false,
-  changeIsHide: (value: boolean) => set(() => ({ isHide: value }))
+  isHideToken: false,
+  isHideLogo: false,
+  changeIsHideToke: (value: boolean) => set(() => ({ isHideToken: value })),
+  changeIsHideLogo: (value: boolean) => set(() => ({ isHideLogo: value }))
 }))

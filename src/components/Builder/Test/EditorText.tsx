@@ -37,7 +37,7 @@ export const EditorText = () => {
           .map((field) => (
             <BuilderSidebarSubCategoryItem key={field.name} {...field} />
           ))}
-        <div className='flex items-center gap-4'>
+        <div className='flex flex-col items-start'>
           {fields
             .filter(
               (field) =>
