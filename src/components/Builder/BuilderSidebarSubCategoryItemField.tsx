@@ -3,6 +3,7 @@ import { Input } from '../ui/input'
 import { FallingImageWidget } from '../ui/widgets'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateEditorContext } from '@/contexts/TemplateEditorContext'
+import { useStylesStore } from '@/store/useStulesStore'
 import {
   TemplateContextValues,
   TemplateEditorContextValues

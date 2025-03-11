@@ -2,11 +2,14 @@ import { TemplateItemError } from '@/components/TemplateItems/Error'
 import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
 import { TemplateContext } from '@/contexts/TemplateContext'
+import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { FC, useContext } from 'react'
 
 export const ClassicHowToBuy: FC = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
+  const { secondary, colorSec } = useStylesStore((state) => state)
+
   if (!data) return <TemplateItemError />
 
   return (
@@ -20,7 +23,11 @@ export const ClassicHowToBuy: FC = () => {
           >
             <div className='flex flex-col items-center gap-2'>
               <h3 className='text-3xl'>Step {index + 1}</h3>
-              <Text fieldName={`${name}Step`} as='p' />
+              <Text
+                fieldName={`${name}Step`}
+                as='p'
+                style={{ fontFamily: secondary, color: colorSec }}
+              />
             </div>
             <Image
               fieldName={`${name}StepImage`}

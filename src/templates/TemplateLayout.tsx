@@ -1,5 +1,6 @@
 import { Image } from '@/components/TemplateItems/Image'
 import { cn } from '@/lib/utils'
+import { useStylesStore } from '@/store/useStulesStore'
 import { FC, ReactNode } from 'react'
 
 interface TemplateLayoutProps {
@@ -13,6 +14,8 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
   className,
   backgroundFieldName
 }) => {
+  const { colorBackground } = useStylesStore((state) => state)
+
   return (
     <div className='relative'>
       <div
@@ -22,6 +25,7 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
       </div>
       <Image
         fieldName={backgroundFieldName ?? 'background'}
+        background={colorBackground}
         className={{
           wrapper: 'absolute left-0 top-0 h-full w-full',
           image: 'object-cover'

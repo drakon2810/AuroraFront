@@ -16,9 +16,11 @@ interface ImageProps {
     width?: string
     height?: string
   }
+  background?: string
 }
 
 const subdomain = getSubdomain()
+
 export const Image: FC<ImageProps> = ({ fieldName, className }) => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
   const fieldData = data?.[fieldName] as ImageData

@@ -255,7 +255,7 @@
         "images": "STYLES",
         "links": "Links",
         "howToBuy": "How to Buy",
-        "buttons": "Buttons"
+        "widgets": "WIDGETS"
       },
       "fields": {
         "logoText": "Project Name",
@@ -264,7 +264,7 @@
         "description": "Description",
         "buyNowText": "Buy Now",
         "logoImage": "Logo ",
-        "background": "Background ",
+        "background": "",
         "tokenImage": "Token Image",
         "tiktok": "Tiktok",
         "twitter": "Twitter",
