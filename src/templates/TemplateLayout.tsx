@@ -14,23 +14,50 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
   className,
   backgroundFieldName
 }) => {
-  const { colorBackground } = useStylesStore((state) => state)
+  const { colorBackground, activeSize, overlayColor, overlayOpacity } =
+    useStylesStore((state) => state)
 
+  console.log(overlayOpacity)
   return (
-    <div className='relative'>
+    <div className='relative' style={{ backgroundColor: colorBackground }}>
+      {/* Фоновое изображение, если нет цветного фона */}
+      {!colorBackground && (
+        <Image
+          fieldName={backgroundFieldName ?? 'background'}
+          className={{
+            wrapper: 'absolute left-0 top-0 h-full w-full',
+            image: 'object-cover'
+          }}
+        />
+      )}
+
+      {/* Наложение цвета поверх фона с прозрачностью */}
+      {overlayColor && (
+        <div
+          className='absolute inset-0'
+          style={{
+            backgroundColor: `${overlayColor}${Math.round(overlayOpacity * 255)
+              .toString(16)
+              .padStart(2, '0')}`,
+            mixBlendMode: 'multiply'
+          }}
+        />
+      )}
+
+      {/* Контент с эффектом blur */}
       <div
-        className={cn('relative z-10 p-8 pt-16 backdrop-blur-lg', className)}
+        className={cn(
+          'relative z-10 p-8 pt-16',
+          {
+            'backdrop-blur-sm': activeSize === 'small',
+            'backdrop-blur-md': activeSize === 'medium',
+            'backdrop-blur-lg': activeSize === 'large'
+          },
+          className
+        )}
       >
         {children}
       </div>
-      <Image
-        fieldName={backgroundFieldName ?? 'background'}
-        background={colorBackground}
-        className={{
-          wrapper: 'absolute left-0 top-0 h-full w-full',
-          image: 'object-cover'
-        }}
-      />
     </div>
   )
 }

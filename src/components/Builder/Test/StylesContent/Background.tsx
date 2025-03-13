@@ -10,12 +10,20 @@ export const BackgroundContent = () => {
   const [toggle, setToggleValue] = useState('color')
   const [activeSize, setActiveSize] = useState('none')
   const [color, setColor] = useState('#ffffff')
+  const [colorOverlay, setColorOverlay] = useState('#ffffff')
   const [isOverlay, setIsOverlay] = useState(false)
   const [isOpacity, setIsOpacity] = useState(50)
-  const { setColorBackground, setToggle } = useStylesStore((state) => state)
+  const {
+    setColorBackground,
+    setToggle,
+    setActiveSizeBtn,
+    setOverlayColor,
+    setOverlayOpacity
+  } = useStylesStore((state) => state)
 
   const handleSizeChange = (size: string) => {
     setActiveSize(size)
+    setActiveSizeBtn(size)
   }
 
   const { selectedTemplate } = useContext(
@@ -35,15 +43,31 @@ export const BackgroundContent = () => {
     setColor(event.target.value)
     setColorBackground(event.target.value)
   }
+  const handleColorChangeOverlay = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setColorOverlay(event.target.value)
+    setOverlayColor(event.target.value)
+  }
 
   const handleDefoltColorSec = () => {
     setColor('#ffffff')
     setColorBackground('')
   }
+  const handleDefoltColorOvarlay = () => {
+    setColorOverlay('#ffffff')
+    setOverlayColor('')
+  }
 
   const handleHideChangeToken = (e: React.ChangeEvent<HTMLInputElement>) => {
     const isChecked = e.target.checked
     setIsOverlay(isChecked)
+  }
+
+  const handleOpacity = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = Number(e.target.value)
+    setIsOpacity(value)
+    setOverlayOpacity(value / 100) // Приведение к 0-1 для корректного отображения прозрачности
   }
 
   const fields = textCategory?.fields ?? []
@@ -169,17 +193,19 @@ export const BackgroundContent = () => {
                   <div className='relative mt-4 h-8 w-36'>
                     <input
                       type='color'
-                      value={color}
+                      value={colorOverlay} // Теперь используем правильное состояние
                       className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
-                      onChange={handleColorChange}
+                      onChange={handleColorChangeOverlay} // Теперь используем обработчик для оверлея
+                      disabled={!isOverlay}
                     />
                     <div
                       className='h-full w-full rounded-full border border-gray-300'
-                      style={{ backgroundColor: color }}
+                      style={{ backgroundColor: colorOverlay }} // Теперь отображается правильный цвет
                     />
+
                     <button
                       className='absolute left-[117px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
-                      onClick={handleDefoltColorSec}
+                      onClick={handleDefoltColorOvarlay}
                     >
                       X
                     </button>
@@ -194,7 +220,7 @@ export const BackgroundContent = () => {
                       max='100'
                       step='1'
                       value={isOpacity}
-                      onChange={(e) => setIsOpacity(Number(e.target.value))}
+                      onChange={handleOpacity}
                       className='h-2 w-full appearance-none rounded-lg'
                       style={{
                         background: `linear-gradient(to right, black ${isOpacity}%, gray ${isOpacity}%)`
@@ -214,19 +240,19 @@ export const BackgroundContent = () => {
                   <div className='relative mt-4 h-8 w-36'>
                     <input
                       type='color'
-                      value={color}
+                      value={colorOverlay}
                       className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
-                      onChange={handleColorChange}
-                      disabled={!isOverlay} // Блокируем инпут при false
+                      onChange={handleColorChangeOverlay}
+                      disabled={!isOverlay}
                     />
                     <div
                       className='h-full w-full rounded-full border border-gray-300'
-                      style={{ backgroundColor: color }}
+                      style={{ backgroundColor: colorOverlay }}
                     />
                     <button
                       className='absolute left-[117px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
                       onClick={handleDefoltColorSec}
-                      disabled={!isOverlay} // Блокируем кнопку при false
+                      disabled={!isOverlay}
                     >
                       X
                     </button>
@@ -241,7 +267,7 @@ export const BackgroundContent = () => {
                       max='100'
                       step='1'
                       value={isOpacity}
-                      onChange={(e) => setIsOpacity(Number(e.target.value))}
+                      onChange={handleOpacity}
                       className='h-2 w-full appearance-none rounded-lg'
                       disabled={!isOverlay} // Блокируем ползунок при false
                       style={{

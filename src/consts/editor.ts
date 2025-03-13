@@ -26,7 +26,7 @@ import { Categories } from '@/types'
 import {
   GalleryVerticalEnd,
   LetterText,
-  Image,
+  Brush,
   Link,
   Grid2x2Plus,
   WandSparkles
@@ -40,7 +40,7 @@ export const categoriesFields = {
   },
   image: {
     label: 'images',
-    icon: Image,
+    icon: Brush,
     element: EditorImage
   },
   links: {

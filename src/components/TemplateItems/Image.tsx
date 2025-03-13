@@ -16,7 +16,6 @@ interface ImageProps {
     width?: string
     height?: string
   }
-  background?: string
 }
 
 const subdomain = getSubdomain()

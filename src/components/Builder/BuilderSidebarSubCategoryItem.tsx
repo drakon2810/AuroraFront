@@ -46,7 +46,6 @@ export const BuilderSidebarSubCategoryItem: FC<TemplateSubCategoryField> = (
           <>
             <Label htmlFor={name} className='flex items-center gap-2'>
               {t(`builder.${selectedTemplate}.fields.${name}`)}
-
               <span
                 title='Max size 7 MB'
                 className='cursor-help text-sm text-gray-500'
@@ -104,9 +103,11 @@ export const BuilderSidebarSubCategoryItem: FC<TemplateSubCategoryField> = (
             )}
           </>
         ) : (
-          <Label htmlFor={name} className=''>
-            {t(`builder.${selectedTemplate}.fields.${name}`)}
-          </Label>
+          name !== 'Falling animation' && (
+            <Label htmlFor={name} className=''>
+              {t(`builder.${selectedTemplate}.fields.${name}`)}
+            </Label>
+          )
         )}
       </div>
 

@@ -28,11 +28,11 @@ export const EditorButtons = () => {
 
   return (
     <div className='flex flex-auto flex-col justify-between gap-4 p-4'>
-      <div className='p-3 font-arial-black'>
+      <div className='text-xl font-semibold'>
         {t(`builder.${selectedTemplate}.categories.${label}`)}
       </div>
       <BuilderSidebarSubCategoryEditorMenu />
-      <div className='flex flex-auto flex-col gap-4 rounded-md py-2 pl-8'>
+      <div className='flex flex-auto flex-col gap-4 rounded-md py-2'>
         {fields.map((field) => (
           <BuilderSidebarSubCategoryItem key={field.name} {...field} />
         ))}

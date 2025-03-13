@@ -146,7 +146,7 @@ const defaultItemAnimationVariants: Record<
       hidden: { opacity: 0, filter: 'blur(10px)', y: 20 },
       show: () => ({
         opacity: 1,
-        filter: 'blur(0px)',
+        // filter: 'blur(0px)',
         y: 0,
         transition: {
           y: { duration: 0.3 },
