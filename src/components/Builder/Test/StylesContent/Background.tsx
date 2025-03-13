@@ -1,4 +1,5 @@
 import { BuilderSidebarSubCategoryItem } from '../../BuilderSidebarSubCategoryItem'
+import { gradients } from './gradients'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useStylesStore } from '@/store/useStulesStore'
@@ -9,22 +10,26 @@ import { useState, useContext } from 'react'
 export const BackgroundContent = () => {
   const [toggle, setToggleValue] = useState('color')
   const [activeSize, setActiveSize] = useState('none')
-  const [color, setColor] = useState('#ffffff')
-  const [colorOverlay, setColorOverlay] = useState('#ffffff')
+  const [color, setColor] = useState('#cfcfcf')
+  const [colorOverlay, setColorOverlay] = useState('#cfcfcf')
   const [isOverlay, setIsOverlay] = useState(false)
   const [isOpacity, setIsOpacity] = useState(50)
+  const [selectedGradient, setSelectedGradient] = useState<string | null>(null)
   const {
     setColorBackground,
     setToggle,
     setActiveSizeBtn,
     setOverlayColor,
-    setOverlayOpacity
+    setOverlayOpacity,
+    setBackgroundGradient
   } = useStylesStore((state) => state)
 
   const handleSizeChange = (size: string) => {
     setActiveSize(size)
     setActiveSizeBtn(size)
   }
+
+  console.log(selectedGradient)
 
   const { selectedTemplate } = useContext(
     TemplateContext
@@ -51,11 +56,11 @@ export const BackgroundContent = () => {
   }
 
   const handleDefoltColorSec = () => {
-    setColor('#ffffff')
+    setColor('#cfcfcf')
     setColorBackground('')
   }
   const handleDefoltColorOvarlay = () => {
-    setColorOverlay('#ffffff')
+    setColorOverlay('#cfcfcf')
     setOverlayColor('')
   }
 
@@ -67,7 +72,12 @@ export const BackgroundContent = () => {
   const handleOpacity = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(e.target.value)
     setIsOpacity(value)
-    setOverlayOpacity(value / 100) // Приведение к 0-1 для корректного отображения прозрачности
+    setOverlayOpacity(value / 100)
+  }
+
+  const handleGradientSelect = (gradient: string) => {
+    setSelectedGradient(selectedGradient === gradient ? '' : gradient)
+    setBackgroundGradient(selectedGradient === gradient ? '' : gradient)
   }
 
   const fields = textCategory?.fields ?? []
@@ -107,30 +117,41 @@ export const BackgroundContent = () => {
           transition={{ duration: 0.5 }}
         >
           <p className='mb-2 text-sm font-semibold text-gray-700'>Hero</p>
-          <div className='flex items-center space-x-4'>
-            <div className='flex items-center space-x-4 rounded-md bg-gray-300 p-1'>
+          <div className='flex w-full justify-center'>
+            <div className='flex w-full max-w-[500px] items-center justify-between rounded-md bg-gray-200 p-1'>
               <button
                 onClick={() => handleToggle('color')}
-                className={`rounded-md px-6 py-1.5 text-sm font-semibold transition-all ${
+                className={`flex-1 rounded-md px-6 py-1.5 text-sm font-semibold transition-all ${
                   toggle === 'color'
                     ? 'bg-white text-black'
-                    : 'bg-gray-300 text-gray-700'
+                    : 'bg-gray-200 text-gray-700'
                 }`}
               >
                 Color
               </button>
               <button
+                onClick={() => handleToggle('gradient')}
+                className={`flex-1 rounded-md px-6 py-1.5 text-sm font-semibold transition-all ${
+                  toggle === 'gradient'
+                    ? 'bg-white text-black'
+                    : 'bg-gray-200 text-gray-700'
+                }`}
+              >
+                Gradient
+              </button>
+              <button
                 onClick={() => handleToggle('image')}
-                className={`rounded-md px-6 py-1.5 text-sm font-semibold transition-all ${
+                className={`flex-1 rounded-md px-6 py-1.5 text-sm font-semibold transition-all ${
                   toggle === 'image'
                     ? 'bg-white text-black'
-                    : 'bg-gray-300 text-gray-700'
+                    : 'bg-gray-200 text-gray-700'
                 }`}
               >
                 Image
               </button>
             </div>
           </div>
+
           {toggle === 'image' && (
             <div>
               <div className='flex flex-auto flex-col gap-4 rounded-md py-2'>
@@ -142,15 +163,15 @@ export const BackgroundContent = () => {
                 <p className='mb-2 text-xs font-semibold text-gray-700'>
                   Image blur
                 </p>
-                <div className='flex items-center space-x-4'>
+                <div className='flex w-full max-w-[500px] items-center space-x-4 rounded-md bg-gray-200 p-1'>
                   {['none', 'small', 'medium', 'large'].map((size) => (
                     <button
                       key={size}
                       onClick={() => handleSizeChange(size)}
                       className={`rounded-md border-2 text-sm font-semibold transition-all ${
                         activeSize === size
-                          ? 'border-gray-300 bg-gray-300 text-gray-700'
-                          : 'border-gray-300 bg-white text-gray-700'
+                          ? 'bg-white text-black'
+                          : 'bg-gray-200 text-gray-700'
                       } px-2 py-1`}
                     >
                       {size.charAt(0).toUpperCase() + size.slice(1)}
@@ -199,17 +220,17 @@ export const BackgroundContent = () => {
                       disabled={!isOverlay}
                     />
                     <div
-                      className='h-full w-full rounded-full border border-gray-300'
+                      className='h-full w-full rounded-md border border-gray-300'
                       style={{ backgroundColor: colorOverlay }} // Теперь отображается правильный цвет
                     />
-
                     <button
-                      className='absolute left-[117px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
+                      className='absolute left-[114px] top-[5px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-transparent font-bold leading-none text-white'
                       onClick={handleDefoltColorOvarlay}
                     >
-                      X
+                      <span className='pb-[1px]'>X</span>
                     </button>
                   </div>
+
                   <div className='mt-4'>
                     <p className='mb-2 text-xs font-semibold text-gray-700'>
                       Overlay opacity
@@ -230,9 +251,7 @@ export const BackgroundContent = () => {
                 </div>
               ) : (
                 <div
-                  className={`${
-                    isOverlay ? '' : 'pointer-events-none opacity-50'
-                  }`}
+                  className={`${isOverlay ? '' : 'pointer-events-none opacity-50'}`}
                 >
                   <p className='mb-2 text-xs font-semibold text-gray-700'>
                     Overlay color
@@ -246,15 +265,15 @@ export const BackgroundContent = () => {
                       disabled={!isOverlay}
                     />
                     <div
-                      className='h-full w-full rounded-full border border-gray-300'
+                      className='h-full w-full rounded-md border border-gray-300'
                       style={{ backgroundColor: colorOverlay }}
                     />
                     <button
-                      className='absolute left-[117px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
+                      className='absolute left-[114px] top-[5px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-transparent font-bold leading-none text-white disabled:opacity-50'
                       onClick={handleDefoltColorSec}
                       disabled={!isOverlay}
                     >
-                      X
+                      <span className='pb-[1px]'>X</span>
                     </button>
                   </div>
                   <div className='mt-4'>
@@ -288,15 +307,41 @@ export const BackgroundContent = () => {
                 onChange={handleColorChange}
               />
               <div
-                className='h-full w-full rounded-full border border-gray-300'
+                className='h-full w-full rounded-md border border-gray-300'
                 style={{ backgroundColor: color }}
               />
               <button
-                className='absolute left-[117px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
+                className='absolute left-[114px] top-[5px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-transparent font-bold leading-none text-white'
                 onClick={handleDefoltColorSec}
               >
-                X
+                <span className='pb-[1px]'>X</span>
               </button>
+            </div>
+          )}
+          {toggle === 'gradient' && (
+            <div>
+              <div className='mt-4 grid grid-cols-6 gap-4'>
+                {gradients.map((gradient, index) => (
+                  <div
+                    key={index}
+                    className='relative h-8 w-8 cursor-pointer rounded-lg shadow-md transition-all'
+                    style={{
+                      backgroundImage: gradient,
+                      border:
+                        selectedGradient === gradient
+                          ? '2px solid black'
+                          : '2px solid white'
+                    }}
+                    onClick={() => handleGradientSelect(gradient)}
+                  >
+                    {selectedGradient === gradient && (
+                      <span className='absolute right-1 top-1 text-white'>
+                        ✔
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </motion.div>

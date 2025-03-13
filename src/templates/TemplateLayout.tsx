@@ -14,14 +14,30 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
   className,
   backgroundFieldName
 }) => {
-  const { colorBackground, activeSize, overlayColor, overlayOpacity } =
-    useStylesStore((state) => state)
+  const {
+    colorBackground,
+    activeSize,
+    overlayColor,
+    overlayOpacity,
+    backgroundGradient
+  } = useStylesStore((state) => state)
 
   console.log(overlayOpacity)
+
+  // Применение фона в зависимости от условий
+  const backgroundStyle = colorBackground
+    ? { backgroundColor: colorBackground }
+    : backgroundGradient
+      ? { backgroundImage: backgroundGradient }
+      : {}
+
+  // Если задан и цвет фона, и градиент, то предпочтение отдается градиенту
+  const isBackgroundImageAvailable = !colorBackground && !backgroundGradient
+
   return (
-    <div className='relative' style={{ backgroundColor: colorBackground }}>
-      {/* Фоновое изображение, если нет цветного фона */}
-      {!colorBackground && (
+    <div className='relative' style={backgroundStyle}>
+      {/* Фоновое изображение, если нет фона или градиента */}
+      {isBackgroundImageAvailable && (
         <Image
           fieldName={backgroundFieldName ?? 'background'}
           className={{
@@ -31,7 +47,7 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
         />
       )}
 
-      {/* Наложение цвета поверх фона с прозрачностью */}
+      {/* Наложение с цветом и прозрачностью */}
       {overlayColor && (
         <div
           className='absolute inset-0'
@@ -44,7 +60,6 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
         />
       )}
 
-      {/* Контент с эффектом blur */}
       <div
         className={cn(
           'relative z-10 p-8 pt-16',

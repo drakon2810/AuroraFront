@@ -1,4 +1,3 @@
-import { BuilderSidebarSubCategoryEditorMenu } from '../../Builder/BuilderSidebarSubCategoryEditorMenu'
 import { BuilderButton } from '../BuilderButton'
 import { BuilderSidebarSubCategoryItem } from '../BuilderSidebarSubCategoryItem'
 import { templatesData } from '@/consts/templatesData'
@@ -31,12 +30,12 @@ export const EditorButtons = () => {
       <div className='text-xl font-semibold'>
         {t(`builder.${selectedTemplate}.categories.${label}`)}
       </div>
-      <BuilderSidebarSubCategoryEditorMenu />
-      <div className='flex flex-auto flex-col gap-4 rounded-md py-2'>
+
+      {/* <div className='flex flex-auto flex-col gap-4 rounded-md py-2'>
         {fields.map((field) => (
           <BuilderSidebarSubCategoryItem key={field.name} {...field} />
         ))}
-      </div>
+      </div> */}
 
       <BuilderButton />
     </div>

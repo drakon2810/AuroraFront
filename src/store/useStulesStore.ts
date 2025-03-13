@@ -10,6 +10,7 @@ interface StylesStoreInterface {
   activeSize: string
   overlayColor: string
   overlayOpacity: number
+  backgroundGradient: string
   setPrimary: (value: string) => void
   setSecondary: (value: string) => void
   setColorSecondary: (value: string) => void
@@ -19,6 +20,7 @@ interface StylesStoreInterface {
   setActiveSizeBtn: (value: string) => void
   setOverlayColor: (value: string) => void
   setOverlayOpacity: (value: number) => void
+  setBackgroundGradient: (value: string) => void
 }
 
 export const useStylesStore = create<StylesStoreInterface>((set) => ({
@@ -31,6 +33,7 @@ export const useStylesStore = create<StylesStoreInterface>((set) => ({
   activeSize: 'none',
   overlayColor: '',
   overlayOpacity: 0,
+  backgroundGradient: '',
   setPrimary: (value) => set(() => ({ primary: value })),
   setSecondary: (value) => set(() => ({ secondary: value })),
   setColorSecondary: (value) => set(() => ({ colorSec: value })),
@@ -39,5 +42,6 @@ export const useStylesStore = create<StylesStoreInterface>((set) => ({
   setToggle: (value) => set(() => ({ toggle: value })),
   setActiveSizeBtn: (value) => set(() => ({ activeSize: value })),
   setOverlayColor: (value) => set(() => ({ overlayColor: value })),
-  setOverlayOpacity: (value) => set(() => ({ overlayOpacity: value }))
+  setOverlayOpacity: (value) => set(() => ({ overlayOpacity: value })),
+  setBackgroundGradient: (value) => set(() => ({ backgroundGradient: value }))
 }))

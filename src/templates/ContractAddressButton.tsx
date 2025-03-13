@@ -3,6 +3,7 @@ import { Text } from '@/components/TemplateItems/Text'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useCopy } from '@/hooks/useCopy'
 import { cn } from '@/lib/utils'
+import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { CircleCheckBig, Copy } from 'lucide-react'
 import { FC, useContext } from 'react'
@@ -12,6 +13,7 @@ export const ContractAddressButton: FC<{ className?: string }> = ({
 }) => {
   const { isCopied, copy } = useCopy()
   const { data } = useContext(TemplateContext) as TemplateContextValues
+  const { primary, colorPrim } = useStylesStore((state) => state)
 
   if (!data) return <span>Something went wrong...</span>
 
@@ -23,7 +25,11 @@ export const ContractAddressButton: FC<{ className?: string }> = ({
         className
       )}
     >
-      <Text fieldName='contractAddress' placeholder='Contract address' />
+      <Text
+        fieldName='contractAddress'
+        placeholder='Contract address'
+        style={{ fontFamily: primary, color: colorPrim || 'black' }}
+      />
       {isCopied && (
         <CircleCheckBig size={28} className='pointer-events-none text-black' />
       )}

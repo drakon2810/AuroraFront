@@ -22,7 +22,7 @@ export const ColorContent = () => {
 
   const handleDefoltColorPrim = () => {
     setPrimColor('#000000')
-    setColorPrimary('#fff')
+    setColorPrimary('')
   }
 
   const handleDefoltColorSec = () => {
@@ -67,16 +67,17 @@ export const ColorContent = () => {
               onChange={(e) => handleColorPrimChange(e.target.value)}
             />
             <div
-              className='h-full w-full rounded-full border border-gray-300 bg-white'
+              className='h-full w-full rounded-md border border-gray-300 bg-white'
               style={{ backgroundColor: primColor }}
             />
             <button
-              className='absolute left-[69px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
+              className='absolute left-[72px] top-[5px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-transparent font-bold leading-none text-white'
               onClick={handleDefoltColorPrim}
             >
-              X
+              <span className='pb-1'>x</span>
             </button>
           </div>
+
           <p className='mb-2 mt-4 text-sm font-semibold text-gray-700'>
             Secondary
           </p>
@@ -88,14 +89,14 @@ export const ColorContent = () => {
               onChange={(e) => handleColorSecChange(e.target.value)}
             />
             <div
-              className='h-full w-full rounded-full border border-gray-300 bg-white'
+              className='h-full w-full rounded-md border border-gray-300 bg-white'
               style={{ backgroundColor: secColor }}
             />
             <button
-              className='absolute left-[69px] top-[4px] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-gray-200 p-1 text-black'
+              className='absolute left-[72px] top-[5px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-transparent font-bold leading-none text-white'
               onClick={handleDefoltColorSec}
             >
-              X
+              <span className='pb-1'>x</span>
             </button>
           </div>
         </motion.div>
