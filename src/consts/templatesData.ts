@@ -334,7 +334,7 @@ export const templatesData = {
             name: 'firstSolana',
             defaultValues: {
               value:
-                'Mobile Users: Download the Suiet wallet for free. Desktop Users: Download the Suiet browser extension',
+                'Mobile Users: Download the Phantom app for free.  Desktop Users: Download the Phantom chrome extension',
               color: '#000',
               fontSizeValue: 20,
               align: 'center'
@@ -357,7 +357,7 @@ export const templatesData = {
             name: 'secondSolana',
             defaultValues: {
               value:
-                'Fund your wallet with SUI, you can buy SUI from an exchange or cross chain swap and send it to your wallet.',
+                'Fund your wallet with Solana, you can buy Solana from an exchange or cross chain swap and send it to your wallet.',
               color: '#000',
               fontSizeValue: 20,
               align: 'center'
@@ -379,7 +379,8 @@ export const templatesData = {
             type: 'text',
             name: 'thirdSolana',
             defaultValues: {
-              value: 'Go to Cetus or Bluefin and swap your SUI for $Ticker',
+              value:
+                'Go to Raydium or Jupiter and swap your Solana for $Ticker',
               color: '#000',
               fontSizeValue: 20,
               align: 'center'

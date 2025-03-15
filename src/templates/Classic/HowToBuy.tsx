@@ -1,5 +1,5 @@
 import { TemplateItemError } from '@/components/TemplateItems/Error'
-import { Image } from '@/components/TemplateItems/Image'
+import { ImageIcons } from '@/components/TemplateItems/ImageIcon'
 import { Text } from '@/components/TemplateItems/Text'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
@@ -80,10 +80,13 @@ export const ClassicHowToBuy: FC = () => {
                 style={{ fontFamily: secondary, color: colorSec }}
               />
             </div>
-            <Image
-              fieldName={getImageField(name)}
-              className={{ image: 'rounded-xl' }}
-            />
+            <div className='flex flex-row justify-start gap-4'>
+              <ImageIcons
+                fieldName={getImageField(name)}
+                className={{ image: 'rounded-xl' }}
+                isIconStep={true}
+              />
+            </div>
           </div>
         ))}
       </div>

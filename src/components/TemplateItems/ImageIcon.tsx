@@ -21,7 +21,11 @@ interface ImageProps {
 
 const subdomain = getSubdomain()
 
-export const Image: FC<ImageProps> = ({ fieldName, className, isIconStep }) => {
+export const ImageIcons: FC<ImageProps> = ({
+  fieldName,
+  className,
+  isIconStep
+}) => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
   const fieldData = data?.[fieldName] as ImageData
 
@@ -58,35 +62,11 @@ export const Image: FC<ImageProps> = ({ fieldName, className, isIconStep }) => {
       }}
     >
       <AnimatePresence mode='popLayout'>
-        <a href={imageLink} target='_blank' rel='noopener noreferrer'>
-          <motion.img
-            key={currentImageIndex}
-            src={items[currentImageIndex] || fieldData.imagePlaceholder}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className={className?.image}
-            style={{
-              borderColor: fieldData.borderColor,
-              borderWidth: `${fieldData.borderWidth}px`,
-              width:
-                className?.width || `${fieldData.width}${fieldData.sizeUnit}`,
-              height:
-                fieldData.height === 'auto'
-                  ? fieldData.height
-                  : className?.height ||
-                    `${fieldData.height}${fieldData.sizeUnit}`,
-              objectFit: 'cover'
-            }}
-          />
-        </a>
-
-        {isIconStep && fieldData.imageSecondPlaceholder && (
-          <a href={secondImageLink} target='_blank' rel='noopener noreferrer'>
+        <div className='flex flex-row justify-center gap-4'>
+          <a href={imageLink} target='_blank' rel='noopener noreferrer'>
             <motion.img
-              key='secondImage'
-              src={fieldData.imageSecondPlaceholder}
+              key={currentImageIndex}
+              src={items[currentImageIndex] || fieldData.imagePlaceholder}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -106,7 +86,34 @@ export const Image: FC<ImageProps> = ({ fieldName, className, isIconStep }) => {
               }}
             />
           </a>
-        )}
+
+          {isIconStep && fieldData.imageSecondPlaceholder && (
+            <a href={secondImageLink} target='_blank' rel='noopener noreferrer'>
+              <motion.img
+                key='secondImage'
+                src={fieldData.imageSecondPlaceholder}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className={className?.image}
+                style={{
+                  borderColor: fieldData.borderColor,
+                  borderWidth: `${fieldData.borderWidth}px`,
+                  width:
+                    className?.width ||
+                    `${fieldData.width}${fieldData.sizeUnit}`,
+                  height:
+                    fieldData.height === 'auto'
+                      ? fieldData.height
+                      : className?.height ||
+                        `${fieldData.height}${fieldData.sizeUnit}`,
+                  objectFit: 'cover'
+                }}
+              />
+            </a>
+          )}
+        </div>
       </AnimatePresence>
     </div>
   )
