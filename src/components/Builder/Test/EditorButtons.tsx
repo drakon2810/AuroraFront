@@ -1,5 +1,6 @@
 import { BuilderButton } from '../BuilderButton'
 import { BuilderSidebarSubCategoryItem } from '../BuilderSidebarSubCategoryItem'
+import { HowToBut } from '@/components/ui/blocks/HowToBuy'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
@@ -26,10 +27,12 @@ export const EditorButtons = () => {
   const { label, fields } = textCategory
 
   return (
-    <div className='flex flex-auto flex-col justify-between gap-4 p-4'>
+    <div className='flex flex-auto flex-col gap-4 p-4'>
       <div className='text-xl font-semibold'>
         {t(`builder.${selectedTemplate}.categories.${label}`)}
       </div>
+
+      <HowToBut />
 
       {/* <div className='flex flex-auto flex-col gap-4 rounded-md py-2'>
         {fields.map((field) => (
@@ -37,7 +40,9 @@ export const EditorButtons = () => {
         ))}
       </div> */}
 
-      <BuilderButton />
+      <div className='mt-auto'>
+        <BuilderButton />
+      </div>
     </div>
   )
 }

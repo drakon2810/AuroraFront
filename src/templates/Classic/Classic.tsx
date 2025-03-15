@@ -25,7 +25,7 @@ export const Classic: FC = () => {
     <TemplateLayout className='h-dvh overflow-y-auto'>
       <div className='mx-auto flex max-w-6xl flex-col items-center gap-8'>
         <header className='flex w-full items-center justify-between gap-4 pb-12'>
-          <div className='flex items-center gap-4'>
+          <div className='flex w-full items-center gap-4'>
             {!isHideLogo && (
               <Image
                 fieldName='logoImage'
@@ -38,6 +38,7 @@ export const Classic: FC = () => {
               style={{ fontFamily: primary, color: colorPrim }}
             />
           </div>
+
           <SocialLinks visibility='header' />
         </header>
         <Text

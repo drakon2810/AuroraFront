@@ -1,3 +1,13 @@
+import Base from '../../public/images/base-logo-in-blue.svg'
+import Bluefin from '../../public/images/bluefin.svg'
+import Bnb from '../../public/images/bnb-bnb-logo.svg'
+import Cetus from '../../public/images/cetus.webp'
+import Pancakeswap from '../../public/images/pancakeswap.svg'
+import Raydium from '../../public/images/raydium.svg'
+import Sui from '../../public/images/sui-sui-logo.svg'
+import Suiet from '../../public/images/suiet-blue.svg'
+import Trust from '../../public/images/trust.svg'
+import Uniswap from '../../public/images/uniswap.svg'
 import ClassicBackground from '@/assets/images/backgrounds/classic.webp'
 import SimpleBackground from '@/assets/images/backgrounds/simple.webp'
 import Jupiter from '@/assets/images/jupiter.webp'
@@ -70,6 +80,12 @@ export const templatesData = {
               align: 'center',
               styles: ['bold']
             }
+          },
+          {
+            type: 'link',
+            name: 'buyNowLink',
+            placeholder: 'URL',
+            defaultValues: { visibility: 'none' }
           },
           {
             type: 'text',
@@ -211,12 +227,47 @@ export const templatesData = {
             type: 'toggle',
             name: 'showHowToBuy'
           },
+
+          // {
+          //   type: 'text',
+          //   name: 'firstNameStep',
+          //   defaultValues: {
+          //     value: 'Step 1',
+          //     color: '#000',
+          //     fontSizeValue: 20,
+          //     align: 'center'
+          //   },
+          //   editor: true
+          // },
+          // {
+          //   type: 'text',
+          //   name: 'secondNameStep',
+          //   defaultValues: {
+          //     value: 'Step 2',
+          //     color: '#000',
+          //     fontSizeValue: 20,
+          //     align: 'center'
+          //   },
+          //   editor: true
+          // },
+          // {
+          //   type: 'text',
+          //   name: 'thirdNameStep',
+          //   defaultValues: {
+          //     value: 'Step 3',
+          //     color: '#000',
+          //     fontSizeValue: 20,
+          //     align: 'center'
+          //   },
+          //   editor: true
+          // },
+
           {
             type: 'text',
             name: 'firstStep',
             defaultValues: {
               value:
-                'Mobile Users: Download the Phantom app for free. Desktop Users: Download the Phantom chrome extension.',
+                'Mobile Users: Download the Phantom app for free.  Desktop Users: Download the Phantom chrome extension',
               color: '#000',
               fontSizeValue: 20,
               align: 'center'
@@ -260,7 +311,7 @@ export const templatesData = {
             name: 'thirdStep',
             defaultValues: {
               value:
-                'Go to Raydium or Jupiter and swap your Solana for $Ticker.',
+                'Go to Raydium or Jupiter and swap your Solana for $Ticker',
               color: '#000',
               fontSizeValue: 20,
               align: 'center'
@@ -277,11 +328,295 @@ export const templatesData = {
             },
             editor: true
           },
+
           {
-            type: 'link',
-            name: 'buyNowLink',
-            placeholder: 'URL',
-            defaultValues: { visibility: 'none' }
+            type: 'text',
+            name: 'firstSolana',
+            defaultValues: {
+              value:
+                'Mobile Users: Download the Suiet wallet for free. Desktop Users: Download the Suiet browser extension',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'firstSolanaImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Phantom,
+              link: 'https://phantom.com/'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'secondSolana',
+            defaultValues: {
+              value:
+                'Fund your wallet with SUI, you can buy SUI from an exchange or cross chain swap and send it to your wallet.',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'secondSolanaImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Solana,
+              link: 'https://phantom.com/'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'thirdSolana',
+            defaultValues: {
+              value: 'Go to Cetus or Bluefin and swap your SUI for $Ticker',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'thirdSolanaImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Jupiter,
+              link: 'https://jup.ag/swap/SOL-coming%20soon',
+              imageSecondPlaceholder: Raydium,
+              secondLink:
+                'https://raydium.io/swap/?inputMint=sol&amp;outputMint=coming%20soon'
+            },
+            editor: true
+          },
+
+          {
+            type: 'text',
+            name: 'firstSui',
+            defaultValues: {
+              value:
+                'Mobile Users: Download the Suiet wallet for free. Desktop Users: Download the Suiet browser extension',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'firstSuiImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Suiet,
+              link: 'https://suiet.app/'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'secondSui',
+            defaultValues: {
+              value:
+                'Fund your wallet with SUI, you can buy SUI from an exchange or cross chain swap and send it to your wallet.',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'secondSuiImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Sui,
+              link: 'https://blog.sui.io/how-to-get-started-with-sui/'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'thirdSui',
+            defaultValues: {
+              value: 'Go to Cetus or Bluefin and swap your SUI for $Ticker',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'thirdSuiImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Bluefin,
+              imageSecondPlaceholder: Cetus,
+              link: 'https://app.cetus.zone/swap?from=0x2::sui::SUI&to=coming%20soon',
+              secondLink:
+                'https://trade.bluefin.io/swap?coin_a=0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI&coin_b=coming%20soon'
+            },
+            editor: true
+          },
+
+          {
+            type: 'text',
+            name: 'firstBase',
+            defaultValues: {
+              value:
+                'Mobile Users: Download the Trust wallet for free. Desktop Users: Download the Trust browser extension',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'firstBaseImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Trust,
+              link: 'https://trustwallet.com/'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'secondBase',
+            defaultValues: {
+              value:
+                'Fund your wallet with ETH on the Base Network, you can buy ETH from an exchange or cross chain swap and send it to your wallet.',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'secondBaseImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Base,
+              link: 'https://trustwallet.com/ru/blog/blockchain/a-beginners-guide-to-the-base-network'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'thirdBase',
+            defaultValues: {
+              value:
+                'Go to Pancakeswap or Uniswap and swap your ETH for $Ticker',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'thirdBaseImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Pancakeswap,
+              imageSecondPlaceholder: Uniswap,
+              link: 'https://pancakeswap.finance/swap?outputCurrency=coming%20soon&chain=base',
+              secondLink:
+                'https://app.uniswap.org/explore/tokens/base/coming%20soon'
+            },
+            editor: true
+          },
+
+          {
+            type: 'text',
+            name: 'firstBnb',
+            defaultValues: {
+              value:
+                'Mobile Users: Download the Trust wallet for free. Desktop Users: Download the Trust browser extension',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'firstBnbImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Trust,
+              link: 'https://trustwallet.com/'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'secondBnb',
+            defaultValues: {
+              value:
+                'Fund your wallet with BNB, you can buy BNB from an exchange or cross chain swap and send it to your wallet.',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'secondBnbImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Bnb,
+              link: 'https://trustwallet.com/ru/blog/blockchain/beginners-guide-to-bnb-smart-chain'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'thirdBnb',
+            defaultValues: {
+              value:
+                'Go to Pancakeswap or Uniswap and swap your BNB for $Ticker',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'image',
+            name: 'thirdBnbImage',
+            defaultValues: {
+              width: 64,
+              height: 64,
+              imagePlaceholder: Pancakeswap,
+              imageSecondPlaceholder: Uniswap,
+              link: 'https://pancakeswap.finance/swap?outputCurrency=coming%20soon&chain=base',
+              secondLink:
+                'https://app.uniswap.org/explore/tokens/base/coming%20soon'
+            },
+            editor: true
           }
         ]
       },

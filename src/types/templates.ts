@@ -68,6 +68,9 @@ export interface ImageData extends CommonData {
   borderColor: string
   borderWidth: number
   imagePlaceholder: string
+  imageSecondPlaceholder: string
+  link: string
+  secondLink: string
 }
 
 export interface LinkData extends CommonData {

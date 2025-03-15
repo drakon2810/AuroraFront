@@ -2,17 +2,56 @@ import { TemplateItemError } from '@/components/TemplateItems/Error'
 import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
 import { TemplateContext } from '@/contexts/TemplateContext'
+import { useBlocksStore } from '@/store/useBlocksStore'
 import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { FC, useContext } from 'react'
 
 export const ClassicHowToBuy: FC = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
+  const { titleHowToBuy, selectedNetwork } = useBlocksStore((state) => state)
+
+  console.log(selectedNetwork)
+
   const { secondary, colorSec, primary, colorPrim } = useStylesStore(
     (state) => state
   )
 
   if (!data) return <TemplateItemError />
+
+  const getTextField = (name: string) => {
+    switch (selectedNetwork) {
+      case 'Custom':
+        return `${name}Step`
+      case 'Solana':
+        return `${name}Solana`
+      case 'Sui':
+        return `${name}Sui`
+      case 'Base':
+        return `${name}Base`
+      case 'BNB Chain':
+        return `${name}Bnb`
+      default:
+        return `${name}Step`
+    }
+  }
+
+  const getImageField = (name: string) => {
+    switch (selectedNetwork) {
+      case 'Custom':
+        return `${name}StepImage`
+      case 'Solana':
+        return `${name}SolanaImage`
+      case 'Sui':
+        return `${name}SuiImage`
+      case 'Base':
+        return `${name}BaseImage`
+      case 'BNB Chain':
+        return `${name}BnbImage`
+      default:
+        return `${name}SolanaImage`
+    }
+  }
 
   return (
     <div className='flex flex-col items-center gap-4 pt-16'>
@@ -20,7 +59,7 @@ export const ClassicHowToBuy: FC = () => {
         className='tracking-wide text-white'
         style={{ fontFamily: primary, color: colorPrim }}
       >
-        How to Buy
+        {titleHowToBuy || 'How to Buy'}
       </h2>
       <div className='flex flex-wrap justify-center gap-4'>
         {['first', 'second', 'third'].map((name, index) => (
@@ -36,13 +75,13 @@ export const ClassicHowToBuy: FC = () => {
                 Step {index + 1}
               </h3>
               <Text
-                fieldName={`${name}Step`}
+                fieldName={getTextField(name)}
                 as='p'
                 style={{ fontFamily: secondary, color: colorSec }}
               />
             </div>
             <Image
-              fieldName={`${name}StepImage`}
+              fieldName={getImageField(name)}
               className={{ image: 'rounded-xl' }}
             />
           </div>
