@@ -103,7 +103,10 @@ export const BuilderSidebarSubCategoryItem: FC<TemplateSubCategoryField> = (
             )}
           </>
         ) : (
-          name !== 'Falling animation' && (
+          name !== 'Falling animation' &&
+          name !== 'firstStep' &&
+          name !== 'secondStep' &&
+          name !== 'thirdStep' && (
             <Label htmlFor={name} className=''>
               {t(`builder.${selectedTemplate}.fields.${name}`)}
             </Label>

@@ -173,10 +173,13 @@ export const HowToBut = () => {
                 {fields
                   .filter(
                     (field) =>
+                      field.name === 'firstNameStep' ||
                       field.name === 'firstStep' ||
                       field.name === 'firstStepImage' ||
+                      field.name === 'secondNameStep' ||
                       field.name === 'secondStep' ||
                       field.name === 'secondStepImage' ||
+                      field.name === 'thirdNameStep' ||
                       field.name === 'thirdStep' ||
                       field.name === 'thirdStepImage'
                   )

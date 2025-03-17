@@ -11,7 +11,7 @@ export const ClassicHowToBuy: FC = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
   const { titleHowToBuy, selectedNetwork } = useBlocksStore((state) => state)
 
-  console.log(selectedNetwork)
+  console.log(data)
 
   const { secondary, colorSec, primary, colorPrim } = useStylesStore(
     (state) => state
@@ -62,22 +62,40 @@ export const ClassicHowToBuy: FC = () => {
         {titleHowToBuy || 'How to Buy'}
       </h2>
       <div className='flex flex-wrap justify-center gap-4'>
-        {['first', 'second', 'third'].map((name, index) => (
+        {['first', 'second', 'third'].map((name) => (
           <div
             key={name}
-            className='flex max-w-72 flex-col items-center justify-between gap-8 rounded-xl bg-white p-6 text-black'
+            className='flex w-72 flex-col items-center justify-between gap-8 rounded-xl bg-white p-6 text-black'
           >
             <div className='flex flex-col items-center gap-2'>
               <h3
                 className='text-3xl'
                 style={{ fontFamily: secondary, color: colorSec }}
               >
-                Step {index + 1}
+                <Text
+                  fieldName={`${name}NameStep`}
+                  as='p'
+                  style={{
+                    fontFamily: secondary,
+                    color: colorSec,
+                    wordBreak: 'break-word',
+                    whiteSpace: 'pre-wrap',
+                    overflowWrap: 'break-word',
+                    maxWidth: '100%'
+                  }}
+                />
               </h3>
               <Text
                 fieldName={getTextField(name)}
                 as='p'
-                style={{ fontFamily: secondary, color: colorSec }}
+                style={{
+                  fontFamily: secondary,
+                  color: colorSec,
+                  wordBreak: 'break-word',
+                  whiteSpace: 'pre-wrap',
+                  overflowWrap: 'break-word',
+                  maxWidth: '100%'
+                }}
               />
             </div>
             <div className='flex flex-row justify-start gap-4'>

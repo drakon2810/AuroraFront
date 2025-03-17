@@ -282,12 +282,12 @@
         "authorTwitter": "Author Twitter",
         "authorDiscord": "Author Discord",
         "showHowToBuy": "Show How to Buy",
-        "firstStep": "First Step",
-        "firstStepImage": "First Step Image",
-        "secondStep": "Second Step",
-        "secondStepImage": "Second Step Image",
-        "thirdStep": "Third Step",
-        "thirdStepImage": "Third Step Image",
+        "firstNameStep": "Step 1",
+        "firstStepImage": "Step 1 Image",
+        "secondNameStep": "Step 2",
+        "secondStepImage": "Step 2 Image",
+        "thirdNameStep": " Step 3",
+        "thirdStepImage": "Step 3 Image",
         "buyNowLink": "Buy Now Link"
       }
     },

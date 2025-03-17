@@ -228,39 +228,17 @@ export const templatesData = {
             name: 'showHowToBuy'
           },
 
-          // {
-          //   type: 'text',
-          //   name: 'firstNameStep',
-          //   defaultValues: {
-          //     value: 'Step 1',
-          //     color: '#000',
-          //     fontSizeValue: 20,
-          //     align: 'center'
-          //   },
-          //   editor: true
-          // },
-          // {
-          //   type: 'text',
-          //   name: 'secondNameStep',
-          //   defaultValues: {
-          //     value: 'Step 2',
-          //     color: '#000',
-          //     fontSizeValue: 20,
-          //     align: 'center'
-          //   },
-          //   editor: true
-          // },
-          // {
-          //   type: 'text',
-          //   name: 'thirdNameStep',
-          //   defaultValues: {
-          //     value: 'Step 3',
-          //     color: '#000',
-          //     fontSizeValue: 20,
-          //     align: 'center'
-          //   },
-          //   editor: true
-          // },
+          {
+            type: 'text',
+            name: 'firstNameStep',
+            defaultValues: {
+              value: 'Step 1',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
 
           {
             type: 'text',
@@ -286,6 +264,17 @@ export const templatesData = {
           },
           {
             type: 'text',
+            name: 'secondNameStep',
+            defaultValues: {
+              value: 'Step 2',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
+            },
+            editor: true
+          },
+          {
+            type: 'text',
             name: 'secondStep',
             defaultValues: {
               value:
@@ -303,6 +292,17 @@ export const templatesData = {
               width: 64,
               height: 64,
               imagePlaceholder: Solana
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'thirdNameStep',
+            defaultValues: {
+              value: 'Step 3',
+              color: '#000',
+              fontSizeValue: 20,
+              align: 'center'
             },
             editor: true
           },
