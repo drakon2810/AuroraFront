@@ -5,7 +5,9 @@ import { TemplateLayout } from '../TemplateLayout'
 import { ClassicHowToBuy } from './HowToBuy'
 import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
+import { EmbedVideo } from '@/components/ui/embedVideo'
 import { TemplateContext } from '@/contexts/TemplateContext'
+import { useBlocksStore } from '@/store/useBlocksStore'
 import { useGeneralStore } from '@/store/useGeneralStore'
 import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
@@ -18,6 +20,7 @@ export const Classic: FC = () => {
   const { primary, secondary, colorPrim, colorSec } = useStylesStore(
     (state) => state
   )
+  const { isActiveEmbed, embedTitle } = useBlocksStore((state) => state)
 
   if (!data) return <span>Something went wrong...</span>
 
@@ -60,6 +63,12 @@ export const Classic: FC = () => {
         />
         <BuyButton className='min-w-72 rounded-full text-center text-3xl uppercase text-black' />
         {(data?.showHowToBuy as ToggleData)?.value && <ClassicHowToBuy />}
+        {isActiveEmbed && (
+          <div className='mx-auto my-8 flex w-full max-w-4xl flex-col items-center justify-center'>
+            <h3 className='mb-4 text-center'>{embedTitle}</h3>
+            <EmbedVideo />
+          </div>
+        )}
       </div>
     </TemplateLayout>
   )

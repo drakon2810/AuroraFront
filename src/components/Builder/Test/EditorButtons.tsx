@@ -1,5 +1,5 @@
+import { EmberBlock } from '../../ui/blocks/EmbedBlock'
 import { BuilderButton } from '../BuilderButton'
-import { BuilderSidebarSubCategoryItem } from '../BuilderSidebarSubCategoryItem'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
@@ -24,7 +24,7 @@ export const EditorButtons = () => {
     return null
   }
 
-  const { label, fields } = textCategory
+  const { label } = textCategory
 
   return (
     <div className='flex flex-auto flex-col gap-4 p-4'>
@@ -33,19 +33,11 @@ export const EditorButtons = () => {
       </div>
 
       <HowToBut />
-
-      {/* <div className='flex flex-auto flex-col gap-4 rounded-md py-2'>
-        {fields.map((field) => (
-          <BuilderSidebarSubCategoryItem key={field.name} {...field} />
-        ))}
-      </div> */}
+      <EmberBlock />
 
       <div className='mt-auto'>
         <BuilderButton />
       </div>
     </div>
   )
-}
-
-{
 }
