@@ -10,6 +10,7 @@ interface useBlocksStoreInterface {
   emberTictok: string
   embedChoiseBtn: string
   embedTitle: string
+  embedColorX: string
   toggleHowToBuy: (value: boolean) => void
   setTitleHowToBuy: (value: string) => void
   setSelectedNetwork: (value: string) => void
@@ -19,6 +20,7 @@ interface useBlocksStoreInterface {
   setEmberTicTok: (value: string) => void
   setEmbedChoiseBtn: (value: string) => void
   setEmbedTitle: (value: string) => void
+  setEmbedColorX: (value: string) => void
 }
 
 export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
@@ -31,6 +33,7 @@ export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
   emberTictok: 'https://vm.tiktok.com/ZNdda2pwC/',
   embedChoiseBtn: 'youtube',
   embedTitle: '',
+  embedColorX: 'white',
   toggleHowToBuy: (value) =>
     set(() => ({
       howToBuyBtn: value
@@ -48,5 +51,6 @@ export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
   setEmberTicTok: (value) => set(() => ({ emberTictok: value })),
   setEmbedChoiseBtn: (value) => set(() => ({ embedChoiseBtn: value })),
   setisActiveEmbed: (value) => set(() => ({ isActiveEmbed: value })),
-  setEmbedTitle: (value) => set(() => ({ embedTitle: value }))
+  setEmbedTitle: (value) => set(() => ({ embedTitle: value })),
+  setEmbedColorX: (value) => set(() => ({ embedColorX: value }))
 }))

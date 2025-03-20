@@ -12,9 +12,8 @@ declare global {
 }
 
 export const EmbedVideo = () => {
-  const { emberVideo, emberX, emberTictok, embedChoiseBtn } = useBlocksStore(
-    (state) => state
-  )
+  const { emberVideo, emberX, emberTictok, embedChoiseBtn, embedColorX } =
+    useBlocksStore((state) => state)
 
   const defaultVideo = {
     youtube: 'https://www.youtube.com/embed/QCJGIz7ROUI?si=MxEWxZGg7xfoc4f1',
@@ -50,6 +49,12 @@ export const EmbedVideo = () => {
   }, [embedChoiseBtn, emberX])
 
   useEffect(() => {
+    if (embedChoiseBtn === 'x' && window.twttr && window.twttr.widgets) {
+      window.twttr.widgets.load() // Перезагружаем виджеты при изменении темы
+    }
+  }, [embedColorX]) // Отслеживаем изменения embedColorX
+
+  useEffect(() => {
     if (embedChoiseBtn === 'tiktok' && emberTictok) {
       const scriptSrc = 'https://www.tiktok.com/embed.js'
 
@@ -79,7 +84,7 @@ export const EmbedVideo = () => {
   } else if (embedChoiseBtn === 'x') {
     embedContent = (
       <div ref={twitterRef} className='flex justify-center'>
-        <blockquote className='twitter-tweet' data-theme='dark'>
+        <blockquote className='twitter-tweet' data-theme={embedColorX}>
           <a href={emberX || defaultVideo.twitter}></a>
         </blockquote>
       </div>

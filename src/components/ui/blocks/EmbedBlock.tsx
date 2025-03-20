@@ -10,6 +10,7 @@ export const EmberBlock = () => {
   const [isActive, setIsActive] = useState(false)
   const [, setTitle] = useState('')
   const [video, setVideo] = useState('')
+  const [color, setColor] = useState('white')
   const {
     setEmberVidoe,
     setisActiveEmbed,
@@ -17,9 +18,7 @@ export const EmberBlock = () => {
     setEmberTicTok,
     setEmbedChoiseBtn,
     setEmbedTitle,
-    emberVideo,
-    emberX,
-    emberTictok
+    setEmbedColorX
   } = useBlocksStore((state) => state)
 
   const { selectedTemplate } = useContext(
@@ -35,6 +34,11 @@ export const EmberBlock = () => {
 
   if (!textCategory) {
     return null
+  }
+
+  const handleColorX = (value: string) => {
+    setColor(value)
+    setEmbedColorX(value)
   }
 
   const handleTitle = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -161,6 +165,26 @@ export const EmberBlock = () => {
               disabled={!isActive}
             />
           </div>
+          {toggle === 'x' && (
+            <div className='flex w-full justify-center'>
+              <div className='flex w-full max-w-[500px] items-center justify-between rounded-md bg-gray-200 p-1'>
+                {['white', 'dark'].map((option) => (
+                  <button
+                    key={option}
+                    onClick={() => isActive && handleColorX(option)}
+                    disabled={!isActive}
+                    className={`flex-1 rounded-md px-6 py-1.5 text-sm font-semibold transition-all ${
+                      color === option
+                        ? 'bg-white text-black'
+                        : 'bg-gray-200 text-gray-700'
+                    } ${!isActive ? 'cursor-not-allowed opacity-50' : ''}`}
+                  >
+                    {option.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </motion.div>
       </details>
     </div>
