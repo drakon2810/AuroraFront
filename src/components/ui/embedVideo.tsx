@@ -19,7 +19,7 @@ export const EmbedVideo = () => {
   const defaultVideo = {
     youtube: 'https://www.youtube.com/embed/QCJGIz7ROUI?si=MxEWxZGg7xfoc4f1',
     twitter: 'https://twitter.com/Interior/status/463440424141459456',
-    tiktok: 'https://vm.tiktok.com/ZNdda2pwC/'
+    tiktok: 'https://www.tiktok.com/embed/7012178757775592706'
   }
 
   const twitterRef = useRef<HTMLDivElement | null>(null)
@@ -50,13 +50,17 @@ export const EmbedVideo = () => {
   }, [embedChoiseBtn, emberX])
 
   useEffect(() => {
-    if (embedChoiseBtn === 'tiktok') {
-      const script = document.createElement('script')
-      script.src = 'https://www.tiktok.com/embed.js'
-      script.async = true
-      document.body.appendChild(script)
+    if (embedChoiseBtn === 'tiktok' && emberTictok) {
+      const scriptSrc = 'https://www.tiktok.com/embed.js'
+
+      if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+        const script = document.createElement('script')
+        script.src = scriptSrc
+        script.async = true
+        document.body.appendChild(script)
+      }
     }
-  }, [embedChoiseBtn])
+  }, [embedChoiseBtn, emberTictok])
 
   let embedContent: JSX.Element | null = null
 
@@ -75,24 +79,40 @@ export const EmbedVideo = () => {
   } else if (embedChoiseBtn === 'x') {
     embedContent = (
       <div ref={twitterRef} className='flex justify-center'>
-        <blockquote className='twitter-tweet'>
+        <blockquote className='twitter-tweet' data-theme='dark'>
           <a href={emberX || defaultVideo.twitter}></a>
         </blockquote>
       </div>
     )
   } else if (embedChoiseBtn === 'tiktok') {
-    embedContent = (
+    embedContent = emberTictok ? (
       <blockquote
         className='tiktok-embed'
-        cite={emberTictok || defaultVideo.tiktok}
-        data-video-id={
-          emberTictok?.split('/').pop() || defaultVideo.tiktok.split('/').pop()
-        }
+        cite={emberTictok}
+        data-video-id={emberTictok.split('/').pop()}
       >
-        <a href={emberTictok || defaultVideo.tiktok}></a>
+        <a href={emberTictok}></a>
       </blockquote>
+    ) : (
+      <iframe
+        src={defaultVideo.tiktok}
+        width='330'
+        height='800'
+        className='rounded-lg shadow-md'
+        allowFullScreen
+      />
     )
   }
 
-  return <div className='mx-auto w-full max-w-3xl'>{embedContent}</div>
+  return (
+    <div
+      className={
+        embedChoiseBtn === 'youtube' || embedChoiseBtn === 'x'
+          ? 'mx-auto w-full max-w-3xl'
+          : ''
+      }
+    >
+      {embedContent}
+    </div>
+  )
 }
