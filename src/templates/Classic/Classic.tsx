@@ -83,7 +83,7 @@ export const Classic: FC = () => {
       </div>
       <div>
         {isActiveChart && (
-          <div className='mx-auto my-8 flex w-full flex-col items-center justify-center'>
+          <div className='mx-auto my-8 flex w-full flex-col items-center justify-center rounded-[70px]'>
             <h3
               className='mb-4 text-center'
               style={{ fontFamily: secondary, color: colorSec || '#000000' }}
