@@ -6,6 +6,7 @@ import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
 import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Chart } from '@/components/ui/blocks/Chart'
 
 export const EditorButtons = () => {
   const { selectedTemplate } = useContext(
@@ -34,6 +35,7 @@ export const EditorButtons = () => {
 
       <HowToBut />
       <EmberBlock />
+      <Chart />
 
       <div className='mt-auto'>
         <BuilderButton />

@@ -5,9 +5,11 @@ import { TemplateLayout } from '../TemplateLayout'
 import { ClassicHowToBuy } from './HowToBuy'
 import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
+import { Chart } from '@/components/ui/chart'
 import { EmbedVideo } from '@/components/ui/embedVideo'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
+import { useChartStore } from '@/store/useChartStore'
 import { useGeneralStore } from '@/store/useGeneralStore'
 import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
@@ -21,8 +23,12 @@ export const Classic: FC = () => {
     (state) => state
   )
   const { isActiveEmbed, embedTitle } = useBlocksStore((state) => state)
+  const { isActiveChart, titleChart, optionChat } = useChartStore(
+    (state) => state
+  )
 
   if (!data) return <span>Something went wrong...</span>
+  console.log(optionChat)
 
   return (
     <TemplateLayout className='h-dvh overflow-y-auto'>
@@ -65,8 +71,26 @@ export const Classic: FC = () => {
         {(data?.showHowToBuy as ToggleData)?.value && <ClassicHowToBuy />}
         {isActiveEmbed && (
           <div className='mx-auto my-8 flex w-full max-w-4xl flex-col items-center justify-center'>
-            <h3 className='mb-4 text-center'>{embedTitle}</h3>
+            <h3
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || '#000000' }}
+            >
+              {embedTitle}
+            </h3>
             <EmbedVideo />
+          </div>
+        )}
+      </div>
+      <div>
+        {isActiveChart && (
+          <div className='mx-auto my-8 flex w-full flex-col items-center justify-center'>
+            <h3
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || '#000000' }}
+            >
+              {titleChart}
+            </h3>
+            <Chart />
           </div>
         )}
       </div>
