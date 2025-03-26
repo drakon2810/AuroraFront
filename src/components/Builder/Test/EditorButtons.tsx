@@ -1,12 +1,13 @@
 import { EmberBlock } from '../../ui/blocks/EmbedBlock'
 import { BuilderButton } from '../BuilderButton'
+import { Chart } from '@/components/ui/blocks/Chart'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
+import { Roandmap } from '@/components/ui/blocks/Roandmap'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
 import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Chart } from '@/components/ui/blocks/Chart'
 
 export const EditorButtons = () => {
   const { selectedTemplate } = useContext(
@@ -36,6 +37,7 @@ export const EditorButtons = () => {
       <HowToBut />
       <EmberBlock />
       <Chart />
+      <Roandmap />
 
       <div className='mt-auto'>
         <BuilderButton />

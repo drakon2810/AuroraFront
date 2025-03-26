@@ -7,10 +7,12 @@ import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
 import { Chart } from '@/components/ui/chart'
 import { EmbedVideo } from '@/components/ui/embedVideo'
+import { Stages } from '@/components/ui/stages'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
 import { useChartStore } from '@/store/useChartStore'
 import { useGeneralStore } from '@/store/useGeneralStore'
+import { useRoadMapStore } from '@/store/useRoadMapStore'
 import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { ToggleData } from '@/types/templates'
@@ -26,6 +28,7 @@ export const Classic: FC = () => {
   const { isActiveChart, titleChart, optionChat } = useChartStore(
     (state) => state
   )
+  const { isActiveRM, titleRM } = useRoadMapStore((state) => state)
 
   if (!data) return <span>Something went wrong...</span>
   console.log(optionChat)
@@ -73,7 +76,7 @@ export const Classic: FC = () => {
           <div className='mx-auto my-8 flex w-full max-w-4xl flex-col items-center justify-center'>
             <h3
               className='mb-4 text-center'
-              style={{ fontFamily: secondary, color: colorSec || '#000000' }}
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
             >
               {embedTitle}
             </h3>
@@ -86,11 +89,22 @@ export const Classic: FC = () => {
           <div className='mx-auto my-8 flex w-full flex-col items-center justify-center rounded-[70px]'>
             <h3
               className='mb-4 text-center'
-              style={{ fontFamily: secondary, color: colorSec || '#000000' }}
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
             >
               {titleChart}
             </h3>
             <Chart />
+          </div>
+        )}
+        {isActiveRM && (
+          <div className='mx-auto my-8 mt-[150px] flex w-full flex-col items-center justify-center rounded-[70px]'>
+            <h3
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
+            >
+              {titleRM}
+            </h3>
+            <Stages />
           </div>
         )}
       </div>
