@@ -1,6 +1,4 @@
-import { BuilderSidebarSubCategoryEditorMenu } from '../../Builder/BuilderSidebarSubCategoryEditorMenu'
 import { BuilderButton } from '../BuilderButton'
-import { BuilderSidebarSubCategoryItem } from '../BuilderSidebarSubCategoryItem'
 import { BackgroundContent } from './StylesContent/Background'
 import { ColorContent } from './StylesContent/Color'
 import { FontsContent } from './StylesContent/Fontes'

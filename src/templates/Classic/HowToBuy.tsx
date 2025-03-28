@@ -9,9 +9,9 @@ import { FC, useContext } from 'react'
 
 export const ClassicHowToBuy: FC = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
-  const { titleHowToBuy, selectedNetwork } = useBlocksStore((state) => state)
-
-  console.log(data)
+  const { titleHowToBuy, selectedNetwork, colorBackgrond } = useBlocksStore(
+    (state) => state
+  )
 
   const { secondary, colorSec, primary, colorPrim } = useStylesStore(
     (state) => state
@@ -66,6 +66,7 @@ export const ClassicHowToBuy: FC = () => {
           <div
             key={name}
             className='flex w-72 flex-col items-center justify-between gap-8 rounded-xl bg-white p-6 text-black'
+            style={{ backgroundColor: colorBackgrond }}
           >
             <div className='flex flex-col items-center gap-2'>
               <h3

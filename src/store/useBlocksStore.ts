@@ -4,6 +4,7 @@ interface useBlocksStoreInterface {
   howToBuyBtn: boolean
   titleHowToBuy: string
   selectedNetwork: string
+  colorBackgrond: string
   isActiveEmbed: boolean
   emberVideo: string
   emberX: string
@@ -14,6 +15,7 @@ interface useBlocksStoreInterface {
   toggleHowToBuy: (value: boolean) => void
   setTitleHowToBuy: (value: string) => void
   setSelectedNetwork: (value: string) => void
+  setColorBackground: (value: string) => void
   setEmberVidoe: (value: string) => void
   setisActiveEmbed: (value: boolean) => void
   setEmberX: (value: string) => void
@@ -27,6 +29,7 @@ export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
   howToBuyBtn: false,
   titleHowToBuy: 'How to Buy',
   selectedNetwork: 'Solana',
+  colorBackgrond: 'white',
   isActiveEmbed: false,
   emberVideo: 'https://www.youtube.com/embed/QCJGIz7ROUI?si=MxEWxZGg7xfoc4f1',
   emberX: 'https://x.com/aurorabuildd/status/1889418700249284715?s=46',
@@ -46,6 +49,7 @@ export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
     set(() => ({
       selectedNetwork: value
     })),
+  setColorBackground: (value) => set(() => ({ colorBackgrond: value })),
   setEmberVidoe: (value) => set(() => ({ emberVideo: value })),
   setEmberX: (value) => set(() => ({ emberX: value })),
   setEmberTicTok: (value) => set(() => ({ emberTictok: value })),

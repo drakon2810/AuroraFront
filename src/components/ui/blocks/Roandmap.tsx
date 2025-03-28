@@ -11,6 +11,7 @@ export const Roandmap = () => {
   const [teaxtAreaOne, setTextAreaOne] = useState('')
   const [teaxtAreaTwo, setTextAreaTwo] = useState('')
   const [teaxtAreaFree, setTextAreaFree] = useState('')
+  const [color, setColor] = useState('#cfcfcf')
   const {
     setisActiveRM,
     setTitleRM,
@@ -19,7 +20,8 @@ export const Roandmap = () => {
     setStageFreeRM,
     setTeaxtAreaOneRM,
     setTeaxtAreaTwoRM,
-    setTeaxtAreaFreeRM
+    setTeaxtAreaFreeRM,
+    setColorBackgrond
   } = useRoadMapStore((state) => state)
 
   const handleTitle = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -70,6 +72,16 @@ export const Roandmap = () => {
       setisActiveRM(newIsActive)
       return newIsActive
     })
+  }
+
+  const handleColorChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setColor(event.target.value)
+    setColorBackgrond(event.target.value)
+  }
+
+  const handleDefoltColorSec = () => {
+    setColor('#cfcfcf')
+    setColorBackgrond('')
   }
   return (
     <div className='flex flex-col items-start space-y-4'>
@@ -174,7 +186,7 @@ export const Roandmap = () => {
             <span className='ml-3 text-sm font-medium text-gray-700'>
               Stage 3
             </span>
-            <div>
+            <div className='mb-4'>
               <input
                 placeholder='Stage 3'
                 value={stageFree}
@@ -193,6 +205,29 @@ export const Roandmap = () => {
                 value={teaxtAreaFree}
                 onChange={handleTextAreaFree}
               ></textarea>
+            </div>
+            <span className='ml-3 text-sm font-medium text-gray-700'>
+              Background Color
+            </span>
+            <div className='relative mt-1 h-8 w-36'>
+              <input
+                type='color'
+                value={color}
+                className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
+                onChange={handleColorChange}
+                disabled={!isActive}
+              />
+              <div
+                className='h-full w-full rounded-md border border-gray-300'
+                style={{ backgroundColor: color }}
+              />
+              <button
+                className='absolute left-[114px] top-[5px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-transparent font-bold leading-none text-white'
+                onClick={handleDefoltColorSec}
+                disabled={!isActive}
+              >
+                <span className='pb-[1px]'>X</span>
+              </button>
             </div>
           </div>
         </motion.div>

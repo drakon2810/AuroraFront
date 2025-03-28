@@ -2,6 +2,7 @@ import { EmberBlock } from '../../ui/blocks/EmbedBlock'
 import { BuilderButton } from '../BuilderButton'
 import { Chart } from '@/components/ui/blocks/Chart'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
+import { Marquee } from '@/components/ui/blocks/Marquee'
 import { Roandmap } from '@/components/ui/blocks/Roandmap'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
@@ -38,7 +39,7 @@ export const EditorButtons = () => {
       <EmberBlock />
       <Chart />
       <Roandmap />
-
+      <Marquee />
       <div className='mt-auto'>
         <BuilderButton />
       </div>
