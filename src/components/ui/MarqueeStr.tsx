@@ -12,7 +12,7 @@ type MarqueeProps = {
 
 export const MarqueeStr: FC<MarqueeProps> = ({
   text = 'Ticker',
-  speed = 150,
+  speed = 80,
   className = '',
   showDollarBadge = true,
   style
