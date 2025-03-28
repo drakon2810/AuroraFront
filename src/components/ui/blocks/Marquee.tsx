@@ -78,11 +78,11 @@ export const Marquee = () => {
                 <input
                   type='checkbox'
                   onChange={handleChooseUp}
-                  className='peer h-5 w-5 appearance-none rounded-md border-2 border-gray-400 checked:border-black checked:bg-black focus:ring-2 focus:ring-black'
+                  className='peer h-4 w-4 appearance-none rounded-md border-2 border-gray-400 checked:border-black checked:bg-black focus:ring-2 focus:ring-black'
                   disabled={!isActive}
                 />
                 <svg
-                  className='pointer-events-none absolute left-1/2 top-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 transform text-white peer-checked:block'
+                  className='pointer-events-none absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 transform text-white peer-checked:block'
                   viewBox='0 0 20 20'
                   fill='currentColor'
                 >
@@ -93,18 +93,18 @@ export const Marquee = () => {
                   />
                 </svg>
               </div>
-              <span className='text-gray-700'>Up</span>
+              <span className='text-sm text-gray-700'>Up</span>
             </label>
             <label className='flex items-center space-x-2'>
               <div className='relative flex items-center'>
                 <input
                   type='checkbox'
                   onChange={handleChooseMiddle}
-                  className='peer h-5 w-5 appearance-none rounded-md border-2 border-gray-400 checked:border-black checked:bg-black focus:ring-2 focus:ring-black'
+                  className='peer h-4 w-4 appearance-none rounded-md border-2 border-gray-400 checked:border-black checked:bg-black focus:ring-2 focus:ring-black'
                   disabled={!isActive}
                 />
                 <svg
-                  className='pointer-events-none absolute left-1/2 top-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 transform text-white peer-checked:block'
+                  className='pointer-events-none absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 transform text-white peer-checked:block'
                   viewBox='0 0 20 20'
                   fill='currentColor'
                 >
@@ -115,18 +115,18 @@ export const Marquee = () => {
                   />
                 </svg>
               </div>
-              <span className='text-gray-700'>Middle</span>
+              <span className='text-sm text-gray-700'>Middle</span>
             </label>
             <label className='flex items-center space-x-2'>
               <div className='relative flex items-center'>
                 <input
                   type='checkbox'
                   onChange={handleChooseDown}
-                  className='peer h-5 w-5 appearance-none rounded-md border-2 border-gray-400 checked:border-black checked:bg-black focus:ring-2 focus:ring-black'
+                  className='peer h-4 w-4 appearance-none rounded-md border-2 border-gray-400 checked:border-black checked:bg-black focus:ring-2 focus:ring-black'
                   disabled={!isActive}
                 />
                 <svg
-                  className='pointer-events-none absolute left-1/2 top-1/2 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 transform text-white peer-checked:block'
+                  className='pointer-events-none absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 transform text-white peer-checked:block'
                   viewBox='0 0 20 20'
                   fill='currentColor'
                 >
@@ -137,7 +137,7 @@ export const Marquee = () => {
                   />
                 </svg>
               </div>
-              <span className='text-gray-700'>Down</span>
+              <span className='text-sm text-gray-700'>Down</span>
             </label>
           </div>
         </motion.div>
