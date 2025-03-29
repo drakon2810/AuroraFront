@@ -5,6 +5,7 @@ import { TemplateLayout } from '../TemplateLayout'
 import { ClassicHowToBuy } from './HowToBuy'
 import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
+import { ImageGallery } from '@/components/ui/ImageGalery'
 import { MarqueeStr } from '@/components/ui/MarqueeStr'
 import { Chart } from '@/components/ui/chart'
 import { EmbedVideo } from '@/components/ui/embedVideo'
@@ -12,6 +13,7 @@ import { Stages } from '@/components/ui/stages'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
 import { useChartStore } from '@/store/useChartStore'
+import { useGallaryStore } from '@/store/useGalleryStore'
 import { useGeneralStore } from '@/store/useGeneralStore'
 import { useMarqueeStore } from '@/store/useMarqueeStore'
 import { useRoadMapStore } from '@/store/useRoadMapStore'
@@ -32,7 +34,7 @@ export const Classic: FC = () => {
   const { isActiveRM, titleRM } = useRoadMapStore((state) => state)
   const { isActiveMarquee, marqueeUp, marqueeDown, marqueeMidle } =
     useMarqueeStore((state) => state)
-
+  const { isActiveGallary, titleGallary } = useGallaryStore((state) => state)
   const tickerData = data?.['ticker'] as TextData | undefined
 
   if (!data) return <span>Something went wrong...</span>
@@ -133,6 +135,18 @@ export const Classic: FC = () => {
             <Stages />
           </div>
         )}
+        {isActiveGallary && (
+          <div className='mt-8'>
+            <h3
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
+            >
+              {titleGallary}
+            </h3>
+            <ImageGallery />
+          </div>
+        )}
+
         <div className='mt-8'>
           {isActiveMarquee && marqueeDown && (
             <MarqueeStr
