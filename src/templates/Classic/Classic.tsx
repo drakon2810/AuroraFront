@@ -7,6 +7,7 @@ import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
 import { ImageGallery } from '@/components/ui/ImageGalery'
 import { MarqueeStr } from '@/components/ui/MarqueeStr'
+import { TokenomicsDisplay } from '@/components/ui/TokenomicsDisplay'
 import { Chart } from '@/components/ui/chart'
 import { EmbedVideo } from '@/components/ui/embedVideo'
 import { Stages } from '@/components/ui/stages'
@@ -18,6 +19,7 @@ import { useGeneralStore } from '@/store/useGeneralStore'
 import { useMarqueeStore } from '@/store/useMarqueeStore'
 import { useRoadMapStore } from '@/store/useRoadMapStore'
 import { useStylesStore } from '@/store/useStulesStore'
+import { useTokenomicsStore } from '@/store/useTokenomicsStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { ToggleData } from '@/types/templates'
 import { TextData } from '@/types/templates'
@@ -35,6 +37,7 @@ export const Classic: FC = () => {
   const { isActiveMarquee, marqueeUp, marqueeDown, marqueeMidle } =
     useMarqueeStore((state) => state)
   const { isActiveGallary, titleGallary } = useGallaryStore((state) => state)
+  const { title, isActiveTK, textArea } = useTokenomicsStore((state) => state)
   const tickerData = data?.['ticker'] as TextData | undefined
 
   if (!data) return <span>Something went wrong...</span>
@@ -144,6 +147,25 @@ export const Classic: FC = () => {
               {titleGallary}
             </h3>
             <ImageGallery />
+          </div>
+        )}
+        {isActiveTK && (
+          <div className='mt-24'>
+            <h3
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
+            >
+              {title}
+            </h3>
+            <p
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
+            >
+              {textArea}
+            </p>
+            <TokenomicsDisplay
+              style={{ fontFamily: secondary, color: colorSec || 'black' }}
+            />
           </div>
         )}
 

@@ -43,7 +43,6 @@ export const ImageGallery = () => {
     )
   }
 
-  // Функция для центрирования элементов
   const renderGrid = () => {
     const items = hasPhotos
       ? photosGallary
@@ -54,7 +53,6 @@ export const ImageGallery = () => {
 
     return (
       <div className='flex flex-col items-center'>
-        {/* Первая строка - центрируется в зависимости от количества элементов */}
         <div
           className={`mb-2 flex justify-center gap-2 ${itemCount > 4 ? 'w-full' : ''}`}
         >
@@ -63,7 +61,6 @@ export const ImageGallery = () => {
           ))}
         </div>
 
-        {/* Вторая строка (если элементов больше 4) */}
         {itemCount > 4 && (
           <div className='flex w-full justify-center gap-2'>
             {items.slice(4, Math.min(8, itemCount)).map((item, index) => (

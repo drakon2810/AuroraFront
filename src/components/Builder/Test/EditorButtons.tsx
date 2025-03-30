@@ -5,6 +5,8 @@ import { Gallery } from '@/components/ui/blocks/Gallery'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
 import { Marquee } from '@/components/ui/blocks/Marquee'
 import { Roandmap } from '@/components/ui/blocks/Roandmap'
+import { TokenomicDescriptionChart } from '@/components/ui/blocks/TokenDistribytionChart'
+import { Tokenomics } from '@/components/ui/blocks/Tokenomics'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
@@ -42,6 +44,8 @@ export const EditorButtons = () => {
       <Roandmap />
       <Marquee />
       <Gallery />
+      <Tokenomics />
+      <TokenomicDescriptionChart />
       <div className='mt-auto'>
         <BuilderButton />
       </div>
