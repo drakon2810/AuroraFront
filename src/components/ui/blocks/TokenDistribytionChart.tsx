@@ -1,24 +1,33 @@
-import { useTokenomicsStore } from '@/store/useTokenomicsStore'
+import { useTokenDistributionStore } from '@/store/useTokenDistribution'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 export const TokenomicDescriptionChart = () => {
   const {
-    isActiveTK,
-    textArea,
-    items,
-    setIsActive,
-    setTitle,
-    setTextArea,
-    addItem,
-    removeItem,
-    updateItem
-  } = useTokenomicsStore()
+    isActiveDes,
+    textAreaDes,
+    itemsDes,
+    setIsActiveDes,
+    setTitleDes,
+    setTextAreaDes,
+    addItemDes,
+    removeItemDes,
+    updateItemDes,
+    updateItemColor
+  } = useTokenDistributionStore()
+
+  console.log(itemsDes)
 
   const handleAddItem = () => {
-    if (items.length < 10) {
-      addItem()
+    if (itemsDes.length < 10) {
+      addItemDes()
     }
   }
+
+  const handleColorChange =
+    (id: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+      updateItemColor(id, event.target.value)
+    }
 
   return (
     <div className='flex flex-col items-start space-y-4'>
@@ -54,8 +63,8 @@ export const TokenomicDescriptionChart = () => {
             <input
               type='checkbox'
               className='peer sr-only'
-              onChange={() => setIsActive(!isActiveTK)}
-              checked={isActiveTK}
+              onChange={() => setIsActiveDes(!isActiveDes)}
+              checked={isActiveDes}
             />
             <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
             <span className='ml-3 text-sm font-medium text-gray-700'>
@@ -65,62 +74,79 @@ export const TokenomicDescriptionChart = () => {
           <span className='ml-3 text-sm font-medium text-gray-700'>Title</span>
           <input
             placeholder='Tokenomics'
-            onChange={(e) => setTitle(e.target.value)}
-            className={`mb-2 mt-1 flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveTK ? 'cursor-not-allowed opacity-50' : ''}`}
-            disabled={!isActiveTK}
+            onChange={(e) => setTitleDes(e.target.value)}
+            className={`mb-2 mt-1 flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveDes ? 'cursor-not-allowed opacity-50' : ''}`}
+            disabled={!isActiveDes}
           />
           <span className='ml-3 text-sm font-medium text-gray-700'>
             Description
           </span>
           <textarea
             placeholder='Optional'
-            className={`mb-4 mt-1 flex h-[100px] w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveTK ? 'cursor-not-allowed opacity-50' : ''}`}
-            disabled={!isActiveTK}
-            value={textArea}
-            onChange={(e) => setTextArea(e.target.value)}
+            className={`mb-4 mt-1 flex h-[100px] w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveDes ? 'cursor-not-allowed opacity-50' : ''}`}
+            disabled={!isActiveDes}
+            value={textAreaDes}
+            onChange={(e) => setTextAreaDes(e.target.value)}
           ></textarea>
 
-          {items.map((item) => (
+          {itemsDes.map((item) => (
             <div key={item.id} className='space-y-2'>
               <div className='flex items-center justify-between'>
                 <span className='ml-3 text-sm font-medium text-gray-700'>
                   {item.title}
                 </span>
                 <button
-                  onClick={() => removeItem(item.id)}
+                  onClick={() => removeItemDes(item.id)}
                   className='flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300'
-                  disabled={!isActiveTK}
+                  disabled={!isActiveDes}
                 >
                   &#8722;
                 </button>
               </div>
-              <div className='flex'>
+              <div className='flex items-center'>
                 <input
                   value={item.value1}
                   placeholder={item.placeholder1}
                   onChange={(e) =>
-                    updateItem(item.id, 'value1', e.target.value)
+                    updateItemDes(item.id, 'value1', e.target.value)
                   }
-                  className={`flex h-9 w-[100px] rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveTK ? 'cursor-not-allowed opacity-50' : ''}`}
-                  disabled={!isActiveTK}
+                  className={`flex h-9 w-[100px] rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveDes ? 'cursor-not-allowed opacity-50' : ''}`}
+                  disabled={!isActiveDes}
                 />
                 <p className='ml-1 mt-1'>%</p>
+                <div className='mb-3 ml-3 flex'>
+                  <div className='relative mt-4 flex h-8 w-36'>
+                    <input
+                      type='color'
+                      value={item.color} // Используем цвет из состояния
+                      className='absolute inset-0 h-full w-full cursor-pointer opacity-0'
+                      onChange={handleColorChange(item.id)} // Обработчик изменения цвета
+                      disabled={!isActiveDes}
+                    />
+                    <div
+                      className='h-full w-full rounded-md border border-gray-300'
+                      style={{ backgroundColor: item.color }}
+                    />
+                  </div>
+                </div>
               </div>
               <input
                 value={item.value2}
                 placeholder={item.placeholder2}
-                onChange={(e) => updateItem(item.id, 'value2', e.target.value)}
-                className={`flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveTK ? 'cursor-not-allowed opacity-50' : ''}`}
-                disabled={!isActiveTK}
+                onChange={(e) =>
+                  updateItemDes(item.id, 'value2', e.target.value)
+                }
+                className={`flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${!isActiveDes ? 'cursor-not-allowed opacity-50' : ''}`}
+                disabled={!isActiveDes}
               />
             </div>
           ))}
 
-          {items.length < 10 && (
+          {itemsDes.length < 10 && (
             <button
               onClick={handleAddItem}
-              className={`mt-2 flex h-9 items-center justify-center rounded-md border bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-50 ${!isActiveTK ? 'cursor-not-allowed opacity-50' : ''}`}
-              disabled={!isActiveTK}
+              className={`mt-2 flex h-9 items-center justify-center rounded-md border bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-50 ${!isActiveDes ? 'cursor-not-allowed opacity-50' : ''}`}
+              disabled={!isActiveDes}
             >
               <span className='mr-2 flex items-center justify-center'>
                 <span className='inline-flex h-5 w-5 items-center justify-center rounded-full border border-gray-400 text-gray-700'>

@@ -8,6 +8,7 @@ import { Text } from '@/components/TemplateItems/Text'
 import { ImageGallery } from '@/components/ui/ImageGalery'
 import { MarqueeStr } from '@/components/ui/MarqueeStr'
 import { TokenomicsDisplay } from '@/components/ui/TokenomicsDisplay'
+import { TokenomicsPieChart } from '@/components/ui/TokenomicsPieChart'
 import { Chart } from '@/components/ui/chart'
 import { EmbedVideo } from '@/components/ui/embedVideo'
 import { Stages } from '@/components/ui/stages'
@@ -19,6 +20,7 @@ import { useGeneralStore } from '@/store/useGeneralStore'
 import { useMarqueeStore } from '@/store/useMarqueeStore'
 import { useRoadMapStore } from '@/store/useRoadMapStore'
 import { useStylesStore } from '@/store/useStulesStore'
+import { useTokenDistributionStore } from '@/store/useTokenDistribution'
 import { useTokenomicsStore } from '@/store/useTokenomicsStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { ToggleData } from '@/types/templates'
@@ -38,6 +40,9 @@ export const Classic: FC = () => {
     useMarqueeStore((state) => state)
   const { isActiveGallary, titleGallary } = useGallaryStore((state) => state)
   const { title, isActiveTK, textArea } = useTokenomicsStore((state) => state)
+  const { isActiveDes, titleDes, textAreaDes } = useTokenDistributionStore(
+    (state) => state
+  )
   const tickerData = data?.['ticker'] as TextData | undefined
 
   if (!data) return <span>Something went wrong...</span>
@@ -166,6 +171,23 @@ export const Classic: FC = () => {
             <TokenomicsDisplay
               style={{ fontFamily: secondary, color: colorSec || 'black' }}
             />
+          </div>
+        )}
+        {isActiveDes && (
+          <div className='mt-24'>
+            <h3
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
+            >
+              {titleDes}
+            </h3>
+            <p
+              className='mb-4 text-center'
+              style={{ fontFamily: secondary, color: colorSec || 'white' }}
+            >
+              {textAreaDes}
+            </p>
+            <TokenomicsPieChart />
           </div>
         )}
 

@@ -35,9 +35,9 @@ export const useTokenomicsStore = create<TokenomicsState>((set) => ({
   colorTK: 'white',
   handleChooseTK: false,
   items: [
-    { id: '1', title: 'Item 1', value1: '40', value2: 'Presale' },
-    { id: '2', title: 'Item 2', value1: '15', value2: 'Team' },
-    { id: '3', title: 'Item 3', value1: '25', value2: 'Marketing' }
+    { id: '1', title: 'Item 1', value1: 'Total Supply', value2: '5,000,000' },
+    { id: '2', title: 'Item 2', value1: 'LP', value2: 'Burned' },
+    { id: '3', title: 'Item 3', value1: 'Taxes', value2: 'Zero' }
   ],
   toggleActive: () => set((state) => ({ isActiveTK: !state.isActiveTK })),
   setTitle: (title) => set({ title }),
