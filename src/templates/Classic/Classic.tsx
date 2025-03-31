@@ -22,6 +22,7 @@ import { useRoadMapStore } from '@/store/useRoadMapStore'
 import { useStylesStore } from '@/store/useStulesStore'
 import { useTokenDistributionStore } from '@/store/useTokenDistribution'
 import { useTokenomicsStore } from '@/store/useTokenomicsStore'
+import { useFallingImagesStore } from '@/store/useWidgetsStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { ToggleData } from '@/types/templates'
 import { TextData } from '@/types/templates'
@@ -33,6 +34,7 @@ export const Classic: FC = () => {
   const { primary, secondary, colorPrim, colorSec } = useStylesStore(
     (state) => state
   )
+  const { isActiveAnimations } = useFallingImagesStore((state) => state)
   const { isActiveEmbed, embedTitle } = useBlocksStore((state) => state)
   const { isActiveChart, titleChart } = useChartStore((state) => state)
   const { isActiveRM, titleRM } = useRoadMapStore((state) => state)
@@ -67,7 +69,9 @@ export const Classic: FC = () => {
             {!isHideLogo && (
               <Image
                 fieldName='logoImage'
-                className={{ image: 'rounded-full' }}
+                className={{
+                  image: `rounded-full ${isActiveAnimations ? 'animate-bounce' : ''}`
+                }}
               />
             )}
             <Text
@@ -87,9 +91,12 @@ export const Classic: FC = () => {
         />
         <ContractAddressButton />
         <SocialLinks />
-        {!isHideToken && (
-          <Image fieldName='tokenImage' className={{ image: 'rounded-xl' }} />
-        )}
+        <Image
+          fieldName='tokenImage'
+          className={{
+            image: `rounded-xl ${isActiveAnimations ? 'animate-bounce' : ''}`
+          }}
+        />
         <Text
           fieldName='description'
           className={{ wrapper: 'rounded-md bg-white p-1' }}

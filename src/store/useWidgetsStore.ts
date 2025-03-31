@@ -13,6 +13,7 @@ interface FallingImagesStore {
   fontSize: string
   isPopTickerColor: string
   shape: string
+  isActiveAnimations: boolean
   addFallingImage: (file: File, count: number) => void
   statusCheckbox: (checked: boolean) => void
   addAudioIcon: (checked: boolean) => void
@@ -26,6 +27,7 @@ interface FallingImagesStore {
   changePopTickerColor: (color: string) => void
   clearFallingImages: () => void
   changeShape: (str: string) => void
+  setisActiveAnimations: (value: boolean) => void
 }
 
 export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
@@ -41,6 +43,7 @@ export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
   fontSize: '',
   isPopTickerColor: '',
   shape: '',
+  isActiveAnimations: false,
   addFallingImage: (file, count) =>
     set((state) => ({
       fallingImages: [...state.fallingImages, ...new Array(count).fill(file)]
@@ -102,5 +105,6 @@ export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
   clearFallingImages: () =>
     set(() => ({
       fallingImages: []
-    }))
+    })),
+  setisActiveAnimations: (value) => set(() => ({ isActiveAnimations: value }))
 }))

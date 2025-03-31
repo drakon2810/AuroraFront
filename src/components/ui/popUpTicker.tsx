@@ -36,14 +36,8 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
   }
 
   return (
-    <div
-      className={`mb-4 rounded-lg border-2 shadow-sm ${
-        theme === 'dark'
-          ? 'border-gray-700 bg-transparent'
-          : 'border-gray-200 bg-[#fff]'
-      }`}
-    >
-      <div className='flex items-center gap-2 px-4 py-2'>
+    <div className={`rounded-lg`}>
+      <div className='mb-2 flex items-center gap-2'>
         <label className='relative inline-flex cursor-pointer items-center'>
           <input
             type='checkbox'
@@ -56,7 +50,7 @@ export const PopUpTicker: FC<PopUpTickerProps> = ({
         <span
           className={`text-sm font-medium text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'}`}
         >
-          Pop-up Ticker on hero click
+          Enable
         </span>
       </div>
 
