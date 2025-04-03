@@ -1,5 +1,6 @@
 import { useFallingImagesStore } from '../../store/useWidgetsStore'
 import { AudioWidget } from './AudioWidgetProps'
+import { CustomCursor } from './CastomCursor'
 import { AnimationsWidgets } from './animations'
 import { PopUpTicker } from './popUpTicker'
 import { ThemeContext } from '@/contexts/ThemeContext'
@@ -225,6 +226,9 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
             </div>
           </motion.div>
         </details>
+      </div>
+      <div className='mt-4'>
+        <CustomCursor />
       </div>
     </div>
   )

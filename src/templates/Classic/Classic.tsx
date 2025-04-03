@@ -5,6 +5,7 @@ import { TemplateLayout } from '../TemplateLayout'
 import { ClassicHowToBuy } from './HowToBuy'
 import { Image } from '@/components/TemplateItems/Image'
 import { Text } from '@/components/TemplateItems/Text'
+import { cursor } from '@/components/cursor/cursor'
 import { ImageGallery } from '@/components/ui/ImageGalery'
 import { MarqueeStr } from '@/components/ui/MarqueeStr'
 import { TokenomicsDisplay } from '@/components/ui/TokenomicsDisplay'
@@ -27,6 +28,7 @@ import { TemplateContextValues } from '@/types/contexts'
 import { ToggleData } from '@/types/templates'
 import { TextData } from '@/types/templates'
 import { FC, useContext } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
 
 export const Classic: FC = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
@@ -34,7 +36,8 @@ export const Classic: FC = () => {
   const { primary, secondary, colorPrim, colorSec } = useStylesStore(
     (state) => state
   )
-  const { isActiveAnimations } = useFallingImagesStore((state) => state)
+  const { isActiveAnimations, customCursor, customPointer } =
+    useFallingImagesStore((state) => state)
   const { isActiveEmbed, embedTitle } = useBlocksStore((state) => state)
   const { isActiveChart, titleChart } = useChartStore((state) => state)
   const { isActiveRM, titleRM } = useRoadMapStore((state) => state)
@@ -46,6 +49,33 @@ export const Classic: FC = () => {
     (state) => state
   )
   const tickerData = data?.['ticker'] as TextData | undefined
+
+  const getCursorValue = (cursorConfig: number | string | null) => {
+    if (cursorConfig === null) return null
+
+    if (typeof cursorConfig === 'number') {
+      return cursor[cursorConfig]
+    }
+
+    return cursorConfig
+  }
+
+  const elementToDataUrl = (element: React.ReactElement) => {
+    const svgString = renderToStaticMarkup(element)
+    return `data:image/svg+xml;utf8,${encodeURIComponent(svgString)}`
+  }
+
+  const currentPointer = getCursorValue(customPointer)
+
+  const pointerStyle = {
+    cursor: currentPointer
+      ? `url("${
+          typeof currentPointer === 'string'
+            ? currentPointer
+            : elementToDataUrl(currentPointer)
+        }"), pointer`
+      : 'pointer'
+  }
 
   if (!data) return <span>Something went wrong...</span>
 
@@ -72,6 +102,7 @@ export const Classic: FC = () => {
                 className={{
                   image: `rounded-full ${isActiveAnimations ? 'animate-bounce' : ''}`
                 }}
+                style={pointerStyle}
               />
             )}
             <Text
@@ -91,12 +122,15 @@ export const Classic: FC = () => {
         />
         <ContractAddressButton />
         <SocialLinks />
-        <Image
-          fieldName='tokenImage'
-          className={{
-            image: `rounded-xl ${isActiveAnimations ? 'animate-bounce' : ''}`
-          }}
-        />
+        {!isHideToken && (
+          <Image
+            fieldName='tokenImage'
+            className={{
+              image: `rounded-xl ${isActiveAnimations ? 'animate-bounce' : ''}`
+            }}
+            style={pointerStyle}
+          />
+        )}
         <Text
           fieldName='description'
           className={{ wrapper: 'rounded-md bg-white p-1' }}

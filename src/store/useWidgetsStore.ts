@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 
 interface FallingImagesStore {
-  fallingImages: File[]
+  fallingImages: string[]
   isCheckboxChecked: boolean
   isAudioaIcon: boolean
   color: string
@@ -14,6 +14,9 @@ interface FallingImagesStore {
   isPopTickerColor: string
   shape: string
   isActiveAnimations: boolean
+  customCursor: number | string | null // Изменено: поддерживает индекс или URL
+  customPointer: number | string | null // Изменено: поддерживает индекс или URL
+  isActiveCursor: boolean
   addFallingImage: (file: File, count: number) => void
   statusCheckbox: (checked: boolean) => void
   addAudioIcon: (checked: boolean) => void
@@ -28,6 +31,9 @@ interface FallingImagesStore {
   clearFallingImages: () => void
   changeShape: (str: string) => void
   setisActiveAnimations: (value: boolean) => void
+  setIsActiveCustomCursor: (value: boolean) => void
+  setCustomCursor: (cursor: File | number | null) => void // Обновлено
+  setCustomPointer: (pointer: File | number | null) => void // Обновлено
 }
 
 export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
@@ -44,9 +50,16 @@ export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
   isPopTickerColor: '',
   shape: '',
   isActiveAnimations: false,
+  customCursor: null,
+  customPointer: null,
+  isActiveCursor: false,
+
   addFallingImage: (file, count) =>
     set((state) => ({
-      fallingImages: [...state.fallingImages, ...new Array(count).fill(file)]
+      fallingImages: [
+        ...state.fallingImages,
+        ...new Array(count).fill(URL.createObjectURL(file))
+      ]
     })),
 
   statusCheckbox: (checked) =>
@@ -63,11 +76,13 @@ export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
     set(() => ({
       color: color
     })),
+
   addAudioIconColorImg: (color) =>
     set(() => ({
       colorImg: color
     })),
-  addAudioFile: (file: File | null) =>
+
+  addAudioFile: (file) =>
     set(() => ({
       audioFile: file
     })),
@@ -106,5 +121,26 @@ export const useFallingImagesStore = create<FallingImagesStore>((set) => ({
     set(() => ({
       fallingImages: []
     })),
-  setisActiveAnimations: (value) => set(() => ({ isActiveAnimations: value }))
+
+  setisActiveAnimations: (value) =>
+    set(() => ({
+      isActiveAnimations: value
+    })),
+
+  setIsActiveCustomCursor: (value) =>
+    set(() => ({
+      isActiveCursor: value
+    })),
+
+  setCustomCursor: (cursor) =>
+    set(() => ({
+      customCursor:
+        cursor instanceof File ? URL.createObjectURL(cursor) : cursor
+    })),
+
+  setCustomPointer: (pointer) =>
+    set(() => ({
+      customPointer:
+        pointer instanceof File ? URL.createObjectURL(pointer) : pointer
+    }))
 }))

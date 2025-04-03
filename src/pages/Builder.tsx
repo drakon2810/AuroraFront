@@ -28,6 +28,8 @@ export const Builder = () => {
   const clearFallingImages = useFallingImagesStore(
     (state) => state.clearFallingImages
   )
+  const customCursor = useFallingImagesStore((state) => state.customCursor)
+  const customPointer = useFallingImagesStore((state) => state.customCursor)
   console.log(fallingImages)
 
   const [texts, setTexts] = useState<

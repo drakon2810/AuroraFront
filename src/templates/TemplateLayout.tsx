@@ -1,7 +1,10 @@
 import { Image } from '@/components/TemplateItems/Image'
+import { cursor } from '@/components/cursor/cursor'
 import { cn } from '@/lib/utils'
 import { useStylesStore } from '@/store/useStulesStore'
+import { useFallingImagesStore } from '@/store/useWidgetsStore'
 import { FC, ReactNode } from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
 
 interface TemplateLayoutProps {
   children: ReactNode
@@ -22,7 +25,20 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
     backgroundGradient
   } = useStylesStore((state) => state)
 
-  console.log(overlayOpacity)
+  const { customCursor } = useFallingImagesStore((state) => state)
+
+  const getCursorValue = (cursorConfig: number | string | null) => {
+    if (cursorConfig === null) return null
+    if (typeof cursorConfig === 'number') return cursor[cursorConfig]
+    return cursorConfig
+  }
+
+  const elementToDataUrl = (element: React.ReactElement) => {
+    const svgString = renderToStaticMarkup(element)
+    return `data:image/svg+xml;utf8,${encodeURIComponent(svgString)}`
+  }
+
+  const currentCursor = getCursorValue(customCursor)
 
   // Применение фона в зависимости от условий
   const backgroundStyle = colorBackground
@@ -31,11 +47,21 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
       ? { backgroundImage: backgroundGradient }
       : {}
 
+  const cursorStyle = currentCursor
+    ? {
+        cursor: `url("${
+          typeof currentCursor === 'string'
+            ? currentCursor
+            : elementToDataUrl(currentCursor)
+        }"), auto`
+      }
+    : {}
+
   // Если задан и цвет фона, и градиент, то предпочтение отдается градиенту
   const isBackgroundImageAvailable = !colorBackground && !backgroundGradient
 
   return (
-    <div className='relative' style={backgroundStyle}>
+    <div className='relative' style={{ ...backgroundStyle, ...cursorStyle }}>
       {/* Фоновое изображение, если нет фона или градиента */}
       {isBackgroundImageAvailable && (
         <Image
