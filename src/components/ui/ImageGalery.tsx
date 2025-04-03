@@ -5,17 +5,25 @@ export const ImageGallery = () => {
 
   const placeholders = 8
   const hasPhotos = photosGallary.some((photo) => photo instanceof File)
+  const photoCount = photosGallary.filter(
+    (photo) => photo instanceof File
+  ).length
 
-  const renderImageOrPlaceholder = (image: any, index: any) => {
+  const renderImageOrPlaceholder = (
+    image: any,
+    index: any,
+    isGrid: boolean
+  ) => {
+    const size = isGrid
+      ? { width: '215px', height: '215px' }
+      : { width: '300px', height: '300px' }
+
     if (image instanceof File) {
       return (
         <div
           key={index}
           className='relative overflow-hidden rounded-lg border bg-white shadow-sm'
-          style={{
-            width: '215px',
-            height: '215px'
-          }}
+          style={size}
         >
           <img
             src={URL.createObjectURL(image)}
@@ -32,10 +40,7 @@ export const ImageGallery = () => {
       <div
         key={index}
         className='relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-white shadow-sm'
-        style={{
-          width: '215px',
-          height: '215px'
-        }}
+        style={size}
       >
         <span className='mb-2 text-xl font-bold text-gray-400'>IMAGE</span>
         <span className='text-gray-400'>PLACEHOLDER</span>
@@ -51,13 +56,34 @@ export const ImageGallery = () => {
 
     if (itemCount === 0) return null
 
+    if (photoCount === 6) {
+      return (
+        <div className='flex flex-col items-center'>
+          <div className='mb-2 flex w-full justify-center gap-2'>
+            {items.slice(0, 3).map((item, index) => (
+              <div key={index}>
+                {renderImageOrPlaceholder(item, index, true)}
+              </div>
+            ))}
+          </div>
+          <div className='flex w-full justify-center gap-2'>
+            {items.slice(3, 6).map((item, index) => (
+              <div key={index + 3}>
+                {renderImageOrPlaceholder(item, index + 3, true)}
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
     return (
       <div className='flex flex-col items-center'>
         <div
           className={`mb-2 flex justify-center gap-2 ${itemCount > 4 ? 'w-full' : ''}`}
         >
           {items.slice(0, Math.min(4, itemCount)).map((item, index) => (
-            <div key={index}>{renderImageOrPlaceholder(item, index)}</div>
+            <div key={index}>{renderImageOrPlaceholder(item, index, true)}</div>
           ))}
         </div>
 
@@ -65,7 +91,7 @@ export const ImageGallery = () => {
           <div className='flex w-full justify-center gap-2'>
             {items.slice(4, Math.min(8, itemCount)).map((item, index) => (
               <div key={index + 4}>
-                {renderImageOrPlaceholder(item, index + 4)}
+                {renderImageOrPlaceholder(item, index + 4, true)}
               </div>
             ))}
           </div>
@@ -86,8 +112,10 @@ export const ImageGallery = () => {
                 ? photosGallary
                 : Array.from({ length: Math.max(placeholders, 8) })
               )
-                .slice(0, 4)
-                .map(renderImageOrPlaceholder)}
+                .slice(0, photoCount === 6 ? 3 : 4)
+                .map((item, index) =>
+                  renderImageOrPlaceholder(item, index, false)
+                )}
             </div>
 
             <div className='ml-14 flex w-full gap-2 overflow-x-auto'>
@@ -95,8 +123,14 @@ export const ImageGallery = () => {
                 ? photosGallary
                 : Array.from({ length: Math.max(placeholders, 8) })
               )
-                .slice(4, 8)
-                .map(renderImageOrPlaceholder)}
+                .slice(photoCount === 6 ? 3 : 4, photoCount === 6 ? 6 : 8)
+                .map((item, index) =>
+                  renderImageOrPlaceholder(
+                    item,
+                    index + (photoCount === 6 ? 3 : 4),
+                    false
+                  )
+                )}
             </div>
           </div>
         )}
