@@ -1,5 +1,4 @@
 import { EditorWidgets } from '../components/Builder/Test/EditorWidgets'
-import { BuilderSidebarSubCategoryEditorMenu } from '@/components/Builder/BuilderSidebarSubCategoryEditorMenu'
 import { EditorButtons } from '@/components/Builder/Test/EditorButtons'
 import { EditorImage } from '@/components/Builder/Test/EditorImg'
 import { Editorlinks } from '@/components/Builder/Test/EditorLinks'

@@ -13,7 +13,7 @@ export const ContractAddressButton: FC<{ className?: string }> = ({
 }) => {
   const { isCopied, copy } = useCopy()
   const { data } = useContext(TemplateContext) as TemplateContextValues
-  const { primary, colorPrim } = useStylesStore((state) => state)
+  const { secondary, colorSec } = useStylesStore((state) => state)
 
   if (!data) return <span>Something went wrong...</span>
 
@@ -28,7 +28,7 @@ export const ContractAddressButton: FC<{ className?: string }> = ({
       <Text
         fieldName='contractAddress'
         placeholder='Contract address'
-        style={{ fontFamily: primary, color: colorPrim || 'black' }}
+        style={{ fontFamily: secondary, color: colorSec || 'black' }}
       />
       {isCopied && (
         <CircleCheckBig size={28} className='pointer-events-none text-black' />

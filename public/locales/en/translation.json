@@ -295,7 +295,9 @@
       "categories": {
         "text": "GENERAL",
         "images": "STYLES",
-        "links": "Links"
+        "howToBuy": "BLOCKS",
+        "links": "Links",
+        "widgets": "WIDGETS"
       },
       "fields": {
         "ticker": "Ticker",
@@ -325,9 +327,10 @@
         "images": "STYLES",
         "links": "Links",
         "buttons": "Buttons",
-        "howToBuy": "How to Buy",
+        "howToBuy": "BLOCKS",
         "roadmap": "Roadmap",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "widgets": "WIDGETS"
       },
       "fields": {
         "ticker": "Ticker",
@@ -389,7 +392,9 @@
         "missionTimeline": "Mission Timeline",
         "missionControl": "Mission Control",
         "faq": "FAQ",
-        "links": "Links"
+        "links": "Links",
+        "widgets": "WIDGETS",
+        "howToBuy": "BLOCKS"
       },
       "fields": {
         "primaryColor": "Primary Color",

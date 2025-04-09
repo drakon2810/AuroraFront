@@ -23,14 +23,10 @@ export const Builder = () => {
   )
   const isAudioaIcon = useFallingImagesStore((state) => state.isAudioaIcon)
   const isPopTicker = useFallingImagesStore((state) => state.isPopTicker)
-  const fallingImages = useFallingImagesStore((state) => state.fallingImages)
   const value = useFallingImagesStore((state) => state.value)
   const clearFallingImages = useFallingImagesStore(
     (state) => state.clearFallingImages
   )
-  const customCursor = useFallingImagesStore((state) => state.customCursor)
-  const customPointer = useFallingImagesStore((state) => state.customCursor)
-  console.log(fallingImages)
 
   const [texts, setTexts] = useState<
     { id: number; x: number; y: number; value: string }[]

@@ -7,7 +7,7 @@ import { ThemeContext } from '@/contexts/ThemeContext'
 import { ThemeContextValues } from '@/types/contexts'
 import { motion } from 'framer-motion'
 import { FC, useState, ChangeEvent } from 'react'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 
 interface FallingImageWidgetProps {
   value: (File | null)[]
@@ -54,9 +54,13 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
       event.target.value = ''
     }
   }
-  statusCheckbox(isActive)
-  changePopTicker(isActiveTicker)
+  useEffect(() => {
+    statusCheckbox(isActive)
+  }, [isActive])
 
+  useEffect(() => {
+    changePopTicker(isActiveTicker)
+  }, [isActiveTicker])
   return (
     <div>
       <div className='mb-4'>
