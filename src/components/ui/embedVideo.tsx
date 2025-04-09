@@ -5,7 +5,7 @@ declare global {
   interface Window {
     twttr?: {
       widgets: {
-        load: () => void
+        load: (el: Element) => void
       }
     }
   }
@@ -27,32 +27,35 @@ export const EmbedVideo = () => {
     if (embedChoiseBtn === 'x') {
       const scriptSrc = 'https://platform.twitter.com/widgets.js'
 
-      if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+      const loadTwitterWidget = () => {
+        if (window.twttr && window.twttr.widgets && twitterRef.current) {
+          window.twttr.widgets.load(twitterRef.current) // Передаём конкретный элемент
+        }
+      }
+
+      // Вставляем блок с твитом
+      if (twitterRef.current) {
+        twitterRef.current.innerHTML = ` 
+          <blockquote class="twitter-tweet" data-theme="${embedColorX}">
+            <a href="${emberX || defaultVideo.twitter}"></a>
+          </blockquote>
+        `
+      }
+
+      const existingScript = document.querySelector(
+        `script[src="${scriptSrc}"]`
+      )
+      if (!existingScript) {
         const script = document.createElement('script')
         script.src = scriptSrc
         script.async = true
-        script.onload = () => {
-          if (window.twttr && window.twttr.widgets) {
-            window.twttr.widgets.load()
-          }
-        }
+        script.onload = loadTwitterWidget
         document.body.appendChild(script)
       } else {
-        const checkTwttr = setInterval(() => {
-          if (window.twttr && window.twttr.widgets) {
-            window.twttr.widgets.load()
-            clearInterval(checkTwttr)
-          }
-        }, 500)
+        loadTwitterWidget() // Если скрипт уже загружен, сразу загружаем виджет
       }
     }
-  }, [embedChoiseBtn, emberX])
-
-  useEffect(() => {
-    if (embedChoiseBtn === 'x' && window.twttr && window.twttr.widgets) {
-      window.twttr.widgets.load() // Перезагружаем виджеты при изменении темы
-    }
-  }, [embedColorX]) // Отслеживаем изменения embedColorX
+  }, [embedChoiseBtn, emberX, embedColorX])
 
   useEffect(() => {
     if (embedChoiseBtn === 'tiktok' && emberTictok) {
@@ -85,7 +88,9 @@ export const EmbedVideo = () => {
     embedContent = (
       <div ref={twitterRef} className='flex justify-center'>
         <blockquote className='twitter-tweet' data-theme={embedColorX}>
-          <a href={emberX || defaultVideo.twitter}></a>
+          <a href={emberX || defaultVideo.twitter}>
+            {emberX || defaultVideo.twitter}
+          </a>
         </blockquote>
       </div>
     )

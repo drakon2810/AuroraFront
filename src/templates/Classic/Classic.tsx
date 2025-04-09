@@ -36,8 +36,9 @@ export const Classic: FC = () => {
   const { primary, secondary, colorPrim, colorSec } = useStylesStore(
     (state) => state
   )
-  const { isActiveAnimations, customCursor, customPointer } =
-    useFallingImagesStore((state) => state)
+  const { isActiveAnimations, customPointer } = useFallingImagesStore(
+    (state) => state
+  )
   const { isActiveEmbed, embedTitle } = useBlocksStore((state) => state)
   const { isActiveChart, titleChart } = useChartStore((state) => state)
   const { isActiveRM, titleRM } = useRoadMapStore((state) => state)

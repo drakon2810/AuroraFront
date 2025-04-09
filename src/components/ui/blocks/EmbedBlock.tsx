@@ -1,3 +1,4 @@
+import { FullscreenModal } from '../EmbedHelp'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
@@ -18,8 +19,15 @@ export const EmberBlock = () => {
     setEmberTicTok,
     setEmbedChoiseBtn,
     setEmbedTitle,
-    setEmbedColorX
+    setEmbedColorX,
+    emberX,
+    emberVideo,
+    emberTictok
   } = useBlocksStore((state) => state)
+
+  console.log(`emberX ${emberX}`)
+  console.log(`emberVideo ${emberVideo}`)
+  console.log(`emberTictok ${emberTictok}`)
 
   const { selectedTemplate } = useContext(
     TemplateContext
@@ -50,7 +58,20 @@ export const EmberBlock = () => {
   const handleVideo = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     setVideo(value)
-    setEmberVidoe(value)
+
+    switch (toggle) {
+      case 'youtube':
+        setEmberVidoe(value)
+        break
+      case 'x':
+        setEmberX(value)
+        break
+      case 'tiktok':
+        setEmberTicTok(value)
+        break
+      default:
+        break
+    }
   }
 
   const handleIsActive = () => {
@@ -85,6 +106,7 @@ export const EmberBlock = () => {
       <details className='group w-full rounded-lg border border-gray-300 bg-white open:border-gray-300'>
         <summary className='flex cursor-pointer items-center justify-between px-2 py-2 transition-colors hover:bg-gray-100'>
           <span className='text-sm font-semibold text-gray-700'>Embed</span>
+
           <svg
             className='h-6 w-6 transform transition-transform group-open:rotate-180'
             fill='none'
@@ -108,18 +130,23 @@ export const EmberBlock = () => {
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          <label className='relative inline-flex cursor-pointer items-center'>
-            <input
-              type='checkbox'
-              className='peer sr-only'
-              onChange={handleIsActive}
-              checked={isActive}
-            />
-            <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
-            <span className='ml-3 text-sm font-medium text-gray-700'>
-              Enable
-            </span>
-          </label>
+          <div className='flex items-center'>
+            <label className='relative inline-flex cursor-pointer items-center'>
+              <input
+                type='checkbox'
+                className='peer sr-only'
+                onChange={handleIsActive}
+                checked={isActive}
+              />
+              <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
+              <span className='ml-3 text-sm font-medium text-gray-700'>
+                Enable
+              </span>
+            </label>
+            <div className='ml-24'>
+              <FullscreenModal />
+            </div>
+          </div>
           <div className='flex w-full justify-center'>
             <div className='flex w-full max-w-[500px] items-center justify-between rounded-md bg-gray-200 p-1'>
               {['youtube', 'x', 'tiktok'].map((option) => (
@@ -157,6 +184,13 @@ export const EmberBlock = () => {
               Embed link
             </span>
             <input
+              value={
+                toggle === 'youtube'
+                  ? emberVideo
+                  : toggle === 'x'
+                    ? emberX
+                    : emberTictok
+              }
               onChange={handleVideo}
               placeholder='Enter your link'
               className={`mt-2 flex h-9 w-full rounded-md border border-neutral-200 bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-neutral-950 placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:file:text-neutral-50 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 md:text-sm ${

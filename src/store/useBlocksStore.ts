@@ -32,7 +32,7 @@ export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
   colorBackgrond: 'white',
   isActiveEmbed: false,
   emberVideo: 'https://www.youtube.com/embed/QCJGIz7ROUI?si=MxEWxZGg7xfoc4f1',
-  emberX: 'https://x.com/aurorabuildd/status/1889418700249284715?s=46',
+  emberX: 'https://twitter.com/Interior/status/463440424141459456',
   emberTictok: 'https://vm.tiktok.com/ZNdda2pwC/',
   embedChoiseBtn: 'youtube',
   embedTitle: '',
