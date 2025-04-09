@@ -6,6 +6,8 @@ import { useSearchParams } from 'react-router-dom'
 
 export const TemplatesSelector = () => {
   const [searchParams, setSearchParams] = useSearchParams()
+
+  console.log(searchParams)
   const { t } = useTranslation()
 
   const selectedTemplate = searchParams.get('template')
