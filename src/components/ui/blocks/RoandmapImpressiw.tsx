@@ -228,7 +228,7 @@ export const RoadmapImpressive = () => {
           </div>
 
           {/* Color Picker */}
-          <div>
+          {/* <div>
             <label className='ml-3 text-sm font-medium text-gray-700'>
               Background Color
             </label>
@@ -252,7 +252,7 @@ export const RoadmapImpressive = () => {
                 ×
               </button>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       </details>
     </div>
