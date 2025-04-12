@@ -1525,17 +1525,17 @@ export const templatesData = {
             name: 'showHowToBuy'
           },
 
-          {
-            type: 'text',
-            name: 'firstNameStep',
-            defaultValues: {
-              value: 'Step 1',
-              color: '#000',
-              fontSizeValue: 20,
-              align: 'center'
-            },
-            editor: true
-          },
+          // {
+          //   type: 'text',
+          //   name: 'firstNameStep',
+          //   defaultValues: {
+          //     value: 'Step 1',
+          //     color: '#000',
+          //     fontSizeValue: 20,
+          //     align: 'center'
+          //   },
+          //   editor: true
+          // },
 
           {
             type: 'text',

@@ -1,21 +1,24 @@
 import { Button } from './ui/button'
 import { cn } from '@/lib/utils'
+import { useTemplateStore } from '@/store/useTemplateStore'
 import { TemplateName } from '@/types/templates'
 import { useTranslation } from 'react-i18next'
 import { useSearchParams } from 'react-router-dom'
 
 export const TemplatesSelector = () => {
   const [searchParams, setSearchParams] = useSearchParams()
+  const { isSelectTemplate, changeSelectedTemplate } = useTemplateStore(
+    (state) => state
+  )
 
-  console.log(searchParams)
   const { t } = useTranslation()
 
-  const selectedTemplate = searchParams.get('template')
+  const selectedTemplate = searchParams.get('template') || isSelectTemplate
   const templates = t('templates.cards', { returnObjects: true })
 
   const selectTemplate = (templateName: TemplateName) => {
     if (selectedTemplate === templateName) return
-
+    changeSelectedTemplate(templateName)
     const params = new URLSearchParams(searchParams)
     params.set('template', templateName)
     setSearchParams(params)

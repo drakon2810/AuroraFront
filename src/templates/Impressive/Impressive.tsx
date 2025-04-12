@@ -18,14 +18,13 @@ import {
 } from '@/components/ui/accordion'
 import { Chart } from '@/components/ui/chart'
 import { EmbedVideo } from '@/components/ui/embedVideo'
-import { Stages } from '@/components/ui/stages'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
 import { useChartStore } from '@/store/useChartStore'
 import { useGallaryStore } from '@/store/useGalleryStore'
 import { useGeneralStore } from '@/store/useGeneralStore'
 import { useMarqueeStore } from '@/store/useMarqueeStore'
-import { useRoadMapStore } from '@/store/useRoadMapStore'
+import { useRoadMapImpressiveStore } from '@/store/useRoadMapStoreImpressive'
 import { useStylesStore } from '@/store/useStulesStore'
 import { useTokenDistributionStore } from '@/store/useTokenDistribution'
 import { useTokenomicsStore } from '@/store/useTokenomicsStore'
@@ -35,21 +34,6 @@ import { TextData } from '@/types/templates'
 import { ToggleData } from '@/types/templates'
 import { FC, useContext } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
-
-const roadmapSteps = [
-  {
-    title: 'roadmapFirstStepTitle',
-    description: 'roadmapFirstStepDescription'
-  },
-  {
-    title: 'roadmapSecondStepTitle',
-    description: 'roadmapSecondStepDescription'
-  },
-  {
-    title: 'roadmapThirdStepTitle',
-    description: 'roadmapThirdStepDescription'
-  }
-]
 
 const howToBuySteps = [
   'howToBuyFirstStep',
@@ -92,7 +76,14 @@ export const Impressive: FC = () => {
     (state) => state
   )
   const { isActiveChart, titleChart } = useChartStore((state) => state)
-  const { isActiveRM, titleRM } = useRoadMapStore((state) => state)
+  const {
+    roadmapFirstStepTitle,
+    roadmapSecondStepTitle,
+    roadmapThirdStepTitle,
+    roadmapFirstStepDescription,
+    roadmapSecondStepDescription,
+    roadmapThirdStepDescription
+  } = useRoadMapImpressiveStore((state) => state)
   const { isActiveMarquee, marqueeUp, marqueeDown, marqueeMidle } =
     useMarqueeStore((state) => state)
   const { isActiveGallary, titleGallary } = useGallaryStore((state) => state)
@@ -100,8 +91,20 @@ export const Impressive: FC = () => {
   const { isActiveDes, titleDes, textAreaDes } = useTokenDistributionStore(
     (state) => state
   )
-
-  console.log(howToBuyBtn)
+  const roadmapSteps = [
+    {
+      title: roadmapFirstStepTitle, // Fallback to 'Phase 1' if null
+      description: roadmapFirstStepDescription
+    },
+    {
+      title: roadmapSecondStepTitle,
+      description: roadmapSecondStepDescription
+    },
+    {
+      title: roadmapThirdStepTitle,
+      description: roadmapThirdStepDescription
+    }
+  ]
 
   const tickerData = data?.['ticker'] as TextData | undefined
 
@@ -212,18 +215,19 @@ export const Impressive: FC = () => {
           <div className='flex flex-col items-center justify-center gap-8 py-24'>
             <Text fieldName='roadmapTitle' as='h2' />
             <div className='flex flex-wrap justify-center gap-8'>
-              {roadmapSteps.map(({ title, description }) => (
+              {roadmapSteps.map((step, index) => (
                 <div
-                  key={title}
+                  key={index}
                   className='impressive-block flex h-96 w-96 flex-col items-center gap-4 bg-white px-10 py-8'
                 >
                   <div className='flex w-full justify-center rounded-full border-4 border-black bg-orange-500 text-center text-2xl'>
-                    <Text fieldName={title} as='h3' />
+                    <h3>{step.title}</h3>
                   </div>
-                  <Text
-                    fieldName={description}
-                    className={{ wrapper: 'h-full w-full' }}
-                  />
+                  <div className='h-full w-full'>
+                    <p className='break-words text-lg text-black'>
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -276,17 +280,7 @@ export const Impressive: FC = () => {
               <Chart />
             </div>
           )}
-          {isActiveRM && (
-            <div className='mx-auto my-8 mb-4 mt-[150px] flex w-full flex-col items-center justify-center rounded-[70px]'>
-              <h3
-                className='mb-4 text-center'
-                style={{ fontFamily: secondary, color: colorSec || 'white' }}
-              >
-                {titleRM}
-              </h3>
-              <Stages />
-            </div>
-          )}
+
           <div>
             {isActiveMarquee && marqueeMidle && (
               <MarqueeStr
