@@ -41,7 +41,10 @@ export const EditorText = () => {
             .filter(
               (field) =>
                 field.type === 'image' &&
-                (field.name === 'logoImage' || field.name === 'tokenImage')
+                (field.name === 'logoImage' ||
+                  field.name === 'tokenImage' ||
+                  field.name === 'logo' ||
+                  field.name === 'aboutUsPreview')
             )
             .map((field) => (
               <div key={field.name} className='flex flex-col items-center'>

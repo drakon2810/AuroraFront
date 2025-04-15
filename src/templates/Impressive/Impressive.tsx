@@ -67,14 +67,22 @@ export const Impressive: FC = () => {
   const { primary, secondary, colorPrim, colorSec } = useStylesStore(
     (state) => state
   )
-  const { isHideToken } = useGeneralStore((state) => state)
+  const { isHideToken, isLogo } = useGeneralStore((state) => state)
 
   const { isActiveAnimations, customPointer } = useFallingImagesStore(
     (state) => state
   )
-  const { isActiveEmbed, embedTitle, howToBuyBtn } = useBlocksStore(
-    (state) => state
-  )
+  const {
+    isActiveEmbed,
+    embedTitle,
+    howToBuyBtn,
+    titleHowToBuyBlock,
+    firstBlock,
+    secondBlock,
+    thirdBlock,
+    fourthBlock,
+    colorBackgrondBlock
+  } = useBlocksStore((state) => state)
   const { isActiveChart, titleChart } = useChartStore((state) => state)
   const {
     roadmapFirstStepTitle,
@@ -82,7 +90,8 @@ export const Impressive: FC = () => {
     roadmapThirdStepTitle,
     roadmapFirstStepDescription,
     roadmapSecondStepDescription,
-    roadmapThirdStepDescription
+    roadmapThirdStepDescription,
+    titleRMImp
   } = useRoadMapImpressiveStore((state) => state)
   const { isActiveMarquee, marqueeUp, marqueeDown, marqueeMidle } =
     useMarqueeStore((state) => state)
@@ -93,7 +102,7 @@ export const Impressive: FC = () => {
   )
   const roadmapSteps = [
     {
-      title: roadmapFirstStepTitle, // Fallback to 'Phase 1' if null
+      title: roadmapFirstStepTitle,
       description: roadmapFirstStepDescription
     },
     {
@@ -157,7 +166,8 @@ export const Impressive: FC = () => {
 
         <div className='mx-auto flex h-full w-full max-w-7xl flex-auto flex-col'>
           <header className='flex w-full items-center justify-between'>
-            <Image fieldName='logo' />
+            {!isLogo && <Image fieldName='logo' />}
+
             <div className='flex items-center gap-4'>
               <BuyButton className='rounded-xl bg-orange-500' />
               <SocialLinks visibility='header' />
@@ -190,6 +200,18 @@ export const Impressive: FC = () => {
             </div>
           </section>
         </div>
+        <div>
+          {isActiveMarquee && marqueeMidle && (
+            <MarqueeStr
+              text={tickerData?.value || 'Ticker'}
+              style={{
+                fontFamily: secondary,
+                color: colorSec || 'green',
+                fontWeight: 600
+              }}
+            />
+          )}
+        </div>
       </TemplateLayout>
       <TemplateLayout
         backgroundFieldName='secondaryBackground'
@@ -213,7 +235,18 @@ export const Impressive: FC = () => {
       <TemplateLayout backgroundFieldName='primaryBackground'>
         <section className='mx-auto flex max-w-7xl flex-col'>
           <div className='flex flex-col items-center justify-center gap-8 py-24'>
-            <Text fieldName='roadmapTitle' as='h2' />
+            <h2
+              style={{
+                fontFamily: 'Dino',
+                fontSize: '72px',
+                color: 'rgb(0, 0, 0)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {titleRMImp}
+            </h2>
+
             <div className='flex flex-wrap justify-center gap-8'>
               {roadmapSteps.map((step, index) => (
                 <div
@@ -234,24 +267,91 @@ export const Impressive: FC = () => {
           </div>
 
           <div className='flex flex-col items-center gap-8 py-24'>
-            <Text fieldName='howToBuyTitle' as='h2' />
-            <div className='flex flex-wrap justify-center gap-4'>
+            <h1
+              style={{
+                fontFamily: 'Dino',
+                fontSize: '72px',
+                color: 'rgb(0, 0, 0)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {titleHowToBuyBlock}
+            </h1>
+
+            <div className='flex flex-wrap justify-center gap-8'>
               {howToBuySteps.map((fieldName, index) => (
                 <div
                   key={fieldName}
                   className='impressive-block flex w-full flex-col items-center gap-4 bg-white p-8'
                 >
-                  <h3 className='flex min-h-14 min-w-14 items-center justify-center rounded-full border-4 border-black bg-orange-500 text-center text-2xl text-white'>
+                  <h3
+                    className='flex min-h-14 min-w-14 items-center justify-center rounded-full border-4 border-black text-center text-2xl text-white'
+                    style={{ backgroundColor: colorBackgrondBlock }}
+                  >
                     {index + 1}
                   </h3>
-                  <Text
-                    fieldName={fieldName}
-                    className={{ wrapper: 'h-full w-full' }}
-                  />
+
+                  {index === 0 && (
+                    <h3
+                      style={{
+                        fontFamily: 'Inter',
+                        fontSize: '24px',
+                        color: 'rgb(0, 0, 0)',
+                        WebkitTextStroke: '0px rgb(255, 0, 0)',
+                        backgroundColor: 'transparent'
+                      }}
+                    >
+                      {firstBlock}
+                    </h3>
+                  )}
+
+                  {index === 1 && (
+                    <h3
+                      style={{
+                        fontFamily: 'Inter',
+                        fontSize: '24px',
+                        color: 'rgb(0, 0, 0)',
+                        WebkitTextStroke: '0px rgb(255, 0, 0)',
+                        backgroundColor: 'transparent'
+                      }}
+                    >
+                      {secondBlock}
+                    </h3>
+                  )}
+
+                  {index === 2 && (
+                    <h3
+                      style={{
+                        fontFamily: 'Inter',
+                        fontSize: '24px',
+                        color: 'rgb(0, 0, 0)',
+                        WebkitTextStroke: '0px rgb(255, 0, 0)',
+                        backgroundColor: 'transparent'
+                      }}
+                    >
+                      {thirdBlock}
+                    </h3>
+                  )}
+
+                  {index === 3 && (
+                    <h3
+                      style={{
+                        fontFamily: 'Inter',
+                        fontSize: '24px',
+                        color: 'rgb(0, 0, 0)',
+                        WebkitTextStroke: '0px rgb(255, 0, 0)',
+                        backgroundColor: 'transparent'
+                      }}
+                    >
+                      {fourthBlock}
+                    </h3>
+                  )}
                 </div>
               ))}
             </div>
           </div>
+
           <div>
             {howToBuyBtn && (data?.showHowToBuy as ToggleData)?.value && (
               <ClassicHowToBuy />
@@ -281,18 +381,6 @@ export const Impressive: FC = () => {
             </div>
           )}
 
-          <div>
-            {isActiveMarquee && marqueeMidle && (
-              <MarqueeStr
-                text={tickerData?.value || 'Ticker'}
-                style={{
-                  fontFamily: secondary,
-                  color: colorSec || 'green',
-                  fontWeight: 600
-                }}
-              />
-            )}
-          </div>
           {isActiveGallary && (
             <div className='mt-8'>
               <h3

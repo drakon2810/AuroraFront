@@ -1226,6 +1226,12 @@ export const templatesData = {
             }
           },
           {
+            type: 'link',
+            name: 'buyNowLink',
+            placeholder: 'URL',
+            defaultValues: { visibility: 'none' }
+          },
+          {
             type: 'text',
             name: 'aboutUsTitle',
             editor: true,
@@ -1245,6 +1251,27 @@ export const templatesData = {
           {
             type: 'image',
             name: 'tokenImage',
+            placeholder: 'URL',
+            editor: true,
+            defaultValues: {
+              width: 100,
+              sizeUnit: '%'
+            }
+          },
+          {
+            type: 'image',
+            name: 'logo',
+            placeholder: 'URL',
+            editor: true,
+            defaultValues: {
+              width: 102,
+              height: 102,
+              sizeUnit: 'px'
+            }
+          },
+          {
+            type: 'image',
+            name: 'aboutUsPreview',
             placeholder: 'URL',
             editor: true,
             defaultValues: {
@@ -1272,17 +1299,7 @@ export const templatesData = {
               sizeUnit: '%'
             }
           },
-          {
-            type: 'image',
-            name: 'logo',
-            placeholder: 'URL',
-            editor: true,
-            defaultValues: {
-              width: 102,
-              height: 102,
-              sizeUnit: 'px'
-            }
-          },
+
           {
             type: 'image',
             name: 'secondaryBackground',
@@ -1292,17 +1309,6 @@ export const templatesData = {
               src: 'https://www.knoxalliance.store/wp-content/uploads/2017/05/light-color-background-images-for-website-top-hd-images-for-free-background-for-website-in-light-color-1-1024x640.jpg',
               width: 100,
               height: 100,
-              sizeUnit: '%'
-            }
-          },
-
-          {
-            type: 'image',
-            name: 'aboutUsPreview',
-            placeholder: 'URL',
-            editor: true,
-            defaultValues: {
-              width: 100,
               sizeUnit: '%'
             }
           }

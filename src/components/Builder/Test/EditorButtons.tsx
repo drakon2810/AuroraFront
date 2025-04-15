@@ -3,6 +3,7 @@ import { BuilderButton } from '../BuilderButton'
 import { Chart } from '@/components/ui/blocks/Chart'
 import { Gallery } from '@/components/ui/blocks/Gallery'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
+import { HowToBuyImpressive } from '@/components/ui/blocks/HowToBuyImpressive'
 import { Marquee } from '@/components/ui/blocks/Marquee'
 import { Roandmap } from '@/components/ui/blocks/Roandmap'
 import { RoadmapImpressive } from '@/components/ui/blocks/RoandmapImpressiw'
@@ -38,6 +39,7 @@ export const EditorButtons = () => {
   // Общие компоненты для всех шаблонов
   const commonComponents = (
     <>
+      <HowToBuyImpressive />
       <EmberBlock />
       <Chart />
       <Marquee />
