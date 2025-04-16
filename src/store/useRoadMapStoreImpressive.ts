@@ -23,7 +23,7 @@ interface RoadMapImpressiveStore {
 
 export const useRoadMapImpressiveStore = create<RoadMapImpressiveStore>(
   (set) => ({
-    isActiveRMImp: false,
+    isActiveRMImp: true,
     titleRMImp: 'Roadmap',
     roadmapFirstStepTitle: 'Phase 1',
     roadmapSecondStepTitle: 'Phase 2',

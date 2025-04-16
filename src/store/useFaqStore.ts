@@ -24,7 +24,7 @@ interface FaqStoreInterface {
 }
 
 export const useFaqStore = create<FaqStoreInterface>((set) => ({
-  isActiveFaq: false,
+  isActiveFaq: true,
   titleFaq: 'FAQ',
   firstFaq: 'FIRST QUESTION',
   firstAnsw: 'FIRST ANSWER',

@@ -41,7 +41,7 @@ interface useBlocksStoreInterface {
 
 export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
   howToBuyBtn: false,
-  howToBuyBtnBlock: false,
+  howToBuyBtnBlock: true,
   titleHowToBuy: 'How to Buy',
   titleHowToBuyBlock: 'How to Buy',
   firstBlock: 'Create any wallet of your choice, we recommend Phantom.',
