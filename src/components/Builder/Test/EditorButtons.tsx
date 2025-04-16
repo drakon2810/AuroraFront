@@ -1,6 +1,7 @@
 import { EmberBlock } from '../../ui/blocks/EmbedBlock'
 import { BuilderButton } from '../BuilderButton'
 import { Chart } from '@/components/ui/blocks/Chart'
+import { FaqImpressiw } from '@/components/ui/blocks/FaqImpressiw'
 import { Gallery } from '@/components/ui/blocks/Gallery'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
 import { HowToBuyImpressive } from '@/components/ui/blocks/HowToBuyImpressive'
@@ -11,35 +12,37 @@ import { TokenomicDescriptionChart } from '@/components/ui/blocks/TokenDistribyt
 import { Tokenomics } from '@/components/ui/blocks/Tokenomics'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
-import { useTemplateStore } from '@/store/useTemplateStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLocation } from 'react-router-dom'
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search)
+}
 
 export const EditorButtons = () => {
-  const { isSelectTemplate } = useTemplateStore((state) => state)
   const { selectedTemplate } = useContext(
     TemplateContext
   ) as TemplateContextValues
   const { t } = useTranslation()
+  const query = useQuery()
 
-  // Проверка существования данных шаблона
+  const templateFromURL = query.get('template')
+
   const currentTemplate = templatesData[selectedTemplate]
   if (!currentTemplate) return null
 
   const currentTemplateCategories = currentTemplate.categories
   if (!currentTemplateCategories) return null
 
-  // Поиск нужной категории
   const textCategory = currentTemplateCategories.find(
     (category) => category.label === 'howToBuy'
   )
   if (!textCategory) return null
 
-  // Общие компоненты для всех шаблонов
   const commonComponents = (
     <>
-      <HowToBuyImpressive />
       <EmberBlock />
       <Chart />
       <Marquee />
@@ -49,9 +52,8 @@ export const EditorButtons = () => {
     </>
   )
 
-  // Определяем, какой шаблон отображать
   const renderTemplateContent = () => {
-    switch (isSelectTemplate) {
+    switch (templateFromURL) {
       case 'classic':
       case 'simple':
         return (
@@ -64,7 +66,9 @@ export const EditorButtons = () => {
       case 'impressive':
         return (
           <>
+            <HowToBuyImpressive />
             <RoadmapImpressive />
+            <FaqImpressiw />
             {commonComponents}
           </>
         )

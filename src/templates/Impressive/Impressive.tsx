@@ -21,6 +21,7 @@ import { EmbedVideo } from '@/components/ui/embedVideo'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useBlocksStore } from '@/store/useBlocksStore'
 import { useChartStore } from '@/store/useChartStore'
+import { useFaqStore } from '@/store/useFaqStore'
 import { useGallaryStore } from '@/store/useGalleryStore'
 import { useGeneralStore } from '@/store/useGeneralStore'
 import { useMarqueeStore } from '@/store/useMarqueeStore'
@@ -72,6 +73,19 @@ export const Impressive: FC = () => {
   const { isActiveAnimations, customPointer } = useFallingImagesStore(
     (state) => state
   )
+
+  const {
+    isActiveFaq,
+    firstFaq,
+    firstAnsw,
+    secondFaq,
+    secondAnsw,
+    thirdFaq,
+    thirdAnsw,
+    fourthFaq,
+    fourAnsw,
+    titleFaq
+  } = useFaqStore((state) => state)
   const {
     isActiveEmbed,
     embedTitle,
@@ -81,7 +95,8 @@ export const Impressive: FC = () => {
     secondBlock,
     thirdBlock,
     fourthBlock,
-    colorBackgrondBlock
+    colorBackgrondBlock,
+    howToBuyBtnBlock
   } = useBlocksStore((state) => state)
   const { isActiveChart, titleChart } = useChartStore((state) => state)
   const {
@@ -91,7 +106,8 @@ export const Impressive: FC = () => {
     roadmapFirstStepDescription,
     roadmapSecondStepDescription,
     roadmapThirdStepDescription,
-    titleRMImp
+    titleRMImp,
+    isActiveRMImp
   } = useRoadMapImpressiveStore((state) => state)
   const { isActiveMarquee, marqueeUp, marqueeDown, marqueeMidle } =
     useMarqueeStore((state) => state)
@@ -234,123 +250,126 @@ export const Impressive: FC = () => {
       </TemplateLayout>
       <TemplateLayout backgroundFieldName='primaryBackground'>
         <section className='mx-auto flex max-w-7xl flex-col'>
-          <div className='flex flex-col items-center justify-center gap-8 py-24'>
-            <h2
-              style={{
-                fontFamily: 'Dino',
-                fontSize: '72px',
-                color: 'rgb(0, 0, 0)',
-                WebkitTextStroke: '0px rgb(255, 0, 0)',
-                backgroundColor: 'transparent'
-              }}
-            >
-              {titleRMImp}
-            </h2>
+          {isActiveRMImp && (
+            <div className='flex flex-col items-center justify-center gap-8 py-24'>
+              <h2
+                style={{
+                  fontFamily: 'Dino',
+                  fontSize: '72px',
+                  color: 'rgb(0, 0, 0)',
+                  WebkitTextStroke: '0px rgb(255, 0, 0)',
+                  backgroundColor: 'transparent'
+                }}
+              >
+                {titleRMImp}
+              </h2>
 
-            <div className='flex flex-wrap justify-center gap-8'>
-              {roadmapSteps.map((step, index) => (
-                <div
-                  key={index}
-                  className='impressive-block flex h-96 w-96 flex-col items-center gap-4 bg-white px-10 py-8'
-                >
-                  <div className='flex w-full justify-center rounded-full border-4 border-black bg-orange-500 text-center text-2xl'>
-                    <h3>{step.title}</h3>
-                  </div>
-                  <div className='h-full w-full'>
-                    <p className='break-words text-lg text-black'>
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className='flex flex-col items-center gap-8 py-24'>
-            <h1
-              style={{
-                fontFamily: 'Dino',
-                fontSize: '72px',
-                color: 'rgb(0, 0, 0)',
-                WebkitTextStroke: '0px rgb(255, 0, 0)',
-                backgroundColor: 'transparent'
-              }}
-            >
-              {titleHowToBuyBlock}
-            </h1>
-
-            <div className='flex flex-wrap justify-center gap-8'>
-              {howToBuySteps.map((fieldName, index) => (
-                <div
-                  key={fieldName}
-                  className='impressive-block flex w-full flex-col items-center gap-4 bg-white p-8'
-                >
-                  <h3
-                    className='flex min-h-14 min-w-14 items-center justify-center rounded-full border-4 border-black text-center text-2xl text-white'
-                    style={{ backgroundColor: colorBackgrondBlock }}
+              <div className='flex flex-wrap justify-center gap-8'>
+                {roadmapSteps.map((step, index) => (
+                  <div
+                    key={index}
+                    className='impressive-block flex h-96 w-96 flex-col items-center gap-4 bg-white px-10 py-8'
                   >
-                    {index + 1}
-                  </h3>
-
-                  {index === 0 && (
-                    <h3
-                      style={{
-                        fontFamily: 'Inter',
-                        fontSize: '24px',
-                        color: 'rgb(0, 0, 0)',
-                        WebkitTextStroke: '0px rgb(255, 0, 0)',
-                        backgroundColor: 'transparent'
-                      }}
-                    >
-                      {firstBlock}
-                    </h3>
-                  )}
-
-                  {index === 1 && (
-                    <h3
-                      style={{
-                        fontFamily: 'Inter',
-                        fontSize: '24px',
-                        color: 'rgb(0, 0, 0)',
-                        WebkitTextStroke: '0px rgb(255, 0, 0)',
-                        backgroundColor: 'transparent'
-                      }}
-                    >
-                      {secondBlock}
-                    </h3>
-                  )}
-
-                  {index === 2 && (
-                    <h3
-                      style={{
-                        fontFamily: 'Inter',
-                        fontSize: '24px',
-                        color: 'rgb(0, 0, 0)',
-                        WebkitTextStroke: '0px rgb(255, 0, 0)',
-                        backgroundColor: 'transparent'
-                      }}
-                    >
-                      {thirdBlock}
-                    </h3>
-                  )}
-
-                  {index === 3 && (
-                    <h3
-                      style={{
-                        fontFamily: 'Inter',
-                        fontSize: '24px',
-                        color: 'rgb(0, 0, 0)',
-                        WebkitTextStroke: '0px rgb(255, 0, 0)',
-                        backgroundColor: 'transparent'
-                      }}
-                    >
-                      {fourthBlock}
-                    </h3>
-                  )}
-                </div>
-              ))}
+                    <div className='flex w-full justify-center rounded-full border-4 border-black bg-orange-500 text-center text-2xl'>
+                      <h3>{step.title}</h3>
+                    </div>
+                    <div className='h-full w-full'>
+                      <p className='break-words text-lg text-black'>
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
+          {howToBuyBtnBlock && (
+            <div className='flex flex-col items-center gap-8 py-24'>
+              <h1
+                style={{
+                  fontFamily: 'Dino',
+                  fontSize: '72px',
+                  color: 'rgb(0, 0, 0)',
+                  WebkitTextStroke: '0px rgb(255, 0, 0)',
+                  backgroundColor: 'transparent'
+                }}
+              >
+                {titleHowToBuyBlock}
+              </h1>
+
+              <div className='flex flex-wrap justify-center gap-8'>
+                {howToBuySteps.map((fieldName, index) => (
+                  <div
+                    key={fieldName}
+                    className='impressive-block flex w-full flex-col items-center gap-4 bg-white p-8'
+                  >
+                    <h3
+                      className='flex min-h-14 min-w-14 items-center justify-center rounded-full border-4 border-black text-center text-2xl text-white'
+                      style={{ backgroundColor: colorBackgrondBlock }}
+                    >
+                      {index + 1}
+                    </h3>
+
+                    {index === 0 && (
+                      <h3
+                        style={{
+                          fontFamily: 'Inter',
+                          fontSize: '24px',
+                          color: 'rgb(0, 0, 0)',
+                          WebkitTextStroke: '0px rgb(255, 0, 0)',
+                          backgroundColor: 'transparent'
+                        }}
+                      >
+                        {firstBlock}
+                      </h3>
+                    )}
+
+                    {index === 1 && (
+                      <h3
+                        style={{
+                          fontFamily: 'Inter',
+                          fontSize: '24px',
+                          color: 'rgb(0, 0, 0)',
+                          WebkitTextStroke: '0px rgb(255, 0, 0)',
+                          backgroundColor: 'transparent'
+                        }}
+                      >
+                        {secondBlock}
+                      </h3>
+                    )}
+
+                    {index === 2 && (
+                      <h3
+                        style={{
+                          fontFamily: 'Inter',
+                          fontSize: '24px',
+                          color: 'rgb(0, 0, 0)',
+                          WebkitTextStroke: '0px rgb(255, 0, 0)',
+                          backgroundColor: 'transparent'
+                        }}
+                      >
+                        {thirdBlock}
+                      </h3>
+                    )}
+
+                    {index === 3 && (
+                      <h3
+                        style={{
+                          fontFamily: 'Inter',
+                          fontSize: '24px',
+                          color: 'rgb(0, 0, 0)',
+                          WebkitTextStroke: '0px rgb(255, 0, 0)',
+                          backgroundColor: 'transparent'
+                        }}
+                      >
+                        {fourthBlock}
+                      </h3>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div>
             {howToBuyBtn && (data?.showHowToBuy as ToggleData)?.value && (
@@ -428,47 +447,110 @@ export const Impressive: FC = () => {
               <TokenomicsPieChart />
             </div>
           )}
-          <div className='mt-8'>
-            {isActiveMarquee && marqueeDown && (
-              <MarqueeStr
-                text={tickerData?.value || 'Ticker'}
-                style={{
-                  fontFamily: secondary,
-                  color: colorSec || 'green',
-                  fontWeight: 600
-                }}
-              />
-            )}
-          </div>
         </section>
       </TemplateLayout>
       <TemplateLayout
         backgroundFieldName='secondaryBackground'
         className='py-24'
       >
-        <section className='mx-auto flex max-w-7xl flex-col items-center gap-8'>
-          <Text fieldName='FAQTitle' as='h2' />
-          <Accordion
-            type='single'
-            collapsible
-            className='flex w-full flex-col gap-4'
-          >
-            {FAQItems.map(({ question, answer }) => (
-              <AccordionItem
-                key={question}
-                value={question}
-                className='impressive-block w-full bg-white px-6 py-4 text-black dark:border-black dark:bg-white dark:text-black'
+        {isActiveFaq && (
+          <section className='mx-auto flex max-w-7xl flex-col items-center gap-8'>
+            {
+              <h1
+                style={{
+                  fontFamily: 'Dino',
+                  fontSize: '72px',
+                  color: 'rgb(0, 0, 0)',
+                  WebkitTextStroke: '0px rgb(255, 0, 0)',
+                  backgroundColor: 'transparent'
+                }}
               >
-                <AccordionTrigger iconSize={32}>
-                  <Text fieldName={question} />
+                {titleFaq}
+              </h1>
+            }
+            <Accordion
+              type='single'
+              collapsible
+              className='flex w-full flex-col gap-4'
+            >
+              <AccordionItem value='item-1'>
+                <AccordionTrigger
+                  style={{
+                    fontSize: '20px', // Увеличиваем размер текста
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {firstFaq}
                 </AccordionTrigger>
-                <AccordionContent>
-                  <Text fieldName={answer} />
+                <AccordionContent
+                  style={{
+                    fontSize: '18px', // Размер текста в контенте
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {firstAnsw}
                 </AccordionContent>
               </AccordionItem>
-            ))}
-          </Accordion>
-        </section>
+
+              <AccordionItem value='item-2'>
+                <AccordionTrigger
+                  style={{
+                    fontSize: '20px', // Увеличиваем размер текста
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {secondFaq}
+                </AccordionTrigger>
+                <AccordionContent
+                  style={{
+                    fontSize: '18px', // Размер текста в контенте
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {secondAnsw}
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value='item-3'>
+                <AccordionTrigger
+                  style={{
+                    fontSize: '20px', // Увеличиваем размер текста
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {thirdFaq}
+                </AccordionTrigger>
+                <AccordionContent
+                  style={{
+                    fontSize: '18px', // Размер текста в контенте
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {thirdAnsw}
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value='item-4'>
+                <AccordionTrigger
+                  style={{
+                    fontSize: '20px', // Увеличиваем размер текста
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {fourthFaq}
+                </AccordionTrigger>
+                <AccordionContent
+                  style={{
+                    fontSize: '18px', // Размер текста в контенте
+                    color: 'black' // Делаем текст черным
+                  }}
+                >
+                  {fourAnsw}
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </section>
+        )}
       </TemplateLayout>
       <TemplateLayout
         backgroundFieldName='primaryBackground'
@@ -479,6 +561,18 @@ export const Impressive: FC = () => {
             {(data?.ticker as TextData)?.value || 'ticker'}
           </span>
         </section>
+        <div className='mt-8'>
+          {isActiveMarquee && marqueeDown && (
+            <MarqueeStr
+              text={tickerData?.value || 'Ticker'}
+              style={{
+                fontFamily: secondary,
+                color: colorSec || 'green',
+                fontWeight: 600
+              }}
+            />
+          )}
+        </div>
       </TemplateLayout>
     </div>
   )

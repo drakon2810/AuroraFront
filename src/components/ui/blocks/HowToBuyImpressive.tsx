@@ -27,7 +27,7 @@ export const HowToBuyImpressive = () => {
 
   const handleDefoltColorSec = () => {
     setColor('#fa6f0c')
-    setColorBackgroundBlock('')
+    setColorBackgroundBlock('#fa6f0c')
   }
 
   const handleIsActive = () => {
