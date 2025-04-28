@@ -73,7 +73,6 @@ export const TemplateLayout: FC<TemplateLayoutProps> = ({
         />
       )}
 
-      {/* Наложение с цветом и прозрачностью */}
       {overlayColor && (
         <div
           className='absolute inset-0'

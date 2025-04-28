@@ -10,6 +10,7 @@ import { Roandmap } from '@/components/ui/blocks/Roandmap'
 import { RoadmapImpressive } from '@/components/ui/blocks/RoandmapImpressiw'
 import { TokenomicDescriptionChart } from '@/components/ui/blocks/TokenDistribytionChart'
 import { Tokenomics } from '@/components/ui/blocks/Tokenomics'
+import { TokenomicsRocet } from '@/components/ui/blocks/TokenomicsRocet'
 import { templatesData } from '@/consts/templatesData'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateContextValues } from '@/types/contexts'
@@ -47,7 +48,7 @@ export const EditorButtons = () => {
       <Chart />
       <Marquee />
       <Gallery />
-      <Tokenomics />
+
       <TokenomicDescriptionChart />
     </>
   )
@@ -60,6 +61,7 @@ export const EditorButtons = () => {
           <>
             <HowToBut />
             <Roandmap />
+            <Tokenomics />
             {commonComponents}
           </>
         )
@@ -69,6 +71,14 @@ export const EditorButtons = () => {
             <HowToBuyImpressive />
             <RoadmapImpressive />
             <FaqImpressiw />
+            <Tokenomics />
+            {commonComponents}
+          </>
+        )
+      case 'rocket':
+        return (
+          <>
+            <TokenomicsRocet />
             {commonComponents}
           </>
         )

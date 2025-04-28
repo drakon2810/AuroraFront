@@ -16,6 +16,7 @@ export const RocketHero: FC<RocketHeroProps> = ({
   secondaryColor
 }) => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
+
   if (!data) return
 
   return (
