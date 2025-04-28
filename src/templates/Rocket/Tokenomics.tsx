@@ -2,6 +2,7 @@ import { RocketCard } from './Card'
 import { Text } from '@/components/TemplateItems/Text'
 import { cn } from '@/lib/utils'
 import { useStylesStore } from '@/store/useStulesStore'
+import { useTokenomicsStoreRocet } from '@/store/useTokenomicsStoreRocet'
 import { FC } from 'react'
 
 interface RocketTokenomicsProps {
@@ -21,6 +22,17 @@ export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
     overlayColorSec,
     overlayOpacitySec
   } = useStylesStore((state) => state)
+  const {
+    titleRocet,
+    blocksFirst,
+    blocksFirstTilte,
+    blocksSecond,
+    blocksSecondTilte,
+    blocksTherd,
+    blocksTherdTilte,
+    blocksFour,
+    blocksFourTilte
+  } = useTokenomicsStoreRocet((state) => state)
 
   // Применение стилей фона с типами
   const backgroundStyle: React.CSSProperties = imgBackgroundSec
@@ -81,28 +93,69 @@ export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
       )}
 
       <div className='mx-auto flex max-w-6xl flex-col items-center justify-center gap-12'>
-        <Text
-          fieldName='tokenomicsTitle'
-          defaultColor={primaryColor}
-          className={{ text: 'tracking-wider' }}
-          as='h2'
-        />
+        <h2
+          style={{
+            fontFamily: 'Orbitron',
+            fontSize: '48px',
+            color: 'rgb(59, 130, 246)',
+            WebkitTextStroke: '0px rgb(255, 0, 0)',
+            backgroundColor: 'transparent'
+          }}
+        >
+          {titleRocet}
+        </h2>
+
         <div className='flex flex-wrap justify-center gap-4'>
-          {['first', 'second', 'third', 'fourth'].map((item) => (
-            <RocketCard key={item} className='items-center'>
+          {[
+            {
+              iconField: 'firstTokenomicsIcon',
+              title: blocksFirstTilte,
+              value: blocksFirst
+            },
+            {
+              iconField: 'secondTokenomicsIcon',
+              title: blocksSecondTilte,
+              value: blocksSecond
+            },
+            {
+              iconField: 'thirdTokenomicsIcon',
+              title: blocksTherdTilte,
+              value: blocksTherd
+            },
+            {
+              iconField: 'fourthTokenomicsIcon',
+              title: blocksFourTilte,
+              value: blocksFour
+            }
+          ].map((item, index) => (
+            <RocketCard key={index} className='items-center'>
               <Text
-                fieldName={`${item}TokenomicsIcon`}
+                fieldName={item.iconField}
                 defaultColor={primaryColor}
                 style={{ filter: `drop-shadow(0 0 10px ${primaryColor})` }}
               />
-              <Text
-                fieldName={`${item}TokenomicsTitle`}
-                defaultColor={primaryColor}
-              />
-              <Text
-                fieldName={`${item}TokenomicsValue`}
-                defaultColor={secondaryColor}
-              />
+              <p
+                style={{
+                  fontFamily: 'Orbitron',
+                  fontSize: '20px',
+                  color: 'rgb(59, 130, 246)',
+                  WebkitTextStroke: '0px rgb(255, 0, 0)',
+                  backgroundColor: 'transparent'
+                }}
+              >
+                {item.value}
+              </p>
+              <h4
+                style={{
+                  fontFamily: 'Orbitron',
+                  fontSize: '32px',
+                  color: 'rgb(192, 191, 188)',
+                  WebkitTextStroke: '0px rgb(255, 0, 0)',
+                  backgroundColor: 'transparent'
+                }}
+              >
+                {item.title}
+              </h4>
             </RocketCard>
           ))}
         </div>

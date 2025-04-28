@@ -2149,74 +2149,62 @@ export const templatesData = {
               height: 100,
               sizeUnit: '%'
             }
+          },
+          {
+            type: 'text',
+            name: 'tokenomicsTitle',
+            editor: true,
+            defaultValues: {
+              value: 'Tokenomics',
+              fontFamily: 'Orbitron',
+              fontSizeValue: 48
+            }
+          },
+          {
+            type: 'text',
+            name: 'missionTimelineTitle',
+            defaultValues: {
+              value: 'Mission Timeline',
+              fontFamily: 'Orbitron',
+              fontSizeValue: 48
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'missionControlTitle',
+            defaultValues: {
+              value: 'Mission Control',
+              fontFamily: 'Orbitron',
+              fontSizeValue: 48
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'FAQTitle',
+            defaultValues: {
+              value: 'Mission FAQ',
+              fontFamily: 'Orbitron',
+              fontSizeValue: 48
+            },
+            editor: true
+          },
+          {
+            type: 'text',
+            name: 'joinTitle',
+            defaultValues: {
+              value: 'Join The Mission',
+              fontFamily: 'Orbitron',
+              fontSizeValue: 48
+            },
+            editor: true
           }
-          // {
-          //   type: 'text',
-          //   name: 'tokenomicsTitle',
-          //   editor: true,
-          //   defaultValues: {
-          //     value: 'Tokenomics',
-          //     fontFamily: 'Orbitron',
-          //     fontSizeValue: 48
-          //   }
-          // },
-          // {
-          //   type: 'text',
-          //   name: 'missionTimelineTitle',
-          //   defaultValues: {
-          //     value: 'Mission Timeline',
-          //     fontFamily: 'Orbitron',
-          //     fontSizeValue: 48
-          //   },
-          //   editor: true
-          // },
-          // {
-          //   type: 'text',
-          //   name: 'missionControlTitle',
-          //   defaultValues: {
-          //     value: 'Mission Control',
-          //     fontFamily: 'Orbitron',
-          //     fontSizeValue: 48
-          //   },
-          //   editor: true
-          // },
-          // {
-          //   type: 'text',
-          //   name: 'FAQTitle',
-          //   defaultValues: {
-          //     value: 'Mission FAQ',
-          //     fontFamily: 'Orbitron',
-          //     fontSizeValue: 48
-          //   },
-          //   editor: true
-          // },
-          // {
-          //   type: 'text',
-          //   name: 'joinTitle',
-          //   defaultValues: {
-          //     value: 'Join The Mission',
-          //     fontFamily: 'Orbitron',
-          //     fontSizeValue: 48
-          //   },
-          //   editor: true
-          // }
         ]
       },
       {
         label: 'images',
         fields: [
-          // {
-          //   type: 'image',
-          //   name: 'background',
-          //   placeholder: 'URL',
-          //   editor: true,
-          //   defaultValues: {
-          //     width: 100,
-          //     height: 100,
-          //     sizeUnit: '%',
-          //     imagePlaceholder: ClassicBackground
-          //   }
-          // }
           // {
           //   type: 'image',
           //   name: 'tokenImage',

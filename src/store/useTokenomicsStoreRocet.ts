@@ -8,27 +8,46 @@ interface TokenomicsBlock {
 interface TokenomicsState {
   isActiveRocet: boolean
   titleRocet: string
-  blocks: TokenomicsBlock[]
+  blocksFirst: string
+  blocksFirstTilte: string
+  blocksSecond: string
+  blocksSecondTilte: string
+  blocksTherd: string
+  blocksTherdTilte: string
+  blocksFour: string
+  blocksFourTilte: string
+
   changeIsActiveRocet: (value: boolean) => void
   changeTitleRocet: (value: string) => void
-  updateBlock: (index: number, field: 'title' | 'value', value: string) => void
+  setFirstBlock: (value: string) => void
+  setFirstBlockTilte: (value: string) => void
+  setSecondBlock: (value: string) => void
+  setSecondBlockTilte: (value: string) => void
+  setTherdBlock: (value: string) => void
+  setTherdBlockTilte: (value: string) => void
+  setFourBlock: (value: string) => void
+  setFourBlockTilte: (value: string) => void
 }
 
 export const useTokenomicsStoreRocet = create<TokenomicsState>((set) => ({
   isActiveRocet: false,
   titleRocet: 'Tokenomics',
-  blocks: [
-    { title: '', value: '' },
-    { title: '', value: '' },
-    { title: '', value: '' },
-    { title: '', value: '' }
-  ],
+  blocksFirst: 'Total Supply ',
+  blocksFirstTilte: '1000000000',
+  blocksSecond: 'Buy Tax ',
+  blocksSecondTilte: '5%',
+  blocksTherd: 'Sell Tax ',
+  blocksTherdTilte: '5%',
+  blocksFour: 'LP Lock ',
+  blocksFourTilte: '2 Years',
   changeIsActiveRocet: (value) => set({ isActiveRocet: value }),
   changeTitleRocet: (value) => set({ titleRocet: value }),
-  updateBlock: (index, field, value) =>
-    set((state) => {
-      const blocks = [...state.blocks]
-      blocks[index] = { ...blocks[index], [field]: value }
-      return { blocks }
-    })
+  setFirstBlock: (value) => set({ blocksFirst: value }),
+  setFirstBlockTilte: (value) => set({ blocksFirstTilte: value }),
+  setSecondBlock: (value) => set({ blocksSecond: value }),
+  setSecondBlockTilte: (value) => set({ blocksSecondTilte: value }),
+  setTherdBlock: (value) => set({ blocksTherd: value }),
+  setTherdBlockTilte: (value) => set({ blocksTherdTilte: value }),
+  setFourBlock: (value) => set({ blocksFour: value }),
+  setFourBlockTilte: (value) => set({ blocksFourTilte: value })
 }))

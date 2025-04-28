@@ -6,8 +6,22 @@ export const TokenomicsRocet = () => {
     isActiveRocet,
     changeIsActiveRocet,
     changeTitleRocet,
-    blocks,
-    updateBlock
+    blocksFirst,
+    blocksFirstTilte,
+    blocksSecond,
+    blocksSecondTilte,
+    blocksTherd,
+    blocksTherdTilte,
+    blocksFour,
+    blocksFourTilte,
+    setFirstBlock,
+    setFirstBlockTilte,
+    setSecondBlock,
+    setSecondBlockTilte,
+    setTherdBlock,
+    setTherdBlockTilte,
+    setFourBlock,
+    setFourBlockTilte
   } = useTokenomicsStoreRocet((state) => state)
 
   return (
@@ -62,39 +76,109 @@ export const TokenomicsRocet = () => {
             disabled={!isActiveRocet}
           />
 
-          {blocks.map((block, index) => (
-            <div
-              key={index}
-              className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${
-                !isActiveRocet ? 'cursor-not-allowed opacity-50' : ''
-              }`}
-            >
-              <div className='flex-1'>
-                <label className='text-sm text-gray-700'>
-                  Title {index + 1}
-                </label>
-                <input
-                  type='text'
-                  value={block.title}
-                  onChange={(e) => updateBlock(index, 'title', e.target.value)}
-                  disabled={!isActiveRocet}
-                  className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
-                />
-              </div>
-              <div className='flex-1'>
-                <label className='text-sm text-gray-700'>
-                  Value {index + 1}
-                </label>
-                <input
-                  type='text'
-                  value={block.value}
-                  onChange={(e) => updateBlock(index, 'value', e.target.value)}
-                  disabled={!isActiveRocet}
-                  className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
-                />
-              </div>
+          {/* Блок 1 */}
+          <div
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+          >
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Title 1</label>
+              <input
+                type='text'
+                value={blocksFirstTilte}
+                onChange={(e) => setFirstBlockTilte(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
             </div>
-          ))}
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Value 1</label>
+              <input
+                type='text'
+                value={blocksFirst}
+                onChange={(e) => setFirstBlock(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+          </div>
+
+          {/* Блок 2 */}
+          <div
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+          >
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Title 2</label>
+              <input
+                type='text'
+                value={blocksSecondTilte}
+                onChange={(e) => setSecondBlockTilte(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Value 2</label>
+              <input
+                type='text'
+                value={blocksSecond}
+                onChange={(e) => setSecondBlock(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+          </div>
+
+          {/* Блок 3 */}
+          <div
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+          >
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Title 3</label>
+              <input
+                type='text'
+                value={blocksTherdTilte}
+                onChange={(e) => setTherdBlockTilte(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Value 3</label>
+              <input
+                type='text'
+                value={blocksTherd}
+                onChange={(e) => setTherdBlock(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+          </div>
+
+          {/* Блок 4 */}
+          <div
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+          >
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Title 4</label>
+              <input
+                type='text'
+                value={blocksFourTilte}
+                onChange={(e) => setFourBlockTilte(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+            <div className='flex-1'>
+              <label className='text-sm text-gray-700'>Value 4</label>
+              <input
+                type='text'
+                value={blocksFour}
+                onChange={(e) => setFourBlock(e.target.value)}
+                disabled={!isActiveRocet}
+                className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
+              />
+            </div>
+          </div>
         </motion.div>
       </details>
     </div>
