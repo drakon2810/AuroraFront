@@ -6,7 +6,7 @@ interface TokenomicsBlock {
 }
 
 interface TokenomicsState {
-  isActiveRocet: boolean
+  isActiveTokRocet: boolean
   titleRocet: string
   blocksFirst: string
   blocksFirstTilte: string
@@ -17,7 +17,7 @@ interface TokenomicsState {
   blocksFour: string
   blocksFourTilte: string
 
-  changeIsActiveRocet: (value: boolean) => void
+  changeIsActiveRocetTok: (value: boolean) => void
   changeTitleRocet: (value: string) => void
   setFirstBlock: (value: string) => void
   setFirstBlockTilte: (value: string) => void
@@ -30,7 +30,7 @@ interface TokenomicsState {
 }
 
 export const useTokenomicsStoreRocet = create<TokenomicsState>((set) => ({
-  isActiveRocet: false,
+  isActiveTokRocet: true,
   titleRocet: 'Tokenomics',
   blocksFirst: 'Total Supply ',
   blocksFirstTilte: '1000000000',
@@ -40,7 +40,8 @@ export const useTokenomicsStoreRocet = create<TokenomicsState>((set) => ({
   blocksTherdTilte: '5%',
   blocksFour: 'LP Lock ',
   blocksFourTilte: '2 Years',
-  changeIsActiveRocet: (value) => set({ isActiveRocet: value }),
+
+  changeIsActiveRocetTok: (value) => set({ isActiveTokRocet: value }),
   changeTitleRocet: (value) => set({ titleRocet: value }),
   setFirstBlock: (value) => set({ blocksFirst: value }),
   setFirstBlockTilte: (value) => set({ blocksFirstTilte: value }),

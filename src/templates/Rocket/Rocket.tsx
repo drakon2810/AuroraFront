@@ -7,7 +7,9 @@ import { RocketRoadmap } from './Roadmap'
 import { RocketTokenomics } from './Tokenomics'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { loadFonts } from '@/lib/utils'
+import { useTimelineStore } from '@/store/useMissionTimeline'
 import { useStylesStore } from '@/store/useStulesStore'
+import { useTokenomicsStoreRocet } from '@/store/useTokenomicsStoreRocet'
 import { TemplateContextValues } from '@/types/contexts'
 import { ColorData } from '@/types/templates'
 import { FC, useContext } from 'react'
@@ -17,6 +19,9 @@ loadFonts(['Orbitron'])
 export const Rocket: FC = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
   if (!data) return <span>Something went wrong...</span>
+
+  const { isActiveTokRocet } = useTokenomicsStoreRocet((state) => state)
+  const { isActiveMissonRoc } = useTimelineStore((state) => state)
 
   const {
     colorBackground,
@@ -88,15 +93,20 @@ export const Rocket: FC = () => {
           primaryColor={primaryColor}
           secondaryColor={secondaryColor}
         />
-        <RocketTokenomics
-          primaryColor={primaryColor}
-          secondaryColor={secondaryColor}
-        />
-        <RocketRoadmap primaryColor={primaryColor} />
+
+        {isActiveTokRocet && (
+          <RocketTokenomics
+            primaryColor={primaryColor}
+            secondaryColor={secondaryColor}
+          />
+        )}
+        {isActiveMissonRoc && <RocketRoadmap primaryColor={primaryColor} />}
+
         <RocketMissionControl
           primaryColor={primaryColor}
           secondaryColor={secondaryColor}
         />
+
         <RocketFAQ primaryColor={primaryColor} />
         <RocketJoin primaryColor={primaryColor} />
       </div>

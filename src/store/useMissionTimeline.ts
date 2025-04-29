@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 
 interface TimelineState {
+  isActiveMissonRoc: boolean
+
   titleTimeline: string
 
   blocksFirstPhase: string
@@ -17,6 +19,8 @@ interface TimelineState {
   blocksThirdTitle: string
   blocksThirdDesc: string
   blocksThirdData: string
+
+  changeIsActiveMissRoc: (value: boolean) => void
 
   setTitleTimeline: (value: string) => void
 
@@ -37,6 +41,8 @@ interface TimelineState {
 }
 
 export const useTimelineStore = create<TimelineState>((set) => ({
+  isActiveMissonRoc: true,
+
   titleTimeline: 'Mission Timeline',
 
   blocksFirstPhase: 'Phase 1',
@@ -55,6 +61,8 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   blocksThirdTitle: 'Launch',
   blocksThirdDesc: 'Release your project to the public and gather feedback.🌟',
   blocksThirdData: 'Q3 2024',
+
+  changeIsActiveMissRoc: (value) => set({ isActiveMissonRoc: value }),
 
   setTitleTimeline: (value) => set({ titleTimeline: value }),
 

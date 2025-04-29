@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 
 export const TokenomicsRocet = () => {
   const {
-    isActiveRocet,
-    changeIsActiveRocet,
+    isActiveTokRocet,
+    changeIsActiveRocetTok,
     changeTitleRocet,
     blocksFirst,
     blocksFirstTilte,
@@ -57,8 +57,8 @@ export const TokenomicsRocet = () => {
             <input
               type='checkbox'
               className='peer sr-only'
-              onChange={() => changeIsActiveRocet(!isActiveRocet)}
-              checked={isActiveRocet}
+              onChange={() => changeIsActiveRocetTok(!isActiveTokRocet)}
+              checked={isActiveTokRocet}
             />
             <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300"></div>
             <span className='ml-3 text-sm font-medium text-gray-700'>
@@ -71,14 +71,14 @@ export const TokenomicsRocet = () => {
             placeholder='Tokenomics'
             onChange={(e) => changeTitleRocet(e.target.value)}
             className={`mb-2 mt-1 flex h-9 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1 ${
-              !isActiveRocet ? 'cursor-not-allowed opacity-50' : ''
+              !isActiveTokRocet ? 'cursor-not-allowed opacity-50' : ''
             }`}
-            disabled={!isActiveRocet}
+            disabled={!isActiveTokRocet}
           />
 
           {/* Блок 1 */}
           <div
-            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveTokRocet ? 'cursor-not-allowed opacity-50' : ''}`}
           >
             <div className='flex-1'>
               <label className='text-sm text-gray-700'>Title 1</label>
@@ -86,7 +86,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksFirstTilte}
                 onChange={(e) => setFirstBlockTilte(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -96,7 +96,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksFirst}
                 onChange={(e) => setFirstBlock(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -104,7 +104,7 @@ export const TokenomicsRocet = () => {
 
           {/* Блок 2 */}
           <div
-            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveTokRocet ? 'cursor-not-allowed opacity-50' : ''}`}
           >
             <div className='flex-1'>
               <label className='text-sm text-gray-700'>Title 2</label>
@@ -112,7 +112,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksSecondTilte}
                 onChange={(e) => setSecondBlockTilte(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -122,7 +122,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksSecond}
                 onChange={(e) => setSecondBlock(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -130,7 +130,7 @@ export const TokenomicsRocet = () => {
 
           {/* Блок 3 */}
           <div
-            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveTokRocet ? 'cursor-not-allowed opacity-50' : ''}`}
           >
             <div className='flex-1'>
               <label className='text-sm text-gray-700'>Title 3</label>
@@ -138,7 +138,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksTherdTilte}
                 onChange={(e) => setTherdBlockTilte(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -148,7 +148,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksTherd}
                 onChange={(e) => setTherdBlock(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -156,7 +156,7 @@ export const TokenomicsRocet = () => {
 
           {/* Блок 4 */}
           <div
-            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveRocet ? 'cursor-not-allowed opacity-50' : ''}`}
+            className={`flex flex-col md:flex-row md:items-center md:space-x-4 ${!isActiveTokRocet ? 'cursor-not-allowed opacity-50' : ''}`}
           >
             <div className='flex-1'>
               <label className='text-sm text-gray-700'>Title 4</label>
@@ -164,7 +164,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksFourTilte}
                 onChange={(e) => setFourBlockTilte(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
@@ -174,7 +174,7 @@ export const TokenomicsRocet = () => {
                 type='text'
                 value={blocksFour}
                 onChange={(e) => setFourBlock(e.target.value)}
-                disabled={!isActiveRocet}
+                disabled={!isActiveTokRocet}
                 className='mb-2 mt-1 w-full rounded-md border px-3 py-1 text-base shadow-sm focus-visible:ring-1'
               />
             </div>
