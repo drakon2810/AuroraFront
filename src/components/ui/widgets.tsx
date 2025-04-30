@@ -8,10 +8,15 @@ import { ThemeContextValues } from '@/types/contexts'
 import { motion } from 'framer-motion'
 import { FC, useState, ChangeEvent } from 'react'
 import { useContext, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 interface FallingImageWidgetProps {
   value: (File | null)[]
   onChange: (value: (File | null)[]) => void
+}
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search)
 }
 
 export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
@@ -29,6 +34,10 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
   const changePopTicker = useFallingImagesStore(
     (state) => state.changePopTicker
   )
+
+  const query = useQuery()
+
+  const templateFromURL = query.get('template')
 
   const handleToggle = () => {
     setIsActive(!isActive)
@@ -63,9 +72,12 @@ export const FallingImageWidget: FC<FallingImageWidgetProps> = ({
   }, [isActiveTicker])
   return (
     <div>
-      <div className='mb-4'>
-        <AnimationsWidgets />
-      </div>
+      {templateFromURL !== 'rocket' && (
+        <div className='mb-4'>
+          <AnimationsWidgets />
+        </div>
+      )}
+
       <div className='flex flex-col items-start space-y-4'>
         <details className='group w-full rounded-lg border border-gray-300 bg-white open:border-gray-300'>
           <summary className='flex cursor-pointer items-center justify-between px-2 py-2 transition-colors hover:bg-gray-100'>

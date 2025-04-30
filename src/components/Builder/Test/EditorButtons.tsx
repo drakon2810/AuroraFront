@@ -44,6 +44,7 @@ export const EditorButtons = () => {
   const textCategory = currentTemplateCategories.find(
     (category) => category.label === 'howToBuy'
   )
+
   if (!textCategory) return null
 
   const commonComponents = (

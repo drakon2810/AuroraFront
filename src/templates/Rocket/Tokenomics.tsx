@@ -11,8 +11,7 @@ interface RocketTokenomicsProps {
 }
 
 export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
-  primaryColor,
-  secondaryColor
+  primaryColor
 }) => {
   const {
     colorBackgroundSec,
@@ -20,7 +19,9 @@ export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
     imgBackgroundSec,
     activeSizeSec,
     overlayColorSec,
-    overlayOpacitySec
+    overlayOpacitySec,
+    colorPrim,
+    colorSec
   } = useStylesStore((state) => state)
   const {
     titleRocet,
@@ -97,7 +98,7 @@ export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
           style={{
             fontFamily: 'Orbitron',
             fontSize: '48px',
-            color: 'rgb(59, 130, 246)',
+            color: colorPrim || 'rgb(59, 130, 246)',
             WebkitTextStroke: '0px rgb(255, 0, 0)',
             backgroundColor: 'transparent'
           }}
@@ -138,7 +139,7 @@ export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
                 style={{
                   fontFamily: 'Orbitron',
                   fontSize: '20px',
-                  color: 'rgb(59, 130, 246)',
+                  color: colorPrim || 'rgb(59, 130, 246)',
                   WebkitTextStroke: '0px rgb(255, 0, 0)',
                   backgroundColor: 'transparent'
                 }}
@@ -149,7 +150,7 @@ export const RocketTokenomics: FC<RocketTokenomicsProps> = ({
                 style={{
                   fontFamily: 'Orbitron',
                   fontSize: '32px',
-                  color: 'rgb(192, 191, 188)',
+                  color: colorSec || 'rgb(192, 191, 188)',
                   WebkitTextStroke: '0px rgb(255, 0, 0)',
                   backgroundColor: 'transparent'
                 }}

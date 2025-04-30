@@ -16,7 +16,9 @@ export const RocketMissionControl: FC<RocketMissionControlProps> = ({}) => {
     imgBackgroundSec,
     activeSizeSec,
     overlayColorSec,
-    overlayOpacitySec
+    overlayOpacitySec,
+    colorPrim,
+    colorSec
   } = useStylesStore((state) => state)
 
   const {
@@ -102,7 +104,7 @@ export const RocketMissionControl: FC<RocketMissionControlProps> = ({}) => {
           style={{
             fontFamily: 'Orbitron',
             fontSize: '48px',
-            color: 'rgb(59, 130, 246)',
+            color: colorPrim || 'rgb(59, 130, 246)',
             backgroundColor: 'transparent'
           }}
         >
@@ -130,7 +132,7 @@ export const RocketMissionControl: FC<RocketMissionControlProps> = ({}) => {
                 style={{
                   fontFamily: 'Orbitron',
                   fontSize: '32px',
-                  color: 'rgb(192, 191, 188)',
+                  color: colorSec || 'rgb(192, 191, 188)',
                   backgroundColor: 'transparent',
                   wordWrap: 'break-word', // Перенос длинных слов
                   overflowWrap: 'break-word', // Альтернатива для wordWrap
@@ -145,7 +147,7 @@ export const RocketMissionControl: FC<RocketMissionControlProps> = ({}) => {
                 style={{
                   fontFamily: 'Orbitron',
                   fontSize: '20px',
-                  color: 'rgb(59, 130, 246)',
+                  color: colorPrim || 'rgb(59, 130, 246)',
                   backgroundColor: 'transparent',
                   wordWrap: 'break-word',
                   overflowWrap: 'break-word',

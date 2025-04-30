@@ -4,6 +4,11 @@ import { AudioDefaultLoader } from './audioDefaultLoader'
 import { AudioPlayer } from './audioPlayer'
 import { useFallingImagesStore } from '@/store/useWidgetsStore'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search)
+}
 
 export const AudioButton = () => {
   const [isActive, setIsActive] = useState(false)
@@ -11,8 +16,10 @@ export const AudioButton = () => {
   const color = useFallingImagesStore((state) => state.color)
   const shape = useFallingImagesStore((state) => state.shape)
   const colorImg = useFallingImagesStore((state) => state.colorImg)
+  const query = useQuery()
 
-  console.log(audioFile)
+  const templateFromURL = query.get('template')
+
   const handleToggle = () => {
     setIsActive((prev) => !prev)
   }
@@ -22,7 +29,13 @@ export const AudioButton = () => {
   }
 
   return (
-    <div>
+    <div
+      className={
+        templateFromURL === 'rocket'
+          ? 'absolute right-[100px] top-[-30px] z-50'
+          : ''
+      }
+    >
       <button
         onClick={handleToggle}
         className={`${styles.audioButton} ${isActive ? styles.active : ''} ${shape === 'circle' ? 'rounded-full' : ''} ${shape === 'rounded' ? 'rounded-lg' : ''} ${shape === 'square' ? 'rounded-none' : ''} `}

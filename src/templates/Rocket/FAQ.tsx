@@ -10,7 +10,9 @@ export const RocketFAQ: FC<{ primaryColor: string }> = ({ primaryColor }) => {
     imgBackground,
     activeSize,
     overlayColor,
-    overlayOpacity
+    overlayOpacity,
+    colorPrim,
+    colorSec
   } = useStylesStore((state) => state)
 
   const {
@@ -104,7 +106,7 @@ export const RocketFAQ: FC<{ primaryColor: string }> = ({ primaryColor }) => {
           style={{
             fontFamily: 'Orbitron',
             fontSize: '48px',
-            color: primaryColor,
+            color: colorPrim || primaryColor,
             backgroundColor: 'transparent',
             textAlign: 'center'
           }}
@@ -119,7 +121,7 @@ export const RocketFAQ: FC<{ primaryColor: string }> = ({ primaryColor }) => {
                 style={{
                   fontFamily: 'Orbitron',
                   fontSize: '20px',
-                  color: 'rgb(59, 130, 246)',
+                  color: colorPrim || 'rgb(59, 130, 246)',
                   WebkitTextStroke: '0px rgb(255, 0, 0)',
                   backgroundColor: 'transparent',
                   wordWrap: 'break-word',
@@ -134,7 +136,7 @@ export const RocketFAQ: FC<{ primaryColor: string }> = ({ primaryColor }) => {
                 style={{
                   fontFamily: 'Inter',
                   fontSize: '16px',
-                  color: 'rgb(192, 191, 188)',
+                  color: colorSec || 'rgb(192, 191, 188)',
                   WebkitTextStroke: '0px rgb(255, 0, 0)',
                   backgroundColor: 'transparent',
                   wordWrap: 'break-word',

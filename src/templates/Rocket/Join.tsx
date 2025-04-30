@@ -1,13 +1,16 @@
 import { RocketCard } from './Card'
-import { Text } from '@/components/TemplateItems/Text'
+import { MarqueeStr } from '@/components/ui/MarqueeStr'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { useJoinTheMission } from '@/store/useJoinTheMission'
+import { useMarqueeStore } from '@/store/useMarqueeStore'
 import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
+import { TextData } from '@/types/templates'
 import { FC, useContext } from 'react'
 
-export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
+export const RocketJoin: FC<{ primaryColor: string }> = () => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
+  const { colorPrim, colorSec } = useStylesStore((state) => state)
   if (!data) return null
   const {
     titleJoin,
@@ -30,6 +33,8 @@ export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
     overlayOpacitySec
   } = useStylesStore((state) => state)
 
+  const { marqueeDown, isActiveMarquee } = useMarqueeStore((state) => state)
+  const tickerData = data?.['ticker'] as TextData | undefined
   const items = [
     {
       title: firstBlockTitleJoin,
@@ -112,7 +117,7 @@ export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
           style={{
             fontFamily: 'Orbitron',
             fontSize: '48px',
-            color: 'rgb(59, 130, 246)',
+            color: colorPrim || 'rgb(59, 130, 246)',
             backgroundColor: 'transparent'
           }}
         >
@@ -131,12 +136,29 @@ export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
                   URLFieldName
                 )}`}
               >
-                <h3 className='text-white'>{title}</h3>
-                <p className='text-[#c0bfbc]'>{description}</p>
+                <h3
+                  style={{ color: colorPrim || 'fff' }}
+                  className='text-white'
+                >
+                  {title}
+                </h3>
+                <p style={{ color: colorSec || '#c0bfbc' }}>{description}</p>
               </RocketCard>
             </a>
           ))}
         </button>
+      </div>
+      <div className='max-w-screen absolute left-1/2 top-[400px] z-50 w-full -translate-x-1/2 overflow-hidden px-4'>
+        {isActiveMarquee && marqueeDown && (
+          <MarqueeStr
+            text={tickerData?.value || 'Ticker'}
+            style={{
+              fontFamily: colorSec,
+              color: colorSec || 'green',
+              fontWeight: 600
+            }}
+          />
+        )}
       </div>
     </section>
   )

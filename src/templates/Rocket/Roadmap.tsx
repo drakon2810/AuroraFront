@@ -1,5 +1,6 @@
 import { RocketCard } from './Card'
 import { useTimelineStore } from '@/store/useMissionTimeline'
+import { useStylesStore } from '@/store/useStulesStore'
 import { FC } from 'react'
 
 export const RocketRoadmap: FC<{ primaryColor: string }> = ({
@@ -20,6 +21,7 @@ export const RocketRoadmap: FC<{ primaryColor: string }> = ({
     blocksThirdDesc,
     blocksThirdData
   } = useTimelineStore()
+  const { colorPrim, colorSec } = useStylesStore((state) => state)
 
   const blocks = [
     {
@@ -56,7 +58,7 @@ export const RocketRoadmap: FC<{ primaryColor: string }> = ({
           ...textBaseStyle,
           fontFamily: 'Orbitron',
           fontSize: '48px',
-          color: 'rgb(59, 130, 246)'
+          color: colorPrim || 'rgb(59, 130, 246)'
         }}
       >
         {titleTimeline}
@@ -73,7 +75,7 @@ export const RocketRoadmap: FC<{ primaryColor: string }> = ({
                   ...textBaseStyle,
                   fontFamily: 'Orbitron',
                   fontSize: '14px',
-                  color: 'rgb(255, 255, 255)'
+                  color: colorSec || 'rgb(255, 255, 255)'
                 }}
               >
                 {block.phase}
@@ -85,7 +87,7 @@ export const RocketRoadmap: FC<{ primaryColor: string }> = ({
                 ...textBaseStyle,
                 fontFamily: 'Orbitron',
                 fontSize: '24px',
-                color: 'rgb(255, 255, 255)'
+                color: colorSec || 'rgb(255, 255, 255)'
               }}
             >
               {block.title}
@@ -96,7 +98,7 @@ export const RocketRoadmap: FC<{ primaryColor: string }> = ({
                 ...textBaseStyle,
                 fontFamily: 'Inter',
                 fontSize: '16px',
-                color: 'rgb(192, 191, 188)'
+                color: colorSec || 'rgb(192, 191, 188)'
               }}
             >
               {block.desc}
@@ -107,7 +109,7 @@ export const RocketRoadmap: FC<{ primaryColor: string }> = ({
                 ...textBaseStyle,
                 fontFamily: 'Orbitron',
                 fontSize: '14px',
-                color: 'rgb(255, 255, 255)'
+                color: colorSec || 'rgb(255, 255, 255)'
               }}
             >
               {block.data}

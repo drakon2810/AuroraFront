@@ -1,14 +1,20 @@
 import { useStylesStore } from '@/store/useStulesStore'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search)
+}
 
 export const ColorContent = () => {
   const [primColor, setPrimColor] = useState('#000000')
   const [secColor, setSecColor] = useState('#000')
-
+  const query = useQuery()
   const { setColorPrimary, setColorSecondary } = useStylesStore(
     (state) => state
   )
+  const templateFromURL = query.get('template')
 
   const handleColorPrimChange = (event: string) => {
     setColorPrimary(event)
@@ -26,8 +32,13 @@ export const ColorContent = () => {
   }
 
   const handleDefoltColorSec = () => {
-    setSecColor('#000000')
-    setColorSecondary('#000000')
+    if (templateFromURL !== 'rocket') {
+      setSecColor('#000000')
+      setColorSecondary('#000000')
+    } else {
+      setSecColor('#dbdbdb')
+      setColorSecondary('white')
+    }
   }
 
   return (
