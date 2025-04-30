@@ -1,7 +1,6 @@
 import { RocketCard } from './Card'
-import { Image } from '@/components/TemplateItems/Image'
-import { Text } from '@/components/TemplateItems/Text'
 import { cn } from '@/lib/utils'
+import { useMissionConrol } from '@/store/useMissionConroll'
 import { useStylesStore } from '@/store/useStulesStore'
 import { FC } from 'react'
 
@@ -10,9 +9,7 @@ interface RocketMissionControlProps {
   secondaryColor: string
 }
 
-export const RocketMissionControl: FC<RocketMissionControlProps> = ({
-  primaryColor
-}) => {
+export const RocketMissionControl: FC<RocketMissionControlProps> = ({}) => {
   const {
     colorBackgroundSec,
     gradientBackgroundSec,
@@ -21,6 +18,19 @@ export const RocketMissionControl: FC<RocketMissionControlProps> = ({
     overlayColorSec,
     overlayOpacitySec
   } = useStylesStore((state) => state)
+
+  const {
+    titleControl,
+    firstBlockImg,
+    secondBlockImg,
+    thierdBlockImg,
+    firstBlockTitle,
+    secondBlockTitle,
+    thierdBlockTitle,
+    firstBlockDescription,
+    secondBlockDescription,
+    thierdBlockDescription
+  } = useMissionConrol((state) => state)
 
   const backgroundStyle = imgBackgroundSec
     ? { backgroundImage: `url(${imgBackgroundSec})` }
@@ -39,64 +49,113 @@ export const RocketMissionControl: FC<RocketMissionControlProps> = ({
           ? 'blur(12px)'
           : 'none'
 
-  // Применение стилей для оверлея с прозрачностью
   const overlayStyle: React.CSSProperties = overlayColorSec
     ? {
         backgroundColor: `${overlayColorSec}${Math.round(
           overlayOpacitySec * 255
         )
           .toString(16)
-          .padStart(2, '0')}`, // Преобразование opacity в формат hex
+          .padStart(2, '0')}`,
         mixBlendMode: 'multiply'
       }
     : {}
 
+  const blocks = [
+    {
+      img: firstBlockImg,
+      title: firstBlockTitle,
+      description: firstBlockDescription
+    },
+    {
+      img: secondBlockImg,
+      title: secondBlockTitle,
+      description: secondBlockDescription
+    },
+    {
+      img: thierdBlockImg,
+      title: thierdBlockTitle,
+      description: thierdBlockDescription
+    }
+  ]
+
   return (
     <section
       style={{ ...backgroundStyle }}
-      className={cn('py-24', {
+      className={cn('relative py-24', {
         'backdrop-blur-sm': activeSizeSec === 'small',
         'backdrop-blur-md': activeSizeSec === 'medium',
         'backdrop-blur-lg': activeSizeSec === 'large'
       })}
     >
-      {/* Слой с размытием */}
       <div
         className='absolute inset-0 -z-[5]'
         style={{
           backdropFilter: blurValue,
-          WebkitBackdropFilter: blurValue // Для Safari
+          WebkitBackdropFilter: blurValue
         }}
       />
-      {/* Слой с оверлеем */}
       {overlayColorSec && (
         <div className='absolute inset-0' style={overlayStyle} />
       )}
-      <div className='mx-auto flex max-w-6xl flex-col items-center justify-center gap-12'>
-        <Text
-          fieldName='missionControlTitle'
-          defaultColor={primaryColor}
-          className={{ text: 'tracking-wider' }}
-          as='h2'
-        />
+      <div className='relative z-10 mx-auto flex max-w-6xl flex-col items-center justify-center gap-12'>
+        <h2
+          style={{
+            fontFamily: 'Orbitron',
+            fontSize: '48px',
+            color: 'rgb(59, 130, 246)',
+            backgroundColor: 'transparent'
+          }}
+        >
+          {titleControl}
+        </h2>
+
         <div className='flex w-full flex-wrap justify-center gap-4'>
-          {['first', 'second', 'third'].map((item) => (
+          {blocks.map((block, idx) => (
             <RocketCard
-              key={item}
+              key={idx}
               className='max-w-[370px] flex-auto items-center'
             >
-              <Image
-                fieldName={`${item}ControlAvatar`}
-                className={{ image: 'rounded-full object-contain' }}
+              <img
+                src={
+                  block.img
+                    ? typeof block.img === 'string'
+                      ? block.img
+                      : URL.createObjectURL(block.img)
+                    : '/src/assets/images/placeholder.webp'
+                }
+                alt={`block-img-${idx}`}
+                className='mb-4 h-48 w-48 rounded-full object-cover'
               />
-              <Text
-                fieldName={`${item}ControlName`}
-                defaultColor={primaryColor}
-              />
-              <Text
-                fieldName={`${item}ControlJob`}
-                defaultColor={primaryColor}
-              />
+              <p
+                style={{
+                  fontFamily: 'Orbitron',
+                  fontSize: '32px',
+                  color: 'rgb(192, 191, 188)',
+                  backgroundColor: 'transparent',
+                  wordWrap: 'break-word', // Перенос длинных слов
+                  overflowWrap: 'break-word', // Альтернатива для wordWrap
+                  whiteSpace: 'normal', // Разрешить перенос строк
+                  textAlign: 'center', // Выравнивание по центру
+                  maxWidth: '100%' // Ограничение по ширине
+                }}
+              >
+                {block.title}
+              </p>
+              <p
+                style={{
+                  fontFamily: 'Orbitron',
+                  fontSize: '20px',
+                  color: 'rgb(59, 130, 246)',
+                  backgroundColor: 'transparent',
+                  wordWrap: 'break-word',
+                  overflowWrap: 'break-word',
+                  whiteSpace: 'normal',
+                  textAlign: 'center',
+                  maxWidth: '100%'
+                }}
+              >
+                {block.description}
+              </p>
             </RocketCard>
           ))}
         </div>

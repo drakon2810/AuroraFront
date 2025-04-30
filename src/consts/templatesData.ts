@@ -2149,57 +2149,57 @@ export const templatesData = {
               height: 100,
               sizeUnit: '%'
             }
-          },
-          {
-            type: 'text',
-            name: 'tokenomicsTitle',
-            editor: true,
-            defaultValues: {
-              value: 'Tokenomics',
-              fontFamily: 'Orbitron',
-              fontSizeValue: 48
-            }
-          },
-          {
-            type: 'text',
-            name: 'missionTimelineTitle',
-            defaultValues: {
-              value: 'Mission Timeline',
-              fontFamily: 'Orbitron',
-              fontSizeValue: 48
-            },
-            editor: true
-          },
-          {
-            type: 'text',
-            name: 'missionControlTitle',
-            defaultValues: {
-              value: 'Mission Control',
-              fontFamily: 'Orbitron',
-              fontSizeValue: 48
-            },
-            editor: true
-          },
-          {
-            type: 'text',
-            name: 'FAQTitle',
-            defaultValues: {
-              value: 'Mission FAQ',
-              fontFamily: 'Orbitron',
-              fontSizeValue: 48
-            },
-            editor: true
-          },
-          {
-            type: 'text',
-            name: 'joinTitle',
-            defaultValues: {
-              value: 'Join The Mission',
-              fontFamily: 'Orbitron',
-              fontSizeValue: 48
-            },
-            editor: true
           }
+          // {
+          //   type: 'text',
+          //   name: 'tokenomicsTitle',
+          //   editor: true,
+          //   defaultValues: {
+          //     value: 'Tokenomics',
+          //     fontFamily: 'Orbitron',
+          //     fontSizeValue: 48
+          //   }
+          // },
+          // {
+          //   type: 'text',
+          //   name: 'missionTimelineTitle',
+          //   defaultValues: {
+          //     value: 'Mission Timeline',
+          //     fontFamily: 'Orbitron',
+          //     fontSizeValue: 48
+          //   },
+          //   editor: true
+          // },
+          // {
+          //   type: 'text',
+          //   name: 'missionControlTitle',
+          //   defaultValues: {
+          //     value: 'Mission Control',
+          //     fontFamily: 'Orbitron',
+          //     fontSizeValue: 48
+          //   },
+          //   editor: true
+          // },
+          // {
+          //   type: 'text',
+          //   name: 'FAQTitle',
+          //   defaultValues: {
+          //     value: 'Mission FAQ',
+          //     fontFamily: 'Orbitron',
+          //     fontSizeValue: 48
+          //   },
+          //   editor: true
+          // },
+          // {
+          //   type: 'text',
+          //   name: 'joinTitle',
+          //   defaultValues: {
+          //     value: 'Join The Mission',
+          //     fontFamily: 'Orbitron',
+          //     fontSizeValue: 48
+          //   },
+          //   editor: true
+          // }
         ]
       },
       {
@@ -2221,22 +2221,22 @@ export const templatesData = {
       {
         label: 'buttons',
         fields: [
-          {
-            type: 'link',
-            name: 'buyTickerLink',
-            placeholder: 'URL'
-          },
-          {
-            type: 'link',
-            name: 'buyNowLink',
-            placeholder: 'URL',
-            defaultValues: { visibility: 'none' }
-          },
-          {
-            type: 'link',
-            name: 'joinUsLink',
-            placeholder: 'URL'
-          }
+          // {
+          //   type: 'link',
+          //   name: 'buyTickerLink',
+          //   placeholder: 'URL'
+          // },
+          // {
+          //   type: 'link',
+          //   name: 'buyNowLink',
+          //   placeholder: 'URL',
+          //   defaultValues: { visibility: 'none' }
+          // },
+          // {
+          //   type: 'link',
+          //   name: 'joinUsLink',
+          //   placeholder: 'URL'
+          // }
         ]
       },
       {
@@ -2645,26 +2645,43 @@ export const templatesData = {
       {
         label: 'links',
         fields: [
+          // {
+          //   type: 'link',
+          //   name: 'joinTelegram',
+          //   editor: true,
+          //   placeholder: 'URL'
+          // },
+          // {
+          //   type: 'link',
+          //   name: 'joinTwitter',
+          //   editor: true,
+          //   placeholder: 'URL'
+          // },
+          // {
+          //   type: 'link',
+          //   name: 'joinDiscord',
+          //   editor: true,
+          //   placeholder: 'URL'
+          // }
           {
             type: 'link',
-            name: 'joinTelegram',
-            editor: true,
+            name: 'buyTickerLink',
             placeholder: 'URL'
           },
           {
             type: 'link',
-            name: 'joinTwitter',
-            editor: true,
-            placeholder: 'URL'
+            name: 'buyNowLink',
+            placeholder: 'URL',
+            defaultValues: { visibility: 'none' }
           },
           {
             type: 'link',
-            name: 'joinDiscord',
-            editor: true,
+            name: 'joinUsLink',
             placeholder: 'URL'
           }
         ]
       },
+
       {
         label: 'howToBuy',
         fields: [

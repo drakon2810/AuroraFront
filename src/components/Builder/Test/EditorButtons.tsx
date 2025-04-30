@@ -5,7 +5,10 @@ import { FaqImpressiw } from '@/components/ui/blocks/FaqImpressiw'
 import { Gallery } from '@/components/ui/blocks/Gallery'
 import { HowToBut } from '@/components/ui/blocks/HowToBuy'
 import { HowToBuyImpressive } from '@/components/ui/blocks/HowToBuyImpressive'
+import { JoinTheMission } from '@/components/ui/blocks/JoinTheMission'
 import { Marquee } from '@/components/ui/blocks/Marquee'
+import { MissionConroll } from '@/components/ui/blocks/MissionConroll'
+import { MissionFaq } from '@/components/ui/blocks/MissionFaq'
 import { MissionTimeline } from '@/components/ui/blocks/MissionTimeline'
 import { Roandmap } from '@/components/ui/blocks/Roandmap'
 import { RoadmapImpressive } from '@/components/ui/blocks/RoandmapImpressiw'
@@ -81,6 +84,9 @@ export const EditorButtons = () => {
           <>
             <TokenomicsRocet />
             <MissionTimeline />
+            <MissionConroll />
+            <MissionFaq />
+            <JoinTheMission />
             {commonComponents}
           </>
         )

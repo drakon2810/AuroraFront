@@ -7,6 +7,9 @@ import { RocketRoadmap } from './Roadmap'
 import { RocketTokenomics } from './Tokenomics'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { loadFonts } from '@/lib/utils'
+import { useJoinTheMission } from '@/store/useJoinTheMission'
+import { useMissionConrol } from '@/store/useMissionConroll'
+import { useMissionFaq } from '@/store/useMissionFaq'
 import { useTimelineStore } from '@/store/useMissionTimeline'
 import { useStylesStore } from '@/store/useStulesStore'
 import { useTokenomicsStoreRocet } from '@/store/useTokenomicsStoreRocet'
@@ -22,6 +25,9 @@ export const Rocket: FC = () => {
 
   const { isActiveTokRocet } = useTokenomicsStoreRocet((state) => state)
   const { isActiveMissonRoc } = useTimelineStore((state) => state)
+  const { isActiveMissonControll } = useMissionConrol((state) => state)
+  const { isActiveMissonFaq } = useMissionFaq((state) => state)
+  const { isActiveMissonJoin } = useJoinTheMission((state) => state)
 
   const {
     colorBackground,
@@ -102,13 +108,14 @@ export const Rocket: FC = () => {
         )}
         {isActiveMissonRoc && <RocketRoadmap primaryColor={primaryColor} />}
 
-        <RocketMissionControl
-          primaryColor={primaryColor}
-          secondaryColor={secondaryColor}
-        />
-
-        <RocketFAQ primaryColor={primaryColor} />
-        <RocketJoin primaryColor={primaryColor} />
+        {isActiveMissonControll && (
+          <RocketMissionControl
+            primaryColor={primaryColor}
+            secondaryColor={secondaryColor}
+          />
+        )}
+        {isActiveMissonFaq && <RocketFAQ primaryColor={primaryColor} />}
+        {isActiveMissonJoin && <RocketJoin primaryColor={primaryColor} />}
       </div>
     </div>
   )

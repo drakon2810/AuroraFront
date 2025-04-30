@@ -1,32 +1,26 @@
 import { RocketCard } from './Card'
 import { Text } from '@/components/TemplateItems/Text'
 import { TemplateContext } from '@/contexts/TemplateContext'
+import { useJoinTheMission } from '@/store/useJoinTheMission'
 import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { FC, useContext } from 'react'
 
-const items = [
-  {
-    title: 'Telegram',
-    description: 'Join our active community',
-    URLFieldName: 'joinTelegram'
-  },
-  {
-    title: 'Twitter',
-    description: 'Follow for updates',
-    URLFieldName: 'joinTwitter'
-  },
-  {
-    title: 'Discord',
-    description: 'Join our server',
-    URLFieldName: 'joinDiscord'
-  }
-]
-
 export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
   if (!data) return null
-
+  const {
+    titleJoin,
+    firstBlockTitleJoin,
+    secondBlockTitleJoin,
+    thierdBlockTitleJoin,
+    firstBlockDescriptionJoin,
+    secondBlockDescriptionJoin,
+    thierdBlockDescriptionJoin,
+    firstBlockLinkJoin,
+    secondBlockLinkJoin,
+    thierdBlockLinkJoin
+  } = useJoinTheMission((state) => state)
   const {
     colorBackgroundSec,
     gradientBackgroundSec,
@@ -35,6 +29,24 @@ export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
     overlayColorSec,
     overlayOpacitySec
   } = useStylesStore((state) => state)
+
+  const items = [
+    {
+      title: firstBlockTitleJoin,
+      description: firstBlockDescriptionJoin,
+      URLFieldName: firstBlockLinkJoin
+    },
+    {
+      title: secondBlockTitleJoin,
+      description: secondBlockDescriptionJoin,
+      URLFieldName: secondBlockLinkJoin
+    },
+    {
+      title: thierdBlockTitleJoin,
+      description: thierdBlockDescriptionJoin,
+      URLFieldName: thierdBlockLinkJoin
+    }
+  ]
 
   const backgroundStyle = imgBackgroundSec
     ? {
@@ -69,6 +81,12 @@ export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
       }
     : {}
 
+  // Функция для подсветки блока, если ссылка заполнена
+  const highlightClass = (link: string) =>
+    link
+      ? 'hover:border-blue-500 hover:shadow-[0px_0px_40px_8px_rgba(255,_255,_255,_0.1)]'
+      : ''
+
   return (
     <section className='relative py-24'>
       {/* Фоновый слой */}
@@ -90,27 +108,35 @@ export const RocketJoin: FC<{ primaryColor: string }> = ({ primaryColor }) => {
 
       {/* Контент */}
       <div className='relative mx-auto flex max-w-6xl flex-col items-center justify-center gap-12'>
-        <Text
-          fieldName='joinTitle'
-          defaultColor={primaryColor}
-          className={{ text: 'tracking-wider' }}
-          as='h2'
-        />
-        <div className='flex w-full flex-wrap justify-center gap-4'>
+        <h2
+          style={{
+            fontFamily: 'Orbitron',
+            fontSize: '48px',
+            color: 'rgb(59, 130, 246)',
+            backgroundColor: 'transparent'
+          }}
+        >
+          {titleJoin}
+        </h2>
+        <button className='flex w-full flex-wrap justify-center gap-4'>
           {items.map(({ title, description, URLFieldName }) => (
             <a
-              href={data.links?.[URLFieldName]?.url}
+              href={URLFieldName}
               key={title}
               target='_blank'
               rel='noopener noreferrer'
             >
-              <RocketCard className='max-w-[370px] flex-auto items-center transition-transform hover:scale-105'>
+              <RocketCard
+                className={`max-w-[370px] flex-auto items-center transition-transform hover:scale-105 ${highlightClass(
+                  URLFieldName
+                )}`}
+              >
                 <h3 className='text-white'>{title}</h3>
                 <p className='text-[#c0bfbc]'>{description}</p>
               </RocketCard>
             </a>
           ))}
-        </div>
+        </button>
       </div>
     </section>
   )
