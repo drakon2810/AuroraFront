@@ -41,7 +41,7 @@ const generateRandomColor = () => {
 
 export const useTokenDistributionStore = create<DistributionState>((set) => ({
   isActiveDes: false,
-  titleDes: '',
+  titleDes: 'Distribution Chart',
   textAreaDes: '',
   itemsDes: [
     {

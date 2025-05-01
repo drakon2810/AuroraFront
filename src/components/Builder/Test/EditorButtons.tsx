@@ -53,7 +53,6 @@ export const EditorButtons = () => {
       <Chart />
       <Marquee />
       <Gallery />
-
       <TokenomicDescriptionChart />
     </>
   )

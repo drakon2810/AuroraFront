@@ -58,7 +58,7 @@ export const useBlocksStore = create<useBlocksStoreInterface>((set) => ({
   emberX: 'https://twitter.com/Interior/status/463440424141459456',
   emberTictok: 'https://vm.tiktok.com/ZNdda2pwC/',
   embedChoiseBtn: 'youtube',
-  embedTitle: '',
+  embedTitle: 'Embed',
   embedColorX: 'white',
 
   toggleHowToBuy: (value) => set({ howToBuyBtn: value }),

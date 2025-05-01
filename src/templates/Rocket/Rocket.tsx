@@ -6,13 +6,21 @@ import { RocketMissionControl } from './MissionControl'
 import { RocketRoadmap } from './Roadmap'
 import { RocketTokenomics } from './Tokenomics'
 import { cursor } from '@/components/cursor/cursor'
+import { ImageGallery } from '@/components/ui/ImageGalery'
+import { TokenomicsPieChart } from '@/components/ui/TokenomicsPieChart'
+import { Chart } from '@/components/ui/chart'
+import { EmbedVideo } from '@/components/ui/embedVideo'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { loadFonts } from '@/lib/utils'
+import { useBlocksStore } from '@/store/useBlocksStore'
+import { useChartStore } from '@/store/useChartStore'
+import { useGallaryStore } from '@/store/useGalleryStore'
 import { useJoinTheMission } from '@/store/useJoinTheMission'
 import { useMissionConrol } from '@/store/useMissionConroll'
 import { useMissionFaq } from '@/store/useMissionFaq'
 import { useTimelineStore } from '@/store/useMissionTimeline'
 import { useStylesStore } from '@/store/useStulesStore'
+import { useTokenDistributionStore } from '@/store/useTokenDistribution'
 import { useTokenomicsStoreRocet } from '@/store/useTokenomicsStoreRocet'
 import { useFallingImagesStore } from '@/store/useWidgetsStore'
 import { TemplateContextValues } from '@/types/contexts'
@@ -31,6 +39,15 @@ export const Rocket: FC = () => {
   const { isActiveMissonControll } = useMissionConrol((state) => state)
   const { isActiveMissonFaq } = useMissionFaq((state) => state)
   const { isActiveMissonJoin } = useJoinTheMission((state) => state)
+  const { isActiveEmbed, embedTitle } = useBlocksStore((state) => state)
+  const { isActiveChart, titleChart } = useChartStore((state) => state)
+  const { isActiveGallary, titleGallary } = useGallaryStore((state) => state)
+  const { primary, secondary, colorPrim, colorSec } = useStylesStore(
+    (state) => state
+  )
+  const { isActiveDes, titleDes, textAreaDes } = useTokenDistributionStore(
+    (state) => state
+  )
 
   const { customCursor } = useFallingImagesStore((state) => state)
   const getCursorValue = (cursorConfig: number | string | null) => {
@@ -139,6 +156,86 @@ export const Rocket: FC = () => {
           />
         )}
         {isActiveMissonFaq && <RocketFAQ primaryColor={primaryColor} />}
+        {isActiveEmbed && (
+          <div className='mx-auto my-8 flex w-full max-w-4xl flex-col items-center justify-center'>
+            <h2
+              className='mb-4 text-center'
+              style={{
+                fontFamily: 'Orbitron',
+                fontSize: '48px',
+                color: colorPrim || 'rgb(59, 130, 246)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {embedTitle}
+            </h2>
+            <EmbedVideo />
+          </div>
+        )}
+        {isActiveChart && (
+          <div className='mx-auto my-8 flex w-full flex-col items-center justify-center rounded-[70px]'>
+            <h2
+              className='mb-4 text-center'
+              style={{
+                fontFamily: 'Orbitron',
+                fontSize: '48px',
+                color: colorPrim || 'rgb(59, 130, 246)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {titleChart}
+            </h2>
+            <Chart />
+          </div>
+        )}
+        {isActiveGallary && (
+          <div className='mt-8'>
+            <h2
+              className='mb-4 text-center'
+              style={{
+                fontFamily: 'Orbitron',
+                fontSize: '48px',
+                color: colorPrim || 'rgb(59, 130, 246)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {titleGallary}
+            </h2>
+            <ImageGallery />
+          </div>
+        )}
+        {isActiveDes && (
+          <div className='mt-24'>
+            <h2
+              className='mb-4 text-center'
+              style={{
+                fontFamily: 'Orbitron',
+                fontSize: '48px',
+                color: colorPrim || 'rgb(59, 130, 246)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {titleDes}
+            </h2>
+            <p
+              className='mb-4 text-center'
+              style={{
+                fontFamily: 'Orbitron',
+                fontSize: '48px',
+                color: colorPrim || 'rgb(59, 130, 246)',
+                WebkitTextStroke: '0px rgb(255, 0, 0)',
+                backgroundColor: 'transparent'
+              }}
+            >
+              {textAreaDes}
+            </p>
+            <TokenomicsPieChart />
+          </div>
+        )}
         {isActiveMissonJoin && <RocketJoin primaryColor={primaryColor} />}
       </div>
     </div>

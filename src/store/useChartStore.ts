@@ -17,7 +17,7 @@ interface ChartStoreInterface {
 }
 
 export const useChartStore = create<ChartStoreInterface>((set) => ({
-  titleChart: '',
+  titleChart: 'Chart',
   contractChart: '',
   isActiveChart: false,
   toggleVariantChart: 'dexscreener',
