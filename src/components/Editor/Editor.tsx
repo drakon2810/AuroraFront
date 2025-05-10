@@ -11,6 +11,7 @@ export const Editor = () => {
     TemplateContext
   ) as TemplateContextValues
   const currentTemplateCategories = templatesData[selectedTemplate].categories
+  console.log(currentTemplateCategories)
 
   return (
     <div className='flex flex-auto flex-col justify-between gap-4 p-4'>

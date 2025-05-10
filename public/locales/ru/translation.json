@@ -156,10 +156,7 @@
       "standard": {
         "label": "Стандартный",
         "description": "За 0,045 Solana вы можете создать сайт, используя шаблоны «Классический» и «Простой». Это простые шаблоны с понятным и приятным пользовательским интерфейсом. Их легко редактировать и изменять.",
-        "features": [
-          "Бесплатный домен",
-          "Редактирование после создания"
-        ]
+        "features": ["Бесплатный домен", "Редактирование после создания"]
       },
       "advanced": {
         "label": "Продвинутый",
@@ -254,11 +251,12 @@
     },
     "classic": {
       "categories": {
-        "text": "Текст",
+        "text": "Главная",
         "images": "Изображения",
         "links": "Ссылки",
         "howToBuy": "Как купить",
-        "buttons": "Кнопки"
+        "buttons": "Кнопки",
+        "widgets": "Виджеты"
       },
       "fields": {
         "logoText": "Название проекта",
@@ -291,14 +289,16 @@
         "secondStepImage": "Изображение второго шага",
         "thirdStep": "Третий шаг",
         "thirdStepImage": "Изображение третьего шага",
-        "buyNowLink": "Ссылка «Купить сейчас»"
+        "buyNowLink": "Ссылка «Купить сейчас»",
+        "Falling animation": "Falling Animation"
       }
     },
     "simple": {
       "categories": {
-        "text": "Текст",
+        "general": "Главная",
         "images": "Изображения",
-        "links": "Ссылки"
+        "links": "Ссылки",
+        "widgets": "Виджеты"
       },
       "fields": {
         "ticker": "Тикер",
@@ -324,13 +324,14 @@
     },
     "impressive": {
       "categories": {
-        "text": "Текст",
+        "text": "Главная",
         "images": "Изображения",
         "links": "Ссылки",
         "buttons": "Кнопки",
         "howToBuy": "Как купить",
         "roadmap": "Дорожная карта",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "widgets": "Виджеты"
       },
       "fields": {
         "ticker": "Тикер",
@@ -385,14 +386,15 @@
     "rocket": {
       "categories": {
         "accentColors": "Акцентные цвета",
-        "text": "Текст",
+        "text": "Главная",
         "images": "Изображения",
         "buttons": "Кнопки",
         "tokenomics": "Токеномика",
         "missionTimeline": "График миссии",
         "missionControl": "Управление миссией",
         "faq": "FAQ",
-        "links": "Ссылки"
+        "links": "Ссылки",
+        "widgets": "Виджеты"
       },
       "fields": {
         "primaryColor": "Основной цвет",

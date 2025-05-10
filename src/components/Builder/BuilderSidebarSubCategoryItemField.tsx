@@ -1,4 +1,7 @@
+import { LogoUploader } from '../ui/LogoUploader'
 import { Input } from '../ui/input'
+import { TextArea } from '../ui/teaxtArea'
+import { FallingImageWidget } from '../ui/widgets'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { TemplateEditorContext } from '@/contexts/TemplateEditorContext'
 import {
@@ -10,7 +13,8 @@ import {
   ImageData,
   LinkData,
   TemplateSubCategoryFieldType,
-  TextData
+  TextData,
+  WidgetsData
 } from '@/types/templates'
 import { FC, useContext } from 'react'
 import { HexColorPicker } from 'react-colorful'
@@ -31,7 +35,17 @@ export const BuilderSidebarSubCategoryItemField: FC<
 
   switch (type) {
     case 'text':
-      return (
+      return name === 'firstStep' ||
+        name === 'secondStep' ||
+        name === 'thirdStep' ? (
+        <TextArea
+          value={(data[name] as TextData).value}
+          id={name}
+          onChange={(e) => updateField(`${name}.value`, e.target.value)}
+          placeholder={placeholder}
+          className='h-[100px]'
+        />
+      ) : (
         <Input
           value={(data[name] as TextData).value}
           id={name}
@@ -42,12 +56,9 @@ export const BuilderSidebarSubCategoryItemField: FC<
 
     case 'image':
       return (
-        <Input
-          type='url'
-          id={name}
-          value={(data[name] as ImageData).src}
-          onChange={(e) => updateField(`${name}.src`, e.target.value)}
-          placeholder={placeholder}
+        <LogoUploader
+          image={(data[name] as ImageData)?.src || null}
+          onChange={(imageUrl) => updateField(`${name}.src`, imageUrl)}
         />
       )
 
@@ -67,6 +78,16 @@ export const BuilderSidebarSubCategoryItemField: FC<
         <HexColorPicker
           color={(data[name] as ColorData).value}
           onChange={(color) => updateField(`${name}.value`, color)}
+        />
+      )
+
+    case 'widgets':
+      return (
+        <FallingImageWidget
+          value={(data[name] as WidgetsData)?.value || []}
+          onChange={(newValue: (File | null)[]) => {
+            updateField(`${name}.value`, newValue)
+          }}
         />
       )
   }

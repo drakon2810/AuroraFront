@@ -156,10 +156,7 @@
       "standard": {
         "label": "Standard",
         "description": "For 0.045 Solana you can create a website using Classic and Simple template. These are simple templates, with a clear and pleasant user interface. They are easy to edit and modify.",
-        "features": [
-          "Free domain",
-          "Editing after creation"
-        ]
+        "features": ["Free domain", "Editing after creation"]
       },
       "advanced": {
         "label": "Advanced",
@@ -254,20 +251,20 @@
     },
     "classic": {
       "categories": {
-        "text": "Text",
-        "images": "Images",
-        "links": "Links",
-        "howToBuy": "How to Buy",
-        "buttons": "Buttons"
+        "text": "GENERAL",
+        "images": "STYLES",
+        "links": "LINKS",
+        "howToBuy": "BLOCKS",
+        "widgets": "WIDGETS"
       },
       "fields": {
         "logoText": "Project Name",
         "ticker": "Ticker",
-        "contractAddress": "Contract Address",
+        "contractAddress": "Contract",
         "description": "Description",
         "buyNowText": "Buy Now",
-        "logoImage": "Logo",
-        "background": "Background",
+        "logoImage": "Logo ",
+        "background": "",
         "tokenImage": "Token Image",
         "tiktok": "Tiktok",
         "twitter": "Twitter",
@@ -285,24 +282,26 @@
         "authorTwitter": "Author Twitter",
         "authorDiscord": "Author Discord",
         "showHowToBuy": "Show How to Buy",
-        "firstStep": "First Step",
-        "firstStepImage": "First Step Image",
-        "secondStep": "Second Step",
-        "secondStepImage": "Second Step Image",
-        "thirdStep": "Third Step",
-        "thirdStepImage": "Third Step Image",
+        "firstNameStep": "Step 1",
+        "firstStepImage": "Step 1 Image",
+        "secondNameStep": "Step 2",
+        "secondStepImage": "Step 2 Image",
+        "thirdNameStep": " Step 3",
+        "thirdStepImage": "Step 3 Image",
         "buyNowLink": "Buy Now Link"
       }
     },
     "simple": {
       "categories": {
-        "text": "Text",
-        "images": "Images",
-        "links": "Links"
+        "text": "GENERAL",
+        "images": "STYLES",
+        "howToBuy": "BLOCKS",
+        "links": "Links",
+        "widgets": "WIDGETS"
       },
       "fields": {
         "ticker": "Ticker",
-        "contractAddress": "Contract Address",
+        "contractAddress": "Contract",
         "background": "Background",
         "tokenImage": "Token Image",
         "tiktok": "Tiktok",
@@ -324,17 +323,18 @@
     },
     "impressive": {
       "categories": {
-        "text": "Text",
-        "images": "Images",
+        "text": "GENERAL",
+        "images": "STYLES",
         "links": "Links",
         "buttons": "Buttons",
-        "howToBuy": "How to Buy",
+        "howToBuy": "BLOCKS",
         "roadmap": "Roadmap",
-        "faq": "FAQ"
+        "faq": "FAQ",
+        "widgets": "WIDGETS"
       },
       "fields": {
         "ticker": "Ticker",
-        "contractAddress": "Contract Address",
+        "contractAddress": "Contract",
         "buyNowText": "Buy Now",
         "aboutUsTitle": "About Us Title",
         "aboutUsDescription": "About Us Description",
@@ -385,14 +385,16 @@
     "rocket": {
       "categories": {
         "accentColors": "Accent Colors",
-        "text": "Text",
-        "images": "Images",
+        "text": "GENERAL",
+        "images": "STYLES",
         "buttons": "Buttons",
         "tokenomics": "Tokenomics",
         "missionTimeline": "Mission Timeline",
         "missionControl": "Mission Control",
         "faq": "FAQ",
-        "links": "Links"
+        "links": "Links",
+        "widgets": "WIDGETS",
+        "howToBuy": "BLOCKS"
       },
       "fields": {
         "primaryColor": "Primary Color",
@@ -400,8 +402,8 @@
         "heroTitle": "Hero Title",
         "ticker": "Ticker",
         "description": "Description",
-        "contractAddress": "Contract Address",
-        "contractAddressLabel": "Contract Address Label",
+        "contractAddress": "Contract ",
+        "contractAddressLabel": "Contract Label",
         "projectName": "Project Name",
         "buyTicker": "Header Button",
         "buyNow": "Buy Now Button",

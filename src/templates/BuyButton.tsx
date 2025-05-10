@@ -3,12 +3,13 @@ import { TemplateItemError } from '@/components/TemplateItems/Error'
 import { Text } from '@/components/TemplateItems/Text'
 import { TemplateContext } from '@/contexts/TemplateContext'
 import { cn } from '@/lib/utils'
+import { useStylesStore } from '@/store/useStulesStore'
 import { TemplateContextValues } from '@/types/contexts'
 import { FC, useContext } from 'react'
 
 export const BuyButton: FC<{ className?: string }> = ({ className }) => {
   const { data } = useContext(TemplateContext) as TemplateContextValues
-
+  const { primary, colorPrim } = useStylesStore((state) => state)
   if (!data?.links?.buyNowLink) {
     return <TemplateItemError />
   }
@@ -23,6 +24,7 @@ export const BuyButton: FC<{ className?: string }> = ({ className }) => {
         <Text
           fieldName='buyNowText'
           className={{ text: 'inline-block px-6 py-3' }}
+          style={{ fontFamily: primary, color: colorPrim }}
         />
       </a>
     </Button>

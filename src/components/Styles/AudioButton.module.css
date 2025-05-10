@@ -1,0 +1,101 @@
+.audioButton {
+  width: 48px;
+  height: 48px;
+  background-color: #1a202c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.audioButton:active {
+  transform: scale(0.95);
+  background-color: #2d3748;
+  border-color: #a0aec0;
+}
+
+.audioButton:hover {
+  transform: scale(1.1);
+}
+
+.iconContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audioLines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audioLines::after,
+.audioLines::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #2ecc71;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.audioLines::after {
+  left: 20%;
+  animation-delay: 0.2s;
+}
+
+.audioLines::before {
+  right: 20%;
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 20px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.active {
+  border-color: #2ecc71;
+}
+
+.active .speakerIcon {
+  color: #2ecc71;
+}
+
+.audioButton.rounded-full {
+  border-radius: 50%;
+}
+
+.audioButton.rounded-lg {
+  border-radius: 8px;
+}
+
+.audioButton.rounded-none {
+  border-radius: 0;
+
+  .audioButton.rounded-none {
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
